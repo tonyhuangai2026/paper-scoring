@@ -1,0 +1,149 @@
+{
+  "agent": "agent_01",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "451dd64a-f6e7-44e8-bd95-a34f879ee8d7",
+  "finished_at": "2026-11-24T06:33:46.081492+00:00",
+  "paper": {
+    "id": "254",
+    "position": 16,
+    "title": "Pandemic and insurance purchase How do people respond to unprecedented risk and uncertainty",
+    "group": "组01",
+    "md_sha256": "4df862da852f5050805502909293c7a967b4fe76b8dce3a2cc0ec08916743866",
+    "pdf_sha256": "7131b5acd28de0caac5bc73be9b463484ce69b1affa96d960fb0b978ab0b1bd7",
+    "ready": true
+  },
+  "pdf_pages": 25,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第1页包含明确的 A B S T R A C T 摘要，位于 P1.4 至 P1.10。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "G41 \nG52 \nKeywords: \nInsurance \nDecision-making \nCOVID-19 \nRisk \nInformation \nA B S T R A C T  \nWe investigate how people insure themselves against an upsurge of risk and uncertainty during a \npandemic. Using",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "high-frequency, city-level insurance purchases data from the largest online in­\nsurance platform in China, we employ difference-in-differences strategies to quantify changes in \ninsurance purchases before and after the",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": false,
+      "derivations": null,
+      "reason": "摘要未明确提出构建新模型、创造新概念、创新计量方法或证明模型性质等理论贡献；正文以 DID 实证识别为主，无理论推导、引理或定理。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "G41 \nG52 \nKeywords: \nInsurance \nDecision-making \nCOVID-19 \nRisk \nInformation \nA B S T R A C T  \nWe investigate how people insure themselves against an upsurge of risk and uncertainty during a \npandemic. Using",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "high-frequency, city-level insurance purchases data from the largest online in­\nsurance platform in China, we employ difference-in-differences strategies to quantify changes in \ninsurance purchases before and after the",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "empirical models \nTo estimate the effects of the COVID-19 pandemic on insurance purchases, we employ a difference-in-differences (DID) strategy \nthat has been increasingly used in recent studies on COVID-19 (Brodeur et",
+          "ref": "P7.14"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "使用中国最大线上保险平台的高频城市级真实保险购买数据及 COVID-19 确诊数据；明确构建 DID 模型并报告了核心系数（如 2020×Post 系数 0.855，对应 135% 增长）。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "people by the end of 2019. The great accessibility and responsiveness of the online platform makes it an excellent source \nof data to investigate insurance purchases behaviors. We use every two-day insurance purchases",
+          "ref": "P2.12"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "data from Dec 01, 2019 to Mar 16, \n2020 (2019–2020) and the corresponding period in 2018–2019 for 294 prefecture-level cities; and a difference-in-differences (DID) \napproach is employed to identify the impact of",
+          "ref": "P2.13"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "al., 2021; Chen et al., 2021; Fang et al., 2020; He et al., \n2020).16 The regression equation can be specified as follows, \nYit = α + β1Treat × Postit + Treat + Postit + λi + ωt + εit\n(1)  \nwhere Yit represents the",
+          "ref": "P7.15"
+        },
+        {
+          "source": "pdf",
+          "start": 10,
+          "end": 10,
+          "quote": "effects of the COVID-19 pandemic on insurance purchases.   \n(1) \n(2) \n(3)  \nLog number of insurance purchases \nLog number of platform visits \nLog number of insurance purchases per visit \n2020 × Post \n0.855*** \n0.532***",
+          "ref": "P10.16"
+        }
+      ]
+    },
+    "field": {
+      "reason": "按步骤 3.2 识别核心自变量与核心因变量：核心自变量为 COVID-19 疫情冲击（Treat×Post），属于公共卫生/经济冲击类变量，与经管中的风险管理与保险需求相关；核心因变量为保险购买数量，属于金融/保险经济学范畴。至少一个核心变量属于经管类，故判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "COVID-19 pandemic (Treat × Post)",
+          "economic": true,
+          "reason": "疫情冲击作为外生风险与不确定性来源，是保险经济学和风险管理研究的核心经济冲击变量。"
+        },
+        {
+          "role": "dependent",
+          "name": "number of insurance purchases",
+          "economic": true,
+          "reason": "保险购买数量是金融与保险经济学中的典型需求变量，直接反映家庭风险管理行为。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "al., 2021; Chen et al., 2021; Fang et al., 2020; He et al., \n2020).16 The regression equation can be specified as follows, \nYit = α + β1Treat × Postit + Treat + Postit + λi + ωt + εit\n(1)  \nwhere Yit represents the",
+          "ref": "P7.15"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "outcomes of insurance purchases measured in prefecture-level city i, at time t, such as the log number of \ninsurance purchases and the log number of consumers. The dummy variable Treat is defined as 1 for 2019–2020",
+          "ref": "P7.16"
+        },
+        {
+          "source": "pdf",
+          "start": 9,
+          "end": 9,
+          "quote": "aggregate level \nWe estimate the average treatment effects of the COVID-19 pandemic on insurance purchases using a DID model (Eq. (1)), which \nquantifies the relative changes in insurance purchases before and after the",
+          "ref": "P9.18"
+        }
+      ]
+    }
+  }
+}

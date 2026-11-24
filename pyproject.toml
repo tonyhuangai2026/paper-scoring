@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-scoring"
+version = "0.1.0"
+description = "Independent multi-agent paper classification and agreement reporting"
+requires-python = ">=3.11"
+dependencies = [
+    "filelock>=3.13,<4",
+    "httpx2[socks]>=2.7,<3",
+    "PyMuPDF>=1.24.4,<2",
+    "pydantic-ai-slim[openai]==2.71.0",
+    "python-dotenv>=1.0,<2",
+    "reportlab>=4.2,<5",
+    "XlsxWriter>=3.2,<4",
+]
+
+[project.scripts]
+paper-scoring = "paper_scoring.cli:main"
+
+[tool.setuptools]
+packages = ["paper_scoring"]
+
+[tool.setuptools.package-data]
+paper_scoring = ["rubric.md"]

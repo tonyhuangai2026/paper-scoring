@@ -1,0 +1,10 @@
+name = "新旧结果不一致"
+pdf_dir = "PDF和MD-新旧结果不一致/PDF-新旧结果不一致"
+md_dir = "PDF和MD-新旧结果不一致/MD-新旧结果不一致"
+instructions = "Agent Team 打标正式指令.pdf"
+ids = ["017", "020", "025", "029", "037", "052", "059", "063", "075", "088",
+       "181", "182", "204", "218", "239", "254", "265", "271", "316", "363"]
+
+[titles]
+"088" = "Does Chinese Environmental Policy Affect Income Inequality? Evidence from the Central Environmental Protection Inspection"
+"182" = "Informal regulation by nongovernmental organizations enhances corporate compliance: Evidence from a nationwide randomized controlled trial in China"

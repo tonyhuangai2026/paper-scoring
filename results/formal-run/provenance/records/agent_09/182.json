@@ -1,0 +1,170 @@
+{
+  "agent": "agent_09",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "e8c8e064-877a-4263-835b-ca4ad6b2b0a7",
+  "finished_at": "2026-11-24T06:41:51.694316+00:00",
+  "paper": {
+    "id": "182",
+    "position": 12,
+    "title": "Informal regulation by nongovernmental organizations enhances corporate compliance: Evidence from a nationwide randomized controlled trial in China",
+    "group": "组01",
+    "md_sha256": "287125068b34a4fbc69165302ce42a40377bea693d77bf4915c0b674c2dd5c7c",
+    "pdf_sha256": "6e41723c30cf1f1135614f4dd6301cbbe1994277d45a3531828f712ad3667cd6",
+    "ready": true
+  },
+  "pdf_pages": 24,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "MD 中 L25.1 有明确的 Abstract 标题，L27.1-L27.5 为摘要正文。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 25,
+          "end": 25,
+          "quote": "## Abstract",
+          "ref": "L25.1"
+        },
+        {
+          "source": "md",
+          "start": 27,
+          "end": 27,
+          "quote": "As a key component of informal regulation, nongovernmental organization (NGO) monitoring reduces the cost of gov ernment oversight and increases the visibility of corporate performance to stakeholders, thereby promoting",
+          "ref": "L27.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": false,
+      "derivations": null,
+      "reason": "摘要明确提出用全国性随机对照试验（RCT）识别NGO监测对企业合规的因果效应，并检验监管威胁与声誉威胁两种机制，属于实证/因果识别贡献，未明确提出构建新模型、新概念、新计量方法或证明模型性质等理论贡献。正文虽有概念框架与假设（L51-L101），但为文献推演式假设，无数学推导、引理、定理。故无理论。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 27,
+          "end": 27,
+          "quote": "corporate compliance. We conduct a nationwide randomized con trolled trial (RCT) to investigate the causal effect of NGO monitoring on corporate compliance as measured by the environmental information disclosure (EID)",
+          "ref": "L27.2"
+        },
+        {
+          "source": "md",
+          "start": 27,
+          "end": 27,
+          "quote": "of China’s highly polluting listed companies. We find that companies improve their EID after being alerted to NGO monitoring, especially private companies and companies with poor baseline per formance. Both the threat",
+          "ref": "L27.3"
+        },
+        {
+          "source": "md",
+          "start": 43,
+          "end": 43,
+          "quote": "We make three contributions. First, we add to the body of knowledge on NGO monitoring and corporate compliance by providing causal evidence from a large-scale RCT, which is in contrast to most existing research that",
+          "ref": "L43.1"
+        },
+        {
+          "source": "md",
+          "start": 67,
+          "end": 67,
+          "quote": "Hypothesis 1: NGO monitoring promotes corporate environmental compliance, as measured by EID in our case.",
+          "ref": "L67.1"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "使用中国高污染上市公司2018-2019年真实数据（606家随机分组，最终561家样本，L129.1-L129.4），构建EID评分并采用DiD模型（式1、式2，L151-L165）估计处理效应，报告了具体系数（如NGO监测使EID总分提高4.01分，L189.3；表3、表4系数，L195、L209）。真实数据与模型估计系数两项均成立。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 129,
+          "end": 129,
+          "quote": "In 2018, more than 1,000 publicly traded companies or their subsidiaries were listed as key pollutant discharge units. In the first-round evaluation in 2019, 606 of these companies received an EID score of less than",
+          "ref": "L129.1"
+        },
+        {
+          "source": "md",
+          "start": 129,
+          "end": 129,
+          "quote": "100. We randomly divide the 606 companies into three groups: 202 in the regulatory threat group, 202 in the reputational threat group, and 202 in the control group.<sup>6</sup> After the second-round evaluation in 2020,",
+          "ref": "L129.2"
+        },
+        {
+          "source": "md",
+          "start": 152,
+          "end": 152,
+          "quote": "Y _ {i t} = \\beta_ {1} T _ {i} \\times P o s t _ {t} + X _ {i t} + \\gamma_ {i} + \\eta_ {p t} + \\delta_ {j t} + \\varepsilon_ {i t}\\tag{1}",
+          "ref": "L152.1"
+        },
+        {
+          "source": "md",
+          "start": 189,
+          "end": 189,
+          "quote": "(3) of Table 3 show that NGO monitoring raised the EID score of highly polluting publicly traded companies by 4.01 points, or 6% relative to the baseline level (69.78 points). The result is statistically significant in",
+          "ref": "L189.3"
+        },
+        {
+          "source": "md",
+          "start": 195,
+          "end": 195,
+          "quote": "<table><tr><td></td><td>(1)Total score</td><td>(2)General score</td><td>(3)Total score</td><td>(4)General score</td></tr><tr><td>Treat*post</td><td>3.800*(2.216)</td><td>3.943***(1.433)</td><td>4.012*(2.313)</td><td>4.09",
+          "ref": "L195.1"
+        }
+      ]
+    },
+    "field": {
+      "reason": "按步骤3.2，有实证，识别核心自变量与核心因变量。核心自变量为NGO监测（监管威胁/声誉威胁处理），属于非政府组织参与的环境治理与监管经济学范畴；核心因变量为企业环境信息披露（EID）合规得分，属于企业环境合规与信息披露，属经管类。至少一个为经管类，故为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "NGO monitoring (regulatory threat / reputational threat)",
+          "economic": true,
+          "reason": "非政府组织监测作为非正式监管手段，属环境治理、监管经济学与公共管理范畴。"
+        },
+        {
+          "role": "dependent",
+          "name": "Environmental information disclosure (EID) score",
+          "economic": true,
+          "reason": "企业环境信息披露合规，属企业环境合规、信息披露与公司治理范畴。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "md",
+          "start": 27,
+          "end": 27,
+          "quote": "corporate compliance. We conduct a nationwide randomized con trolled trial (RCT) to investigate the causal effect of NGO monitoring on corporate compliance as measured by the environmental information disclosure (EID)",
+          "ref": "L27.2"
+        },
+        {
+          "source": "md",
+          "start": 41,
+          "end": 41,
+          "quote": "We conduct a nationwide randomized controlled trial (RCT) to estimate whether highly polluting companies improve their EID when informed by an NGO that they do not comply with the regula tion. To examine the key ways",
+          "ref": "L41.1"
+        },
+        {
+          "source": "md",
+          "start": 115,
+          "end": 115,
+          "quote": "We examine whether and how NGO monitoring improves the EID compliance of China’s high polluting listed companies. We conduct a 2-year field experiment with one of the most influential environmental NGOs in China: the",
+          "ref": "L115.1"
+        },
+        {
+          "source": "md",
+          "start": 155,
+          "end": 155,
+          "quote": "where i represents companies, j represents the 2-digit National Standard Industrial Classification industries, p represents provinces, and t represents years. $Y _ { i t }$ is the EID score for company i in year t. For",
+          "ref": "L155.1"
+        }
+      ]
+    }
+  }
+}

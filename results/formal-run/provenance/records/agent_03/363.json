@@ -1,0 +1,184 @@
+{
+  "agent": "agent_03",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "5bfa0c88-8098-408c-9883-1facca2a02fe",
+  "finished_at": "2026-11-24T06:34:26.753220+00:00",
+  "paper": {
+    "id": "363",
+    "position": 20,
+    "title": "The impacts of household structure transitions on household carbon emissions in China",
+    "group": "组01",
+    "md_sha256": "18508c99defe198b67c6c8850d2c9d495f1e01fc4d6c474a0122dd2ea385d6b0",
+    "pdf_sha256": "06bf372af5ab9da3af7e7f9e0a9a3f65772c839950f3fd731ba0060e7ebf38cf",
+    "ready": true
+  },
+  "pdf_pages": 17,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第1页有明确的 A B S T R A C T 摘要，概述了研究问题、方法、主要结果与预测。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "emissions \nHousehold size \nInput-output model \nBidirectional fixed-effect econometric model \nA B S T R A C T  \nHousehold consumption has great potential to reduce CO2 emissions from the demand side which is an important",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "way to achieve carbon peaking and carbon neutrality goals. However, the shrinking household size will have a \nsignificant impact on household carbon emissions. In this paper, we have investigated the impacts of the",
+          "ref": "P1.6"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "decrease \nin Chinese household size on the direct and indirect household carbon emissions by using the input-output model \nand the bidirectional fixed-effect model, based on China's Urban Household Income and",
+          "ref": "P1.7"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": false,
+      "derivations": null,
+      "reason": "摘要未明确提出构建新理论模型、新概念或证明模型性质等理论贡献；其贡献在于结合投入产出模型与双向固定效应模型进行实证测算与预测，属于应用性方法组合而非理论创新。正文虽有投入产出公式与计量模型设定，但按规则摘要未明确理论贡献即无理论，故不判断正文推导。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "way to achieve carbon peaking and carbon neutrality goals. However, the shrinking household size will have a \nsignificant impact on household carbon emissions. In this paper, we have investigated the impacts of the",
+          "ref": "P1.6"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "decrease \nin Chinese household size on the direct and indirect household carbon emissions by using the input-output model \nand the bidirectional fixed-effect model, based on China's Urban Household Income and",
+          "ref": "P1.7"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Expenditure Survey \ndataset. Results have shown that household size has a significant negative effect on household carbon emissions \nper capita, and such a negative effect on indirect carbon emissions is much greater",
+          "ref": "P1.8"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "使用中国城镇住户调查（UHIES）1992、2007、2012年微观数据及投入产出表、能源与气象数据，属真实数据；正文明确构建双向固定效应计量模型，并报告了家庭规模对人均直接与间接碳排放的回归系数（如-0.128、-1.344）及显著性，模型系数被明确估计。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "decrease \nin Chinese household size on the direct and indirect household carbon emissions by using the input-output model \nand the bidirectional fixed-effect model, based on China's Urban Household Income and",
+          "ref": "P1.7"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Expenditure Survey \ndataset. Results have shown that household size has a significant negative effect on household carbon emissions \nper capita, and such a negative effect on indirect carbon emissions is much greater",
+          "ref": "P1.8"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "than that on direct carbon \nemissions in China. Reducing the average household size by one has led to an increase of 0.128 t of the direct \nhousehold carbon emissions per capita and 1.344 t of indirect household carbon",
+          "ref": "P1.9"
+        },
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "in \ninput-output tables. \n3.2. Bidirectional fixed effect model \nA bidirectional fixed-effect model has been constructed to estimate \nthe effect of household size on household direct and indirect carbon \nemissions per",
+          "ref": "P4.11"
+        },
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "capita. The specific econometric model is given by: \nYit = β0 + β1 • Sizeit + β2Zit + λcounty + δyear + εit\n(5)  \nwhere Yit is the annual per capita carbon emissions in household i in year \nt, including direct and",
+          "ref": "P4.12"
+        },
+        {
+          "source": "pdf",
+          "start": 8,
+          "end": 8,
+          "quote": "household carbon emissions per capita.   \n(1) \n(2) \n(3) \n(4) \n(5) \n(6) \n(7) \nHousehold size \n−0.085*** \n−0.128*** \n−0.127*** \n−0.128*** \n−0.128*** \n−0.128*** \n−0.128***  \n(0.005) \n(0.008) \n(0.008) \n(0.007) \n(0.007)",
+          "ref": "P8.9"
+        },
+        {
+          "source": "pdf",
+          "start": 8,
+          "end": 8,
+          "quote": "(6) \n(7) \nHousehold size \n−0.819*** \n−1.335*** \n−1.333*** \n−1.346*** \n−1.342*** \n−1.343*** \n−1.344***  \n(0.034) \n(0.059) \n(0.059) \n(0.058) \n(0.056) \n(0.056) \n(0.056) \nHousehold gross income  \n3.310*** \n3.302***",
+          "ref": "P8.16"
+        }
+      ]
+    },
+    "field": {
+      "reason": "按步骤3.2，有实证，识别核心自变量与核心因变量。核心自变量为家庭规模（household size），核心因变量为人均家庭直接与间接碳排放。家庭规模是人口/家庭结构经济变量，家庭碳排放是资源环境经济与消费经济变量，二者均属经管类，故为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Household size",
+          "economic": true,
+          "reason": "家庭规模是家庭人口结构与消费经济分析中的核心社会经济变量，影响家庭资源共享与消费支出。"
+        },
+        {
+          "role": "dependent",
+          "name": "Household direct and indirect carbon emissions per capita",
+          "economic": true,
+          "reason": "人均家庭直接与间接碳排放是资源环境经济学和消费经济学关注的核心结果变量，与家庭消费支出和能源使用直接相关。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "capita. The specific econometric model is given by: \nYit = β0 + β1 • Sizeit + β2Zit + λcounty + δyear + εit\n(5)  \nwhere Yit is the annual per capita carbon emissions in household i in year \nt, including direct and",
+          "ref": "P4.12"
+        },
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "indirect carbon emissions. Sizeit is the household \nsize in household i in year t. Zit includes a series of control variables that \ncan also affect Yit, including household and regional characteristics such \nas",
+          "ref": "P4.13"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "indicate that reducing the household size by \none can lead to 0.128 t of growth in direct household carbon emissions \nper capita of Chinese households. This can be explained by the fact that \nlarger-size households can",
+          "ref": "P7.3"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "emissions. The coefficients of interest \nare negatively and statistically significant (at the 1% level), as shown in \nTable 3. Results suggest that reducing the household size by one person \ncan lead to 1.344 t of",
+          "ref": "P7.6"
+        }
+      ]
+    }
+  }
+}

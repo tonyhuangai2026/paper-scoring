@@ -1,0 +1,142 @@
+{
+  "agent": "agent_08",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "9377f1b1-c1fd-489f-8545-233f46c8dec0",
+  "finished_at": "2026-11-24T06:40:30.934839+00:00",
+  "paper": {
+    "id": "181",
+    "position": 11,
+    "title": "Indoor air quality and health Empirical evidence from fluoride pollution in China",
+    "group": "组01",
+    "md_sha256": "4bd0de4c42b9187d6e69d720428b56db8338138dd43319124324e5dbeccddd33",
+    "pdf_sha256": "b2cfedb6a5854c4679880238625caa35c6b002405d0f4e0083f9ad2555054778",
+    "ready": true
+  },
+  "pdf_pages": 16,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第1页有明确的 A B S T R A C T 段落，内容完整。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+          "ref": "P1.2"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": false,
+      "derivations": null,
+      "reason": "摘要明确提出的是实证分析（econometric analysis、individual fixed effect models、triple difference models），未提出构建新模型、新概念或证明模型性质等理论贡献；正文亦无定理、引理等理论推导，故无理论。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+          "ref": "P1.3"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "使用中国健康与营养调查（CHNS）纵向数据及中国深入生育调查（CIFS）等真实数据；正文明确构建个体固定效应模型、家庭固定效应模型和三重差分模型，并报告了估计系数（如家庭用煤对舒张压系数0.937、对收缩压1.286等），两项均成立。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "models were used in the study to respectively estimate the influence of fluoride pollution on adults\nand the influence of exposure to fluoride pollution during infancy on child development. The model for estimating the",
+          "ref": "P4.13"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "gender and age/age squared, wave fixed effects, prefectural GDP per capita, and primary and secondary industry proportions. The\nresults reveal that the estimated coefficient of the household coal use variable was 0.937",
+          "ref": "P7.5"
+        },
+        {
+          "source": "pdf",
+          "start": 9,
+          "end": 9,
+          "quote": "the interaction term between household coal use and\nGuizhou.\nTable 5 presents the estimated coefficients of the interaction term between household coal use and Guizhou province from the\ntriple difference models. We find",
+          "ref": "P9.9"
+        }
+      ]
+    },
+    "field": {
+      "reason": "按步骤3.2，有实证，识别核心自变量为家庭是否以煤为主要燃料（室内氟污染代理），核心因变量为成人血压、体重及儿童身高体重等健康指标。自变量反映家庭能源使用与室内污染暴露，属经管类；因变量为健康结果，属健康经济学范畴，亦属经管类。至少一个为经管类，故为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "household coal use",
+          "economic": true,
+          "reason": "家庭燃料选择与室内空气污染暴露，属于环境与资源经济学、家庭经济决策范畴。"
+        },
+        {
+          "role": "dependent",
+          "name": "diastolic and systolic blood pressure, underweight, height, weight",
+          "economic": true,
+          "reason": "健康结果变量，属于健康经济学研究对象。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "influence of\nfluoride pollution on adults is expressed as follows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nht\niht\ni\nt\niht\n1\n2\n3\n(1)\nwhere the dependent variable yiht represents the health indicator that may be affected by fluoride",
+          "ref": "P4.14"
+        },
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "household to which the individual belongs, and the period during which the individual is\nsurveyed; coalht represents whether individual i's household uses coal as the main cooking fuel during the period t, which is a",
+          "ref": "P4.16"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "pollution on the health of adults\nUsing an individual fixed-effects model, we estimated the impact of fluoride pollution on adult health. The regression result is\nshown in Table 3. The first four columns concern the",
+          "ref": "P7.3"
+        },
+        {
+          "source": "pdf",
+          "start": 8,
+          "end": 8,
+          "quote": "results are presented in\nTable 4. Panel A concerns the long-term influence of infant fluoride exposure on height. The first column provides the estimated\ncoefficient with controlled variables such as age, birth order,",
+          "ref": "P8.6"
+        }
+      ]
+    }
+  }
+}

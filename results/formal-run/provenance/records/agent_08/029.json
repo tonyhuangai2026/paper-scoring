@@ -1,0 +1,189 @@
+{
+  "agent": "agent_08",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "9377f1b1-c1fd-489f-8545-233f46c8dec0",
+  "finished_at": "2026-11-24T06:39:25.167546+00:00",
+  "paper": {
+    "id": "029",
+    "position": 4,
+    "title": "Regulating Conglomerates Evidence from an Energy Conservation Program in China",
+    "group": "组01",
+    "md_sha256": "341b0aca02a932d1a1d6283ea8e0fff87dddce2e7cb6efc6ece4017a159e3e3b",
+    "pdf_sha256": "884cd484c8e6fc3452839833008d77b7f2fe8b09c08d8ff50655157a4635e9be",
+    "ready": true
+  },
+  "pdf_pages": 40,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第1页包含论文摘要，位于标题与作者信息之后、JEL 分类号之前。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Carlos Suárez Serrato, and Daniel Yi Xu*\nWe study a prominent energy regulation affecting large Chinese man-\nufacturers that are part of broader conglomerates. Using detailed \n­firm-level data and",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "­difference-in-differences research designs, we \nshow that regulated firms cut output and shifted some production \nto unregulated firms within their conglomerate instead of improv-\ning their energy efficiency. To",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "account for conglomerate and market \nspillovers, we interpret these results through the lens of an indus-\ntry equilibrium model featuring conglomerate production. The pol-\nicy raises welfare if the ­per ton benefits of",
+          "ref": "P1.4"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": true,
+      "derivations": true,
+      "reason": "摘要明确提出构建一个包含企业集团生产的产业均衡模型，属于理论贡献；正文第IV节给出模型设定、命题1–5及数学推导，满足理论判断。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "account for conglomerate and market \nspillovers, we interpret these results through the lens of an indus-\ntry equilibrium model featuring conglomerate production. The pol-\nicy raises welfare if the ­per ton benefits of",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 22,
+          "end": 22,
+          "quote": "following result.\nPROPOSITION 1 (­Within-Conglomerate Distribution): Absent regulation, the \ninputs and the output of producers in a conglomerate follow a decreasing geometric \nsequence given by\n(5)\t\n​ ​q​i​ \n_",
+          "ref": "P22.4"
+        },
+        {
+          "source": "pdf",
+          "start": 25,
+          "end": 25,
+          "quote": "PROPOSITION 3 (­Within-Conglomerate Distribution under Regulation): Under the \nTop 1,000 regulation, the inputs and the output of producers follow the sequences \ngiven by\n\t\n​ ​e​j​ \n_ \n​e​2​ ​  =  ​ ​l​j​ \n_ \n​l​2​ ​",
+          "ref": "P25.5"
+        },
+        {
+          "source": "pdf",
+          "start": 26,
+          "end": 26,
+          "quote": "PROPOSITION 5 (Equilibrium under Regulation): The equilibrium price level \nunder the Top 1,000 regulation solves the following system of nonlinear equations:\n(13)            ​(​ P \n_ \n​P​ ∗​ ​)​ \n−ρ\n​  =",
+          "ref": "P26.4"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "论文使用中国企业层面真实数据（CESD、ASIF、CARD 等）进行双重差分估计，并明确构建结构模型、用矩估计法估计出模型系数（δ、σm、φ1 等），两项均成立。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 8,
+          "end": 8,
+          "quote": "­firm-level pro-\nduction and energy use. We obtain the list of firms in the Top 1,000 and Top 10,000 \nprograms from the National Development and Reform Commission. We then col-\nlect detailed information on firm energy",
+          "ref": "P8.13"
+        },
+        {
+          "source": "pdf",
+          "start": 11,
+          "end": 11,
+          "quote": "the explosive growth in the energy use of regulated firms.\nWe quantify the effects of the policy by estimating ­difference-in-differences \nspecifications of the form\n(2)\t\n​Y​ijkt​  =",
+          "ref": "P11.14"
+        },
+        {
+          "source": "pdf",
+          "start": 27,
+          "end": 27,
+          "quote": "and the \nmarket expenditure ​R,​ equations (8) and (9) pin down ​f.​ The entry cost ​f​e​ is then \ndetermined by the conglomerate ­free-entry condition.21\nWe estimate the parameters ​θ  =  ​(δ, ​ϕ​1​, ​σ​m​)​ using the",
+          "ref": "P27.9"
+        },
+        {
+          "source": "pdf",
+          "start": 28,
+          "end": 28,
+          "quote": "given by\n\t\n​θ ˆ ​  =  ​arg min​ \nθ∈Θ\n​  ​[​m​d​ − m​(θ)​]​ ′ ​ W​[​m​d​ − m​(θ)​]​,​\nwhere ​m​d​ are the data moments and ​m​(θ)​ are the moments generated by the model.22\nTable 4 reports the results of the estimation.",
+          "ref": "P28.2"
+        },
+        {
+          "source": "pdf",
+          "start": 28,
+          "end": 28,
+          "quote": "_ \n1 − ρ ​\n4.00\nMelitz and Redding (2015)\nReturns to scale\n​α​\n0.90\nBurnside et al. (1995)\nReturns to scale (labor share)\n​α​l​\n0.80\nCost share of variable inputs\n2. Method of moments\nEfficiency depreciation\n​δ​\n0.900",
+          "ref": "P28.10"
+        }
+      ]
+    },
+    "field": {
+      "reason": "论文有实证，按步骤3.2识别核心自变量与核心因变量。核心自变量为是否受 Top 1,000 节能项目规制（Treat×Post），属于环境规制/产业政策变量；核心因变量为企业能源使用、产出和能源效率，属于能源经济学与产业组织中的经管类变量。至少一个核心变量属于经管类，故判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Treat × Post（是否受 Top 1,000 项目规制）",
+          "economic": true,
+          "reason": "环境规制/产业政策处理变量，属于经管类。"
+        },
+        {
+          "role": "dependent",
+          "name": "ln(Energy Use)（企业能源使用）",
+          "economic": true,
+          "reason": "能源经济学核心结果变量，属于经管类。"
+        },
+        {
+          "role": "dependent",
+          "name": "ln(Output)（企业产出）",
+          "economic": true,
+          "reason": "产业组织与企业生产结果变量，属于经管类。"
+        },
+        {
+          "role": "dependent",
+          "name": "ln(Energy Efficiency)（企业能源效率）",
+          "economic": true,
+          "reason": "能源效率是能源经济学核心变量，属于经管类。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 11,
+          "end": 11,
+          "quote": "the explosive growth in the energy use of regulated firms.\nWe quantify the effects of the policy by estimating ­difference-in-differences \nspecifications of the form\n(2)\t\n​Y​ijkt​  =",
+          "ref": "P11.14"
+        },
+        {
+          "source": "pdf",
+          "start": 13,
+          "end": 13,
+          "quote": "significantly. Indeed, panel B of Table 1 \nTable 1—Effects of the Program on Regulated Firms\nVariables\nln(Energy Use)\nPanel A. Energy use\nTreat ​×​ Post\n−0.125\n−0.156\n−0.156\n−0.128\n(0.042)\n(0.045)\n(0.047)\n(0.048)",
+          "ref": "P13.5"
+        },
+        {
+          "source": "pdf",
+          "start": 13,
+          "end": 13,
+          "quote": "[0.003]\n[0.001]\n[0.001]\n[0.008]\nObservations\n23,607\n23,602\n23,151\n20,571\n​R​ 2​\n0.887\n0.890\n0.892\n0.898\nVariables\nln(Output)\nPanel B. Output\nTreat ​×​ Post\n−0.096\n−0.226\n−0.204\n−0.145\n(0.040)\n(0.041)\n(0.042)\n(0.042)",
+          "ref": "P13.6"
+        },
+        {
+          "source": "pdf",
+          "start": 13,
+          "end": 13,
+          "quote": "[0.017]\n[0.000]\n[0.000]\n[0.001]\nObservations\n23,435\n23,430\n22,991\n20,446\n​R​ 2​\n0.881\n0.887\n0.889\n0.893\nVariables\nln(Energy Efficiency)\nPanel C. Energy efficiency\nTreat ​×​ Post\n0.032\n−0.069\n−0.049\n−0.019\n(0.042)",
+          "ref": "P13.7"
+        }
+      ]
+    }
+  }
+}

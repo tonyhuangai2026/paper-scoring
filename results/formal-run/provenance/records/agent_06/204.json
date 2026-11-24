@@ -1,0 +1,170 @@
+{
+  "agent": "agent_06",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "a00df1af-2693-43d1-8be9-fdf439933b15",
+  "finished_at": "2026-11-24T06:37:10.254534+00:00",
+  "paper": {
+    "id": "204",
+    "position": 13,
+    "title": "Is an ounce of prevention worth a pound of cure Evidence from a large-scale vaccination experiment in China",
+    "group": "组01",
+    "md_sha256": "60fa81ba86705e63acc0bd83a8d7ab32a0fe7f838e04c0322ce533fe36dd4ac8",
+    "pdf_sha256": "ddb2f0ad23b37069f3963ec842e94566a125b140797e1d94c7735d5a560599d4",
+    "ready": true
+  },
+  "pdf_pages": 18,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第1页有明确的 A B S T R A C T 段落，内容完整。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+          "ref": "P1.4"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": false,
+      "derivations": null,
+      "reason": "摘要明确提出本文是实验研究，估计疫苗的成本效益，未提出构建新模型、创造新概念、创新计量方法或证明模型性质等理论贡献；正文亦无定理、引理等理论推导。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "– experienced improvements in their COPD \ncondition, which led to a substantial decrease in their medical expenditure (public medical in­\nsurance reimbursements and out-of-pocket expenses). Our conservative",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "论文使用中国宁波和重庆1657名老年COPD患者的随机实验数据及医疗记录，构建DID回归模型并明确报告了核心系数（如Post×Group A、Post×Group B、Post×Group C等），属于使用真实数据并估计模型系数。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "Data and sample\nOur data are derived from a large-scale randomized experiment study that was jointly conducted by Peking University’s Institute of \nEconomic Policy Research (IEPR) and the Chinese Center for Disease",
+          "ref": "P3.20"
+        },
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "undertaking hormonal therapy for cancer, (v) \nsuspected or confirmed to be infected with pneumococcal infection.6 In the end, we obtained a sample size of 1657 patients (that is, \napproximately 400 patients in each",
+          "ref": "P4.5"
+        },
+        {
+          "source": "pdf",
+          "start": 6,
+          "end": 6,
+          "quote": "effect on medical \nexpenditure.\nWe implement the DID estimator by running the following regression. For ease of exposition, consider the case of one treatment \ngroup and one control group only: \nyijt = α0 + α1Vaccineij",
+          "ref": "P6.15"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "expenditure\n(1)\n(2)\n(3)\nGroup A\n−1363.4\n−1244.7\n​\n​\n(672.6)**\n(689.2)*\n​\nGroup B\n−1337.0\n−1135.1\n​\n​\n(558.4)**\n(593.0)*\n​\nGroup C\n−725.3\n−627.8\n​\n​\n(838.1)\n(813.8)\n​\nPost\n1066.9\n1109.2\n1104.5\n​\n(669.8)\n(650.2)*\n(657.3)*",
+          "ref": "P7.14"
+        },
+        {
+          "source": "pdf",
+          "start": 7,
+          "end": 7,
+          "quote": "Post × Group A\n−2229.0\n−2258.4\n−2253.1\n​\n(714.9)***\n(689.9)***\n(698.1)***\nPost × Group B\n−2354.4\n−2340.6\n−2351.8\n​\n(723.8)***\n(715.1)***\n(717.4)***\nPost × Group C\n−2598.9\n−2544.9\n−2544.5\n​\n(800.7)***\n(789.6)***",
+          "ref": "P7.15"
+        }
+      ]
+    },
+    "field": {
+      "reason": "论文有实证、无理论，按步骤3.2识别核心自变量和核心因变量。核心自变量为疫苗接种（流感疫苗、肺炎球菌疫苗），属于公共卫生干预/健康经济学范畴；核心因变量为医疗支出（总医疗支出、医保报销支出、自付支出），属于卫生经济学和公共财政范畴。两者均属经管类，故判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Vaccine (influenza vaccine, pneumococcal vaccine, both)",
+          "economic": true,
+          "reason": "疫苗接种是公共卫生干预措施，其成本效益分析属于健康经济学和公共政策评估的核心议题。"
+        },
+        {
+          "role": "dependent",
+          "name": "Total medical expenditure (and its components: reimbursed expenditure, out-of-pocket expenditure)",
+          "economic": true,
+          "reason": "医疗支出是卫生经济学中的核心经济变量，涉及公共医疗保险报销和家庭自付费用，属于经管类变量。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "– experienced improvements in their COPD \ncondition, which led to a substantial decrease in their medical expenditure (public medical in­\nsurance reimbursements and out-of-pocket expenses). Our conservative",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "expenditure of COPD patients – on inpatient hospital admissions, outpatient visits, and prescription \nmedicine – were substantially reduced in the year following vaccination. In particular, our difference-in-differences",
+          "ref": "P2.13"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "estimates suggest \nthat vaccination against influenza and pneumonia reduced public medical insurance reimbursements by around 1613 RMB ($225) and \n1587 RMB ($222) respectively, and the corresponding total medical",
+          "ref": "P2.14"
+        },
+        {
+          "source": "pdf",
+          "start": 6,
+          "end": 6,
+          "quote": "+ α2Postt + α3Vaccineij × Postt + Xijtγ + μj + εijt\n(1) \nwhere i, j, and t denotes patient, community, and time respectively. yijt is the outcome variable such as total medical expenditure, \nVaccineij is a dummy",
+          "ref": "P6.16"
+        }
+      ]
+    }
+  }
+}

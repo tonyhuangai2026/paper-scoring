@@ -1,0 +1,171 @@
+{
+  "agent": "agent_10",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "cc57af5d-03f3-4471-bfac-2a07cdad35a7",
+  "finished_at": "2026-11-24T06:44:37.477962+00:00",
+  "paper": {
+    "id": "075",
+    "position": 9,
+    "title": "Designing and implementing pollutant emissions trading systems in China A twelve-year reflection",
+    "group": "组01",
+    "md_sha256": "67e83c79021516b268b83d6eb61b5fc4b6630c86482838281299940bf55f2430",
+    "pdf_sha256": "5580671a4197905e194109c20b68411631545628588d5e717e54e87acc905271",
+    "ready": true
+  },
+  "pdf_pages": 8,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "描述性统计和综述",
+  "label_two": "核心经管",
+  "field_path": "3.3",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第1页有明确的 A B S T R A C T 摘要段，位于关键词之后、引言之前。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Emissions trading \nChina \nEnvironmental governance \nEnvironmental management \nA B S T R A C T  \nOver the past few decades, the pollutant emissions trading policies in China have undergone significant inno­\nvation and",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "exploration. It is considered as a market-based approach that became integrated with command-and- \ncontrol mechanisms such as total emissions control or pollution permits. This study is the first to provide sys­",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": false,
+      "derivations": null,
+      "reason": "摘要说明本文首次提供系统性、反思性思考，追踪中国区域排污权交易试点，并做比较定性分析；这属于综述与政策反思，未明确提出构建新模型、新概念、新计量方法或证明模型性质等理论贡献。正文亦无数学推导、引理或定理，故无理论。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "exploration. It is considered as a market-based approach that became integrated with command-and- \ncontrol mechanisms such as total emissions control or pollution permits. This study is the first to provide sys­",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "tematic, reflective thinking that tracks the regional initiatives of pollutant emissions trading systems in China. In \nthis article, we divided China’s emissions trading practices into three stages and conducted a",
+          "ref": "P1.6"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "systematic review at the regional initiatives level. \nIn this article, we argue that the shaping of regional initiatives has \nplayed a critical part in the trajectory of China’s PETSs. Our argument is \nsupported through",
+          "ref": "P2.4"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "a comparative qualitative approach to analyze a \nunique longitudinal dataset on the evolution and institutional arrange­\nment of China’s PETSs. We aim to provide a critical and holistic review \nthat elaborates on the",
+          "ref": "P2.5"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": false,
+      "reason": "研究使用真实材料：2008–2016年（表2延伸至2018年）的32次半结构化访谈、17个焦点小组、890名政府/行业/专家代表，以及11个试点省份的120余份政策技术文件，并做开放式编码与三角验证。但全文为比较定性分析与政策评述，未明确构建计量/统计模型并估计模型系数，故无实证。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "authorized by the central government and almost all \nstarting from2007.3 We first collected qualitative data for this study \nbased on in-depth stakeholder workshops and focus group discussions \nheld during 2008–2016. In",
+          "ref": "P3.13"
+        },
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "total, we conducted 32 semi-structured in­\nterviews and 17 focus groups with 890 government representatives, \nofficers from relevant governmental agencies, industry representatives, \nand experts through focus group",
+          "ref": "P3.14"
+        },
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "workshops. For confidentiality reasons, \nthe specific departments and regions that the interviewed stakeholders \nare affiliated with are not listed in Table 2. \nThe empirical cases and interview contents were then",
+          "ref": "P3.15"
+        },
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "transcribed \nand categorized for coding. An open-coding method was used to analyze \nthe data (Yin, 2009). This process involved reviewing key narratives \nexhibited by the transcripts, including repeating keywords and",
+          "ref": "P3.16"
+        },
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "insights \nfrom the interviews and focus groups, and matching those narratives \nwith elemental concepts and constructs of China’s multilevel environ­\nmental governance framework. We then used the secondary data to",
+          "ref": "P3.17"
+        },
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "triangulate our coding, during which we collected policy documents and \nreports from all eleven provinces and municipalities. We in turn \nreviewed a wide range of action plans, interim measures and guiding \nopinions of",
+          "ref": "P3.18"
+        }
+      ]
+    },
+    "field": {
+      "reason": "按步骤3.3处理：无理论且无实证，识别正文最核心的一个变量。全文核心是“排污权交易体系/政策”（pollutant emissions trading systems, PETSs）这一环境政策制度变量，属于环境经济学与公共管理范畴，故为核心经管。",
+      "variables": [
+        {
+          "role": "central",
+          "name": "pollutant emissions trading systems (PETSs)",
+          "economic": true,
+          "reason": "排污权交易体系是以市场为基础的环境政策工具，涉及总量控制、初始分配、定价、交易平台与政府监管，属于环境经济学和公共政策管理的研究对象。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "exploration. It is considered as a market-based approach that became integrated with command-and- \ncontrol mechanisms such as total emissions control or pollution permits. This study is the first to provide sys­",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "tematic, reflective thinking that tracks the regional initiatives of pollutant emissions trading systems in China. In \nthis article, we divided China’s emissions trading practices into three stages and conducted a",
+          "ref": "P1.6"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "systematic review at the regional initiatives level. \nIn this article, we argue that the shaping of regional initiatives has \nplayed a critical part in the trajectory of China’s PETSs. Our argument is \nsupported through",
+          "ref": "P2.4"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "a comparative qualitative approach to analyze a \nunique longitudinal dataset on the evolution and institutional arrange­\nment of China’s PETSs. We aim to provide a critical and holistic review \nthat elaborates on the",
+          "ref": "P2.5"
+        }
+      ]
+    }
+  }
+}

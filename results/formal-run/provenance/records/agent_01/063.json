@@ -1,0 +1,128 @@
+{
+  "agent": "agent_01",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "451dd64a-f6e7-44e8-bd95-a34f879ee8d7",
+  "finished_at": "2026-11-24T06:32:02.330932+00:00",
+  "paper": {
+    "id": "063",
+    "position": 8,
+    "title": "Corporate investment and financing with uncertain growth opportunities",
+    "group": "组01",
+    "md_sha256": "36c298c0c29a56f5d5de2f061ca5d4b7555b1a79bfb0690fb79642b46c7aff9c",
+    "pdf_sha256": "a98ca663ee1a63342eaff766ef04a20048e210192c598fe586c94a7e084dbe3f",
+    "ready": true
+  },
+  "pdf_pages": 22,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "理论",
+  "label_two": "核心经管",
+  "field_path": "3.1",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "MD 中 L23.1 明确标注 Abstract，L25.1-L25.6 为摘要正文。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 23,
+          "end": 23,
+          "quote": "## Abstract",
+          "ref": "L23.1"
+        },
+        {
+          "source": "md",
+          "start": 25,
+          "end": 25,
+          "quote": "This paper develops a continuous-time model of a firm's sequential investments. The firm has an option to expand revenue after the initial investment. However, the timing of exercising the growth option depends not only",
+          "ref": "L25.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": true,
+      "derivations": true,
+      "reason": "摘要明确提出构建连续时间序贯投资模型，将增长机会到达建模为 Poisson 过程，并给出投资阈值、杠杆等理论结果；正文包含模型设定、价值匹配与平滑粘贴条件、微分方程及求解推导。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 25,
+          "end": 25,
+          "quote": "This paper develops a continuous-time model of a firm's sequential investments. The firm has an option to expand revenue after the initial investment. However, the timing of exercising the growth option depends not only",
+          "ref": "L25.1"
+        },
+        {
+          "source": "md",
+          "start": 25,
+          "end": 25,
+          "quote": "on the underlying cash flows but also on the uncertainty of the growth opportunity. We show that the uncertainty of growth opportunity has a positive effect on the initial investment. In particular, the investment",
+          "ref": "L25.2"
+        },
+        {
+          "source": "md",
+          "start": 59,
+          "end": 59,
+          "quote": "We use a standard real-option model (e.g., Sundaresan et al., 2015) but with the addition of a jump process for the modernization opportunity (similar to Li and Mauer (2016)). The jump process is used to represent the",
+          "ref": "L59.1"
+        },
+        {
+          "source": "md",
+          "start": 225,
+          "end": 225,
+          "quote": "$$",
+          "ref": "L225.1"
+        },
+        {
+          "source": "md",
+          "start": 305,
+          "end": 305,
+          "quote": "The initial investment threshold is solved using value-matching and smooth-pasting conditions similar to prior section. After obtaining solution to all coefficients, we obtain the following equation to solve x :",
+          "ref": "L305.1"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": false,
+      "estimated_model": null,
+      "reason": "全文使用校准参数进行数值求解与比较静态分析，未使用真实数据估计模型系数；第 5 节仅为实证启示，不构成实证估计。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 321,
+          "end": 321,
+          "quote": "Although some special cases of our model can be solved analytically, there are no closed-form solutions for the general case $( 0 < \\lambda < \\infty )$ . We use numerical solutions to characterize the quantitative",
+          "ref": "L321.1"
+        },
+        {
+          "source": "md",
+          "start": 321,
+          "end": 321,
+          "quote": "effects of the jump risk (of arrival) on investment and financing decisions. In order to solve the model numerically, we need to specify values of th input parameters. We start with a set of reasonable “base",
+          "ref": "L321.2"
+        },
+        {
+          "source": "md",
+          "start": 323,
+          "end": 323,
+          "quote": "Base-case parameter values: the risk-free rate $r = 7 \\%$ (Tsyplakoy. 2008: Mauer and Ott. 2000). the expected growth rate of revenue flow is $\\mu = 1 \\%$ (Hackbarth and Mauer, 2011; Huang and Lee, 2013; Morellec &",
+          "ref": "L323.1"
+        },
+        {
+          "source": "md",
+          "start": 405,
+          "end": 405,
+          "quote": "## 5 | EMPIRICAL IMPLICATION",
+          "ref": "L405.1"
+        }
+      ]
+    },
+    "field": {
+      "reason": "按步骤 3.1，有理论、无实证，直接判定为核心经管。",
+      "variables": [],
+      "evidence": []
+    }
+  }
+}

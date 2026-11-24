@@ -1,0 +1,13 @@
+.env*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+/runs/
+/output/
+/PDF和MD-*/
+/PDF和MD-*.zip
+/Agent Team 打标正式指令.pdf

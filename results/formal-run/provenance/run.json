@@ -1,0 +1,202 @@
+{
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "plan": {
+    "name": "新旧结果不一致",
+    "papers": [
+      {
+        "id": "017",
+        "position": 1,
+        "title": "Notching R&D Investment with Corporate Income Tax Cuts in China",
+        "group": "组01",
+        "md_sha256": "6246e755b917d50d56106d966bc3c2caf3e03576455cc7e521579827c814f208",
+        "pdf_sha256": "30458c82f4e7dd2883fd61315cbaf14ce50b302fd6e43f8d445d87083436c7d9",
+        "ready": true
+      },
+      {
+        "id": "020",
+        "position": 2,
+        "title": "Using the Retail Distribution of Sellers to Impute Expenditure Shares",
+        "group": "组01",
+        "md_sha256": "01b59550b942122a67b8321c2ff4bf9a678539b90d1d1ba4138adae9347bd6bc",
+        "pdf_sha256": "53f5b9b211eec059452d1a74bb74041c253207940df9a2d647ee512791ef7acf",
+        "ready": true
+      },
+      {
+        "id": "025",
+        "position": 3,
+        "title": "Efficiency and Equity Impacts of Urban Transportation Policies with Equilibrium Sorting",
+        "group": "组01",
+        "md_sha256": "02b60bb735d7ee300ba68e79b3f0c56bdc70031f4f8582f0098ac496b38ea534",
+        "pdf_sha256": "572765bdfb914741c3efb92a4195e98761d27142aa7b05b271aa3dc551870f53",
+        "ready": true
+      },
+      {
+        "id": "029",
+        "position": 4,
+        "title": "Regulating Conglomerates Evidence from an Energy Conservation Program in China",
+        "group": "组01",
+        "md_sha256": "341b0aca02a932d1a1d6283ea8e0fff87dddce2e7cb6efc6ece4017a159e3e3b",
+        "pdf_sha256": "884cd484c8e6fc3452839833008d77b7f2fe8b09c08d8ff50655157a4635e9be",
+        "ready": true
+      },
+      {
+        "id": "037",
+        "position": 5,
+        "title": "Can trade liberalization promote green production Evidence from China's manufacturing enterprises",
+        "group": "组01",
+        "md_sha256": "8577b507fb01847bd73bdec24c9df0cf961467ac0977ad39faf6f40a17a9d9f7",
+        "pdf_sha256": "1f12e6847454e2a0c15992d3a0f059da04d6ec3bb53eac674a908852c09355ab",
+        "ready": true
+      },
+      {
+        "id": "052",
+        "position": 6,
+        "title": "Exorbitant Privilege Gained and Lost Fiscal Implications",
+        "group": "组01",
+        "md_sha256": "a6cbe316763258e88929ff1202f783fef87fa7969b791bc335c9e408b68eda4d",
+        "pdf_sha256": "52ac9cfbea5eae852969c0ee223bc54f1f38540078b113d8a4c289765ec2ace9",
+        "ready": true
+      },
+      {
+        "id": "059",
+        "position": 7,
+        "title": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE",
+        "group": "组01",
+        "md_sha256": "532ac7d494f1ef7ee6ba8e184fb4a291f961eb1d875842339166363ce4da0137",
+        "pdf_sha256": "bcab122a56856e2c17504eccdede96d9f82f1c9e1338000d284605efb7a9f42a",
+        "ready": true
+      },
+      {
+        "id": "063",
+        "position": 8,
+        "title": "Corporate investment and financing with uncertain growth opportunities",
+        "group": "组01",
+        "md_sha256": "36c298c0c29a56f5d5de2f061ca5d4b7555b1a79bfb0690fb79642b46c7aff9c",
+        "pdf_sha256": "a98ca663ee1a63342eaff766ef04a20048e210192c598fe586c94a7e084dbe3f",
+        "ready": true
+      },
+      {
+        "id": "075",
+        "position": 9,
+        "title": "Designing and implementing pollutant emissions trading systems in China A twelve-year reflection",
+        "group": "组01",
+        "md_sha256": "67e83c79021516b268b83d6eb61b5fc4b6630c86482838281299940bf55f2430",
+        "pdf_sha256": "5580671a4197905e194109c20b68411631545628588d5e717e54e87acc905271",
+        "ready": true
+      },
+      {
+        "id": "088",
+        "position": 10,
+        "title": "Does Chinese Environmental Policy Affect Income Inequality? Evidence from the Central Environmental Protection Inspection",
+        "group": "组01",
+        "md_sha256": "c723771aae4fb36bed63d4face96aefac1908ce9eb46ca33792246f52ff084d9",
+        "pdf_sha256": "9409d16b98b62b73317f2944c259fdf95ad27c76536638ad9ffb221497283336",
+        "ready": true
+      },
+      {
+        "id": "181",
+        "position": 11,
+        "title": "Indoor air quality and health Empirical evidence from fluoride pollution in China",
+        "group": "组01",
+        "md_sha256": "4bd0de4c42b9187d6e69d720428b56db8338138dd43319124324e5dbeccddd33",
+        "pdf_sha256": "b2cfedb6a5854c4679880238625caa35c6b002405d0f4e0083f9ad2555054778",
+        "ready": true
+      },
+      {
+        "id": "182",
+        "position": 12,
+        "title": "Informal regulation by nongovernmental organizations enhances corporate compliance: Evidence from a nationwide randomized controlled trial in China",
+        "group": "组01",
+        "md_sha256": "287125068b34a4fbc69165302ce42a40377bea693d77bf4915c0b674c2dd5c7c",
+        "pdf_sha256": "6e41723c30cf1f1135614f4dd6301cbbe1994277d45a3531828f712ad3667cd6",
+        "ready": true
+      },
+      {
+        "id": "204",
+        "position": 13,
+        "title": "Is an ounce of prevention worth a pound of cure Evidence from a large-scale vaccination experiment in China",
+        "group": "组01",
+        "md_sha256": "60fa81ba86705e63acc0bd83a8d7ab32a0fe7f838e04c0322ce533fe36dd4ac8",
+        "pdf_sha256": "ddb2f0ad23b37069f3963ec842e94566a125b140797e1d94c7735d5a560599d4",
+        "ready": true
+      },
+      {
+        "id": "218",
+        "position": 14,
+        "title": "Local political chief turnover and economic growth Evidence from China",
+        "group": "组01",
+        "md_sha256": "2b7bda207c06281cd82f26ca263f9f91612664962b47ef04a1734c7b23a2c8ab",
+        "pdf_sha256": "25adeceab24660b9196241bc53083051001247fe117b01d6bb044f5d117a1e38",
+        "ready": true
+      },
+      {
+        "id": "239",
+        "position": 15,
+        "title": "Narrowing or widening the gender gap in market and domestic work The impact of workweek reduction reform in China",
+        "group": "组01",
+        "md_sha256": "2accc0a4532e75b65582f60adf6c93078f797b07d4b335338a482a3cbd1222e9",
+        "pdf_sha256": "426c4c436581d09c5ceee088d52ceaaea1514a1ae963551406c2fb5c5d9a295f",
+        "ready": true
+      },
+      {
+        "id": "254",
+        "position": 16,
+        "title": "Pandemic and insurance purchase How do people respond to unprecedented risk and uncertainty",
+        "group": "组01",
+        "md_sha256": "4df862da852f5050805502909293c7a967b4fe76b8dce3a2cc0ec08916743866",
+        "pdf_sha256": "7131b5acd28de0caac5bc73be9b463484ce69b1affa96d960fb0b978ab0b1bd7",
+        "ready": true
+      },
+      {
+        "id": "265",
+        "position": 17,
+        "title": "Physical attractiveness, drug taking and gender differences",
+        "group": "组01",
+        "md_sha256": "60e9fc7de4808f686778d44b87366400ae1be4f945829c7260d069dca6e22202",
+        "pdf_sha256": "d0e332714d3a281bfdc4d41dc0b3ff1e1df7e0730a33802cb943c4eb30563b6e",
+        "ready": true
+      },
+      {
+        "id": "271",
+        "position": 18,
+        "title": "Political Connections and the Transition to Low‐carbon Energy Sources in China Evidence from a Quasi‐natural Experiment",
+        "group": "组01",
+        "md_sha256": "f646bd4cc3b86f79cf179c8b7e053aa173beedce3125dc1366f860028e7b0cae",
+        "pdf_sha256": "9a49a9afa3280b9479ade5b0ecac011d429b81beaa862964f8b3768e6f327bb5",
+        "ready": true
+      },
+      {
+        "id": "316",
+        "position": 19,
+        "title": "Should Financial Gatekeepers be Publicly Traded",
+        "group": "组01",
+        "md_sha256": "828c76a26ef24c541daad995457f1a500bd24d0002dab986c894c7abd5f9d648",
+        "pdf_sha256": "65305f3907c6203529771c5126fe834bdc3804bb57784158ca3d5e3ecfe2f461",
+        "ready": true
+      },
+      {
+        "id": "363",
+        "position": 20,
+        "title": "The impacts of household structure transitions on household carbon emissions in China",
+        "group": "组01",
+        "md_sha256": "18508c99defe198b67c6c8850d2c9d495f1e01fc4d6c474a0122dd2ea385d6b0",
+        "pdf_sha256": "06bf372af5ab9da3af7e7f9e0a9a3f65772c839950f3fd731ba0060e7ebf38cf",
+        "ready": true
+      }
+    ],
+    "smoke": false,
+    "instructions_sha256": "961a6c101b1574df9676089282e9cfb4da18399081ea5c7b37faa6cfdb49b244",
+    "rubric_sha256": "ea4e1b2792c9f527ae7b0617829e3a18f9e69d85cfe3998db7bd7a011eb71c07",
+    "judge_sha256": "f7cda2bdf4938ff6eee0e9312d6c2a9565debb95386fabfd22e0aa33c1f96bb3",
+    "model": {
+      "api_base_url": "https://sub2api.starapi.net/v1",
+      "model": "deepseek-v4.1-flash",
+      "pdf_images": true,
+      "max_output_tokens": 8192,
+      "temperature": 0,
+      "thinking": "disabled",
+      "reasoning_effort": "none",
+      "agent_framework": "Pydantic AI 2.71.0"
+    }
+  }
+}

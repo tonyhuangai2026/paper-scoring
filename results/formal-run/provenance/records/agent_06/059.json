@@ -1,0 +1,180 @@
+{
+  "agent": "agent_06",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "a00df1af-2693-43d1-8be9-fdf439933b15",
+  "finished_at": "2026-11-24T06:36:20.569458+00:00",
+  "paper": {
+    "id": "059",
+    "position": 7,
+    "title": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE",
+    "group": "组01",
+    "md_sha256": "532ac7d494f1ef7ee6ba8e184fb4a291f961eb1d875842339166363ce4da0137",
+    "pdf_sha256": "bcab122a56856e2c17504eccdede96d9f82f1c9e1338000d284605efb7a9f42a",
+    "ready": true
+  },
+  "pdf_pages": 42,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "摘要位于第1页，以“We propose a series-based nonparametric specification test...”开头，明确说明研究内容。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Econometric Theory, 40, 2024, 278–319.\ndoi:10.1017/S0266466622000445\nCONSISTENT SPECIFICATION\nTESTING UNDER SPATIAL\nDEPENDENCE\nABHIMANYU GUPTA\nUniversity of Essex\nXI QU\nShanghai Jiao Tong University\nWe propose a",
+          "ref": "P1.1"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+          "ref": "P1.2"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": true,
+      "derivations": true,
+      "reason": "摘要明确提出提出新的基于级数的非参数设定检验，并建立线性过程二次型在维数递增情形下的中心极限定理；正文包含定理、引理、假设及附录证明，数学推导充分。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "dependence condition, our test statistic is asymptotically\nstandard normal. To prove the latter property, we establish a central limit theorem for\nquadratic forms in linear processes in an increasing dimension setting.",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 3,
+          "end": 3,
+          "quote": "and possessing nontrivial power against local alternatives of a certain\ntype. To prove asymptotic normality, we present a new central limit theorem (CLT)\nfor quadratic forms in linear processes in an increasing",
+          "ref": "P3.9"
+        },
+        {
+          "source": "pdf",
+          "start": 12,
+          "end": 12,
+          "quote": "= 1,...,n and j = 1,...,p.\nThe next theorem establishes the asymptotic normality of the approximating\nquadratic form introduced above.\nTheorem 4.3. Under Assumptions R.3, R.4, R.8, and R.11–R.13 and p−1 +\np3/n →0, as n",
+          "ref": "P12.5"
+        },
+        {
+          "source": "pdf",
+          "start": 31,
+          "end": 31,
+          "quote": "now follows\nby (4.3).\n□\nProof of Theorem 4.1. This a particular case of the proof of Theorem 5.1 with λ = 0,\nand so S(λ) = In.\n□\nProof of Theorem 4.2. In the Supplementary Material.\n□\nProof of Theorem 4.3. We would like",
+          "ref": "P31.4"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "第9节使用冲突联盟、R&D溢出和经济增长三个真实数据例子，并报告了SARARMA等模型的参数估计和检验统计量，明确估计出模型系数。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 4,
+          "end": 4,
+          "quote": "present Monte\nCarlo simulations that exhibit satisfactory small sample properties. The test is\ndemonstrated in three empirical examples, including two based on recently pub-\nlished work on social networks: Bloom et al.",
+          "ref": "P4.8"
+        },
+        {
+          "source": "pdf",
+          "start": 25,
+          "end": 25,
+          "quote": "ij = 1 if groups i and j\nare allies, and WA\nij = 0 otherwise) and WE (WE\nij = 1 if groups i and j are enemies,\nand WE\nij = 0 otherwise):\ny = λ1WAy+λ2WEy+1nβ0 +Xβ +u,\nwhere y is a vector of fighting efforts of each group",
+          "ref": "P25.4"
+        },
+        {
+          "source": "pdf",
+          "start": 26,
+          "end": 26,
+          "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n303\nTable 6. The estimates and test statistics for the conflict data.\n1998\nPooled\nH0\np-value\nH1\np-value\nH0\np-value\nH1\nSARARMA(2,1,0)\nWAy\n−0.005\n<0.001\n−0.003",
+          "ref": "P26.1"
+        },
+        {
+          "source": "pdf",
+          "start": 27,
+          "end": 27,
+          "quote": "304\nABHIMANYU GUPTA AND XI QU\nTable 7. The estimates and test statistics for the R&D data, SARARMA(0,1,0).\nVariables\nFE\nSARARMA(0,1,0), WTEC\np-value\nH0\np-value\nH1\np-value\nln(Spsic)\n−0.005\n0.649\n0.007\n0.574\n0.015\n0.166",
+          "ref": "P27.1"
+        }
+      ]
+    },
+    "field": {
+      "reason": "论文有理论贡献且有实证，按步骤3.2识别核心自变量和因变量。核心因变量为冲突强度、企业销售/生产率、人均收入等经济结果；核心自变量包括空间滞后项、R&D存量、投资率等经济变量，均属经管类，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "spatial lag terms (Wy, WAy, WEy)",
+          "economic": true,
+          "reason": "空间滞后项刻画经济主体间的空间依赖，属于经济计量模型的核心解释变量。"
+        },
+        {
+          "role": "independent",
+          "name": "R&D stock",
+          "economic": true,
+          "reason": "研发存量是衡量技术创新投入的经济变量。"
+        },
+        {
+          "role": "independent",
+          "name": "investment rate",
+          "economic": true,
+          "reason": "投资率是宏观经济增长分析中的核心经济变量。"
+        },
+        {
+          "role": "dependent",
+          "name": "fighting effort",
+          "economic": true,
+          "reason": "冲突强度是政治经济学研究的因变量。"
+        },
+        {
+          "role": "dependent",
+          "name": "sales / productivity",
+          "economic": true,
+          "reason": "企业销售和生产率是产业组织与创新经济学的核心结果变量。"
+        },
+        {
+          "role": "dependent",
+          "name": "log real income per worker",
+          "economic": true,
+          "reason": "人均实际收入是经济增长研究的核心因变量。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 25,
+          "end": 25,
+          "quote": "ij = 1 if groups i and j\nare allies, and WA\nij = 0 otherwise) and WE (WE\nij = 1 if groups i and j are enemies,\nand WE\nij = 0 otherwise):\ny = λ1WAy+λ2WEy+1nβ0 +Xβ +u,\nwhere y is a vector of fighting efforts of each group",
+          "ref": "P25.4"
+        },
+        {
+          "source": "pdf",
+          "start": 26,
+          "end": 26,
+          "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+          "ref": "P26.6"
+        },
+        {
+          "source": "pdf",
+          "start": 29,
+          "end": 29,
+          "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+          "ref": "P29.9"
+        }
+      ]
+    }
+  }
+}

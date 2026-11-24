@@ -1,0 +1,149 @@
+{
+  "agent": "agent_09",
+  "run_id": "1ae16495-3a2e-403f-987c-414707a8685e",
+  "session_id": "e8c8e064-877a-4263-835b-ca4ad6b2b0a7",
+  "finished_at": "2026-11-24T06:42:40.451087+00:00",
+  "paper": {
+    "id": "265",
+    "position": 17,
+    "title": "Physical attractiveness, drug taking and gender differences",
+    "group": "组01",
+    "md_sha256": "60e9fc7de4808f686778d44b87366400ae1be4f945829c7260d069dca6e22202",
+    "pdf_sha256": "d0e332714d3a281bfdc4d41dc0b3ff1e1df7e0730a33802cb943c4eb30563b6e",
+    "ready": true
+  },
+  "pdf_pages": 26,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "MD 开头 L11.1 明确标注 Abstract，并给出研究问题、机制与主要发现。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 11,
+          "end": 11,
+          "quote": "Abstract. This study investigates the relationship between adolescent physical attractiveness and drug-taking behaviour, emphasizing the human capital and “pretty girl” efects on the decision to use drugs. Through the",
+          "ref": "L11.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": true,
+      "derivations": true,
+      "reason": "摘要明确提出提出并检验“human capital”与“pretty girl”两种效应，属于新假设/新机制；正文第2节构建简单模型，给出函数假设、比较静态表达式(1)-(4)，并推导性别差异。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 11,
+          "end": 11,
+          "quote": "propose a “pretty girl” efect by suggesting that physically attractive young women or girls are more likely to be approached by men or mature boys who may have access to drugs, and they are thus more likely to take",
+          "ref": "L11.3"
+        },
+        {
+          "source": "md",
+          "start": 21,
+          "end": 21,
+          "quote": "The “pretty girl” efect is a novel channel we propose to test in this study. Literature in economics and psychology shows that men or mature boys are likely to approach physically attractive young women or girls (e.g.,",
+          "ref": "L21.1"
+        },
+        {
+          "source": "md",
+          "start": 33,
+          "end": 33,
+          "quote": "The simple model developed in this section aims to capture the main points and guide th empirical study presented in later sections, and thus it is illustrative. We assume human capital function (in monetary terms) as",
+          "ref": "L33.1"
+        },
+        {
+          "source": "md",
+          "start": 87,
+          "end": 87,
+          "quote": "Expression (4) shows that the efect of physical attractiveness on a female’s gain from taking drugs is the sum of the human capital (the bracket term) and “pretty girl” efects (the last term). The negative human capital",
+          "ref": "L87.1"
+        }
+      ]
+    },
+    "empirical": {
+      "real_data": true,
+      "estimated_model": true,
+      "reason": "使用 Add Health 第一、四波真实调查数据；正文明确设定 OLS/有序 probit 等回归模型，并报告“very attractive in wave 1”等系数及显著性，如男性 marijuana 系数 -0.143。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 91,
+          "end": 91,
+          "quote": "We test our hypothesis using a public-use sample from the first and fourth waves of the National Longitudinal Study of Adolescent Health (Add Health) in the United States. This longitudinal study is considered a",
+          "ref": "L91.1"
+        },
+        {
+          "source": "md",
+          "start": 125,
+          "end": 125,
+          "quote": "Our hypothesis suggests that the coeficients for “very attractive” and/or “attractive” will be negative for males, but less negative for females. The estimated equation is formulated as follows:",
+          "ref": "L125.1"
+        },
+        {
+          "source": "md",
+          "start": 145,
+          "end": 145,
+          "quote": "In panel A, specifications 1 to 4 show that the coeficients of “very attractive in wave 1” are negative and statistically significant for the likelihood of taking marijuana, cocaine, crystal meth and other types of",
+          "ref": "L145.1"
+        },
+        {
+          "source": "md",
+          "start": 149,
+          "end": 149,
+          "quote": "td></tr><tr><td rowspan=\"2\">Very attractive in wave 1</td><td>-0.143***(0.053)</td><td>-0.135***(0.045)</td><td>-0.067**(0.033)</td><td>-0.094*(0.052)</td><td>-0.076*(0.041)</td><td>-0.026(0.032)</td><td>-0.031(0.021)</t",
+          "ref": "L149.3"
+        }
+      ]
+    },
+    "field": {
+      "reason": "按步骤3.2，有实证，识别核心自变量为青少年外貌吸引力，核心因变量为是否曾使用毒品及毒品类型/严重程度。外貌吸引力作为人力资本与健康风险行为研究中的个体特征变量，属于经济学分析变量；毒品使用属于健康经济学/风险行为变量，二者均属经管类，因此为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "physical attractiveness (very attractive in wave 1)",
+          "economic": true,
+          "reason": "外貌吸引力被纳入人力资本与风险行为的经济学模型，作为影响个体决策的解释变量。"
+        },
+        {
+          "role": "dependent",
+          "name": "ever used drugs / types of drugs ever taken",
+          "economic": true,
+          "reason": "毒品使用及类型属于健康经济学中的风险行为与健康结果变量。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "md",
+          "start": 19,
+          "end": 19,
+          "quote": "hypothesis and estimate the efect of adolescent physical attractiveness on whether people have ever taken drugs prior to or during adulthood and on the types of drugs they have ever taken.",
+          "ref": "L19.4"
+        },
+        {
+          "source": "md",
+          "start": 95,
+          "end": 95,
+          "quote": "In addition to physical attractiveness, our study focuses on ever using diferent types of drugs until adulthood. In wave 4 of the National Longitudinal Study of Adolescent Health (Add Health), respondents were asked to",
+          "ref": "L95.1"
+        },
+        {
+          "source": "md",
+          "start": 125,
+          "end": 125,
+          "quote": "Our hypothesis suggests that the coeficients for “very attractive” and/or “attractive” will be negative for males, but less negative for females. The estimated equation is formulated as follows:",
+          "ref": "L125.1"
+        }
+      ]
+    }
+  }
+}
