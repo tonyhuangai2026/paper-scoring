@@ -1,0 +1,202 @@
+{
+  "agent": "agent_07",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "659fb356-7118-4ccc-b836-213df9cb243f",
+  "finished_at": "2026-11-24T09:39:27.054204+00:00",
+  "paper": {
+    "id": "052",
+    "position": 6,
+    "title": "Exorbitant Privilege Gained and Lost Fiscal Implications",
+    "group": "组01",
+    "md_sha256": "a6cbe316763258e88929ff1202f783fef87fa7969b791bc335c9e408b68eda4d",
+    "pdf_sha256": "52ac9cfbea5eae852969c0ee223bc54f1f38540078b113d8a4c289765ec2ace9",
+    "ready": true
+  },
+  "pdf_pages": 49,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文开头有明确的摘要段，概述研究三个世纪的财政历史及主要发现。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+          "ref": "P2.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要未明确提及本文的理论贡献（如构建新模型、新概念或计量方法创新），仅说明研究三个世纪的财政历史并发现主导安全资产供应国发行超过未来基本盈余可支撑的债务。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+            "ref": "P2.1"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用了真实历史数据，包括英国1729-2020年数据（来自Bank of England的“A Millennium of Macroeconomics Data”）、美国1793-2020年数据（来自Hall and Sargent (2021)等），以及荷兰1601-1794年和1817-1914年数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "same approach to analyze\nthe case of Holland and the Netherlands.\nII.\nThe Historical Cash Flow Dynamics:\nStylized Facts\nA.\nData and Fiscal Cash Flows\nFor the United Kingdom, we use annual data from 1729 to 2020. The",
+            "ref": "P9.9"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "main\nUK dataset we used is “A Millennium of Macroeconomics Data,” pub-\nlished by the Bank of England, which contains a broad set of historical\nmacroeconomic and ﬁnancial market data. Our historical (1793–1929)\nUS",
+            "ref": "P9.10"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "government ﬁnance data were taken from Hall and Sargent (2021),\nwhich contain detailed historical government ﬁnance information. We\nuse other datasets to complement the main dataset, as detailed in appen-\ndix A (apps.",
+            "ref": "P9.11"
+          },
+          {
+            "source": "pdf",
+            "start": 40,
+            "end": 40,
+            "quote": "1830.\nB.\nCash Flows and Debt Dynamics\nPrior to 1795, we focus on the debt issued by the province of Holland as\nwell as its spending and revenue. In the Dutch Republic, the lion’s share\nof the debt ﬁnancing of the",
+            "ref": "P40.3"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了VAR模型来估计财政支持（fiscal backing），并明确估计出模型系数（如VAR系数矩阵Ψ、协方差矩阵Σ等），用于计算未来基本盈余的现值。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "A.\nVAR Model of Cash Flow Dynamics\nWe propose a VAR model to capture the dynamics in expected cash ﬂows\nand discount rates in the economy.\nWe assume that the N \u0003 1 vector of state variables z follows a Gaussian",
+            "ref": "P29.1"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "ﬁrst-order VAR:\nzt 5 Ψzt21 1 ut 5 Ψzt21 1 Σ1=2εt,\n(8)\nwith N \u0003 N companion matrix Ψ and homoscedastic innovations ut ∼\ni:i:d: N (0, Σ). The Cholesky decomposition of the covariance matrix,\nΣ 5 Σ1=2(Σ1=2)0, has nonzero",
+            "ref": "P29.2"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "elements on and below the diagonal. In this\nway, the shock ut to each state variable is a linear combination of its own\nstructural shock εt and the structural shocks to the state variables that\nprecede it in the VAR,",
+            "ref": "P29.3"
+          },
+          {
+            "source": "pdf",
+            "start": 31,
+            "end": 31,
+            "quote": "t. With discount rates\nand valuation ratios from the VAR in hand and our assumption rpT\n0 5\nrpG\n0 5 rpY\n0, we can compute the valuation ratios in equations (2) and\n(3) (see app. D for the derivation).\nD.\nDynamic Measure",
+            "ref": "P31.3"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章有理论（数学推导）且有实证（真实数据+模型估计），采用步骤3.2：识别核心自变量和核心因变量，判断是否至少有一个为经管类变量。核心自变量为政府债务的市场价值与财政支持之间的楔子（或财政支持本身），核心因变量为债务是否被未来盈余充分支持（或超额财政能力），两者均属于财政经济学范畴，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "fiscal backing (present discounted value of future primary surpluses)",
+          "economic": true,
+          "reason": "财政支持是未来基本盈余的现值，衡量政府财政能力，属于财政经济学核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "approached 175% in the ﬁrst half of the nineteenth century.\nWas all of the UK government debt backed by future ﬁscal resources,\nthat is, primary surpluses? To answer this question, we measure the ﬁscal\nbacking as the",
+              "ref": "P3.3"
+            },
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "present discounted value of future primary surpluses using\nthe approach developed by Jiang et al. (2024a). This approach measures\nthe expected present value of primary surpluses using a vector autoreg-\nression (VAR)",
+              "ref": "P3.4"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "market value of government debt / excess fiscal capacity",
+          "economic": true,
+          "reason": "政府债务的市场价值及超额财政能力（债务超过财政支持的部分）是财政可持续性和主权债务定价的核心变量，属于经管类。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "the Dutch Republic in the seven-\nteenth and part of the eighteenth century. By comparing the market val-\nuation of government debt with the ﬁscal backing of the global hegemon,\nwe obtain a new measure of the exorbitant",
+              "ref": "P2.6"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "privilege and document how it\nevolves over time. Our main ﬁnding is that the world’s safe asset provider\nborrows more than justiﬁed by its ﬁscal backing. In contrast, the historical\nevidence shows that before or after a",
+              "ref": "P2.7"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

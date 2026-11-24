@@ -2,29 +2,41 @@
 
 使用 Pydantic AI 对论文独立判定研究类型和经管属性，并保留逐篇依据、投票和人工复核材料。正式批次包含「新旧结果不一致」组的 20 篇论文。10 个子 Agent 各判读全部 20 篇，最多同时运行 3 个。
 
-## 正式运行结果
+## 双模型实验结果
 
-本批次收齐 200 份原判，实测最高并发为 3。标签一有 19 篇全票一致，标签二的 20 篇均获 10 票「核心经管」，两个标签同时全票一致的有 19 篇。
+DeepSeek V4.1 Flash 和 GPT-6.2-sol 使用相同的 20 篇论文、材料和逐步骤判定规则。每个模型由 10 个独立子 Agent 各判读 20 篇，实际最高并发均为 3。
 
-- [正式结果目录](results/formal-run/) · [Excel 汇总](results/formal-run/标签一二-10个Agent独立打标汇总.xlsx) · [逐 Agent PDF](results/formal-run/PDF-每组详细判定/) · [逐 Agent Markdown](results/formal-run/MD-每组详细判定/)
-- [独立验收 PDF](results/formal-run/独立验收与抽查报告.pdf) · [独立验收 Markdown](results/formal-run/独立验收与抽查报告.md) · [程序验收](results/formal-run/验收报告.md) · [不一致论文复核](results/formal-run/不一致论文复核.md)
-- [运行配置与 200 条原判 JSON](results/formal-run/provenance/)
+| 指标 | DeepSeek V4.1 Flash | GPT-6.2-sol |
+| --- | ---: | ---: |
+| 有效原判 | 200 / 200 | 200 / 200 |
+| 标签一获组内 10 票一致 | 19 / 20 篇 | 20 / 20 篇 |
+| 标签二获组内 10 票一致 | 20 / 20 篇 | 20 / 20 篇 |
+| 两个标签均获组内 10 票一致 | 19 / 20 篇 | 20 / 20 篇 |
 
-请整目录下载或克隆仓库后打开 Excel。工作簿中的 400 个链接使用相对路径，需要与两个明细目录放在一起。
+### 标签分布
 
-### 标签分布与一致率
+![两个模型的标签频数。标签一中，DeepSeek 与 GPT 分别给出 115 和 160 票实证、65 和 20 票理论加实证。标签二中，分别给出 200 和 180 票核心经管。](docs/figures/model-label-distribution.png)
 
-![左图显示标签一的 200 份原判频数，依次为实证 108 份、理论加实证 72 份、理论 10 份、描述性统计和综述 10 份。右图显示两项标签各自的逐篇一致率分布。](docs/figures/label-agreement.png)
+两组共有 **5 篇论文的标签一众数集合不同**。GPT 在这 5 篇上都给出 10 票「实证」。DeepSeek 对 4 篇给出 10 票「理论+实证」，第 020 篇两类各 5 票。每篇的 10 票用于衡量同一论文的重复判读一致性。
 
-每篇的一致率按该篇最多票标签的票数除以 10 计算。037 是唯一分票的论文，标签一获 8 票「实证」和 2 票「理论+实证」。独立抽查发现，017 的全票理论判定将正文里的建模贡献归给了摘要，020 的全票理论判定缺少充分的正文推导证据。正式结果保留原判，Excel 的人工结果栏留空。
+### 逐篇分歧
 
-### 标签构成与判读材料
+![左右两栏分别显示标签一和标签二众数集合不同的论文。020 的理论加实证票数为 DeepSeek 5 票、GPT 0 票。265 和 363 的核心经管票数均为 DeepSeek 10 票、GPT 0 票。](docs/figures/paper-level-disagreements.png)
 
-![点图比较 PDF 文本组和 MD 文本组的四类标签一比例。PDF 组有 14 篇、140 份原判，MD 组有 6 篇、60 份原判。](docs/figures/source-label-distribution.png)
+- **标签一的分歧集中在摘要的理论贡献门槛。** 例如，017 的摘要报告结构估计和模拟，明确描述模型构建的内容出现在正文。按 Step 1.2 核查，原文支持 GPT 的「实证」判定。025 的摘要提到均衡模型估计，是否已明确声明理论贡献仍有解释空间。
+- **标签二在 265 和 363 上分歧。** DeepSeek 两篇均给出 10 票「核心经管」，GPT 均给出 10 票「广义经管」。在抽查的理由里，DeepSeek 侧重变量在经管研究中的用途，GPT 侧重变量直接测量的内容。
 
-各比例以同组原判数为分母。同篇论文的 10 份原判都使用了相同的材料路径，两组由不同论文组成。本批次有 14 篇使用 PDF 文本、6 篇使用 MD 文本，所有原判的页图清单为空。
+一致率反映重复判读的稳定性。论文来自同一批样本，两个模型使用不同网关，网关对请求参数的实际处理无法通过本地记录独立核验。
 
-[Matplotlib 绘图脚本](scripts/plot_results.py) 读取已发布的原判 JSON。安装 `matplotlib` 后，运行 `python scripts/plot_results.py` 可重新生成两张图。需要指定中文字体时可传 `--font <字体文件>`。
+### 下载结果与复现图表
+
+- [模型对比报告与原文复核](results/step-evidence-comparison/模型对比报告.md) · [逐篇票数 CSV](results/step-evidence-comparison/逐篇票数.csv)
+- **DeepSeek V4.1 Flash**　[Excel 汇总](results/step-evidence-comparison/deepseek-v4.1-flash/标签一二-10个Agent独立打标汇总.xlsx) · [PDF 明细](results/step-evidence-comparison/deepseek-v4.1-flash/PDF-每组详细判定/) · [Markdown 明细](results/step-evidence-comparison/deepseek-v4.1-flash/MD-每组详细判定/) · [程序验收](results/step-evidence-comparison/deepseek-v4.1-flash/验收报告.md) · [配置与原判 JSON](results/step-evidence-comparison/deepseek-v4.1-flash/provenance/)
+- **GPT-6.2-sol**　[Excel 汇总](results/step-evidence-comparison/gpt-6.2-sol/标签一二-10个Agent独立打标汇总.xlsx) · [PDF 明细](results/step-evidence-comparison/gpt-6.2-sol/PDF-每组详细判定/) · [Markdown 明细](results/step-evidence-comparison/gpt-6.2-sol/MD-每组详细判定/) · [程序验收](results/step-evidence-comparison/gpt-6.2-sol/验收报告.md) · [配置与原判 JSON](results/step-evidence-comparison/gpt-6.2-sol/provenance/)
+
+请克隆仓库或整目录下载后打开 Excel。每个工作簿的 400 个明细链接均使用相对路径。
+
+[Matplotlib 绘图脚本](scripts/plot_results.py) 直接读取两组已发布的原判 JSON。安装 `matplotlib>=3.7` 后运行 `python scripts/plot_results.py` 即可生成两张图。需要指定中文字体时使用 `--font <字体文件>`。
 
 ## 架构图 · 主程序与子 Agent
 
@@ -110,7 +122,7 @@ python -m paper_scoring run
 
 - `00_任务清单/` 保存分组、材料指纹和实验配置。
 - `01_Agent工作区/` 保存分 Agent 的单篇 JSON、进度、异常与本机会话记录。
-- `04_汇总结果/` 保存程序验收报告。结果收齐后生成明细、Excel 汇总和不一致论文复核清单。
+- `04_汇总结果/` 保存程序验收报告。结果收齐后生成明细、Excel 汇总和不一致论文复核清单。新版明细逐项列出 Step 1.1–1.3 和 Step 2.1–2.2 的结论、理由与原文位置，按规则跳过时注明原因。标签二明细记录所走路径及每个核心变量的正文依据和经管属性理由。
 
 ## 切换模型或网关
 
@@ -118,10 +130,18 @@ python -m paper_scoring run
 2. 更换网关时，将 `PAPER_SCORING_BASE_URL` 改为该网关的 OpenAI 兼容 API 基础地址，并将 `PAPER_SCORING_API_KEY` 改为对应凭据。仅使用文本模型时，将 `PAPER_SCORING_PDF_IMAGES` 设为 `false`。需要页图才能完成的判读会记录异常。
 3. 先运行 `doctor`，再分别为试跑和正式判读指定新目录。原运行目录绑定原模型配置，用于原实验续跑。
 
+本次双模型实验使用以下网关配置。分别把对应的模型 ID、基础地址和你自己的 API Key 写入本地配置文件。
+
+| 本地配置文件 | `PAPER_SCORING_MODEL` | `PAPER_SCORING_BASE_URL` |
+| --- | --- | --- |
+| `.env` | `deepseek-v4.1-flash` | `https://sub2api.starapi.net/v1` |
+| `.env.gpt-6.2-sol` | `gpt-6.2-sol` | `https://ai2api.cc/v1` |
+
 ```bash
-python -m paper_scoring doctor
-python -m paper_scoring run --smoke --run-dir runs/alternative-model-smoke
-python -m paper_scoring run --run-dir runs/alternative-model
+python -m paper_scoring doctor --env-file .env
+python -m paper_scoring doctor --env-file .env.gpt-6.2-sol
+python -m paper_scoring run --env-file .env --run-dir runs/deepseek-v4.1-flash-step-evidence
+python -m paper_scoring run --env-file .env.gpt-6.2-sol --run-dir runs/gpt-6.2-sol-step-evidence
 ```
 
 网关需要支持 Chat Completions 和 JSON 对象输出。当前适配器发送 `thinking.type=disabled` 和 `reasoning_effort=none`。如果新网关拒绝这些字段，需要按其接口调整 [模型适配器](paper_scoring/judge.py) 后重新做兼容检查。

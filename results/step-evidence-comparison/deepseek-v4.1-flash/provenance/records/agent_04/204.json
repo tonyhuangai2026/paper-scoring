@@ -1,0 +1,181 @@
+{
+  "agent": "agent_04",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "cf722762-2e71-44ee-85e6-ecc3cea29f0d",
+  "finished_at": "2026-11-24T09:36:14.655513+00:00",
+  "paper": {
+    "id": "204",
+    "position": 13,
+    "title": "Is an ounce of prevention worth a pound of cure Evidence from a large-scale vaccination experiment in China",
+    "group": "组01",
+    "md_sha256": "60fa81ba86705e63acc0bd83a8d7ab32a0fe7f838e04c0322ce533fe36dd4ac8",
+    "pdf_sha256": "ddb2f0ad23b37069f3963ec842e94566a125b140797e1d94c7735d5a560599d4",
+    "ready": true
+  },
+  "pdf_pages": 18,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的摘要（ABSTRACT）段落，概述了研究目的、实验设计、主要估计结果和政策含义。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+          "ref": "P1.4"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要未明确提及本文的理论贡献（如构建新模型、提出新概念、计量方法创新或证明模型性质等）。摘要主要说明通过大规模实验估计成本效益，属于实证研究，未声称理论创新。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "– experienced improvements in their COPD \ncondition, which led to a substantial decrease in their medical expenditure (public medical in­\nsurance reimbursements and out-of-pocket expenses). Our conservative",
+            "ref": "P1.5"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "研究使用了来自中国宁波和重庆的大规模随机实验数据，包括1657名COPD患者的健康记录和医疗支出数据，属于真实数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "Data and sample\nOur data are derived from a large-scale randomized experiment study that was jointly conducted by Peking University’s Institute of \nEconomic Policy Research (IEPR) and the Chinese Center for Disease",
+            "ref": "P3.20"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "Control and Prevention (CDC) in China from October 2013 to \nOctober 2014.\nTwo cities – Ningbo (in Zhejiang province) and Chongqing (a provincial-level municipality) – were specifically chosen as the lo­\ncations for our",
+            "ref": "P3.21"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "undertaking hormonal therapy for cancer, (v) \nsuspected or confirmed to be infected with pneumococcal infection.6 In the end, we obtained a sample size of 1657 patients (that is, \napproximately 400 patients in each",
+            "ref": "P4.5"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了双重差分（DID）模型（式1）和三次差分（DDD）模型（式2），并报告了模型系数的估计值（如Post×Group A系数为-2253.1等），明确估计出模型系数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "effect on medical \nexpenditure.\nWe implement the DID estimator by running the following regression. For ease of exposition, consider the case of one treatment \ngroup and one control group only: \nyijt = α0 + α1Vaccineij",
+            "ref": "P6.15"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "+ α2Postt + α3Vaccineij × Postt + Xijtγ + μj + εijt\n(1) \nwhere i, j, and t denotes patient, community, and time respectively. yijt is the outcome variable such as total medical expenditure, \nVaccineij is a dummy",
+            "ref": "P6.16"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "Post × Group A\n−2229.0\n−2258.4\n−2253.1\n​\n(714.9)***\n(689.9)***\n(698.1)***\nPost × Group B\n−2354.4\n−2340.6\n−2351.8\n​\n(723.8)***\n(715.1)***\n(717.4)***\nPost × Group C\n−2598.9\n−2544.9\n−2544.5\n​\n(800.7)***\n(789.6)***",
+            "ref": "P7.15"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "individual’s initial COPD status i.e. baseline CAT scores in the following triple-differencing (DDD) \nspecification: \nyijt = β0 + β1Vaccineij + β2Postt + β3CATij + β4Vaccineij × Postt + β5CATij × Postt + β6CATij ×",
+            "ref": "P8.9"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章为有实证、无理论（摘要未提理论贡献，正文无数学推导/定理），按Step 3.2判断核心自变量和核心因变量是否至少有一个为经管类变量。核心自变量为疫苗接种（Vaccine），核心因变量为医疗支出（Total medical expenditure），两者均属于卫生经济学范畴，是经管类变量，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Vaccine (疫苗接种)",
+          "economic": true,
+          "reason": "疫苗接种是卫生经济学中典型的预防性健康投入，涉及公共政策、成本效益分析等经管类议题，属于经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "+ α2Postt + α3Vaccineij × Postt + Xijtγ + μj + εijt\n(1) \nwhere i, j, and t denotes patient, community, and time respectively. yijt is the outcome variable such as total medical expenditure, \nVaccineij is a dummy",
+              "ref": "P6.16"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Total medical expenditure (总医疗支出)",
+          "economic": true,
+          "reason": "医疗支出是卫生经济学核心指标，衡量医疗资源消耗和经济负担，属于经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "variation (information) about COPD condition.\nThe main outcome that we look at in this paper is the total medical expenditure, which comprises three items: inpatient expenses, \noutpatient expenses, and prescription",
+              "ref": "P5.10"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "medicine. The incidence of hospitalization in our sample is low (around 25.1 % at baseline), so \nmost of the expenses stem from outpatient visits and the cost of prescription medicine. At baseline, total medical",
+              "ref": "P5.11"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

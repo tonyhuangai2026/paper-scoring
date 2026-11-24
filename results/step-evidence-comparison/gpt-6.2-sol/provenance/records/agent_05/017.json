@@ -1,0 +1,286 @@
+{
+  "agent": "agent_05",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "53fb0f66-6fb2-4723-b7f3-3efdeb483437",
+  "finished_at": "2026-11-24T09:37:05.800310+00:00",
+  "paper": {
+    "id": "017",
+    "position": 1,
+    "title": "Notching R&D Investment with Corporate Income Tax Cuts in China",
+    "group": "组01",
+    "md_sha256": "6246e755b917d50d56106d966bc3c2caf3e03576455cc7e521579827c814f208",
+    "pdf_sha256": "30458c82f4e7dd2883fd61315cbaf14ce50b302fd6e43f8d445d87083436c7d9",
+    "ready": true
+  },
+  "pdf_pages": 36,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 首页作者署名后、引言前的文字概述了研究问题、数据、方法和主要发现，并以 JEL 分类收尾，可识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Daniel Yi Xu*\nWe study a Chinese policy that awards substantial tax cuts \nto firms with R&D investment over a threshold or “notch.” \n­Quasi-experimental variation and administrative tax data show a \nsignificant increase",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "in reported R&D that is partly driven by firms \nrelabeling expenses as R&D. Structural estimates show relabeling \naccounts for 24.2 percent of reported R&D and that doubling R&D \nwould increase productivity by",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "9 percent. Policy simulations show \nthat firm selection and relabeling determine the ­cost-effectiveness \nof stimulating R&D, that ­notch-based policies are more effective \nthan tax credits when relabeling is prevalent,",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "and that modest spill-\novers justify the program from a welfare perspective. (JEL D22, \nD24, H25, O14, O32, P31, P35)\nThe belief that innovation is crucial for economic growth inspires governments \naround the world to",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核查完整摘要后，确认摘要报告了准实验分析、结构估计和政策模拟的发现，未明确提出本文构建了新模型、创新了计量方法或推导了理论性质。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Daniel Yi Xu*\nWe study a Chinese policy that awards substantial tax cuts \nto firms with R&D investment over a threshold or “notch.” \n­Quasi-experimental variation and administrative tax data show a \nsignificant increase",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "in reported R&D that is partly driven by firms \nrelabeling expenses as R&D. Structural estimates show relabeling \naccounts for 24.2 percent of reported R&D and that doubling R&D \nwould increase productivity by",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "9 percent. Policy simulations show \nthat firm selection and relabeling determine the ­cost-effectiveness \nof stimulating R&D, that ­notch-based policies are more effective \nthan tax credits when relabeling is prevalent,",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "and that modest spill-\novers justify the program from a welfare perspective. (JEL D22, \nD24, H25, O14, O32, P31, P35)\nThe belief that innovation is crucial for economic growth inspires governments \naround the world to",
+            "ref": "P1.5"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "研究使用中国国家税务总局 2008—2011 年的企业所得税行政记录，并以 2006—2007 年的中国制造业年度调查补充样本。这些资料记录了实际企业的生产、销售、投入和研发支出。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "2072\nTHE AMERICAN ECONOMIC REVIEW\nJULY 2021\nA.  Data and Summary Statistics\nOur main data come from the Chinese State Administration of Tax (SAT \n­2008–2011). The SAT is the counterpart of the IRS in China and is in",
+            "ref": "P8.1"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "charge of tax \ncollection and auditing. Our data are comprised of administrative enterprise income \ntax records for the years ­2008–2011 (online Appendix Section B discusses our data \nsources). These panel data include",
+            "ref": "P8.2"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "information on firms’ total production, sales, \ninputs, and R&D investment. The detailed cost breakdowns allow us to measure \ndifferent subcategories of administrative expenses. We use these data to construct",
+            "ref": "P8.3"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "precisely characterize the effective tax \nrate for individual manufacturing firms. We supplement these data with the Chinese \nAnnual Survey of Manufacturing (ASM) (NBS ­2006–2007), which extends our \nsample to the years",
+            "ref": "P8.5"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "­2006–2007.\nTable 2 reports descriptive statistics of the firms in our analysis sample. In \npanel A, we report summary statistics of our tax data for all surveyed manufacturing \nfirms from 2008 to 2011. Our data are",
+            "ref": "P8.6"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "正文第三节明确构建企业在所得税门槛下选择真实研发投入和费用重分类的结构模型，并用方程（1）描述研发投入如何影响生产率。第四节使用模拟矩估计五个结构参数，表 3 报告了点估计和标准误。使用全部矩的模型中，研发的生产率弹性 ε 为 0.091，重分类成本参数 η 为 6.755。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 16,
+            "end": 16,
+            "quote": "expenses (to obtain a preferential tax rate).\nIII.  A Model of R&D Investment and Corporate Tax Notches\nThis section develops a model of R&D investment where firms can respond to \nnotches in the corporate income tax",
+            "ref": "P16.7"
+          },
+          {
+            "source": "pdf",
+            "start": 16,
+            "end": 16,
+            "quote": "schedule by investing in R&D and by relabeling \n­non-R&D expenses. The model is motivated by the empirical facts in the previous \nsection and shows that these data patterns inform structural parameters that are key \nfor",
+            "ref": "P16.8"
+          },
+          {
+            "source": "pdf",
+            "start": 16,
+            "end": 16,
+            "quote": "is log TFP and has the following law of motion:\n(1)\t\n​ϕ​i,t​  =  ρ ​ϕ​i,t−1​ + εln​(​D​i,t−1​)​ + ​u​it​ ,\nwhere ​D​i,t−1​ is R&D investment and ​u​i,t​  ∼  i.i.d.​ ​N(0, ​σ​ 2​ )​. Because our empirical \nanalysis",
+            "ref": "P16.10"
+          },
+          {
+            "source": "pdf",
+            "start": 22,
+            "end": 22,
+            "quote": "Notowidigdo 2019).\nWe use the method of simulated moments to estimate the parameters ​Ω \n=  {ε, η, ​μ​b​, ​σ​b​, ​μ​c​}.​ For a given value of these parameters, we simulate productivity \nand adjustment and fixed costs",
+            "ref": "P22.11"
+          },
+          {
+            "source": "pdf",
+            "start": 22,
+            "end": 22,
+            "quote": "averaging over these instances. Our \nestimate of ​Ω​ minimizes the difference between data moments and moments gen-\nerated by the distribution of simulated firms as measured by the criterion function:\n\t\n​Q​(Ω)​  =",
+            "ref": "P22.14"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "notch and that do \nnot bunch. These additional restrictions reduced the uncertainty of the estimate for \ncertification cost ​μ​c​.​\nTable 3—Structural Estimates\nTFP elasticity \nof R&D\nRelabeling \ncost\nDistribution of",
+            "ref": "P25.4"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "adjustment costs\nDistribution \nof fixed costs\n​ε​\n​η​\n​μ​b​\n​σ​b​\n​μ​c​\nPanel A.  Point estimates\nModel 1:  Excluding bunching moments\nEstimate\n0.089\n5.900\n7.989\n2.047\n0.687\nStandard error\n(0.002)\n(0.493)\n(0.086)",
+            "ref": "P25.5"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "(0.076)\n(0.062)\nModel 2:  All moments\nEstimate\n0.091\n6.755\n8.011\n2.014\n0.532\nStandard Error\n(0.002)\n(0.449)\n(0.075)\n(0.073)\n(0.012)\nSimulated\nModel 1:\nModel 2:\n \nData\nexcluding \nbunching\nall \nmoments\nPanel B.  Simulated",
+            "ref": "P25.6"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "摘要未明确提出理论贡献，正文使用真实数据估计了结构模型，因此采用 Step 3.2。论文主要考察企业所得税优惠对企业申报研发强度的影响，两个核心变量均属于经管类。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "InnoCom corporate income tax cuts (tax notches)",
+          "economic": true,
+          "reason": "该变量刻画企业跨过适用的研发强度门槛后可获得的企业所得税优惠，衡量政府通过改变企业税负提供的财政激励，属于公共财政和税收政策变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "fostering \n­technology-intensive industries as a source of future economic growth.\nThe tax incentive that we study, China’s InnoCom program, provides substantial \ncorporate income tax cuts to firms that report R&D",
+              "ref": "P2.3"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "investment over a given thresh-\nold or “notch.” Before 2008, firms with an R&D intensity (R&D investment over \nrevenue) above 5 percent could qualify for a special ­high-tech-firm status that was \naccompanied by a lower",
+              "ref": "P2.4"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "average tax rate of 15 percent, a large reduction from the \nstatutory rate of 33 percent. After 2008, the government established three thresholds \nat 3 percent, 4 percent, and 6 percent for firms in different size",
+              "ref": "P2.5"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "intensity above a given threshold. The reform changed the threshold from \na common R&D intensity of 5 percent, to a ­size-dependent threshold with a lower \nhurdle for medium and large firms, 4 percent and 3 percent,",
+              "ref": "P6.2"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "respectively, and a larger \nhurdle of 6 percent for small firms. This requirement provides a large fiscal incentive \nto invest above these thresholds, and the reform generates ­quasi-experimental vari-\nation across",
+              "ref": "P6.3"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Reported R&D intensity (R&D/Sales)",
+          "economic": true,
+          "reason": "该变量衡量企业申报的研发支出占销售收入的比例，反映企业相对经营规模的研发支出强度及其申报行为，属于企业创新投入和财务报告变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "the potential for relabeling of R&D.\nWe begin our analysis in Section II by showing graphically that tax notches have \nsignificant effects on the distribution of reported R&D intensity. We show that a \nlarge number of",
+              "ref": "P2.7"
+            },
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "mated counterfactual density ​ f ˆ ​0​( ⋅ )​. To characterize the impact of bunching on aver-\nage R&D intensity, we compute ​Δd​ as the percentage increase in average R&D \nintensity for firms in the exclusion region.13",
+              "ref": "P11.11"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "InnoCom program are stated in \nterms of R&D intensity (R&D/Sales), firms could increase their R&D intensity \nby ­under-reporting sales. Panel A in Figure 6 plots firms’ log sales relative to their \nR&D intensity. For",
+              "ref": "P14.3"
+            },
+            {
+              "source": "pdf",
+              "start": 16,
+              "end": 16,
+              "quote": "2080\nTHE AMERICAN ECONOMIC REVIEW\nJULY 2021\nsignificant increases in reported R&D investment for firms close to the notch. Third, \nthe overall increase in R&D is driven by heterogeneous responses that depend on \nfirms’",
+              "ref": "P16.1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

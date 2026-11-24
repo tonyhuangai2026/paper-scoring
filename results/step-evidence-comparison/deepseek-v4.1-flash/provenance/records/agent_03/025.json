@@ -1,0 +1,272 @@
+{
+  "agent": "agent_03",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "a7304907-6c7c-40e5-a8bc-61635ff501fe",
+  "finished_at": "2026-11-24T09:28:24.466319+00:00",
+  "paper": {
+    "id": "025",
+    "position": 3,
+    "title": "Efficiency and Equity Impacts of Urban Transportation Policies with Equilibrium Sorting",
+    "group": "组01",
+    "md_sha256": "02b60bb735d7ee300ba68e79b3f0c56bdc70031f4f8582f0098ac496b38ea534",
+    "pdf_sha256": "572765bdfb914741c3efb92a4195e98761d27142aa7b05b271aa3dc551870f53",
+    "ready": true
+  },
+  "pdf_pages": 45,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的摘要段，概述了研究问题、方法、数据和主要发现。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Andrew Waxman, Jing Wu, and Tianli \nXia*\nWe estimate an equilibrium sorting model of housing location and \ncommuting mode choice with endogenous traffic congestion to eval-\nuate urban transportation policies. Leveraging",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "­fine-scale data from \ntravel diaries and housing transactions identifying residents’ home \nand work locations, we recover rich preference heterogeneity over \nboth travel mode and residential location decisions. While",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "different \npolicies produce the same congestion reduction, their impacts on \nsocial welfare differ drastically. In addition, sorting undermines the \ncongestion reduction under driving restrictions and subway expan-\nsion",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "but strengthens it under congestion pricing. The combination \nof congestion pricing and subway expansion delivers the greatest \ncongestion relief and efficiency gains. (JEL H76, O18, P25, R23, \nR31, R41, R48)",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提到本文构建并估计了一个包含内生交通拥堵的均衡排序模型，属于理论贡献（构建新模型）。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Andrew Waxman, Jing Wu, and Tianli \nXia*\nWe estimate an equilibrium sorting model of housing location and \ncommuting mode choice with endogenous traffic congestion to eval-\nuate urban transportation policies. Leveraging",
+            "ref": "P1.2"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文包含模型设定、均衡定义、存在性证明（引用布劳威尔不动点定理）以及数学推导和方程，属于有理论推导。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "the utility for household ​i​ choosing housing unit ​\nj​ is specified as\n(1)\t\n​ max​ \n​{ j∈​​i​}​​ ​U​ij​  =  ​α​i​ ​p​j​ + ​x​ j​ ' ​ ​β​i​ + ​∑ \nk\n​ ​ϕ​ik​ E​V​ijk​(​v​ijk​)​ + ​ξ​j​ + ​ε​ij​,​\n10 A more detailed",
+            "ref": "P13.14"
+          },
+          {
+            "source": "pdf",
+            "start": 17,
+            "end": 17,
+            "quote": "relationship characterizes the nature of conges-\ntion externality: drivers on the road reduce other drivers’ speed.\nSorting Equilibrium.—A sorting equilibrium is defined as a vector of housing \nprices, ​𝐩​ *​, and a",
+            "ref": "P17.10"
+          },
+          {
+            "source": "pdf",
+            "start": 18,
+            "end": 18,
+            "quote": "3178\nTHE AMERICAN ECONOMIC REVIEW\nOCTOBER 2024\nand commuting mode choice equation (3) are from continuous distributions, then \nthe system of equations (2), (4), (7), and (8) is continuous. The existence of a sort-\ning",
+            "ref": "P18.1"
+          },
+          {
+            "source": "pdf",
+            "start": 18,
+            "end": 18,
+            "quote": "equilibrium follows Brouwer’s fixed point theorem. Intuitively, a unique vector \nof housing prices (up to a constant) p solves the system of equations defined by \nequations (2) and (7), conditional on traffic speed v.",
+            "ref": "P18.2"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用了2010年和2014年北京家庭出行调查数据以及2006-2014年住房抵押贷款交易数据，均为真实微观数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "leverages two unique data sources with fine spatial resolution (street \naddresses) that allow us to jointly model residential locations and commuting choices. \nThe first dataset is the Beijing Household Travel Survey",
+            "ref": "P2.15"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "(BHTS) from 2010 and 2014, \na large representative survey that records households’ home and work addresses, \ntrips made in a ­24-hour window, and other demographic and ­transportation-related \ninformation. We complement",
+            "ref": "P2.16"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "3168\nTHE AMERICAN ECONOMIC REVIEW\nOCTOBER 2024\nHousing Transactions.—The data on housing transactions come from a major \n­government-sponsored mortgage program in Beijing and covers July 2006 to July \n2014. Virtually",
+            "ref": "P8.1"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "transaction in our data \ncorresponds to a mortgage application, and there are no refinancing loans in the sample.\nThe final dataset includes 77,696 mortgage transactions, with detailed informa-\ntion on housing",
+            "ref": "P8.3"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了均衡排序模型，并分两步估计了模型系数：第一步用模拟最大似然估计出行方式选择参数，第二步用模拟最大似然和线性IV估计住房需求参数，并报告了具体系数估计值。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "borrowers. To our knowledge, these datasets constitute the most comprehensive data \nthat link work commutes and housing transactions in the context of equilibrium sort-\ning models.\nWe estimate the equilibrium sorting",
+            "ref": "P3.4"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "model in two steps. First, using household \ntravel surveys, we estimate heterogeneous preferences on travel times and mone-\ntary costs, allowing us to recover the distribution of the value of time (VOT). We \nthen",
+            "ref": "P3.5"
+          },
+          {
+            "source": "pdf",
+            "start": 18,
+            "end": 18,
+            "quote": "relationship. Online Appendix \nSection C includes further details.\nA.  Commuting Mode Choice\nThe parameters of the travel mode choices are estimated via simulated maximum \nlikelihood estimation (MLE) using household",
+            "ref": "P18.5"
+          },
+          {
+            "source": "pdf",
+            "start": 21,
+            "end": 21,
+            "quote": "residential sorting is new \nto the best of our knowledge. Because ​ˆ \nEV​ij​ is estimated separately, we bootstrap the \nstandard errors for housing demand parameters.\nNonlinear Parameters.—Housing demand is estimated",
+            "ref": "P21.11"
+          },
+          {
+            "source": "pdf",
+            "start": 22,
+            "end": 22,
+            "quote": "step, we regress the ­population-average utilities ​δ​j​ on prices instrumented by IVs to \nrecover linear parameters.\nTable 4 reports three specifications: without the EV terms (the ­ease-of-commute \nutility), with the",
+            "ref": "P22.2"
+          },
+          {
+            "source": "pdf",
+            "start": 19,
+            "end": 19,
+            "quote": "provides the best fit, \nthough results are similar with two or four DF.\nTable 3—Estimation Results for Travel Mode Choices\nlogit\nRandom coefficient\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\nTravel time (​γ​1​)\n−1.194\n−0.270\n−0.191",
+            "ref": "P19.7"
+          },
+          {
+            "source": "pdf",
+            "start": 24,
+            "end": 24,
+            "quote": "the transpor-\ntation sector and the housing market (holding housing supply fixed), and calculate the changes in driving costs and \nhousing size.\nTable 5—Housing Demand-Linear Parameters\nOLS \n(1)\nOLS \n(2)\nIV1 \n(3)\nIV2",
+            "ref": "P24.9"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章同时具有理论模型和实证估计，属于“有理论、有实证”情形，按Step 3.2判断核心自变量和核心因变量是否至少有一个为经管类变量。核心自变量包括住房价格、通勤便利性（EV）、出行方式属性等，核心因变量为住房选择概率和出行方式选择概率，均属于城市经济学、交通经济学和住房经济学范畴，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "住房价格 (p_j)",
+          "economic": true,
+          "reason": "住房价格是住房市场需求的核心变量，衡量住房成本，属于经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "the utility for household ​i​ choosing housing unit ​\nj​ is specified as\n(1)\t\n​ max​ \n​{ j∈​​i​}​​ ​U​ij​  =  ​α​i​ ​p​j​ + ​x​ j​ ' ​ ​β​i​ + ​∑ \nk\n​ ​ϕ​ik​ E​V​ijk​(​v​ijk​)​ + ​ξ​j​ + ​ε​ij​,​\n10 A more detailed",
+              "ref": "P13.14"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "通勤便利性 (EV_ijk)",
+          "economic": true,
+          "reason": "通勤便利性由出行方式选择模型导出，反映通勤时间与成本，是交通经济学和城市经济学中的关键变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "Commuting \nmembers within household ​i​ are denoted by ​k  ∈  ​{male borrower, female borrower}​ .13​ \nE​V​ijk​(​v​ijk​)​ is the expected commuting utility that member ​k​ in household ​i​ derives \nfrom the optimal",
+              "ref": "P14.2"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "commuting mode. It characterizes home ​j​’s attractiveness in terms \nof member ​k​’s work commute. Our notation makes it explicit that the commuting \nutility depends on the driving speed ​v​ijk​ of member ​k​’s work",
+              "ref": "P14.3"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "住房选择概率 (P_ij)",
+          "economic": true,
+          "reason": "住房选择概率是家庭在离散选择模型中选择特定住房的概率，属于住房需求与城市空间排序的核心因变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "probability that household ​i​ chooses home ​j​ is denoted \nby\n(2)\t\n​P​ij​(p, v)​  =  h​(𝐄𝐕​(𝐯)​, 𝐩, 𝐱, ξ, ​𝐳​i​)​,​\nwhere p and v denote the vector of prices for all properties and driving speeds for all \nindividuals’",
+              "ref": "P14.11"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "出行方式选择概率 (R_ijm)",
+          "economic": true,
+          "reason": "出行方式选择概率是通勤者选择某种交通方式的概率，属于交通需求分析的核心因变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 16,
+              "end": 16,
+              "quote": "​i​ chooses mode ​m​ \nto commute to work is\n(4)\t\n​R​ijm​(​v​ij​)​  =  r​(​𝐭𝐢𝐦𝐞​ij​(​v​ij​)​, ​𝐜𝐨𝐬𝐭​ij​ / ​y​i​, ​𝐰​ijm​)​,\nwhere ​𝐭𝐢𝐦𝐞​ij​(​v​ij​)​ and ​𝐜𝐨𝐬𝐭​ij​ / ​y​i​ denote the vector of travel time and cost (as a",
+              "ref": "P16.2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

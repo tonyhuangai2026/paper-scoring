@@ -1,0 +1,256 @@
+{
+  "agent": "agent_04",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "cf722762-2e71-44ee-85e6-ecc3cea29f0d",
+  "finished_at": "2026-11-24T09:32:48.370662+00:00",
+  "paper": {
+    "id": "020",
+    "position": 2,
+    "title": "Using the Retail Distribution of Sellers to Impute Expenditure Shares",
+    "group": "组01",
+    "md_sha256": "01b59550b942122a67b8321c2ff4bf9a678539b90d1d1ba4138adae9347bd6bc",
+    "pdf_sha256": "53f5b9b211eec059452d1a74bb74041c253207940df9a2d647ee512791ef7acf",
+    "ready": true
+  },
+  "pdf_pages": 24,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的摘要段落，从P1.2开始至P1.5的JEL代码前结束。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "(Jimmy) Xu*\nMany price indices must be constructed without quantity data at the \nelementary level. The paper shows that for some consumer goods in \nthe United States and other countries, one can approximate expen-",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "diture shares using weights derived from the retail distribution of \nsellers. These weights are based on the share of outlets selling an \nitem, or the share of outlets adjusted by the total number of items \nsold in",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "each. Relative to using no weights, the paper finds that using \nsuch imputed weights substantially reduces bias in the frequency of \nprice changes, in annual inflation, and in price comparisons across \ncountries. (JEL",
+          "ref": "P1.4"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提到本文提出了一种方法（用零售分布近似支出份额），并展示了其相对于无权重方法的改进，这属于构建新方法/模型的理论贡献。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "(Jimmy) Xu*\nMany price indices must be constructed without quantity data at the \nelementary level. The paper shows that for some consumer goods in \nthe United States and other countries, one can approximate expen-",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "diture shares using weights derived from the retail distribution of \nsellers. These weights are based on the share of outlets selling an \nitem, or the share of outlets adjusted by the total number of items \nsold in",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "each. Relative to using no weights, the paper finds that using \nsuch imputed weights substantially reduces bias in the frequency of \nprice changes, in annual inflation, and in price comparisons across \ncountries. (JEL",
+            "ref": "P1.4"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文包含数学公式（如ND、WD的定义式，市场share与分布关系的指数函数式，以及价格指数公式），并提及在线附录C中提出了一个理论模型提供微观基础，但正文本身有公式推导和模型设定。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "Retail Distribution and Market Share\nTo measure the retail distribution, the following metrics have been widely adopted \nin the marketing field (see the references just below):\n(1)  ​Numeric or physical distribution, ND",
+            "ref": "P5.7"
+          },
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "(%)  =  ​ number of outlets carrying item \n \n__________________ \n \ntotal number of outlets \n​  ​,\n(2)  ​All commodity volume, ACV (%)  =  ​ total sales of outlets carrying item \n \n \n___________________ \n \n \ntotal sales",
+            "ref": "P5.8"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "2218\nTHE AMERICAN ECONOMIC REVIEW\nJULY 2022\nfoundation for the hypothesized convex relation.8 They then tested the following \nlogistic function that resulted from their model:\n(4)\t\n​Market share  =  ​β​0​ × ​",
+            "ref": "P6.1"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "distribution, namely, ND and WD. We \ndo that by exploiting the convex relation between these two variables and imposing \nthe following functional form:\n(6)\t\n​Market share  =  ​e​ a+bND​\nor\n(7)\t\n​Market share  =",
+            "ref": "P12.12"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "​e​ a+bWD​,\nwhere ND and WD are ­item-specific measures of the numeric and weighted distri-\nbutions, respectively, and the two regressions need not have the same coefficients.\nIn general, the coefficients will not be",
+            "ref": "P12.13"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用了Nielsen提供的扫描数据（scanner data），涵盖美国和海合会国家的快速消费品价格和数量信息，以及中国在线价格数据，均为真实数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "first discuss the data and then the \napplications in more detail.\nOur sample comes from AC Nielsen store scanner data for FMCGs in the United \nStates and the six GCC countries: Bahrain, Kuwait, Oman, Qatar, Saudi",
+            "ref": "P9.7"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "Arabia, and \nthe United Arab Emirates. The price and quantity information for thousands of items \n(barcodes) across 30 product groups between January 2006 and December 2011 are \nused.14 The frequency of data for the GCC",
+            "ref": "P9.8"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "month and considering the price during the first week of the month for each barcode \nat each outlet.\nDescriptive statistics for the GCC and United States datasets are provided in \nTable 1. In total, the dataset provides",
+            "ref": "P10.5"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "price and quantity information on 203,719 \n(­nonunique) items sold across 5,851 outlets in the GCC and 111,733 items across \n11,046 stores in the United States over a 6-year period. In the GCC, Qatar, and \nBahrain are",
+            "ref": "P10.6"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了计量模型（如将ln(market share)对ND或WD进行回归，并包含固定效应），并报告了估计出的系数（表2中ND和WD的系数在4-6之间），且系数在0.01水平上统计显著。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "2225\nANTONIADES ET AL.: RETAIL DISTRIBUTION TO IMPUTE EXPENDITURE\nVOL. 112 NO. 7\nitem across all GCC product groups, countries, and time periods. Then we pool the \ndata and regress item retail distribution on log market",
+            "ref": "P13.1"
+          },
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "share in order to obtain the \ncoefficients of interest. The results are reported in Table 2. Columns 1 and 2 present \nthe estimates from regressing ln(market share) on ND and WD, respectively, using \nGCC data. Period",
+            "ref": "P13.2"
+          },
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "subsequent exercises \nwere inferior to those presented in the paper.\nTable 2—Market Share and Distribution Regression Results\nln(market share)\nGCC\nUS (food outlets only)\nUS (all outlets)\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\nNumeric",
+            "ref": "P13.15"
+          },
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "distribution\n4.861\n4.213\n6.215\n(ND)\n(0.001)\n(0.002)\n(0.002)\nWeighted distribution\n4.984\n4.325\n5.242\n(WD)\n(0.000)\n(0.002)\n(0.002)\nConstant\n−7.259\n−8.055\n−7.036\n−7.211\n−6.967\n−7.232\n(0.001)\n(0.001)\n(0.001)\n(0.001)\n(0.001)",
+            "ref": "P13.16"
+          },
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "controls. All outlets include (i) con-\nvenience, (ii) drug, (iii) food, (iii) mass merchandiser, and (iv) liquor outlets. Robust standard errors are in paren-\ntheses. All coefficients are statistically significant at",
+            "ref": "P13.19"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章有理论和实证，采用步骤3.2：识别核心自变量和核心因变量。核心自变量为零售分布指标（ND或WD），核心因变量为市场份额（或支出份额）。两者均为经管类变量（市场结构、销售份额），因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Numeric distribution (ND) / Weighted distribution (WD)",
+          "economic": true,
+          "reason": "ND和WD是衡量产品在零售渠道中分布广度的指标，反映市场覆盖和零售结构，属于产业组织/市场营销领域的经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "Retail Distribution and Market Share\nTo measure the retail distribution, the following metrics have been widely adopted \nin the marketing field (see the references just below):\n(1)  ​Numeric or physical distribution, ND",
+              "ref": "P5.7"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "(%)  =  ​ number of outlets carrying item \n \n__________________ \n \ntotal number of outlets \n​  ​,\n(2)  ​All commodity volume, ACV (%)  =  ​ total sales of outlets carrying item \n \n \n___________________ \n \n \ntotal sales",
+              "ref": "P5.8"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "outlet size. Specifically, \nwe define the weighted distribution (WD) as\n(5)\t\n​Weighted distribution, WD (%)  =  ​ total products of outlets carrying item  \n \n \n______________________ \n \n \ntotal products of all outlets",
+              "ref": "P6.9"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Market share",
+          "economic": true,
+          "reason": "市场份额是产品销售额占类别总销售额的比例，是衡量企业市场绩效的核心经管变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "AC​V​ ​β​1​​ \n_ \n \n​(1 − ACV)​ ​β​2​​ ​.\nFor all categories but frozen pizza, they confirmed that a convex relation char-\nacterizes market shares, defined as item dollar sales over total category sales, and \nthe retail",
+              "ref": "P6.2"
+            },
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "distribution, namely, ND and WD. We \ndo that by exploiting the convex relation between these two variables and imposing \nthe following functional form:\n(6)\t\n​Market share  =  ​e​ a+bND​\nor\n(7)\t\n​Market share  =",
+              "ref": "P12.12"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

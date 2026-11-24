@@ -1,0 +1,408 @@
+{
+  "agent": "agent_03",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "ee139769-0530-4f12-b42f-a0b71223f539",
+  "finished_at": "2026-11-24T09:32:20.460782+00:00",
+  "paper": {
+    "id": "181",
+    "position": 11,
+    "title": "Indoor air quality and health Empirical evidence from fluoride pollution in China",
+    "group": "组01",
+    "md_sha256": "4bd0de4c42b9187d6e69d720428b56db8338138dd43319124324e5dbeccddd33",
+    "pdf_sha256": "b2cfedb6a5854c4679880238625caa35c6b002405d0f4e0083f9ad2555054778",
+    "ready": true
+  },
+  "pdf_pages": 16,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页有明确的 ABSTRACT 标题，摘要从研究目的开始，依次交代数据、方法和主要发现，到第 1 节 Introduction 开始前结束。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Health and\nNutrition Survey, we applied individual fixed effect models and triple difference models to ex-\namine the effects of whether households use coal as domestic fuel. The results showed that\nfluoride pollution",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "pollution exposure on\nbirthweight and find evidence that fluoride pollution had a negative impact on prenatal devel-\nopment.\n1. Introduction\nAir pollution is a severe problem in China. In recent decades, this problem",
+          "ref": "P1.7"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对全文摘要后，摘要明确说本文应用个体固定效应模型和三重差分模型来估计家庭用煤的健康影响，报告了成人血压、低体重、儿童生长和出生体重方面的发现。摘要未明确提出新的理论模型、概念、计量方法或数学命题。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Health and\nNutrition Survey, we applied individual fixed effect models and triple difference models to ex-\namine the effects of whether households use coal as domestic fuel. The results showed that\nfluoride pollution",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "from coal burning significantly increases the diastolic and systolic blood\npressure levels of adults. And the pollution also leads to higher likelihood of underweight. Our\nfurther analysis indicated that fluoride",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "pollution from coal burning during the infant period\ngreatly reduces the height and weight of children in their childhood and adolescence periods. We\nalso explore the mechanism by investigating the influence of fluoride",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "pollution exposure on\nbirthweight and find evidence that fluoride pollution had a negative impact on prenatal devel-\nopment.\n1. Introduction\nAir pollution is a severe problem in China. In recent decades, this problem",
+            "ref": "P1.7"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "主要数据来自中国健康与营养调查（CHNS），该追踪抽样调查记录了受访家庭实际使用的燃料以及个人血压、体重等健康指标。出生体重分析还使用了 1987 年中国生育节育抽样调查（CIFS）的调查记录，并匹配贵州流行病学调查报告中的县级氟斑牙患病率。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "by using household coal use as an indicator of the\nseverity of fluoride pollution. For this purpose, we used the CHNS as the major data source. It is a national sampling survey im-\nplemented by the Carolina Population",
+            "ref": "P4.9"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "Center at the University of North Carolina at Chapel Hill and the National Institute for\nNutrition and Health at the Chinese Center for Disease Control and Prevention. As a follow-up survey, it has released nine rounds",
+            "ref": "P4.10"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "of\ndata since 1989. Guizhou is one of nine provinces surveyed by the CHNS, and the samples are mostly distributed in the coal-burning\nareas with severe fluorosis that were identified by the epidemiological survey. This",
+            "ref": "P4.11"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "longitudinal survey provided us with information\non households' domestic fuel, as well as health indicators such as blood pressure and weight, which enabled our empirical strategy to\nbe implemented. Specifically, two",
+            "ref": "P4.12"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "hypothesis, we measured the status of prenatal development by birthweight, which is provided by the\n0\n0.1\n0.2\n0.3\n0.4\n0.5\n0.6\n0.7\n0.8\n0.9\n1\n1989\n1991\n1993\n1995\n1997\n1999\n2001\n2003\n2005\n2007\n2009\n2011\nProportion of",
+            "ref": "P9.20"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "China In-depth Fertility Survey (CIFS) of 1987. The CIFS reviewed 6619 qualified women from 40 counties (cities, districts, special\ndistricts) of Guizhou, providing detailed information on women's fertility history and",
+            "ref": "P10.1"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "household backgrounds. We proxied exposure\nto fluoride pollution among women by the county-level dental fluorosis prevalence rate among students aged 8–15 years, which is\nprovided by the Epidemiological Investigation",
+            "ref": "P10.2"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "Report of Guizhou conducted from 1981 to 1986. Although the surveys were per-\nformed in the 1980s, the dental fluorosis prevalence rate mainly reflects the fluoride pollution severity in the 1970s; this is because",
+            "ref": "P10.3"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "正文明确构建了模型。式（1）使用个体和调查年份固定效应估计家庭用煤对成人健康的影响，式（2）使用家庭和调查轮次固定效应估计婴儿期家庭用煤对后续生长发育的影响。正文也明确报告了估计系数和标准误。表 3 的成人舒张压基准回归中，家庭用煤系数为 0.937。表 4 的身高基准回归中，婴儿期家庭用煤系数为 −6.776。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "influence of\nfluoride pollution on adults is expressed as follows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nht\niht\ni\nt\niht\n1\n2\n3\n(1)\nwhere the dependent variable yiht represents the health indicator that may be affected by fluoride",
+            "ref": "P4.14"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "household to which the individual belongs, and the period during which the individual is\nsurveyed; coalht represents whether individual i's household uses coal as the main cooking fuel during the period t, which is a",
+            "ref": "P4.16"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "individual fixed effects and survey year fixed effects, respectively;\nand εiht represents the random error item. Since the individual fixed effects are controlled in the model, the coefficient β2 measures\nthe change in",
+            "ref": "P4.18"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "for the identifi-\ncation of the long-term effects (Bleakley, 2010; Chen & Zhou, 2007), but with the treatment at household level. The model was set as\nfollows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nih\niht\nh\nt\niht\n1\n2\n3\n(2)\nwhere the",
+            "ref": "P4.23"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "household to which the individual\nbelongs and the period during which the individual is surveyed; coalih represents whether individual i's household used coal as the\nmain cooking fuel during the individual's infancy,",
+            "ref": "P4.25"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "household\nlevel; λt represents the wave fixed effect; and εiht represents the random error item. Since the household fixed effects are controlled in\nthe model, the coefficient β2 measures the difference in physical",
+            "ref": "P4.27"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "≥18).\nDependent Variable\nDiastolic\nPressure\nDiastolic\nPressure\n≥90\nSystolic\nPressure\nSystolic\nPressure\n≥140\nWeight\nUnderweight\n(BMI < 18.5)\nOverweight\n(BMI ≥24)\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\n(7)\nControl Variables\n(1) baseline",
+            "ref": "P7.22"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "0.937*\n0.018\n1.286*\n0.003\n−0.393**\n0.026**\n−0.005\n(0.498)\n(0.013)\n(0.690)\n(0.012)\n(0.184)\n(0.011)\n(0.011)\n(2) + income & occupation\n1.013**\n0.019\n1.228*\n0.002\n−0.286\n0.026**\n−0.000\n(0.499)\n(0.013)\n(0.693)\n(0.012)",
+            "ref": "P7.23"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "household coal use variable.\nSignificance: ***p < .01, **p < .05, *p < .1. The baseline control variables include individual fixed effects, age, age squared, interaction between\nage/age squared and gender, wave fixed",
+            "ref": "P7.26"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "variable: Height\n(1)\n(2)\n(3)\n(4)\n(5)\nIndependent variables:\nHousehold coal use during\ninfancy\n−6.776**\n−6.479**\n−6.458**\n−6.292**\n−5.833**\n(2.675)\n(2.614)\n(2.591)\n(2.837)\n(2.823)\nHousehold coal use in\nheight-survey year",
+            "ref": "P8.17"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "摘要未明确提出理论贡献，正文使用真实调查数据建模并报告系数，因此采用步骤 3.2。主要回归的核心自变量衡量家庭炊事燃料选择，属于家庭能源消费变量。成人血压、低体重以及儿童和青少年身高、体重属于健康和生长发育指标。核心自变量中已有经管类变量，符合核心经管的判定条件。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Household coal use",
+          "economic": true,
+          "reason": "衡量家庭在调查期是否以煤作为主要炊事燃料，反映家庭能源消费中的燃料选择。论文用这一选择代理当期室内氟污染暴露。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "household to which the individual belongs, and the period during which the individual is\nsurveyed; coalht represents whether individual i's household uses coal as the main cooking fuel during the period t, which is a",
+              "ref": "P4.16"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "proxy\nfor the severity of fluoride pollution exposure for individual i in the current period; Xiht represents controlled variables that may affect\nhealth, such as age and household income; αi and λt represents the",
+              "ref": "P4.17"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "economic/nutritional status.\nDependent Variable\nHousehold income per capita (log)\nCalorie Intake\nCarbohydrate Intake\nFat Intake\nProtein Intake\n(1)\n(2)\n(3)\n(4)\n(5)\nIndependent Variable:\nHousehold coal use (Yes = 1)",
+              "ref": "P6.19"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "Household coal use during infancy",
+          "economic": true,
+          "reason": "衡量个体在婴儿期所在家庭是否以煤作为主要炊事燃料，记录的是该时期的家庭能源消费选择，在长期影响模型中用作婴儿期氟污染暴露的代理变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "household to which the individual\nbelongs and the period during which the individual is surveyed; coalih represents whether individual i's household used coal as the\nmain cooking fuel during the individual's infancy,",
+              "ref": "P4.25"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "which measures the severity of infant exposure to fluoride pollution; Xiht represents\ncontrolled variables such as age, age squared, gender and household income per capita; αh represents the fixed effect at the",
+              "ref": "P4.26"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "variable: Height\n(1)\n(2)\n(3)\n(4)\n(5)\nIndependent variables:\nHousehold coal use during\ninfancy\n−6.776**\n−6.479**\n−6.458**\n−6.292**\n−5.833**\n(2.675)\n(2.614)\n(2.591)\n(2.837)\n(2.823)\nHousehold coal use in\nheight-survey year",
+              "ref": "P8.17"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Diastolic Pressure / Systolic Pressure",
+          "economic": false,
+          "reason": "衡量成人舒张压和收缩压水平，是反映心血管功能的生理指标，属于健康结果。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "influence of\nfluoride pollution on adults is expressed as follows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nht\niht\ni\nt\niht\n1\n2\n3\n(1)\nwhere the dependent variable yiht represents the health indicator that may be affected by fluoride",
+              "ref": "P4.14"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "pollution, including diastolic and\nsystolic blood pressure, weight, and other indicators that measure cardiovascular function and physical state; the subscripts i, h, and t\nrespectively represent the individual, the",
+              "ref": "P4.15"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "≥18).\nDependent Variable\nDiastolic\nPressure\nDiastolic\nPressure\n≥90\nSystolic\nPressure\nSystolic\nPressure\n≥140\nWeight\nUnderweight\n(BMI < 18.5)\nOverweight\n(BMI ≥24)\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\n(7)\nControl Variables\n(1) baseline",
+              "ref": "P7.22"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Underweight (BMI < 18.5)",
+          "economic": false,
+          "reason": "衡量成人是否因体质指数低于 18.5 而被归为低体重，属于身体状况指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "≥18).\nDependent Variable\nDiastolic\nPressure\nDiastolic\nPressure\n≥90\nSystolic\nPressure\nSystolic\nPressure\n≥140\nWeight\nUnderweight\n(BMI < 18.5)\nOverweight\n(BMI ≥24)\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\n(7)\nControl Variables\n(1) baseline",
+              "ref": "P7.22"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "whether exposure to fluoride pollution can lead to underweight (namely BMI < 18.5). The results reveal that fluoride pollution\nsignificantly increased the probability of low body weight. The seventh column concerns the",
+              "ref": "P8.1"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Height / Weight",
+          "economic": false,
+          "reason": "衡量受访者在 8 至 20 岁时的身高和体重，用于考察儿童及青少年的身体发育，属于生长发育指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "dependent variable yiht represents the indicator that measures the physical development of children and adolescents,\nincluding height and weight; the subscripts i, h, and t respectively represent the individual, the",
+              "ref": "P4.24"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "impact of infant exposure to fluoride pollution was limited to\nindividuals who were born in or before 2004 and who were aged between 8 and 20 years at the time of being surveyed. Table 1\npresents the statistical",
+              "ref": "P5.6"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "indicating that fluoride pollution during childhood and adolescence has no significant impact on weight.\nTable 4\nLong-term Impact of Fluoride Pollution Exposure during Infancy (age between 8 and 20).\nPanel A:\nDependent",
+              "ref": "P8.16"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "variable: Height\n(1)\n(2)\n(3)\n(4)\n(5)\nIndependent variables:\nHousehold coal use during\ninfancy\n−6.776**\n−6.479**\n−6.458**\n−6.292**\n−5.833**\n(2.675)\n(2.614)\n(2.591)\n(2.837)\n(2.823)\nHousehold coal use in\nheight-survey year",
+              "ref": "P8.17"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "height-\nsurvey year\nObservations\n682\n682\n682\n682\n682\nR2\n0.924\n0.926\n0.926\n0.928\n0.930\nPanel B:\nDependent variable: Weight\n(1)\n(2)\n(3)\n(4)\n(5)\nIndependent variables:\nHousehold coal use during\ninfancy\n−5.664**\n−5.446**",
+              "ref": "P8.19"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

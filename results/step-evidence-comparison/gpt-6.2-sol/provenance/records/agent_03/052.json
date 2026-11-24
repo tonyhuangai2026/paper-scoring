@@ -1,0 +1,328 @@
+{
+  "agent": "agent_03",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "ee139769-0530-4f12-b42f-a0b71223f539",
+  "finished_at": "2026-11-24T09:30:09.978049+00:00",
+  "paper": {
+    "id": "052",
+    "position": 6,
+    "title": "Exorbitant Privilege Gained and Lost Fiscal Implications",
+    "group": "组01",
+    "md_sha256": "a6cbe316763258e88929ff1202f783fef87fa7969b791bc335c9e408b68eda4d",
+    "pdf_sha256": "52ac9cfbea5eae852969c0ee223bc54f1f38540078b113d8a4c289765ec2ace9",
+    "ready": true
+  },
+  "pdf_pages": 49,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "作者信息后、第一节引言前有一段跨越 PDF 第 1 至 2 页的文字，概述了研究对象、历史范围和主要发现，可以识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "(seventeenth to eighteenth cen-\nturies), the United Kingdom (eighteenth to nineteenth centuries),\nand the United States (twentieth to twenty-ﬁrst centuries). When Dutch\nElectronically published October 16, 2025\nJournal",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+          "ref": "P2.1"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "the early stage, followed by bondholder losses and ﬁnancial re-\npression in the later stage.\nI.\nIntroduction\nThe international monetary system has been characterized by a hegemon\nconﬁguration, in which a single dominant",
+          "ref": "P2.2"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对完整摘要后，摘要明确陈述的是荷兰共和国、英国和美国的历史比较结果，包括主导安全资产供应者的债务超过其财政支撑，以及荷兰和英国失去主导地位后的变化。摘要提到便利收益和债务高估来描述研究发现，未明确提出本文构建了新理论模型、提出了新概念、创新了计量方法或证明了模型性质。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "(seventeenth to eighteenth cen-\nturies), the United Kingdom (eighteenth to nineteenth centuries),\nand the United States (twentieth to twenty-ﬁrst centuries). When Dutch\nElectronically published October 16, 2025\nJournal",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+            "ref": "P2.1"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "the early stage, followed by bondholder losses and ﬁnancial re-\npression in the later stage.\nI.\nIntroduction\nThe international monetary system has been characterized by a hegemon\nconﬁguration, in which a single dominant",
+            "ref": "P2.2"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文使用真实历史观测数据。英国的年度宏观和金融数据来自英格兰银行的历史数据库，其可交易国债市值由逐只债券的市场价格和发行数量汇总得到。美国的早期财政数据来自 Hall 和 Sargent 整理的历史政府财政记录。荷兰部分也使用历史财政数据和债券市场估值。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "same approach to analyze\nthe case of Holland and the Netherlands.\nII.\nThe Historical Cash Flow Dynamics:\nStylized Facts\nA.\nData and Fiscal Cash Flows\nFor the United Kingdom, we use annual data from 1729 to 2020. The",
+            "ref": "P9.9"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "main\nUK dataset we used is “A Millennium of Macroeconomics Data,” pub-\nlished by the Bank of England, which contains a broad set of historical\nmacroeconomic and ﬁnancial market data. Our historical (1793–1929)\nUS",
+            "ref": "P9.10"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "government ﬁnance data were taken from Hall and Sargent (2021),\nwhich contain detailed historical government ﬁnance information. We\nuse other datasets to complement the main dataset, as detailed in appen-\ndix A (apps.",
+            "ref": "P9.11"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "the data\nconstructed by Ellison and Scott (2020), which contain the quantity and\nmarket price of every individual bond issued by the UK government start-\ning in 1694. We compute the market value by matching each bond’s",
+            "ref": "P12.4"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "ID\nfor market price and quantity data and summing across all individual\nbonds. The Ellison-Scott dataset includes only marketable debt, which\nis the concept we focus on. We also obtain the market value of the public",
+            "ref": "P12.5"
+          },
+          {
+            "source": "pdf",
+            "start": 40,
+            "end": 40,
+            "quote": "recover to par value. However, by 1794,\nHolland bonds were trading at a 70% discount to book value in secondary\nmarkets. The Netherlands effectively defaulted on two-thirds of the inter-\nest payments in 1810, and the",
+            "ref": "P40.10"
+          },
+          {
+            "source": "pdf",
+            "start": 40,
+            "end": 40,
+            "quote": "outstanding 2.5% coupon bonds lost two-\nthirds of their market value (see van Riel 2021, 333–35). Our estimate of\nthe market value of debt is plotted in ﬁgure 11 (dashed line). The 1828\nobservation (circle in ﬁg. 11B)",
+            "ref": "P40.11"
+          },
+          {
+            "source": "pdf",
+            "start": 40,
+            "end": 40,
+            "quote": "empire in 1810, and it\nimmediately defaulted on two-thirds of the debt.\n26 See https://resources.huygens.knaw.nl/gewestelijkeﬁnancien/Spreadsheets for the\nﬁscal data.\n3752\njournal of political economy",
+            "ref": "P40.13"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "建模方面，正文第 V.A 节的式（8）明确设定了一阶高斯向量自回归模型，定义了状态向量、滞后系数矩阵和创新项。系数估计方面，正文脚注明确报告荷兰省与荷兰两组样本的 VAR 伴随矩阵点估计分别列于表 G.4 和 G.5，图 11 图注也确认作者对历史子样本估计了 VAR。所提供 PDF 未包含这些在线附表，正文足以确认作者已估计出模型系数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "A.\nVAR Model of Cash Flow Dynamics\nWe propose a VAR model to capture the dynamics in expected cash ﬂows\nand discount rates in the economy.\nWe assume that the N \u0003 1 vector of state variables z follows a Gaussian",
+            "ref": "P29.1"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "ﬁrst-order VAR:\nzt 5 Ψzt21 1 ut 5 Ψzt21 1 Σ1=2εt,\n(8)\nwith N \u0003 N companion matrix Ψ and homoscedastic innovations ut ∼\ni:i:d: N (0, Σ). The Cholesky decomposition of the covariance matrix,\nΣ 5 Σ1=2(Σ1=2)0, has nonzero",
+            "ref": "P29.2"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "with εt ∼i:i:d: N (0, I). Table 4 summarizes the\nvariables we include in the state vector in order of appearance of the\nVAR. The vector z contains the state variables demeaned by their respec-\ntive sample averages.\nTo",
+            "ref": "P29.4"
+          },
+          {
+            "source": "pdf",
+            "start": 44,
+            "end": 44,
+            "quote": "sample (after 1817) is listed in tables G.2 and G.3. The VAR companion matrix point\nestimates for the two samples are listed in tables G.4 and G.5. Appendix sec. G.3 shows that\nthe results are robust to including",
+            "ref": "P44.13"
+          },
+          {
+            "source": "pdf",
+            "start": 45,
+            "end": 45,
+            "quote": "measure (horizontal black line), the actual\ndebt/GDP ratio (dashed line), and the book debt/GDP ratio (dotted line). A estimates\nthe VAR in two subsamples (1601–99 and 1700–1794) and plots the combined estimated\nﬁscal",
+            "ref": "P45.2"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "A–G are available online).\nOver the course of three centuries, the United Kingdom has been run-\nning positive primary surpluses of 1.41% of the GDP. Table 1 reports\nsummary statistics for the UK and US central",
+            "ref": "P9.12"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "按 Step 3.2 判定。论文的核心比较是取得或失去主导安全资产供应地位时，政府债务市值与财政支撑之间的缺口如何变化。该地位是历史分组维度，缺口是核心结果。两者分别衡量国际金融中的主权安全资产供给地位和公共财政中的债务支撑程度，均属于经管类变量。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "主导安全资产供应者地位（dominant safe asset supplier status）",
+          "economic": true,
+          "reason": "衡量一个国家或财政辖区在特定历史时期是否占据主导安全资产供应地位。论文用这一地位区分历史时期并进行比较。该变量反映主权债券在安全资产市场中的供给角色，属于国际金融变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "the early stage, followed by bondholder losses and ﬁnancial re-\npression in the later stage.\nI.\nIntroduction\nThe international monetary system has been characterized by a hegemon\nconﬁguration, in which a single dominant",
+              "ref": "P2.2"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "country issues most of the\nworld’s safe assets. These safe assets, mostly government debt, tend to be\nmore expensive than the debt issued by other countries, reﬂecting a high\ndemand from domestic and international",
+              "ref": "P2.3"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "Bretton\nWoods international ﬁnancial architecture.2 The United States took over\nthe baton from the United Kingdom as the hegemon in the international\nﬁnancial system.\nReﬂecting the reversal of fortunes, we ﬁnd that the",
+              "ref": "P4.3"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "US government\ndebt consistently exceeded its ﬁscal backing after World War II when\nthe United States became the global safe asset supplier. In fact, the gap\nbetween the market value of debt and ﬁscal backing is much",
+              "ref": "P4.4"
+            },
+            {
+              "source": "pdf",
+              "start": 44,
+              "end": 44,
+              "quote": "Napoleon’s invasion, as the Dutch Republic’s relative fundamentals be-\ngin to deteriorate.\nIn sum, bond investors award Holland with the privilege of issuing debt\nbeyond its ﬁscal backing in the 1601–1794 period, much",
+              "ref": "P44.4"
+            },
+            {
+              "source": "pdf",
+              "start": 44,
+              "end": 44,
+              "quote": "the same way\nas we found for the United Kingdom in the 1729–1946 period and for\nthe United States in the 1947–2020 period.\nNext, we turn to the post-1817 era in column 2 of table 5. The multiple\non GDP is higher (18.31)",
+              "ref": "P44.5"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "政府债务市值与财政支撑之间的缺口（excess fiscal capacity）",
+          "economic": true,
+          "reason": "衡量政府债务市值超出未来初级盈余贴现现值的程度。计入便利收益时，财政支撑还包括相应铸币税收入的现值。该缺口直接反映公共债务估值和政府偿债资源，属于公共财政与金融变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "US yields were too\nlow after World War II.\nOur ﬁndings shed light on the wide gap between the market value of\ndebt and ﬁscal capacity that has been documented for the United States\nin recent decades by Jiang et al.",
+              "ref": "P7.12"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "(2024a). Reis (2022) calls this wedge the\ndebt revenue term; we call it excess ﬁscal capacity. The measurement in\nJiang et al. (2024a) is focused on the postwar United States. Our paper\ncompares the historical",
+              "ref": "P7.13"
+            },
+            {
+              "source": "pdf",
+              "start": 19,
+              "end": 19,
+              "quote": "surpluses plus the value of future seigniorage revenue:\nDt 5 Et o\n∞\nj50\nM $\nt,t1j\nTt1j 2 Gt1j 1(1 2 e2lt1j)o\nH\nh51\nQ $\nt1j,hP $\nt1j(h)\n\u0002\n\u0003\n\"\n#\n,\n(6)\nwhere Dt denotes the cum dividend value of the government’s debt port-",
+              "ref": "P19.8"
+            },
+            {
+              "source": "pdf",
+              "start": 20,
+              "end": 20,
+              "quote": "ratio. Let\npdK\nt denote the log price/dividend ratio on the claim to the seigniorage\nrevenue. Then, ﬁscal capacity with convenience yields can be written\nwith an additional term that reﬂects the value of the seigniorage",
+              "ref": "P20.2"
+            },
+            {
+              "source": "pdf",
+              "start": 20,
+              "end": 20,
+              "quote": "revenue\nstream from convenience:\nDt\nYt\n5 P T\nt\nYt\n1 P K\nt\nYt\n2 P G\nt\nYt\n5 ttexp(pdT\nt ) 1 ktexp(pdK\nt ) 2 gtexp(pdG\nt ):\n(7)\nD.\nFiscal Backing with Mispricing\nWhen assessing ﬁscal capacity, we will plug the seigniorage",
+              "ref": "P20.3"
+            },
+            {
+              "source": "pdf",
+              "start": 33,
+              "end": 33,
+              "quote": "GDP. Until 1870, the observed\nmarket value of debt/GDP ratio (ﬁg. 5, dashed line) exceeds the ﬁscal ca-\npacity estimate. The debt is not fully backed by our estimate of future\nsurpluses and seigniorage revenue. The",
+              "ref": "P33.3"
+            },
+            {
+              "source": "pdf",
+              "start": 33,
+              "end": 33,
+              "quote": "wedge between the debt and our\nﬁscal backing estimate increases to 50% of GDP after the Napoleonic wars.\nHowever, starting in 1870, ﬁscal capacity tracks the actual UK debt/GDP ra-\ntio more closely.\nAs shown in panel C",
+              "ref": "P33.4"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "agent": "agent_10",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "e89771f0-2ca1-4153-9746-1d212bc51bf9",
+  "finished_at": "2026-11-24T09:58:04.655282+00:00",
+  "paper": {
+    "id": "059",
+    "position": 7,
+    "title": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE",
+    "group": "组01",
+    "md_sha256": "532ac7d494f1ef7ee6ba8e184fb4a291f961eb1d875842339166363ce4da0137",
+    "pdf_sha256": "bcab122a56856e2c17504eccdede96d9f82f1c9e1338000d284605efb7a9f42a",
+    "ready": true
+  },
+  "pdf_pages": 42,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页作者署名之后、第 1 节引言之前的段落概述了本文提出的检验、理论结果、模拟和真实数据应用，可识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Econometric Theory, 40, 2024, 278–319.\ndoi:10.1017/S0266466622000445\nCONSISTENT SPECIFICATION\nTESTING UNDER SPATIAL\nDEPENDENCE\nABHIMANYU GUPTA\nUniversity of Essex\nXI QU\nShanghai Jiao Tong University\nWe propose a",
+          "ref": "P1.1"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "dependence condition, our test statistic is asymptotically\nstandard normal. To prove the latter property, we establish a central limit theorem for\nquadratic forms in linear processes in an increasing dimension setting.",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Finite sample\nperformance is investigated in a simulation study, with a bootstrap method also\njustified and illustrated. Empirical examples illustrate the test with real-world data.\n1. INTRODUCTION\nModels for spatial",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提出一种适用于空间依赖数据的基于级数的非参数回归设定检验，并说明本文为证明检验统计量的渐近标准正态性，建立了维数递增情形下线性过程二次型的中心极限定理。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "dependence condition, our test statistic is asymptotically\nstandard normal. To prove the latter property, we establish a central limit theorem for\nquadratic forms in linear processes in an increasing dimension setting.",
+            "ref": "P1.4"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文第 3 节从准对数似然给出系数和方差的最小化解。第 4 节的定理 4.2 给出检验统计量的二次型近似，定理 4.3 给出该二次型的渐近正态性，定理 4.4 给出检验统计量在原假设下的渐近分布、检验的一致性及局部备择下的极限分布。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "admissible values\nβ, σ 2, and γ , the (multiplied by 2\nn) negative quasi-log-likelihood function based\non using the approximation (3.1) is\nL(β,σ 2,γ ) = ln\n\u0005\n2πσ 2\u0006\n+ 1\nn ln|\b (γ )|+ 1\nnσ 2 (y−\u000fβ)′\b (γ )−1 (y−\u000fβ),\n(3.3)",
+            "ref": "P7.5"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "which is minimized with respect to β and σ 2 by\n¯β (γ ) =\n\u0005\n\u000f′\b (γ )−1 \u000f\n\u0006−1 \u000f′\b (γ )−1 y,\n(3.4)\n¯σ 2 (γ ) = n−1y′E(γ )′M(γ )E(γ )y,\n(3.5)\nwhere M(γ ) = In −E(γ )\u000f\n\u0005\n\u000f′\b(γ )−1\u000f\n\u0006−1 \u000f′E(γ )′ and E(γ ) is the n × n sym-",
+            "ref": "P7.6"
+          },
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "infinite-dimensional matrix V = B′\b−1\u000f\n\u0005\n\u000f′\b−1\u000f\n\u0006−1 \u000f′\b−1B,\nwhich is symmetric, idempotent, and has rank p. We now show that our test statistic\nis approximated by a quadratic form in ε, weighted by V .\nTheorem\n4.2.",
+            "ref": "P11.11"
+          },
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "Under\nAssumptions\nR.1–R.10,\np−1 + p\n\u0005\np+d2\nγ\n\u0006\n/n +\n√n/pμ+1/4 →0, as n →∞, and H0, Tn −\n\u0005\nσ −2\n0 ε′V ε −p\n\u0006\n/√2p = op(1).\nhttps://doi.org/10.1017/S0266466622000445 Published online by Cambridge University Press",
+            "ref": "P11.12"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "= 1,...,n and j = 1,...,p.\nThe next theorem establishes the asymptotic normality of the approximating\nquadratic form introduced above.\nTheorem 4.3. Under Assumptions R.3, R.4, R.8, and R.11–R.13 and p−1 +\np3/n →0, as n",
+            "ref": "P12.5"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "→∞,\n\u0005\nσ −2\n0 ε′V ε −p\n\u0006\n/√2p\nd\n−→N(0,1).\nThis is a new type of CLT, integrating both a linear process framework and\nan increasing dimension element. A linear-quadratic form in i.i.d. disturbances is\ntreated by Kelejian",
+            "ref": "P12.6"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "4.4. Under the conditions of Theorems 4.2 and 4.3, (1) Tn\nd→N(0,1)\nunder H0, (2) Tn is a consistent test statistic, and (3) Tn\nd→N (\u0016,1) under local\nalternatives Hℓ.\n5. MODELS WITH SAR STRUCTURE IN RESPONSES\nWe now",
+            "ref": "P12.10"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "第 9 节使用既有研究中的真实观测数据。创新溢出应用使用 Bloom 等人的美国企业数据，取 2000 年的 577 个观测。经济增长应用使用源自 Penn World Tables 6.1 的 91 国数据，覆盖 1960 至 1995 年。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "smaller\np-values but unchanged conclusions.\n9.2. Innovation Spillovers\nThis example is based on the study of the impact of R&D on growth from\nBloom et al. (2013). They develop a general framework incorporating two types",
+            "ref": "P25.13"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+            "ref": "P26.6"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "Ti = (Ti1,Ti2,...,Ti426)′, with Tiτ being the share of patents\nof firm i in technology class τ. Focusing on a cross-sectional analysis, we use\nobservations from the year 2000 and obtain a sample size of 577. Both weight",
+            "ref": "P27.6"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "regional incomes.\nIn this section, we want to test the linear SAR model specification in Ertur and\nKoch (2007). Their dataset covers a sample of 91 countries over the period of\n1960–1995, originally from Heston,",
+            "ref": "P29.7"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "Summers, and Aten (2002), obtained from\nthe Penn World Tables (PWT version 6.1). The variables in use include per worker\nincome in 1960 (y60) and 1995 (y95), average rate of growth between 1960 and\n1995 (gy), average",
+            "ref": "P29.8"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+            "ref": "P29.9"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "模型构建明确。创新溢出应用在式（9.1）中设定以企业销售额对数为因变量的生产率方程，并指定空间误差结构。经济增长应用在式（9.2）中给出空间自回归方程。系数估计明确。表 7 报告创新溢出模型的系数估计，例如使用技术邻近矩阵时，线性设定下研发存量对数的系数为 0.043。表 9 报告经济增长模型的系数估计，例如第一种空间权重下，非受限模型的投资率对数系数为 0.8256。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+            "ref": "P26.6"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "regressors in\nX include the log of capital (Capital), log of labor (Labor), R&D, a dummy for\nmissing values in R&D, a price index, and two spillover terms constructed as the\nlog of WSICR&D (Spsic) and the log of WTECR&D",
+            "ref": "P26.7"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "ln(Sptec)\n0.191\n<0.001\n0.006\n0.850\n−0.001\n0.998\nln(Lab.)\n0.636\n<0.001\n0.572\n<0.001\nln(Cap.)\n0.154\n<0.001\n0.336\n<0.001\nln(R&D)\n0.043\n<0.001\n0.081\n<0.001\nWTEC\n0.835\n<0.001\n0.829\n<0.001\nTn\n15.528\n<0.001\nT ∗\nn\n0.050",
+            "ref": "P27.2"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "matrices are row normalized.\nThe column FE of Table 7 is from Table 5 of Bloom et al. (2013) based on\ntheir panel fixed effects estimation and we use it as a baseline for comparison.\nThis table reports results for",
+            "ref": "P27.7"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "SARARMA(0,1,0) models using WSIC and WTEC\nseparately. We use both WSIC and WTEC simultaneously in SARARMA(0,2,0),\nSARARMA(0,2,0), and Error MESS(2) models, reported in Table 8. In all of\nthese specifications, the test",
+            "ref": "P27.8"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+            "ref": "P29.9"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "worker ln(y95), elements\nof the explanatory variable X = (x′\n1,x′\n2) include log investment rate ln(s) = x1\nand log physical capital effective rate of depreciation ln(np + 0.05) = x2, with\ncorresponding subscripted",
+            "ref": "P29.10"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n307\nTable 9. The estimates and test statistics of the linear SAR model for the\ngrowth data.\nVariable\nw∗\nij = d−2\nij\nfor i̸ = j\nw∗\nij = e−2dij for i̸ = j\nEstimate",
+            "ref": "P30.1"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "p-value\nEstimate\np-value\nConstant\n1.0711\n0.608\n0.5989\n0.798\nln(s)\n0.8256\n< 0.001\n0.7938\n< 0.001\nln(np +0.05)\n−1.4984\n0.008\n−1.4512\n0.009\nW ln(s)\n−0.3159\n0.075\n−0.3595\n0.020\nW ln(np +0.05)\n0.5633\n0.498\n0.1283\n0.856\nWy",
+            "ref": "P30.2"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文有理论且有实证，采用步骤 3.2。创新溢出模型的企业研发存量和销售额，以及经济增长模型的投资率和实际人均劳动收入，均为经管类变量，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "ln(R&D)",
+          "economic": true,
+          "reason": "衡量企业研发存量的对数，反映企业累积的研发投入，是企业创新和生产率分析中的经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            },
+            {
+              "source": "pdf",
+              "start": 27,
+              "end": 27,
+              "quote": "ln(Sptec)\n0.191\n<0.001\n0.006\n0.850\n−0.001\n0.998\nln(Lab.)\n0.636\n<0.001\n0.572\n<0.001\nln(Cap.)\n0.154\n<0.001\n0.336\n<0.001\nln(R&D)\n0.043\n<0.001\n0.081\n<0.001\nWTEC\n0.835\n<0.001\n0.829\n<0.001\nTn\n15.528\n<0.001\nT ∗\nn\n0.050",
+              "ref": "P27.2"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ln(y)",
+          "economic": true,
+          "reason": "在创新溢出模型中衡量企业销售额的对数，反映企业经营规模，是企业经营活动的经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "ln(s)",
+          "economic": true,
+          "reason": "衡量样本国 1960 至 1995 年平均投资率的对数，反映宏观经济中的投资水平，是经济增长分析中的经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "Summers, and Aten (2002), obtained from\nthe Penn World Tables (PWT version 6.1). The variables in use include per worker\nincome in 1960 (y60) and 1995 (y95), average rate of growth between 1960 and\n1995 (gy), average",
+              "ref": "P29.8"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+              "ref": "P29.9"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "worker ln(y95), elements\nof the explanatory variable X = (x′\n1,x′\n2) include log investment rate ln(s) = x1\nand log physical capital effective rate of depreciation ln(np + 0.05) = x2, with\ncorresponding subscripted",
+              "ref": "P29.10"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ln(y95)",
+          "economic": true,
+          "reason": "衡量样本国 1995 年每名劳动者实际收入的对数，反映经价格调整的劳动者平均收入水平，是宏观经济增长分析中的经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "Summers, and Aten (2002), obtained from\nthe Penn World Tables (PWT version 6.1). The variables in use include per worker\nincome in 1960 (y60) and 1995 (y95), average rate of growth between 1960 and\n1995 (gy), average",
+              "ref": "P29.8"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+              "ref": "P29.9"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "worker ln(y95), elements\nof the explanatory variable X = (x′\n1,x′\n2) include log investment rate ln(s) = x1\nand log physical capital effective rate of depreciation ln(np + 0.05) = x2, with\ncorresponding subscripted",
+              "ref": "P29.10"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

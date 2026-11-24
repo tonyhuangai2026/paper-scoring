@@ -1,0 +1,294 @@
+{
+  "agent": "agent_03",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "a7304907-6c7c-40e5-a8bc-61635ff501fe",
+  "finished_at": "2026-11-24T09:30:21.816591+00:00",
+  "paper": {
+    "id": "052",
+    "position": 6,
+    "title": "Exorbitant Privilege Gained and Lost Fiscal Implications",
+    "group": "组01",
+    "md_sha256": "a6cbe316763258e88929ff1202f783fef87fa7969b791bc335c9e408b68eda4d",
+    "pdf_sha256": "52ac9cfbea5eae852969c0ee223bc54f1f38540078b113d8a4c289765ec2ace9",
+    "ready": true
+  },
+  "pdf_pages": 49,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含摘要，以“We study three centuries of fiscal history...”开头，明确陈述研究问题、样本和主要发现。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "(seventeenth to eighteenth cen-\nturies), the United Kingdom (eighteenth to nineteenth centuries),\nand the United States (twentieth to twenty-ﬁrst centuries). When Dutch\nElectronically published October 16, 2025\nJournal",
+          "ref": "P1.4"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要主要陈述研究样本、核心发现和政策含义，没有明确宣称构建新模型、提出新概念、计量方法创新或证明模型性质等理论贡献。摘要提到“obtain a new measure”，但这是实证度量而非摘要明确表述的理论贡献。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+            "ref": "P2.1"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "the early stage, followed by bondholder losses and ﬁnancial re-\npression in the later stage.\nI.\nIntroduction\nThe international monetary system has been characterized by a hegemon\nconﬁguration, in which a single dominant",
+            "ref": "P2.2"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文使用英国1729–2020年、美国1793–2020年以及荷兰1601–1794/1817–1914年的历史财政、债务和利率数据，来源包括Bank of England“A Millennium of Macroeconomics Data”、Hall and Sargent (2021)、Ellison and Scott (2020)、Jordà-Schularick-Taylor数据库等，属于真实历史数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "same approach to analyze\nthe case of Holland and the Netherlands.\nII.\nThe Historical Cash Flow Dynamics:\nStylized Facts\nA.\nData and Fiscal Cash Flows\nFor the United Kingdom, we use annual data from 1729 to 2020. The",
+            "ref": "P9.9"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "main\nUK dataset we used is “A Millennium of Macroeconomics Data,” pub-\nlished by the Bank of England, which contains a broad set of historical\nmacroeconomic and ﬁnancial market data. Our historical (1793–1929)\nUS",
+            "ref": "P9.10"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "government ﬁnance data were taken from Hall and Sargent (2021),\nwhich contain detailed historical government ﬁnance information. We\nuse other datasets to complement the main dataset, as detailed in appen-\ndix A (apps.",
+            "ref": "P9.11"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "online) plots the same data against recession episodes, showing that\nspending/GDP, tax/GDP and surplus/GDP ratios are largely acyclical be-\nfore World War I.\nWe obtain the market value of the UK public debt data using",
+            "ref": "P12.3"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "the data\nconstructed by Ellison and Scott (2020), which contain the quantity and\nmarket price of every individual bond issued by the UK government start-\ning in 1694. We compute the market value by matching each bond’s",
+            "ref": "P12.4"
+          },
+          {
+            "source": "pdf",
+            "start": 14,
+            "end": 14,
+            "quote": "risk.8\nWe measure the government bond yield difference between the United\nKingdom and a set of 15 advanced economies on the gold standard:\nUnited States, Austria, Belgium, France, Germany, Netherlands, Japan,\nItaly,",
+            "ref": "P14.5"
+          },
+          {
+            "source": "pdf",
+            "start": 14,
+            "end": 14,
+            "quote": "Denmark, Finland, Norway, Portugal, Spain, Sweden, and Switzer-\nland. We use a short-term and a long-term interest rate series from the\nJordà-Schularick-Taylor macrohistory database ( Jordà et al. 2019). The\nshort rates",
+            "ref": "P14.6"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "论文明确构建了VAR模型来刻画税收、支出和宏观金融变量的动态，并基于VAR估计财政支持（fiscal backing）；同时报告了VAR系数、脉冲响应/预测表现以及财政支持的具体估计值（如英国战前债务仅约70.93%被未来盈余和铸币税支持，美国战后仅31.93%被支持）。因此既明确构建模型，也明确估计出模型系数/参数并给出量化结果。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "A.\nVAR Model of Cash Flow Dynamics\nWe propose a VAR model to capture the dynamics in expected cash ﬂows\nand discount rates in the economy.\nWe assume that the N \u0003 1 vector of state variables z follows a Gaussian",
+            "ref": "P29.1"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "ﬁrst-order VAR:\nzt 5 Ψzt21 1 ut 5 Ψzt21 1 Σ1=2εt,\n(8)\nwith N \u0003 N companion matrix Ψ and homoscedastic innovations ut ∼\ni:i:d: N (0, Σ). The Cholesky decomposition of the covariance matrix,\nΣ 5 Σ1=2(Σ1=2)0, has nonzero",
+            "ref": "P29.2"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "with εt ∼i:i:d: N (0, I). Table 4 summarizes the\nvariables we include in the state vector in order of appearance of the\nVAR. The vector z contains the state variables demeaned by their respec-\ntive sample averages.\nTo",
+            "ref": "P29.4"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "predictive ability for surpluses or debt returns. We include the\ndebt/GDP ratio for the United Kingdom in a robustness exercise dis-\ncussed in section V.G.\nB.\nTax and Spending Growth Forecasts\nIn appendix section C.1,",
+            "ref": "P30.4"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "we evaluate the forecasting performance of the\nVAR model. Overall, predictive accuracy of the VAR is similar to that of\nthe best linear forecast at the 5- and 10-year horizons. This evidence leads\nus to conclude that",
+            "ref": "P30.5"
+          },
+          {
+            "source": "pdf",
+            "start": 33,
+            "end": 33,
+            "quote": "of table 3, the average ﬁscal capacity including sei-\ngniorage in the pre-1914 period is 61.32%. This number is close to the\nsteady-state ﬁscal capacity estimate from section V.D and well below the\nobserved debt/GDP",
+            "ref": "P33.5"
+          },
+          {
+            "source": "pdf",
+            "start": 34,
+            "end": 34,
+            "quote": "year 2000,\nthe US dynamic ﬁscal capacity measure inclusive of seigniorage revenue\nis below the market value of debt. Future surpluses and convenience\nyields cover only 31.93% of outstanding US debt after World War II.",
+            "ref": "P34.5"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文同时具有理论建模（跨期政府预算约束、VAR动态、财政支持度量）和实证估计（历史数据、VAR系数、财政支持量化），因此走Step 3.2路径。核心自变量为政府债务的市场价值/债务-GDP比率及便利收益率/铸币税，核心因变量为未来基本盈余的现值（财政支持）。这些变量均属于宏观经济学、公共财政和国际金融领域的经管类变量，故判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "market value of government debt / debt-GDP ratio",
+          "economic": true,
+          "reason": "政府债务的市场价值或债务/GDP比率是公共财政和宏观金融的核心变量，衡量政府借款规模和债务负担，属于经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "the Dutch Republic in the seven-\nteenth and part of the eighteenth century. By comparing the market val-\nuation of government debt with the ﬁscal backing of the global hegemon,\nwe obtain a new measure of the exorbitant",
+              "ref": "P2.6"
+            },
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "approached 175% in the ﬁrst half of the nineteenth century.\nWas all of the UK government debt backed by future ﬁscal resources,\nthat is, primary surpluses? To answer this question, we measure the ﬁscal\nbacking as the",
+              "ref": "P3.3"
+            },
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "debt (marketable plus nonmarketable) from “A Millennium of Macro-\neconomics Data.” Figure 2 plots the evolution of the market value of the\npublic debt scaled by the UK GDP over time. Between 1914 and 1980,\nthe gap",
+              "ref": "P12.6"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "convenience yield / seigniorage revenue",
+          "economic": true,
+          "reason": "便利收益率和铸币税收入是国际金融中安全资产特权与政府融资成本的核心概念，属于经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "Indeed, UK government debt traded at yields\nbelow those of other countries also on the gold standard. The United\nKingdom earned a convenience yield of around 1% per year on its gov-\nernment debt prior to World War I. We",
+              "ref": "P3.8"
+            },
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "augment our measure of the\nUK ﬁscal backing to account for the seigniorage revenue earned from\nthis convenience yield. We ﬁnd that the revenue boost is not large\nenough to close the gap between the market value of",
+              "ref": "P3.9"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "V.H, with details in appendix F.\nB.\nConvenience Yields\nThe United Kingdom was the world’s safe asset supplier in the nineteenth\ncentury, allowing it to harvest seigniorage revenue on the sales of its\nbonds. We infer UK",
+              "ref": "P14.2"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "present discounted value of future primary surpluses (fiscal backing)",
+          "economic": true,
+          "reason": "未来基本盈余的现值即财政支持，是公共财政可持续性和政府预算约束的核心度量，属于经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "approached 175% in the ﬁrst half of the nineteenth century.\nWas all of the UK government debt backed by future ﬁscal resources,\nthat is, primary surpluses? To answer this question, we measure the ﬁscal\nbacking as the",
+              "ref": "P3.3"
+            },
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "present discounted value of future primary surpluses using\nthe approach developed by Jiang et al. (2024a). This approach measures\nthe expected present value of primary surpluses using a vector autoreg-\nression (VAR)",
+              "ref": "P3.4"
+            },
+            {
+              "source": "pdf",
+              "start": 17,
+              "end": 17,
+              "quote": "As shown in Jiang\net al. (2024a), the market value of the outstanding government bond port-\nfolio equals the present risk-adjusted discounted value of current and\nfuture primary surpluses:\nDt ; o\nH\nh50\nP $\nt (h)Q $",
+              "ref": "P17.3"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

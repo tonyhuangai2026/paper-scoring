@@ -48,31 +48,34 @@ def locations(section: dict) -> list[str]:
     return lines
 
 
+def step_details(heading: str, item: dict, key: str = "result") -> list[str]:
+    return [f"{heading}：{'是' if item[key] else '否'}。理由：{item['reason']}", *locations(item)]
+
+
 def details(record: dict) -> list[tuple[str, list[str]]]:
     result = record["judgment"]
-    abstract = result["abstract"]
-    theory = result["theory"]
-    empirical = result["empirical"]
-    field = result["field"]
-    theory_text = [f"1.1 摘要{'可识别' if abstract['found'] else '在 PDF 中仍无法识别'}。{abstract['reason']}", *locations(abstract)]
+    abstract, theory, empirical, field = (result[k] for k in ("abstract", "theory", "empirical", "field"))
+    theory_text = step_details("1.1 能否识别摘要", abstract, "found")
     if theory is None:
-        theory_text.append("跳过 1.2、1.3，理论未判断。")
-        empirical_text = ["因步骤 1.1 无法识别摘要，跳过 2.1、2.2，实证未判断。"]
+        theory_text.extend(["1.2 跳过：核查 PDF 后仍无法识别摘要。", "1.3 跳过：无法执行摘要理论贡献判断。"])
+        empirical_text = ["2.1 跳过：无可识别摘要，按规则跳过实证判断。", "2.2 跳过：按规则跳过整个 Step 2。"]
     else:
-        contribution = theory["contribution"]
-        proof = theory["derivations"]
-        real = empirical["real_data"]
-        estimated = empirical["estimated_model"]
-        theory_text.extend([f"1.2 {'有' if contribution else '无'}明确的理论贡献表述。",
-                            "1.3 跳过，摘要未明确提出理论贡献。" if proof is None else f"1.3 正文{'有' if proof else '无'}数学推导、引理、定理等。",
-                            f"结论：{'有理论' if contribution and proof else '无理论'}。{theory['reason']}", *locations(theory)])
-        empirical_text = [f"2.1 {'使用' if real else '未使用'}真实数据。",
-                          "2.2 跳过，未使用真实数据。" if estimated is None else f"2.2 {'满足' if estimated else '未满足'}明确构建模型并估计出系数。",
-                          f"结论：{'有实证' if real and estimated else '无实证'}。{empirical['reason']}", *locations(empirical)]
+        theory_text.extend(step_details("1.2 摘要是否明确提出理论贡献", theory["contribution"]))
+        if derivations := theory["derivations"]:
+            theory_text.extend(step_details("1.3 正文是否有数学推导、引理或定理等", derivations))
+        else:
+            theory_text.append("1.3 跳过：摘要未明确提出理论贡献。")
+        empirical_text = step_details("2.1 是否使用真实数据", empirical["real_data"])
+        if estimation := empirical["estimated_model"]:
+            empirical_text.extend(step_details("2.2 是否明确建模并估计出系数", estimation))
+        else:
+            empirical_text.append("2.2 跳过：未使用真实数据。")
     names = {"independent": "核心自变量", "dependent": "核心因变量", "central": "最核心变量"}
-    variables = [f"{names[v['role']]} {v['name']}（{'经管类' if v['economic'] else '非经管类'}）。{v['reason']}"
-                 for v in field["variables"]]
-    field_text = [f"路径 {record['field_path']}。{field['reason']}", *variables, *locations(field)]
+    field_text = [f"采用路径 {record['field_path']}，判为{record['label_two']}。理由：{field['reason']}"]
+    for variable in field["variables"]:
+        role, name = names[variable["role"]], variable["name"]
+        attribute = "经管类" if variable["economic"] else "非经管类"
+        field_text.extend([f"{role} {name}（{attribute}）。理由：{variable['reason']}", *locations(variable)])
     sources = {"md": "MD", "pdf": "PDF 文本", "pdf_image": "PDF 页图"}
     source_text = [" → ".join(sources[s] for s in record["modes"]) + f"。PDF 共 {record['pdf_pages']} 页。"]
     if record["image_pages"]:

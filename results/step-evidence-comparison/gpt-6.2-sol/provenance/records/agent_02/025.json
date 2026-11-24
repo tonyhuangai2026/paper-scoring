@@ -1,0 +1,328 @@
+{
+  "agent": "agent_02",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "c0a6858f-51bb-42b3-9b86-8d6b55d67650",
+  "finished_at": "2026-11-24T09:28:46.738753+00:00",
+  "paper": {
+    "id": "025",
+    "position": 3,
+    "title": "Efficiency and Equity Impacts of Urban Transportation Policies with Equilibrium Sorting",
+    "group": "组01",
+    "md_sha256": "02b60bb735d7ee300ba68e79b3f0c56bdc70031f4f8582f0098ac496b38ea534",
+    "pdf_sha256": "572765bdfb914741c3efb92a4195e98761d27142aa7b05b271aa3dc551870f53",
+    "ready": true
+  },
+  "pdf_pages": 45,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页作者署名后、引言首段之前的文字概述了研究目的、模型、数据和主要发现，并以 JEL 分类结尾，可以识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Andrew Waxman, Jing Wu, and Tianli \nXia*\nWe estimate an equilibrium sorting model of housing location and \ncommuting mode choice with endogenous traffic congestion to eval-\nuate urban transportation policies. Leveraging",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "­fine-scale data from \ntravel diaries and housing transactions identifying residents’ home \nand work locations, we recover rich preference heterogeneity over \nboth travel mode and residential location decisions. While",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "different \npolicies produce the same congestion reduction, their impacts on \nsocial welfare differ drastically. In addition, sorting undermines the \ncongestion reduction under driving restrictions and subway expan-\nsion",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "but strengthens it under congestion pricing. The combination \nof congestion pricing and subway expansion delivers the greatest \ncongestion relief and efficiency gains. (JEL H76, O18, P25, R23, \nR31, R41, R48)",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Transportation plays a crucial role in shaping the urban spatial structure and \nthe organization of economic activity. In many developing countries, rapid urban-\nization and motorization, together with poor",
+          "ref": "P1.6"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对完整摘要后，首句明确说本文估计一个纳入内生交通拥堵的均衡排序模型，后续概述偏好异质性的估计和政策结果。摘要交代了模型设定与用途，但未明确提出本文新建模型、创新估计方法或证明模型性质。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Andrew Waxman, Jing Wu, and Tianli \nXia*\nWe estimate an equilibrium sorting model of housing location and \ncommuting mode choice with endogenous traffic congestion to eval-\nuate urban transportation policies. Leveraging",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "­fine-scale data from \ntravel diaries and housing transactions identifying residents’ home \nand work locations, we recover rich preference heterogeneity over \nboth travel mode and residential location decisions. While",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "different \npolicies produce the same congestion reduction, their impacts on \nsocial welfare differ drastically. In addition, sorting undermines the \ncongestion reduction under driving restrictions and subway expan-\nsion",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "but strengthens it under congestion pricing. The combination \nof congestion pricing and subway expansion delivers the greatest \ncongestion relief and efficiency gains. (JEL H76, O18, P25, R23, \nR31, R41, R48)",
+            "ref": "P1.5"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文使用 2010 年和 2014 年北京居民出行调查，其中的出行日记记录受访者实际发生的行程及所用交通方式。论文还使用 2006 至 2014 年北京政府支持的住房按揭项目记录，其中包含实际住房交易的成交价格和借款人的工作地址。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "datasets for our analysis: (i) the Beijing Household Travel \nSurveys (BHTS) from 2010 and 2014 and (ii) housing mortgage data from ­2006–2014 \nwith detailed information on household demographics and the work addresses",
+            "ref": "P7.2"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "collected by \nthe Beijing Transportation Research Center to inform transportation policies and \nurban planning. It includes data on individual and household demographics and \na travel diary on all trips taken during the",
+            "ref": "P7.5"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "preceding 24 hours. The survey reports \ndetailed information for each trip by each commuting member of a household, \nincluding the origin and destination, departure and arrival time, trip purpose, and \ntravel mode used.",
+            "ref": "P7.6"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "3168\nTHE AMERICAN ECONOMIC REVIEW\nOCTOBER 2024\nHousing Transactions.—The data on housing transactions come from a major \n­government-sponsored mortgage program in Beijing and covers July 2006 to July \n2014. Virtually",
+            "ref": "P8.1"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "transaction in our data \ncorresponds to a mortgage application, and there are no refinancing loans in the sample.\nThe final dataset includes 77,696 mortgage transactions, with detailed informa-\ntion on housing",
+            "ref": "P8.3"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "attributes such as the property size, age, street address, transaction \nprice, and date when the mortgage was signed.7 As is reflective of the housing sup-\nply in urban China, most housing units are within housing",
+            "ref": "P8.4"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "and—critically for our analysis—the work addresses of \nthe primary borrower and the ­co-borrower if one is present. In our housing demand \nanalysis, we distinguish the borrowers by gender. We geocode the home and work",
+            "ref": "P8.6"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "建模方面，正文用方程（1）明确设定住房选择效用，用方程（3）明确设定通勤方式选择效用。系数估计方面，表 3 报告通勤方式模型的时间和货币成本系数，表 4 报告基于按揭数据估计的住房需求系数，包括男女借款人的通勤便利度系数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "the utility for household ​i​ choosing housing unit ​\nj​ is specified as\n(1)\t\n​ max​ \n​{ j∈​​i​}​​ ​U​ij​  =  ​α​i​ ​p​j​ + ​x​ j​ ' ​ ​β​i​ + ​∑ \nk\n​ ​ϕ​ik​ E​V​ijk​(​v​ijk​)​ + ​ξ​j​ + ​ε​ij​,​\n10 A more detailed",
+            "ref": "P13.14"
+          },
+          {
+            "source": "pdf",
+            "start": 15,
+            "end": 15,
+            "quote": "an individual in a household rather \nthan the whole household in this subsection. Individual ​i​’s utility of commuting \nfrom home ​j​ to work using mode choice ​m​ is specified as\n(3)\t\n​max​ \nm∈​​ij​​ ​ ​u​ijm​  =",
+            "ref": "P15.3"
+          },
+          {
+            "source": "pdf",
+            "start": 15,
+            "end": 15,
+            "quote": "​θ​im​ + ​γ​1i​ ⋅ tim​e​ijm​(​v​ij​)​ + ​γ​2​ ⋅ cos​t​ijm​/​y​i​ + ​𝐰​ ijm​ \n'  ​ η + ​ε​ijm​,​\nwhere ​​ij​ is the set of transportation modes available to individual ​i​’s work com-\nmute.15The ­mode-specific random",
+            "ref": "P15.4"
+          },
+          {
+            "source": "pdf",
+            "start": 18,
+            "end": 18,
+            "quote": "relationship. Online Appendix \nSection C includes further details.\nA.  Commuting Mode Choice\nThe parameters of the travel mode choices are estimated via simulated maximum \nlikelihood estimation (MLE) using household",
+            "ref": "P18.5"
+          },
+          {
+            "source": "pdf",
+            "start": 19,
+            "end": 19,
+            "quote": "provides the best fit, \nthough results are similar with two or four DF.\nTable 3—Estimation Results for Travel Mode Choices\nlogit\nRandom coefficient\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\nTravel time (​γ​1​)\n−1.194\n−0.270\n−0.191",
+            "ref": "P19.7"
+          },
+          {
+            "source": "pdf",
+            "start": 19,
+            "end": 19,
+            "quote": "(0.082)\n(0.006)\n(0.006)\nTravel cost/hourly wage (​γ​2​)\n−1.578\n−0.788\n−0.565\n−1.411\n−1.424\n−2.531\n(0.324)\n(0.028)\n(0.034)\n(0.041)\n(0.052)\n(0.065)\nRandom coefficients on travel time (​μ​γ​)\nTravel Time\n−0.955\n−0.885",
+            "ref": "P19.8"
+          },
+          {
+            "source": "pdf",
+            "start": 22,
+            "end": 22,
+            "quote": "0.026\nAge in ­30–45 × ln(home size)\n1.343\n0.014\n1.443\n0.026\n1.486\n0.030\nAge  ​>​  45 × ln(home size)\n2.394\n0.028\n2.665\n0.070\n2.746\n0.060\n​E​V​Male​\n0.708\n0.015\n0.755\n0.016\n​E​V​Female​\n0.833\n0.017\n0.893\n0.019\nRandom",
+            "ref": "P22.13"
+          },
+          {
+            "source": "pdf",
+            "start": 22,
+            "end": 22,
+            "quote": "coefficients\n​σ​(E​V​Male​)​\n0.379\n0.019\n​σ​(E​V​Female​)​\n0.482\n0.018\n­log-likelihood\n−206,829\n−170,057\n−168,808\nNotes: This table reports MLE estimates of the nonlinear parameters in housing demand using mortgage data",
+            "ref": "P22.14"
+          },
+          {
+            "source": "pdf",
+            "start": 22,
+            "end": 22,
+            "quote": "from \n­2006–2014 with 77,696 observations. The ­ease-of-commuting utility (​EV​) is constructed using column 6 of Table 3 \nvia equation (5). The first specification does not include ​EV​, the second specification does,",
+            "ref": "P22.15"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "实证判定成立，采用 Step 3.2。以连接交通部门和住房市场的住房需求方程为依据，通勤便利度效用是核心自变量，家庭住房区位选择是核心因变量。两者均属于经管类变量，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "ease-of-commute utility（通勤便利度效用，EV）",
+          "economic": true,
+          "reason": "该变量衡量家庭成员从候选住房出发、在可用交通方式中择优通勤所获得的期望效用，综合反映通勤时间、货币成本和出行偏好。它作为住房属性进入住房需求方程，衡量通勤条件对住房选择的经济价值。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "Commuting \nmembers within household ​i​ are denoted by ​k  ∈  ​{male borrower, female borrower}​ .13​ \nE​V​ijk​(​v​ijk​)​ is the expected commuting utility that member ​k​ in household ​i​ derives \nfrom the optimal",
+              "ref": "P14.2"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "commuting mode. It characterizes home ​j​’s attractiveness in terms \nof member ​k​’s work commute. Our notation makes it explicit that the commuting \nutility depends on the driving speed ​v​ijk​ of member ​k​’s work",
+              "ref": "P14.3"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "commute (which is \naffected by congestion) in addition to the travel cost. As shown in Section IIB below, \nthis commuting utility is our key innovation relative to traditional residential sorting \nmodels. Transportation",
+              "ref": "P14.4"
+            },
+            {
+              "source": "pdf",
+              "start": 16,
+              "end": 16,
+              "quote": "travel shocks) \nis defined as\n(5)\t\n​E​V​ij​(​v​ij​)​  =  ​피​​ε​ijm​​[​max​ \nm∈​​ij​​ ​ ​u​ijm​(​v​ij​)​]​\n​\t\n=  log​\n(\n​ ∑ \nm∈​​ij​\n​ \n \n  ​exp​{​θ​im​ + ​γ​1i​ tim​e​ijm​(​v​ij​)​ + ​γ​2​ cos​t​ijm​/​y​i​ + ​w​ ijm​",
+              "ref": "P16.4"
+            },
+            {
+              "source": "pdf",
+              "start": 16,
+              "end": 16,
+              "quote": "'  ​ η}​\n)\n​,​\nwhich is the ­ease-of-commute variable discussed in equation (1).\nC.  Market-Clearing Conditions and the Sorting Equilibrium\nIn the housing market, choices of individual households aggregate to total",
+              "ref": "P16.5"
+            },
+            {
+              "source": "pdf",
+              "start": 21,
+              "end": 21,
+              "quote": "demand using the mortgage data. The \n­ease-of-commute variable ​E ​V​ij​ that is derived from travel mode choices enters the \nhousing demand equation (1) as an observed housing attribute. Similar approaches \nthat nest",
+              "ref": "P21.9"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Housing Location Choice（家庭住房区位选择）",
+          "economic": true,
+          "reason": "该变量衡量家庭从候选住房中购买哪一套，模型用各套住房被选中的概率刻画这一决策。个体选择汇总形成住房需求，因此该变量属于房地产市场中的消费者选择变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "burden, we follow a ­choice-based \nsampling strategy as in Bayer, Keohane, and Timmins (2009). The choice set for \na household is assumed to include the purchased home and a 1 percent sample of \nhouses randomly chosen",
+              "ref": "P10.7"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "from those sold during a ­two-month window around the \npurchase date.8 Section IIIB conducts robustness analyses using different choice \n8 ­Choice-based sampling has been shown to yield consistent results in Wasi",
+              "ref": "P10.8"
+            },
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "the utility for household ​i​ choosing housing unit ​\nj​ is specified as\n(1)\t\n​ max​ \n​{ j∈​​i​}​​ ​U​ij​  =  ​α​i​ ​p​j​ + ​x​ j​ ' ​ ​β​i​ + ​∑ \nk\n​ ​ϕ​ik​ E​V​ijk​(​v​ijk​)​ + ​ξ​j​ + ​ε​ij​,​\n10 A more detailed",
+              "ref": "P13.14"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "probability that household ​i​ chooses home ​j​ is denoted \nby\n(2)\t\n​P​ij​(p, v)​  =  h​(𝐄𝐕​(𝐯)​, 𝐩, 𝐱, ξ, ​𝐳​i​)​,​\nwhere p and v denote the vector of prices for all properties and driving speeds for all \nindividuals’",
+              "ref": "P14.11"
+            },
+            {
+              "source": "pdf",
+              "start": 16,
+              "end": 16,
+              "quote": "probabilities ​P​ij​ give rise to the aggregate \nhousing demand:\n\t\n​D​j​(p, 𝐯)​  =  ​∑ \ni​ ​P​ij​(p, 𝐯)​,    ∀ j,​\nwhich depends on the vector of housing prices p as well as the vector of the driv-\ning speeds v (through",
+              "ref": "P16.10"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

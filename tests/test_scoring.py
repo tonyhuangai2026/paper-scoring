@@ -20,6 +20,7 @@ import pymupdf
 from paper_scoring.cli import write_assignment
 from paper_scoring.judge import RUBRIC, InvalidResult, check_evidence, classify
 from paper_scoring.materials import ScoringError, Settings, load_manifest
+from paper_scoring.reports import details
 
 
 IDS = ["017", "020", "025", *(f"{n:03d}" for n in range(27, 44))]
@@ -28,20 +29,26 @@ QUOTE = "Evidence in the synthetic paper."
 
 
 def judgment(source: str, theory: bool = False, empirical: bool = True, unknown: bool = False) -> dict:
-    evidence = [{"source": source, "start": 1, "end": 1, "quote": QUOTE}]
+    def evidence():
+        return [{"source": source, "start": 1, "end": 1, "quote": QUOTE}]
+
+    def step(result):
+        return {"result": result, "reason": "已核对本步证据。", "evidence": evidence()}
+
+    def variable(role, name, economic):
+        return {"role": role, "name": name, "economic": economic, "reason": "变量属性理由。", "evidence": evidence()}
+
     if theory and not empirical:
         variables = []
     elif empirical and not unknown:
-        variables = [{"role": "independent", "name": "Price", "economic": True, "reason": "价格为经管变量。"},
-                     {"role": "dependent", "name": "Output", "economic": False, "reason": "示例因变量。"}]
+        variables = [variable("independent", "Price", True), variable("dependent", "Output", False)]
     else:
-        variables = [{"role": "central", "name": "Price", "economic": True, "reason": "价格为经管变量。"}]
-    return {"status": "ok", "abstract": {"found": not unknown, "reason": "已核对摘要。", "evidence": evidence},
-            "theory": None if unknown else {"contribution": theory, "derivations": True if theory else None,
-                                            "reason": "按摘要和正文推导判断。", "evidence": evidence},
-            "empirical": None if unknown else {"real_data": empirical, "estimated_model": True if empirical else None,
-                                               "reason": "已核对数据和估计。", "evidence": evidence},
-            "field": {"reason": "按正文的变量判断。", "variables": variables, "evidence": evidence if variables else []}}
+        variables = [variable("central", "Price", True)]
+    return {"status": "ok", "abstract": {"found": not unknown, "reason": "已核对摘要。", "evidence": evidence()},
+            "theory": None if unknown else {"contribution": step(theory), "derivations": step(True) if theory else None},
+            "empirical": None if unknown else {"real_data": step(empirical), "estimated_model": step(True) if empirical else None},
+            "field": {"reason": "按正文的变量判断。", "variables": variables}}
+
 
 
 class RuleTests(unittest.TestCase):
@@ -62,6 +69,33 @@ class RuleTests(unittest.TestCase):
         bad["theory"]["derivations"] = False
         with self.assertRaises(InvalidResult):
             classify(bad, "md")
+
+    def test_each_executed_step_and_variable_requires_its_own_evidence(self):
+        for parent, child in (("theory", "contribution"), ("theory", "derivations"),
+                              ("empirical", "real_data"), ("empirical", "estimated_model")):
+            with self.subTest(step=child):
+                result = judgment("md", theory=True, empirical=True)
+                result[parent][child]["evidence"] = []
+                with self.assertRaises(InvalidResult):
+                    classify(result, "md")
+        result = judgment("md")
+        result["field"]["variables"][1]["evidence"] = []
+        with self.assertRaises(InvalidResult):
+            classify(result, "md")
+
+    def test_report_lists_executed_steps_and_skip_reasons(self):
+        for result, pdf, expected in (
+            (judgment("md", theory=True, empirical=False), False, ("1.3 正文是否有", "2.2 跳过：未使用真实数据")),
+            (judgment("md"), False, ("1.3 跳过：摘要未明确提出理论贡献", "2.2 是否明确建模并估计出系数")),
+            (judgment("pdf", unknown=True), True, ("1.2 跳过", "1.3 跳过", "2.1 跳过", "2.2 跳过")),
+        ):
+            mode = "pdf" if pdf else "md"
+            _, label_two, path = classify(result, mode)
+            report = details({"judgment": result, "field_path": path, "label_two": label_two,
+                              "modes": [mode], "pdf_pages": 1, "image_pages": []})
+            report_text = "\n".join(line for _, lines in report for line in lines)
+            for phrase in expected:
+                self.assertIn(phrase, report_text)
 
     def test_evidence_must_match_location_and_page_scope(self):
         good = judgment("md")
@@ -144,8 +178,8 @@ def fake_gateway():
                     result = {"status": "needs_pdf", "reason": "请核查 PDF。", "pages": []}
                 elif paper == "020":
                     result = judgment("pdf", unknown=True)
-                    for section in ("abstract", "field"):
-                        result[section]["evidence"] = [{"ref": "P1.1"}]
+                    result["abstract"]["evidence"] = [{"ref": "P1.1"}]
+                    result["field"]["variables"][0]["evidence"] = [{"ref": "P1.1"}]
                 elif paper == "025" and mode == "pdf":
                     result = {"status": "needs_pdf", "reason": "请核查页图。", "pages": [1]}
                 elif paper == "025" and state["fail_images"]:

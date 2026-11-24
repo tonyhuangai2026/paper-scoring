@@ -1,0 +1,259 @@
+{
+  "agent": "agent_09",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "ea14727c-7e1f-4056-a4d1-07e6e53aedf4",
+  "finished_at": "2026-11-24T09:42:02.017350+00:00",
+  "paper": {
+    "id": "059",
+    "position": 7,
+    "title": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE",
+    "group": "组01",
+    "md_sha256": "532ac7d494f1ef7ee6ba8e184fb4a291f961eb1d875842339166363ce4da0137",
+    "pdf_sha256": "bcab122a56856e2c17504eccdede96d9f82f1c9e1338000d284605efb7a9f42a",
+    "ready": true
+  },
+  "pdf_pages": 42,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含摘要，以“We propose a series-based nonparametric specification test...”开头，明确陈述研究内容。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Econometric Theory, 40, 2024, 278–319.\ndoi:10.1017/S0266466622000445\nCONSISTENT SPECIFICATION\nTESTING UNDER SPATIAL\nDEPENDENCE\nABHIMANYU GUPTA\nUniversity of Essex\nXI QU\nShanghai Jiao Tong University\nWe propose a",
+          "ref": "P1.1"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+          "ref": "P1.2"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提出本文的理论贡献：提出基于级数的非参数设定检验，并在新的平滑空间依赖条件下证明检验统计量渐近标准正态，同时建立增维线性过程中二次型的中心极限定理。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "increasing dimension,\nsemiparametric or any combination thereof, thus covering a vast variety of settings.\nThese include spatial error models of varying types and levels of complexity. Under\na new smooth spatial",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "dependence condition, our test statistic is asymptotically\nstandard normal. To prove the latter property, we establish a central limit theorem for\nquadratic forms in linear processes in an increasing dimension setting.",
+            "ref": "P1.4"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文包含大量数学推导、引理、定理和证明，例如Proposition 4.1、Theorem 4.1–4.4、Theorem 5.1–5.3、Theorem 6.1–6.3，以及附录中的详细证明。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "continuous or,\nequivalently, a bounded linear operator, a property that makes Assumption R.5\nmore reasonable.\nThe following proposition is very useful in “linearizing” perturbations in\nthe \b(·).\nProposition 4.1. If",
+            "ref": "P10.5"
+          },
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "R.3, Assumption R.8 implies\nsupγ ∈\t\n\r\nϕ\n\u0005\nn−1\u000f′\b(γ )−1\u000f\n\u0006\u000e−1\n= Op(1).\nTheorem 4.1. Under either H0 or H1, Assumptions R.1–R.8, and p−1 +\n\u0005\ndγ +p\n\u0006\n/n →0 as n →∞,\n\f\f\u0005\n\nγ, ˆσ 2\u0006\n−\n\u0005\nγ0,σ 2\n0\n\u0006\f\f\np\n−→0.\n4.2. Asymptotic",
+            "ref": "P11.6"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "= 1,...,n and j = 1,...,p.\nThe next theorem establishes the asymptotic normality of the approximating\nquadratic form introduced above.\nTheorem 4.3. Under Assumptions R.3, R.4, R.8, and R.11–R.13 and p−1 +\np3/n →0, as n",
+            "ref": "P12.5"
+          },
+          {
+            "source": "pdf",
+            "start": 31,
+            "end": 31,
+            "quote": "results in the literature and future work might combine\nboth aspects.\nA. APPENDIX: Proofs of Theorems and Propositions\nProof of Proposition 4.1. Because the map \b : \to →Mn×n is Fréchet-differentiable\non \to, it is also",
+            "ref": "P31.2"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文第9节使用三个真实数据实证例子：刚果冲突联盟数据（König et al., 2017）、美国企业R&D溢出数据（Bloom et al., 2013）和跨国经济增长数据（Ertur and Koch, 2007），均为真实经济数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 24,
+            "end": 24,
+            "quote": "examples.\n9.1. Conflict Alliances\nThis example is based on a study of how a network of military alliances and\nenmities affects the intensity of a conflict, conducted by König et al. (2017). They\nstress that",
+            "ref": "P24.7"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "302\nABHIMANYU GUPTA AND XI QU\nempirical analysis using data on the Second Congo War, a conflict that involves\nmany groups in a complex network of informal alliances and rivalries.\nTo study the fighting effort of each",
+            "ref": "P25.1"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+            "ref": "P26.6"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "regional incomes.\nIn this section, we want to test the linear SAR model specification in Ertur and\nKoch (2007). Their dataset covers a sample of 91 countries over the period of\n1960–1995, originally from Heston,",
+            "ref": "P29.7"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "论文明确构建了SARARMA等空间计量模型，并在实证部分报告了模型系数估计值（如Table 6、Table 7、Table 8、Table 9中的系数估计和p值），同时计算了检验统计量。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n303\nTable 6. The estimates and test statistics for the conflict data.\n1998\nPooled\nH0\np-value\nH1\np-value\nH0\np-value\nH1\nSARARMA(2,1,0)\nWAy\n−0.005\n<0.001\n−0.003",
+            "ref": "P26.1"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "304\nABHIMANYU GUPTA AND XI QU\nTable 7. The estimates and test statistics for the R&D data, SARARMA(0,1,0).\nVariables\nFE\nSARARMA(0,1,0), WTEC\np-value\nH0\np-value\nH1\np-value\nln(Spsic)\n−0.005\n0.649\n0.007\n0.574\n0.015\n0.166",
+            "ref": "P27.1"
+          },
+          {
+            "source": "pdf",
+            "start": 28,
+            "end": 28,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n305\nTable 8. The estimates and test statistics for the R&D data,\nSARARMA(0,2,0) and Error MESS(2).\nVariables\nSARARMA(0,2,0)\nH0\np-value\nH1\np-value\nln(Spsic)\n0.009",
+            "ref": "P28.1"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n307\nTable 9. The estimates and test statistics of the linear SAR model for the\ngrowth data.\nVariable\nw∗\nij = d−2\nij\nfor i̸ = j\nw∗\nij = e−2dij for i̸ = j\nEstimate",
+            "ref": "P30.1"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文为“有理论、有实证”，按Step 3.2判断核心自变量和核心因变量是否至少有一个为经管类变量。核心因变量为冲突强度、企业销售/生产率、人均收入等经济变量，核心自变量包括R&D、资本、劳动力、投资率等经济变量，均属经管类变量，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "dependent",
+          "name": "fighting efforts of each group",
+          "economic": true,
+          "reason": "衡量冲突中各集团的战斗投入，属于政治经济学/冲突经济学中的经济行为变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "ij = 1 if groups i and j\nare allies, and WA\nij = 0 otherwise) and WE (WE\nij = 1 if groups i and j are enemies,\nand WE\nij = 0 otherwise):\ny = λ1WAy+λ2WEy+1nβ0 +Xβ +u,\nwhere y is a vector of fighting efforts of each group",
+              "ref": "P25.4"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "R&D stock",
+          "economic": true,
+          "reason": "研发资本存量，是衡量企业创新投入的核心经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "sales (lny)",
+          "economic": true,
+          "reason": "企业销售额，是衡量企业市场表现的核心经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "investment rate (s)",
+          "economic": true,
+          "reason": "投资率，是宏观经济增长分析中的核心经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "Summers, and Aten (2002), obtained from\nthe Penn World Tables (PWT version 6.1). The variables in use include per worker\nincome in 1960 (y60) and 1995 (y95), average rate of growth between 1960 and\n1995 (gy), average",
+              "ref": "P29.8"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "log real income per worker (ln(y95))",
+          "economic": true,
+          "reason": "人均实际收入，是衡量经济发展水平的核心经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+              "ref": "P29.9"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

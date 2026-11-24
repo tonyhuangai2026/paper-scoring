@@ -1,0 +1,351 @@
+{
+  "agent": "agent_07",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "9ce5351f-b70d-4855-96a0-e4b63cd1fb15",
+  "finished_at": "2026-11-24T09:54:06.819062+00:00",
+  "paper": {
+    "id": "271",
+    "position": 18,
+    "title": "Political Connections and the Transition to Low‐carbon Energy Sources in China Evidence from a Quasi‐natural Experiment",
+    "group": "组01",
+    "md_sha256": "f646bd4cc3b86f79cf179c8b7e053aa173beedce3125dc1366f860028e7b0cae",
+    "pdf_sha256": "9a49a9afa3280b9479ade5b0ecac011d429b81beaa862964f8b3768e6f327bb5",
+    "ready": true
+  },
+  "pdf_pages": 19,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 首页标题之后、关键词之前的段落完整概述了研究问题、数据、准自然实验、估计方法与主要发现，可识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "JING SHI, JIANLEI HAN, MARTINA LINNENLUECKE, AND TOM SMITH\nPolitical Connections and the Transition to\nLow-carbon Energy Sources in China:\nEvidence from a Quasi-natural Experiment\nWe extend existing research on",
+          "ref": "P1.1"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "political connections to test their role in\nfacilitating or hindering the transition to low-carbon energy in China.\nThis paper uses hand-collected evidence on political connections from the\nrésumés of executives and",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "enactment of China’s 2013 Action Plan on Air Pollution\nPrevention and Control (the Action Plan) as a quasi-natural experiment. The\nplan favoured low-carbon energy sources over traditional energy sources.\nUsing a",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "difference-in-differences methodology, we investigate the impact of\nthese political connections on ﬁrm performance before and after the country\nissued the 2013 Action Plan. Our results suggests that low-carbon energy",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "business-state ties have improved ﬁrm\nperformance in sectors targeted by government policy.\nKey words: China; Energy transition; Low-carbon energy; Political\nconnections; Quasi-natural experiment.\nEmpirical evidence",
+          "ref": "P1.9"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核查了首页摘要全文。摘要将研究贡献表述为检验政治关联在低碳能源转型中的作用，并说明利用 2013 年行动计划开展准自然实验、采用双重差分法估计企业绩效变化。摘要未明确提出新理论模型、新概念、计量方法创新或数学证明。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "JING SHI, JIANLEI HAN, MARTINA LINNENLUECKE, AND TOM SMITH\nPolitical Connections and the Transition to\nLow-carbon Energy Sources in China:\nEvidence from a Quasi-natural Experiment\nWe extend existing research on",
+            "ref": "P1.1"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "political connections to test their role in\nfacilitating or hindering the transition to low-carbon energy in China.\nThis paper uses hand-collected evidence on political connections from the\nrésumés of executives and",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "directors of energy ﬁrms operating across clean and\nemissions-intensive (i.e., fossil-fuel intensive) sectors in China. To obtain\nexogenous variation in the transition towards low-carbon energy sources, we\nexploit the",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "enactment of China’s 2013 Action Plan on Air Pollution\nPrevention and Control (the Action Plan) as a quasi-natural experiment. The\nplan favoured low-carbon energy sources over traditional energy sources.\nUsing a",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "difference-in-differences methodology, we investigate the impact of\nthese political connections on ﬁrm performance before and after the country\nissued the 2013 Action Plan. Our results suggests that low-carbon energy",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "implementation of\nthe Action Plan, suggesting that political connections have also led to longer-\nterm ﬁnancial beneﬁts. Our results provide evidence that, as the transition to\nlow-carbon energy proceeded,",
+            "ref": "P1.8"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "business-state ties have improved ﬁrm\nperformance in sectors targeted by government policy.\nKey words: China; Energy transition; Low-carbon energy; Political\nconnections; Quasi-natural experiment.\nEmpirical evidence",
+            "ref": "P1.9"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "样本来自 2009 至 2019 年的中国 A 股能源上市公司。作者从 CSMAR 获取高管履历和企业财务数据，使用公司年报与网站等资料交叉核对履历，并逐年编码政治关联。这些数据记录了实际企业、高管任职经历及财务表现。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "DATA\nTo empirically test the models speciﬁed above, we ﬁrst identiﬁed the energy ﬁrms to be\nincluded in our sample from those that are Chinese A-Share (publicly) ﬁrms over the\nperiod 2009–2019. To identify Chinese",
+            "ref": "P9.1"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "directors. Speciﬁcally, and to identify whether a ﬁrm is politically connected, we\ncollected the CEO’s and chairman’s biographical information from the CSMAR\ndatabase. We then cross-checked the biographical information",
+            "ref": "P10.6"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "against the ﬁrm’s\nannual report, website, and the online search engines baidu.com, and ﬁnance.sina.\ncom.cn (publishing comprehensive ﬁnancial information about Chinese publicly listed\nﬁrms). We identiﬁed a ﬁrm as",
+            "ref": "P10.7"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "listed on the stock exchange to reﬂect any changes\nin\nthe\nexecutive\nleadership\nof\na\ncompany.\nWe\nhand-coded\nany\npolitical\nconnections as a binary indicator variable set equal to one in years when the CEO\nor chairman in",
+            "ref": "P10.11"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "the focal ﬁrm had served as a chief ofﬁcer or deputy chief ofﬁcer at\na county level in China or above, and zero otherwise. For the purposes of\nrobustness, we constructed a second measure of political connectedness,",
+            "ref": "P10.12"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "ﬁnancial information for the companies in our sample\nfrom the China Stock Market & Accounting Research Database (CSMAR), which\nprovides comprehensive information for Chinese listed ﬁrms. We obtained all\nrequired",
+            "ref": "P10.14"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "ﬁnancial information from the CSMAR database to estimate our models\nabove, including each ﬁrm’s operating performance return on total asset (ROA),\nreturn on equity (ROE), and ﬁnancial performance Tobin’s Q (Q). We also",
+            "ref": "P10.15"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "正文明确构建了双重差分回归模型。式（1）纳入低碳能源企业指标与政策后指标的交互项，式（2）进一步纳入低碳能源企业、政策后时期与政治关联的三重交互项。结果表明确报告了系数估计，表 7 中该三重交互项对 ROA、ROE 和 Q 的估计系数分别为 0.018、0.066 和 −0.308。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "and control conditions (i.e., having or not having political connections) to\nclarify causation, similar to an experimental setting.2\nOur initial difference-in-differences model is deﬁned as follows:\nPerformancei,t ¼",
+            "ref": "P6.12"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "αþβLow_Carbon*Posti,t þγLow_Carboni þθControlsi,t þYearFE\nþei,t,\nð1Þ\n2\nOne common limitation of using a policy change as a shock is that the policy might be driven by a\nchange in social norms, which could simultaneously",
+            "ref": "P6.13"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "PC, that equals one if\nthe ﬁrm is politically connected, and zero otherwise. We then estimate the model\nas follows:\nPerformancei,t ¼ αþβ1Low_Carbon*Post*PCi,t þβ2Low_Carbon*Posti,t\nþβ3Low_Carbon*PCi,t þβ4Post*PCi,t",
+            "ref": "P7.12"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "þγLow_Carboni\nþθControlsi,t þYearFEþei,t\nð2Þ\nAs for Equation (1) above, performance refers to the performance proxies ROA,\nROE, or Q. Low_Carbon is a dummy variable that equals one if the ﬁrm is a low-\ncarbon energy",
+            "ref": "P7.13"
+          },
+          {
+            "source": "pdf",
+            "start": 15,
+            "end": 15,
+            "quote": "favourable outcomes for the\npolitically connected low-carbon ﬁrms.\nTABLE 7\nCOMPARISON OF POLITICALLY CONNECTED AND NON-CONNECTED FIRMS\nDependent Variable\nPerformance\nROA\nROE\nQ\n(1)\n(2)\n(3)\nLow_Carbon\u0002Post\u0002PC\n0.018*",
+            "ref": "P15.3"
+          },
+          {
+            "source": "pdf",
+            "start": 15,
+            "end": 15,
+            "quote": "0.066**\n–0.308**\n(1.860)\n(2.032)\n(–2.024)\nLow_Carbon\u0002Post\n0.029**\n0.047\n0.328*\n(2.708)\n(1.562)\n(1.843)\nLow_Carbon\u0002 PC\n0.010\n–0.005\n0.117\n(0.834)\n(–0.162)\n(0.616)\nPost\u0002PC\n–0.008\n–0.032\n0.115\n(–0.967)\n(–1.362)\n(0.819)",
+            "ref": "P15.4"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文使用真实企业数据构建并估计回归模型，适用步骤 3.2。核心自变量刻画企业政商关系在政策实施后的作用，核心因变量衡量企业盈利能力和市场估值，判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Low_Carbon × Post × PC",
+          "economic": true,
+          "reason": "该交互项标识政策实施后具有政治关联的低碳能源企业观测。其中，PC 依据企业 CEO 或董事长是否曾担任中国县级或以上的正职或副职官员编码。该变量将管理层所体现的企业政商关系置于产业政策背景下，用于衡量政治关联对应的企业绩效差异，属于企业管理与政治经济学变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "PC, that equals one if\nthe ﬁrm is politically connected, and zero otherwise. We then estimate the model\nas follows:\nPerformancei,t ¼ αþβ1Low_Carbon*Post*PCi,t þβ2Low_Carbon*Posti,t\nþβ3Low_Carbon*PCi,t þβ4Post*PCi,t",
+              "ref": "P7.12"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "þγLow_Carboni\nþθControlsi,t þYearFEþei,t\nð2Þ\nAs for Equation (1) above, performance refers to the performance proxies ROA,\nROE, or Q. Low_Carbon is a dummy variable that equals one if the ﬁrm is a low-\ncarbon energy",
+              "ref": "P7.13"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "ﬁrm. Post is a dummy variable that equals one if the year is greater\nthan 2013, and zero otherwise. YearFE denotes the year ﬁxed effect. The control\nvariables remain the same as for Equation (1). β1 captures whether the",
+              "ref": "P7.14"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "anti-\npollution policy has different effect on ﬁrms with or without political connection.\nABACUS\n608\n© 2024 The Author(s). Abacus published by John Wiley & Sons Australia, Ltd on behalf of Accounting Foundation,\nThe",
+              "ref": "P7.15"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "listed on the stock exchange to reﬂect any changes\nin\nthe\nexecutive\nleadership\nof\na\ncompany.\nWe\nhand-coded\nany\npolitical\nconnections as a binary indicator variable set equal to one in years when the CEO\nor chairman in",
+              "ref": "P10.11"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "the focal ﬁrm had served as a chief ofﬁcer or deputy chief ofﬁcer at\na county level in China or above, and zero otherwise. For the purposes of\nrobustness, we constructed a second measure of political connectedness,",
+              "ref": "P10.12"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ROA",
+          "economic": true,
+          "reason": "资产收益率为净利润除以总资产，衡量企业利用资产获得利润的能力，属于企业经营绩效指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "þγLow_Carboni\nþθControlsi,t þYearFEþei,t\nð2Þ\nAs for Equation (1) above, performance refers to the performance proxies ROA,\nROE, or Q. Low_Carbon is a dummy variable that equals one if the ﬁrm is a low-\ncarbon energy",
+              "ref": "P7.13"
+            },
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "Equation (1) above. The\nresults of Equation (1) are reported in Table 4. Columns (1) to (3) report the results\nTABLE 3\nVARIABLE DEFINITIONS\nVariable\nDeﬁnition\nDependent Variables\nROA\nNet income divided by total assets.",
+              "ref": "P11.8"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ROE",
+          "economic": true,
+          "reason": "净资产收益率为净利润除以所有者权益，衡量股东账面资本的盈利水平，属于企业财务绩效指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "þγLow_Carboni\nþθControlsi,t þYearFEþei,t\nð2Þ\nAs for Equation (1) above, performance refers to the performance proxies ROA,\nROE, or Q. Low_Carbon is a dummy variable that equals one if the ﬁrm is a low-\ncarbon energy",
+              "ref": "P7.13"
+            },
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "ROE\nNet income divided by total equity.\nQ\nA ﬁrm’s market-to-book ratio.\nIndependent Variables\nLow_Carbon\nAn indicator variable that equals one if the company belongs to the low-\ncarbon energy sector, that is, if the ﬁrm",
+              "ref": "P11.9"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Tobin’s Q (Q)",
+          "economic": true,
+          "reason": "论文用企业市值账面比衡量 Tobin’s Q，反映市场估值相对于账面价值的水平，属于公司金融中的估值指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "ﬁnancial information from the CSMAR database to estimate our models\nabove, including each ﬁrm’s operating performance return on total asset (ROA),\nreturn on equity (ROE), and ﬁnancial performance Tobin’s Q (Q). We also",
+              "ref": "P10.15"
+            },
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "ROE\nNet income divided by total equity.\nQ\nA ﬁrm’s market-to-book ratio.\nIndependent Variables\nLow_Carbon\nAn indicator variable that equals one if the company belongs to the low-\ncarbon energy sector, that is, if the ﬁrm",
+              "ref": "P11.9"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

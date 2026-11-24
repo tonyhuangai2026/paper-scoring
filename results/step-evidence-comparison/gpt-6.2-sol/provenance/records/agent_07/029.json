@@ -1,0 +1,329 @@
+{
+  "agent": "agent_07",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "9ce5351f-b70d-4855-96a0-e4b63cd1fb15",
+  "finished_at": "2026-11-24T09:47:54.146346+00:00",
+  "paper": {
+    "id": "029",
+    "position": 4,
+    "title": "Regulating Conglomerates Evidence from an Energy Conservation Program in China",
+    "group": "组01",
+    "md_sha256": "341b0aca02a932d1a1d6283ea8e0fff87dddce2e7cb6efc6ece4017a159e3e3b",
+    "pdf_sha256": "884cd484c8e6fc3452839833008d77b7f2fe8b09c08d8ff50655157a4635e9be",
+    "ready": true
+  },
+  "pdf_pages": 40,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页作者署名之后、JEL 分类之前的段落概述了研究问题、数据、方法、主要发现和政策分析，可识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Carlos Suárez Serrato, and Daniel Yi Xu*\nWe study a prominent energy regulation affecting large Chinese man-\nufacturers that are part of broader conglomerates. Using detailed \n­firm-level data and",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "­difference-in-differences research designs, we \nshow that regulated firms cut output and shifted some production \nto unregulated firms within their conglomerate instead of improv-\ning their energy efficiency. To",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "account for conglomerate and market \nspillovers, we interpret these results through the lens of an indus-\ntry equilibrium model featuring conglomerate production. The pol-\nicy raises welfare if the ­per ton benefits of",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "carbon reduction exceed \n$161. Alternative policies that exploit public information on busi-\nness networks can increase aggregate energy savings by 10 percent.  \n(JEL D22, L22, L51, L60, P28, P31, Q48)\nBalancing",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对完整摘要后，摘要明确说明借助包含企业集团生产的行业均衡模型解释实证结果，并报告福利和替代政策分析。摘要未明确声称本文构建了新模型、提出了新概念、创新了计量方法或推导了模型性质。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "­difference-in-differences research designs, we \nshow that regulated firms cut output and shifted some production \nto unregulated firms within their conglomerate instead of improv-\ning their energy efficiency. To",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "account for conglomerate and market \nspillovers, we interpret these results through the lens of an indus-\ntry equilibrium model featuring conglomerate production. The pol-\nicy raises welfare if the ­per ton benefits of",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "carbon reduction exceed \n$161. Alternative policies that exploit public information on busi-\nness networks can increase aggregate energy savings by 10 percent.  \n(JEL D22, L22, L51, L60, P28, P31, Q48)\nBalancing",
+            "ref": "P1.5"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "研究使用国家发展和改革委员会公布的受监管企业名单、由地方环保机构采集并接受环保部门审核的企业能耗记录、国家统计局工业企业调查中的产出和财务数据，以及工商登记数据库中的股东信息。这些数据记录了实际企业的经营、能耗和所有权关系。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "­firm-level pro-\nduction and energy use. We obtain the list of firms in the Top 1,000 and Top 10,000 \nprograms from the National Development and Reform Commission. We then col-\nlect detailed information on firm energy",
+            "ref": "P8.13"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "consumption from 2001 to 2010 from \nChina’s Environmental Statistics Database (CESD), provided by China’s Ministry \nof Environmental Protection (CMEP 1998–2010). These data allow us to measure \n5 Supplemental Appendix A",
+            "ref": "P8.14"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "416\nTHE AMERICAN ECONOMIC REVIEW\nFEBRUARY 2025\nthe effects of the regulation on the production and energy use of Top 1,000 and Top \n10,000 firms. The CESD data are primarily collected by local environmental agen-\ncies",
+            "ref": "P9.1"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "and focus on polluting enterprises. These data are subject to audits by environ-\nmental protection agencies at both the local and national levels and cover the vast \nmajority of Top 1,000 firms and a subset of Top",
+            "ref": "P9.2"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "10,000 firms.\nWe complement these data with two additional datasets. First, we use data on \nfirm characteristics from the Annual Survey of Industrial Firms (ASIF) from the \nNational Bureau of Statistics (NBS ­1998–2009,",
+            "ref": "P9.3"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "­2011–2013).6 This dataset provides \ndetailed information on a firm’s industry, address, ownership, output, and financial \ninformation and covers all industrial firms with annual revenue above ¥5 million \n(approximately",
+            "ref": "P9.4"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "Administrative \nRegistration Database (CARD) (SAIC ­1949–2018). These data are collected by the \nState Administration of Industry and Commerce and list the registration information \nof all firms in China starting in",
+            "ref": "P9.9"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "1980, including firm name, registration number, date \nof establishment, address, ownership, registered capital, and related legal persons. \nImportantly, the data provide detailed shareholder information, which allows us",
+            "ref": "P9.10"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "正文式（2）明确建立了双重差分回归，包含处理组与政策实施后时期的交互项、企业控制变量和固定效应。表 1 明确报告了交互项的估计系数，例如第 4 列的能源使用系数为 −0.128，企业产出系数为 −0.145。第 V 节还用矩估计法估计了结构模型参数，并在表 4 报告了估计值。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "the explosive growth in the energy use of regulated firms.\nWe quantify the effects of the policy by estimating ­difference-in-differences \nspecifications of the form\n(2)\t\n​Y​ijkt​  =",
+            "ref": "P11.14"
+          },
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "β Trea​t​i​ × Pos​t​t​ + ​X​ it​ ′ ​ γ + ​α​i​ + ​η​jt​ + ​δ​kt​ + ​ε​ijkt​,​\n11 For visual clarity, panels B, D, and F in Figure 3 follow Ohrn (2018) by plotting trends for the control group \nthat are ­rescaled to have",
+            "ref": "P11.15"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "419\nCHEN ET AL.: REGULATING CONGLOMERATES\nVOL. 115 NO. 2\nwhere ​Pos​t​t​ is an indicator that equals one after 2006. In addition to the differ-\nent fixed effects, some specifications include controls for firm",
+            "ref": "P12.1"
+          },
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "significantly. Indeed, panel B of Table 1 \nTable 1—Effects of the Program on Regulated Firms\nVariables\nln(Energy Use)\nPanel A. Energy use\nTreat ​×​ Post\n−0.125\n−0.156\n−0.156\n−0.128\n(0.042)\n(0.045)\n(0.047)\n(0.048)",
+            "ref": "P13.5"
+          },
+          {
+            "source": "pdf",
+            "start": 13,
+            "end": 13,
+            "quote": "[0.003]\n[0.001]\n[0.001]\n[0.008]\nObservations\n23,607\n23,602\n23,151\n20,571\n​R​ 2​\n0.887\n0.890\n0.892\n0.898\nVariables\nln(Output)\nPanel B. Output\nTreat ​×​ Post\n−0.096\n−0.226\n−0.204\n−0.145\n(0.040)\n(0.041)\n(0.042)\n(0.042)",
+            "ref": "P13.6"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "and the \nmarket expenditure ​R,​ equations (8) and (9) pin down ​f.​ The entry cost ​f​e​ is then \ndetermined by the conglomerate ­free-entry condition.21\nWe estimate the parameters ​θ  =  ​(δ, ​ϕ​1​, ​σ​m​)​ using the",
+            "ref": "P27.9"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "method of moments. For a \ncandidate value of ​θ,​ we solve the model and compute the following moments: (i) \nthe share of firms in three bins of firm revenue (¥5–20 million, ¥20–100 million, \nand greater than ¥100",
+            "ref": "P27.10"
+          },
+          {
+            "source": "pdf",
+            "start": 28,
+            "end": 28,
+            "quote": "_ \n1 − ρ ​\n4.00\nMelitz and Redding (2015)\nReturns to scale\n​α​\n0.90\nBurnside et al. (1995)\nReturns to scale (labor share)\n​α​l​\n0.80\nCost share of variable inputs\n2. Method of moments\nEfficiency depreciation\n​δ​\n0.900",
+            "ref": "P28.10"
+          },
+          {
+            "source": "pdf",
+            "start": 28,
+            "end": 28,
+            "quote": "­Within-conglomerate distribution\n(0.003)\nDispersion of ­ln-ability ​ϕ​\n​σ​m​\n1.239\nFirm size distribution\n(0.055)\nSurvival threshold\n​ϕ​1​\n0.609\nShare of small firms\n(0.166)\n3. Policy parameters\nPolicy threshold\n​ϕ ̃ ​",
+            "ref": "P28.11"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "依据摘要的理论贡献判断和正文的实证证据，采用步骤 3.2。核心因变量之一是以营业收入衡量的企业产出，直接反映企业经营活动规模，因此判为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Treat × Post",
+          "economic": true,
+          "reason": "该交互项衡量企业是否属于 Top 1,000 计划监管对象且处于政策实施后时期，反映产业监管对企业投入和生产决策施加的约束，属于经济政策变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "​β​τ​ × Trea​t​i​ × Yea​r​τ​ + ​α​i​ + ​η​jt​ + ​δ​kt​ + ​ε​ijkt​,​\nwhere ​Y​ijkt​ is a dependent variable for firm ​i​ in industry ​j​, province ​k​, and year ​t​. \n​Trea​t​i​ is a treatment group indicator that equals",
+              "ref": "P11.7"
+            },
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "1 for Top 1,000 firms and 0 for Top \n10,000 firms. The coefficients ​β​τ​ from this specification represent differences in the \ndependent variable between Top 1,000 and Top 10,000 firms in each year. Given that \nthe",
+              "ref": "P11.8"
+            },
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "Province ​×​ Year fixed effects\nY\nY\n­Firm-level controls\nY\nNotes: This table shows estimates of equation (2) where Treat ​×​ Post is an indicator for regu-\nlated firms interacted with an indicator for years after 2006",
+              "ref": "P13.9"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "savings or efficiency, the practical implementation of \nthe policy instead relied on ­energy use quotas. We use detailed interviews with the \nprincipal architect of the policy, government officials, and regulated",
+              "ref": "P8.4"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "companies to \ncorroborate that in practice, firms were regulated based on energy use quotas and \nwere not primarily evaluated on energy savings or efficiency.5 The firms’ energy \nquotas were based on historical energy",
+              "ref": "P8.5"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ln(Output)",
+          "economic": true,
+          "reason": "该变量衡量企业营业收入的对数，论文以营业收入衡量企业产出，反映企业经营活动的规模。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "nomic activity or in energy efficiency, we now estimate the effects of the program on \nfirm output (i.e., revenue). Panels C–D of Figure 3 show that, after the reform, firm \noutput in regulated firms also decreased",
+              "ref": "P13.4"
+            },
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "[0.003]\n[0.001]\n[0.001]\n[0.008]\nObservations\n23,607\n23,602\n23,151\n20,571\n​R​ 2​\n0.887\n0.890\n0.892\n0.898\nVariables\nln(Output)\nPanel B. Output\nTreat ​×​ Post\n−0.096\n−0.226\n−0.204\n−0.145\n(0.040)\n(0.041)\n(0.042)\n(0.042)",
+              "ref": "P13.6"
+            },
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "and the dependent variable is log \nfirm energy consumption in panel A, log firm output in panel B, and log firm energy efficiency in \npanel C. The estimates in this table correspond to a pooled version of the regression",
+              "ref": "P13.10"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ln(Energy Use)",
+          "economic": false,
+          "reason": "该变量衡量企业实际能源消耗量的对数，原始单位为折合标准煤量，属于物理能耗指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "implementation of our ­difference-in-differences esti-\nmation strategy. Panel A in Figure 3 displays the ​β​τ​ coefficients when the outcome \nvariable is ­firm-level energy use (total coal consumption equivalent). This",
+              "ref": "P11.11"
+            },
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "significantly. Indeed, panel B of Table 1 \nTable 1—Effects of the Program on Regulated Firms\nVariables\nln(Energy Use)\nPanel A. Energy use\nTreat ​×​ Post\n−0.125\n−0.156\n−0.156\n−0.128\n(0.042)\n(0.045)\n(0.047)\n(0.048)",
+              "ref": "P13.5"
+            },
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "and the dependent variable is log \nfirm energy consumption in panel A, log firm output in panel B, and log firm energy efficiency in \npanel C. The estimates in this table correspond to a pooled version of the regression",
+              "ref": "P13.10"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "agent": "agent_08",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "069f21e5-4f3f-470f-a1d8-9df357cefd4b",
+  "finished_at": "2026-11-24T09:48:23.959550+00:00",
+  "paper": {
+    "id": "037",
+    "position": 5,
+    "title": "Can trade liberalization promote green production Evidence from China's manufacturing enterprises",
+    "group": "组01",
+    "md_sha256": "8577b507fb01847bd73bdec24c9df0cf961467ac0977ad39faf6f40a17a9d9f7",
+    "pdf_sha256": "1f12e6847454e2a0c15992d3a0f059da04d6ec3bb53eac674a908852c09355ab",
+    "ready": true
+  },
+  "pdf_pages": 14,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页有明确的 ABSTRACT 标题，摘要从该标题后开始，到 1. Introduction 标题前结束。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Tariff reduction \nTechnology upgrading \nCorporate environmental performance \nA B S T R A C T  \nWhether international trade causes environmental damage to developing countries has caused \nwidespread concern. We estimate",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "emission. \nHowever, using multiple firm-level indicators, we demonstrate the existence of the trade-induced \ntechnique effect that trade liberalization can promote cleaner production.   \n1. Introduction \nThere is much",
+          "ref": "P1.7"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对了完整摘要。摘要说明用中国企业污染数据估计贸易自由化的影响，并以入世协议规定的最高关税税率作为实际税率的工具变量。摘要报告了关税下降与二氧化硫排放、产品构成及清洁生产有关的实证发现，未明确提出新模型、新概念、计量方法创新或理论证明。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Tariff reduction \nTechnology upgrading \nCorporate environmental performance \nA B S T R A C T  \nWhether international trade causes environmental damage to developing countries has caused \nwidespread concern. We estimate",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "trade liberalization’s impact on environmental performance \nusing unique firm-level pollution data in China. By using maximum tariff rates from China’s \naccession agreement as instrumental variables for actual tariff",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "rates, we find that cuts in import \ntariffs enhance the average SO2 emission. Changes in the composition of products in the polluting \nand non-polluting industries can explain the substantial increase in the average SO2",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "emission. \nHowever, using multiple firm-level indicators, we demonstrate the existence of the trade-induced \ntechnique effect that trade liberalization can promote cleaner production.   \n1. Introduction \nThere is much",
+            "ref": "P1.7"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文匹配了中国环境统计数据库（CESD）和中国工业企业数据库（CIED）。CESD 的污染数据来自企业定期填报，并由地方环保部门通过监测和现场检查核实。CIED 记录企业的实际生产和财务指标。作者用法人代码和企业名称匹配两个数据库，得到 1998–2007 年的 170,329 条企业—年份观测。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "in the existing \nliterature exist. By matching two firm-level data, we established a firm-level database that consists of both environmental information \nand economic information. The environmental information comes",
+            "ref": "P2.20"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "from China’s Environmental Statistics Database (CESD), and the \neconomic information comes from China’s Industrial Enterprise Database (CIED). CESD is China’s most complete national environ­\nmental data set but has only",
+            "ref": "P2.21"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "and industrial pollutants in the 1980s. However, CESD was kept secret for a long time and \nhas only lately become available for research. The MEP created a system to collect data on various aspects of environmental",
+            "ref": "P7.17"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "protection \nfor every major industrial emission source. The data is collected in a bottom-up manner. All firms report their environmental data on a \nseasonal basis, and then the county-level local Environmental",
+            "ref": "P7.18"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "Protection Bureus (EPBs) at the county level confirm data quality \nthrough monitoring activities and unannounced on-site inspections. The local EPBs then send the checked environmental information \nto provincial EPBs,",
+            "ref": "P7.19"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "and finally, the MEP compile the data after careful review. Thereafter, every environmental protection department \ncan use the microdata to release its annual environmental status reports. Strict data quality procedures",
+            "ref": "P7.20"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "Journal of Asian Economics 79 (2022) 101369\n8\nTao (2010), Lu and Yu (2015)). This dataset contains very detailed information on the production and finances of all industrial firms \nabove a certain size. Specifically,",
+            "ref": "P8.1"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "the overall \nindustrial output of China.14 The CIED encompasses more than a hundred variables that are related to various financial and economic \nindicators, such as industrial output, value-added, and ownership type,",
+            "ref": "P8.3"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "intermediate inputs, capital, and employees. We match these \ntwo datasets using information on legal person code and firm name. \nTable 1 shows the summary statistic on firm characteristics over 1998–2007. On average, we",
+            "ref": "P8.4"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "have around 17 thousand obser­\nvations per year, which gives us 170,329 enterprise-year observations. The average annual firm-level SO2 emission is about 195 tons. It \nis worth noting that this is the amount of SO2 that",
+            "ref": "P8.5"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "第 4.2 节的式（7）明确建立了企业二氧化硫排放量对数关于滞后一期的行业产出关税和投入关税的回归模型，并纳入年份固定效应。论文以入世协议规定的最高税率作为实际税率的工具变量，表 2 报告了两项关税的估计系数和标准误。例如，第（1）列的投入关税系数为 −7.016，产出关税系数为 −0.795。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "a good predictor of the actual tariff.10 \n4.2. Estimating equation \nTo identify the effects of trade liberalization on environmental outcomes, we first regress the firm-level SO2 emission on the in­\ndicator of trade",
+            "ref": "P6.20"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "liberalization, \nlog(SO2)it = β1Output tariffjt−1 + β2Input tariffjt−1 + γt + εit\n(7)  \nwhere i, j, p, and t represent firm, industry, province and year, respectively. We use firm-level log SO2 emission as the indicator",
+            "ref": "P6.21"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "of \nenvironmental performance (log(SO2)it). We use lagged output and input tariffs (Output tariffjt−1 and Iutput tariffjt−1) at the industry \n9 Amiti and Konings (2007) estimate the productivity gains from cutting back",
+            "ref": "P6.22"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "Journal of Asian Economics 79 (2022) 101369\n7\nlevel to measure trade liberalization.11 We also include year fixed effects (γt) in all the specifications to control for the average change \nin environmental performance",
+            "ref": "P7.1"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "170,329 \n0.09 \n0.04 \nMaximum output tariff \n170,329 \n0.14 \n0.11  \nTable 2 \nEffects of import tariffs on corporate SO2 emissions.   \n(1) \n(2) \n(3) \n(4) \n(5)  \nln(SO2)  \nln(SO2)  \nln(SO2)  \nln(SO2)  \nln(SO2)   \nOLS-IV",
+            "ref": "P9.19"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "OLS-IV \nOLS-IV \nFE-IV \nFE-IV \nInput tariff (lagged) \n−\n7.016***  \n−\n6.211***  \n1.283 \n0.764 \n0.650  \n(1.285) \n(1.252) \n(0.836) \n(0.878) \n(0.849) \nOutput tariff (lagged) \n−\n0.795*  \n−\n0.881**  \n0.321* \n0.719** \n0.595**",
+            "ref": "P9.20"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "(0.461) \n(0.428) \n(0.184) \n(0.307) \n(0.275) \nYear fixed effects \nYES \nYES \nYES \nYES \nYES \nProvince fixed effects \nNO \nYES \nYES \nNO \nNO \nIndustry fixed effects \nNO \nNO \nYES \nNO \nNO \nFirm fixed effects \nNO \nNO \nNO \nYES",
+            "ref": "P9.21"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "YES \nProvince-year fixed effects \nNO \nNO \nNO \nNO \nYES \nObservations \n170,329 \n170,329 \n170,323 \n151,872 \n151,872 \n1. Instrument from 2001 onward is the maximum allowable tariff under the WTO agreement. \n2. Standard",
+            "ref": "P9.22"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文有实证，采用步骤 3.2。基准模型以滞后一期的行业投入关税和产出关税衡量贸易自由化，以企业二氧化硫排放量的对数衡量环境表现。两项关税均为国际贸易政策变量，因此判为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Input tariff (lagged)",
+          "economic": true,
+          "reason": "衡量上一年行业使用的进口投入品所适用的关税税率，反映投入品进口的贸易壁垒，属于国际贸易政策变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "trace through in detail \nthe mechanisms through which trade liberalization affects environmental performance. \n4. Empirical framework \n4.1. Quantifying trade openness \nIn this paper, we use import tariffs at the 4-digit",
+              "ref": "P6.13"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "industry level as the key measure of trade liberalization since they provide the most \ndetailed information on trade openness (Brandt et al., 2017). Lower output tariffs induce tougher import competition (De Loecker,",
+              "ref": "P6.14"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "Goldberg, Khandelwal, & Pavcnik, 2016), whereas cheaper input tariffs can promote learning, variety, and quality.9 Since input tariff \nand output tariff have different impacts on firm performance, we use both of them to",
+              "ref": "P6.15"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "measure trade liberalization from different \naspects. \nOne may raise the endogeneity worries of using tariffs as explanatory variables for trade liberalization’s degree – policymakers \nmight selectively lower tariffs",
+              "ref": "P6.16"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "liberalization, \nlog(SO2)it = β1Output tariffjt−1 + β2Input tariffjt−1 + γt + εit\n(7)  \nwhere i, j, p, and t represent firm, industry, province and year, respectively. We use firm-level log SO2 emission as the indicator",
+              "ref": "P6.21"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "of \nenvironmental performance (log(SO2)it). We use lagged output and input tariffs (Output tariffjt−1 and Iutput tariffjt−1) at the industry \n9 Amiti and Konings (2007) estimate the productivity gains from cutting back",
+              "ref": "P6.22"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "Journal of Asian Economics 79 (2022) 101369\n7\nlevel to measure trade liberalization.11 We also include year fixed effects (γt) in all the specifications to control for the average change \nin environmental performance",
+              "ref": "P7.1"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "Output tariff (lagged)",
+          "economic": true,
+          "reason": "衡量上一年行业产出品所对应的进口关税税率，反映同类进口产品面临的贸易壁垒及国内企业所面对的进口竞争，属于国际贸易政策变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "trace through in detail \nthe mechanisms through which trade liberalization affects environmental performance. \n4. Empirical framework \n4.1. Quantifying trade openness \nIn this paper, we use import tariffs at the 4-digit",
+              "ref": "P6.13"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "industry level as the key measure of trade liberalization since they provide the most \ndetailed information on trade openness (Brandt et al., 2017). Lower output tariffs induce tougher import competition (De Loecker,",
+              "ref": "P6.14"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "Goldberg, Khandelwal, & Pavcnik, 2016), whereas cheaper input tariffs can promote learning, variety, and quality.9 Since input tariff \nand output tariff have different impacts on firm performance, we use both of them to",
+              "ref": "P6.15"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "liberalization, \nlog(SO2)it = β1Output tariffjt−1 + β2Input tariffjt−1 + γt + εit\n(7)  \nwhere i, j, p, and t represent firm, industry, province and year, respectively. We use firm-level log SO2 emission as the indicator",
+              "ref": "P6.21"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "of \nenvironmental performance (log(SO2)it). We use lagged output and input tariffs (Output tariffjt−1 and Iutput tariffjt−1) at the industry \n9 Amiti and Konings (2007) estimate the productivity gains from cutting back",
+              "ref": "P6.22"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "Journal of Asian Economics 79 (2022) 101369\n7\nlevel to measure trade liberalization.11 We also include year fixed effects (γt) in all the specifications to control for the average change \nin environmental performance",
+              "ref": "P7.1"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "log(SO2)it",
+          "economic": false,
+          "reason": "衡量企业经治理后实际排入环境的二氧化硫质量的对数，用于表征企业环境表现，属于物理排放指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "liberalization, \nlog(SO2)it = β1Output tariffjt−1 + β2Input tariffjt−1 + γt + εit\n(7)  \nwhere i, j, p, and t represent firm, industry, province and year, respectively. We use firm-level log SO2 emission as the indicator",
+              "ref": "P6.21"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "of \nenvironmental performance (log(SO2)it). We use lagged output and input tariffs (Output tariffjt−1 and Iutput tariffjt−1) at the industry \n9 Amiti and Konings (2007) estimate the productivity gains from cutting back",
+              "ref": "P6.22"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "have around 17 thousand obser­\nvations per year, which gives us 170,329 enterprise-year observations. The average annual firm-level SO2 emission is about 195 tons. It \nis worth noting that this is the amount of SO2 that",
+              "ref": "P8.5"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "firms discharge into the environment after being treated by the treatment facility. \nBefore entering the pollution reduction facility, the amount of SO2 generated during the production process was 381 tons. On average,",
+              "ref": "P8.6"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

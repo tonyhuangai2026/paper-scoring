@@ -1,4 +1,4 @@
-"""Generate the README figures from the published records. Requires Matplotlib."""
+"""Generate model comparison figures from the published judgments. Requires Matplotlib."""
 
 import argparse
 from collections import Counter, defaultdict
@@ -11,16 +11,22 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
-from matplotlib.ticker import MaxNLocator, PercentFormatter
+from matplotlib.lines import Line2D
+from matplotlib.ticker import MultipleLocator
 
 ROOT = Path(__file__).resolve().parents[1]
-RECORDS = ROOT / 'results/formal-run/provenance/records'
+RESULTS = ROOT / 'results/step-evidence-comparison'
 FIGURES = ROOT / 'docs/figures'
-LABELS = ('实证', '理论+实证', '理论', '描述性统计和综述', '无法判断')
-BLUE = '#235C8C'
-ORANGE = '#AB4C2C'
+MODELS = (
+    ('deepseek-v4.1-flash', 'DeepSeek V4.1 Flash', '#216080', 'o'),
+    ('gpt-6.2-sol', 'GPT-6.2-sol', '#AB4C2C', 'D'),
+)
+LABELS = (
+    ('label_one', '标签一 · 研究类型', ('实证', '理论+实证', '理论', '描述性统计和综述', '无法判断')),
+    ('label_two', '标签二 · 经管属性', ('核心经管', '广义经管')),
+)
 INK = '#202931'
-GRID = '#E4E8EC'
+MUTED = '#53616D'
 
 
 def set_style(font_path):
@@ -39,23 +45,38 @@ def set_style(font_path):
 
     plt.rcParams.update({
         'font.family': [family, 'DejaVu Sans'],
-        'font.size': 10,
-        'axes.titlesize': 12,
+        'font.size': 11,
+        'axes.titlesize': 13,
         'axes.labelcolor': INK,
         'axes.spines.top': False,
         'axes.spines.right': False,
+        'axes.spines.left': False,
         'axes.edgecolor': '#A4ADB5',
-        'axes.linewidth': 0.7,
         'text.color': INK,
-        'xtick.color': INK,
+        'xtick.color': MUTED,
         'ytick.color': INK,
-        'grid.color': GRID,
-        'grid.linewidth': 0.7,
+        'grid.color': '#E4E8EC',
+        'grid.linewidth': 0.8,
         'axes.axisbelow': True,
         'legend.frameon': False,
         'savefig.dpi': 220,
         'savefig.facecolor': 'white',
     })
+
+
+def load_votes():
+    votes = {}
+    for model, *_ in MODELS:
+        by_label = {key: defaultdict(Counter) for key, _, _ in LABELS}
+        for path in sorted((RESULTS / model / 'provenance/records').glob('*/*.json')):
+            record = json.loads(path.read_text(encoding='utf-8'))
+            for key in by_label:
+                by_label[key][record['paper']['id']][record[key]] += 1
+        if any(len(papers) != 20 or any(counts.total() != 10 for counts in papers.values())
+               for papers in by_label.values()):
+            raise SystemExit(f'{model} 缺少完整的 20 篇 × 10 份原判。')
+        votes[model] = by_label
+    return votes
 
 
 def save(figure, name):
@@ -64,109 +85,70 @@ def save(figure, name):
     plt.close(figure)
 
 
-def label_agreement(records, categories, by_paper):
-    figure, (frequency, agreement) = plt.subplots(
-        ncols=2, figsize=(10.5, 3.7), width_ratios=(1.05, 1), layout='constrained',
-    )
-    figure.get_layout_engine().set(w_pad=0.12, h_pad=0.09, wspace=0.12)
-    votes = Counter(record['label_one'] for record in records)
-    counts = [votes[category] for category in categories]
-    bars = frequency.barh(categories, counts, height=0.56, color=BLUE)
-    frequency.bar_label(
-        bars, labels=[f'{count}  ({count / len(records):.0%})' for count in counts],
-        padding=5, fontsize=9,
-    )
-    frequency.invert_yaxis()
-    frequency.set(xlim=(0, max(counts) * 1.29), xlabel=f'原判份数（n = {len(records)}）')
-    frequency.xaxis.set_major_locator(MaxNLocator(nbins=5, integer=True))
-    frequency.grid(axis='x')
-    frequency.tick_params(axis='y', length=0)
-    frequency.set_title('(a)  标签一频数', loc='left', pad=10)
-
-    shares = {}
-    for key in ('label_one', 'label_two'):
-        shares[key] = Counter(
-            round(100 * Counter(record[key] for record in group).most_common(1)[0][1] / len(group))
-            for group in by_paper.values()
-        )
-    levels = sorted(set(shares['label_one']) | set(shares['label_two']))
-    positions = list(range(len(levels)))
-    for key, label, shift, color in (
-        ('label_one', '标签一', -0.18, BLUE), ('label_two', '标签二', 0.18, ORANGE),
-    ):
-        counts = [shares[key][level] for level in levels]
-        bars = agreement.bar(
-            [x + shift for x in positions], counts, width=0.34, label=label, color=color,
-        )
-        agreement.bar_label(bars, labels=[str(count) if count else '' for count in counts], padding=3, fontsize=9)
-    agreement.set_xticks(positions, [f'{level}%' for level in levels])
-    agreement.set(
-        xlim=(-0.52, len(levels) - 0.48), ylim=(0, len(by_paper) * 1.17),
-        xlabel='每篇论文的众数票数占比', ylabel=f'论文篇数（n = {len(by_paper)}）',
-    )
-    agreement.yaxis.set_major_locator(MaxNLocator(nbins=5, integer=True))
-    agreement.grid(axis='y')
-    agreement.legend(loc='upper left', fontsize=9)
-    agreement.set_title('(b)  一致率分布', loc='left', pad=10)
-    save(figure, 'label-agreement.png')
+def label_distribution(votes):
+    figure, axes = plt.subplots(1, 2, figsize=(10.5, 3.35), layout='constrained')
+    figure.get_layout_engine().set(w_pad=0.16, h_pad=0.12, wspace=0.1)
+    for axis, (key, title, categories) in zip(axes, LABELS):
+        totals = {model: sum(votes[model][key].values(), Counter()) for model, *_ in MODELS}
+        present = [category for category in categories if any(counts[category] for counts in totals.values())]
+        positions = list(range(len(present)))
+        for shift, (model, name, color, _) in zip((-0.17, 0.17), MODELS):
+            values = [totals[model][category] for category in present]
+            bars = axis.barh([position + shift for position in positions], values,
+                             height=0.28, color=color, label=name)
+            axis.bar_label(bars, padding=4, fontsize=9, color=color)
+        axis.set_yticks(positions, present)
+        axis.set(xlim=(0, 227), ylim=(len(present) - 0.5, -0.5), xlabel='原判份数')
+        axis.xaxis.set_major_locator(MultipleLocator(50))
+        axis.grid(axis='x')
+        axis.tick_params(axis='y', length=0)
+        axis.set_title(title, loc='left', pad=10, fontweight='bold')
+    handles, names = axes[0].get_legend_handles_labels()
+    figure.legend(handles, names, loc='outside upper center', ncols=2)
+    save(figure, 'model-label-distribution.png')
 
 
-def source_label_distribution(records, categories):
-    votes = defaultdict(Counter)
-    papers = defaultdict(set)
-    for record in records:
-        mode = tuple(record['modes'])
-        votes[mode][record['label_one']] += 1
-        papers[mode].add(record['paper']['id'])
+def mode_set(counts):
+    maximum = max(counts.values())
+    return {category for category, count in counts.items() if count == maximum}
 
-    figure, axes = plt.subplots(figsize=(8.5, 3.7), layout='constrained')
-    figure.get_layout_engine().set(w_pad=0.13, h_pad=0.09)
-    rows = list(range(len(categories)))
-    max_share = 0
-    for mode, name, shift, marker, color in (
-        (('pdf',), 'PDF 文本', -0.15, 'o', BLUE),
-        (('md',), 'MD 文本', 0.15, 's', ORANGE),
-    ):
-        total = votes[mode].total()
-        raw_shares = [votes[mode][category] / total for category in categories]
-        positions = [row + shift for row in rows]
-        max_share = max(max_share, *raw_shares)
-        axes.scatter(
-            raw_shares, positions, s=36, marker=marker, color=color, zorder=3,
-            label=f'{name}（{len(papers[mode])} 篇，{total} 份）',
-        )
-        for share, y in zip(raw_shares, positions):
-            axes.annotate(
-                f'{share:.1%}', (share, y), xytext=(7, 0), textcoords='offset points',
-                va='center', fontsize=9, color=color,
-            )
 
-    axes.set_yticks(rows, categories)
-    axes.set(ylim=(len(rows) - 0.55, -0.55), xlim=(-0.025, max_share + 0.11), xlabel='占该来源原判的比例')
-    axes.xaxis.set_major_formatter(PercentFormatter(1, decimals=0))
-    axes.grid(axis='x')
-    axes.tick_params(axis='y', length=0)
-    axes.spines['left'].set_visible(False)
-    axes.legend(loc='lower left', bbox_to_anchor=(-0.01, 1.00), ncols=2, columnspacing=1.4, fontsize=9)
-    axes.set_title('按判读材料分组的标签一构成', loc='left', pad=32)
-    save(figure, 'source-label-distribution.png')
+def paper_disagreements(votes):
+    focus = ('理论+实证', '核心经管')
+    figure, axes = plt.subplots(1, 2, figsize=(10.5, 3.6), layout='constrained')
+    figure.get_layout_engine().set(w_pad=0.2, h_pad=0.1, wspace=0.11)
+    model_one, model_two = (model for model, *_ in MODELS)
+    for axis, (key, title, _), category in zip(axes, LABELS, focus):
+        left, right = votes[model_one][key], votes[model_two][key]
+        if left.keys() != right.keys():
+            raise SystemExit('两个模型的论文清单不同。')
+        paper_ids = sorted(pid for pid in left if mode_set(left[pid]) != mode_set(right[pid]))
+        for position, pid in enumerate(paper_ids):
+            values = [votes[model][key][pid][category] for model, *_ in MODELS]
+            axis.hlines(position, min(values), max(values), color='#9CA9B2', linewidth=1.6, zorder=2)
+            for value, (_, _, color, marker) in zip(values, MODELS):
+                axis.scatter(value, position, s=64, marker=marker, color=color,
+                             edgecolor='white', linewidth=0.8, zorder=3, clip_on=False)
+        axis.set_yticks(range(len(paper_ids)), paper_ids)
+        axis.set_xticks(range(0, 11, 2))
+        axis.set(xlim=(-0.35, 10.35), ylim=(max(len(paper_ids) - 0.45, 1.55), -0.55),
+                 xlabel=f'「{category}」票数（每模型 10 票）', ylabel='论文编号')
+        axis.grid(axis='x')
+        axis.tick_params(axis='y', length=0, pad=7)
+        axis.set_title(f'{title}（{len(paper_ids)}/20 篇）', loc='left', pad=10, fontweight='bold')
+    handles = [Line2D([], [], color=color, marker=marker, linestyle='None', markersize=7, label=name)
+               for _, name, color, marker in MODELS]
+    figure.legend(handles=handles, loc='outside upper center', ncols=2)
+    save(figure, 'paper-level-disagreements.png')
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--font', type=Path, help='Optional path to a Chinese font file.')
-    args = parser.parse_args()
-    set_style(args.font)
-    records = [json.loads(path.read_text(encoding='utf-8')) for path in sorted(RECORDS.glob('*/*.json'))]
-    if not records:
-        raise SystemExit(f'未找到原判 JSON：{RECORDS}')
-    by_paper = defaultdict(list)
-    for record in records:
-        by_paper[record['paper']['id']].append(record)
-    observed = {record['label_one'] for record in records}
-    categories = [label for label in LABELS if label in observed]
-    label_agreement(records, categories, by_paper)
-    source_label_distribution(records, categories)
+    parser.add_argument('--font', help='Path to a Chinese font file')
+    set_style(parser.parse_args().font)
+    votes = load_votes()
+    label_distribution(votes)
+    paper_disagreements(votes)
 
 
 if __name__ == '__main__':

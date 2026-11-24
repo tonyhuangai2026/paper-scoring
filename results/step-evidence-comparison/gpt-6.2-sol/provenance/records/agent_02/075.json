@@ -1,0 +1,292 @@
+{
+  "agent": "agent_02",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "c0a6858f-51bb-42b3-9b86-8d6b55d67650",
+  "finished_at": "2026-11-24T09:31:49.351580+00:00",
+  "paper": {
+    "id": "075",
+    "position": 9,
+    "title": "Designing and implementing pollutant emissions trading systems in China A twelve-year reflection",
+    "group": "组01",
+    "md_sha256": "67e83c79021516b268b83d6eb61b5fc4b6630c86482838281299940bf55f2430",
+    "pdf_sha256": "5580671a4197905e194109c20b68411631545628588d5e717e54e87acc905271",
+    "ready": true
+  },
+  "pdf_pages": 8,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "描述性统计和综述",
+  "label_two": "核心经管",
+  "field_path": "3.3",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "第1页有明确的“ABSTRACT”标题，摘要概述了研究对象、方法、发现和政策启示，并在引言标题前结束。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Emissions trading \nChina \nEnvironmental governance \nEnvironmental management \nA B S T R A C T  \nOver the past few decades, the pollutant emissions trading policies in China have undergone significant inno­\nvation and",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "comparative \nqualitative analysis of the country’s eleven provincial emissions trading pilots. We found that provincial pilots \nare highly diverse and complex regarding the pollutants that can be traded, the industrial",
+          "ref": "P1.7"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "integrated with the newly developed \npollution permitting system.   \n1. Introduction \nThe economic incentive approach enables more flexibility and effi­\nciency in environmental management. Emissions trading has been",
+          "ref": "P1.10"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对完整摘要后，作者明确提出的贡献是系统回顾中国地方排污权交易实践，将其划分为三个阶段，对11个省级试点开展定性比较，并总结实施挑战。摘要未明确提出新模型、新理论概念、计量方法创新或理论证明。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "exploration. It is considered as a market-based approach that became integrated with command-and- \ncontrol mechanisms such as total emissions control or pollution permits. This study is the first to provide sys­",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "tematic, reflective thinking that tracks the regional initiatives of pollutant emissions trading systems in China. In \nthis article, we divided China’s emissions trading practices into three stages and conducted a",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "comparative \nqualitative analysis of the country’s eleven provincial emissions trading pilots. We found that provincial pilots \nare highly diverse and complex regarding the pollutants that can be traded, the industrial",
+            "ref": "P1.7"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "sectors involved, the \ndesign of trading administration and processes, and the implementation of trading practices such as allowance, \npricing and platforms. We also identified four main challenges: legislation setup,",
+            "ref": "P1.8"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "monitoring and verification, \nadministrative interference, and the technical quantification of pollutant hotspots. We conclude the article by \nproviding policy implications so that emissions trading policies can be",
+            "ref": "P1.9"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "integrated with the newly developed \npollution permitting system.   \n1. Introduction \nThe economic incentive approach enables more flexibility and effi­\nciency in environmental management. Emissions trading has been",
+            "ref": "P1.10"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "研究使用了真实试点的资料，包括对政府部门人员、行业代表和专家开展的半结构式访谈及焦点小组讨论，以及从11个试点省市收集的政策文件和报告。访谈和讨论材料经转录、编码，并与政策文件和报告交叉核验。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "PETSs that were developed and evolved in Stage 2 (prior to \nDocument #38) and Stage 3 (after Document #38). We have chosen to \nstudy these eleven provinces as part of a multi-case study because they \nserved as pilots",
+            "ref": "P3.12"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "authorized by the central government and almost all \nstarting from2007.3 We first collected qualitative data for this study \nbased on in-depth stakeholder workshops and focus group discussions \nheld during 2008–2016. In",
+            "ref": "P3.13"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "total, we conducted 32 semi-structured in­\nterviews and 17 focus groups with 890 government representatives, \nofficers from relevant governmental agencies, industry representatives, \nand experts through focus group",
+            "ref": "P3.14"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "workshops. For confidentiality reasons, \nthe specific departments and regions that the interviewed stakeholders \nare affiliated with are not listed in Table 2. \nThe empirical cases and interview contents were then",
+            "ref": "P3.15"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "transcribed \nand categorized for coding. An open-coding method was used to analyze \nthe data (Yin, 2009). This process involved reviewing key narratives \nexhibited by the transcripts, including repeating keywords and",
+            "ref": "P3.16"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "triangulate our coding, during which we collected policy documents and \nreports from all eleven provinces and municipalities. We in turn \nreviewed a wide range of action plans, interim measures and guiding \nopinions of",
+            "ref": "P3.18"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "PETSs at the provincial or municipal levels, including over \n120 policy or technical documents, in turn identifying the specific \npathways of local PETSs. \n3. Regional comparison of PETSs \n3.1. The scope of PETSs in",
+            "ref": "P3.19"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": false,
+        "reason": "核对所提供的8页全文，其中未见附录。建模方面，研究采用多案例定性比较、开放编码和政策文件交叉核验，未明确构建用于系数估计的模型。系数方面，研究未报告模型系数估计值，表7列出的数值是各地排污权交易指导价格。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "design to implementation. The following sections examine the \neleven pioneering provinces (marked in red in Fig. 1) and present a \ncomparative qualitative analysis that systematically reviews the diverse \nprovincial",
+            "ref": "P3.11"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "PETSs that were developed and evolved in Stage 2 (prior to \nDocument #38) and Stage 3 (after Document #38). We have chosen to \nstudy these eleven provinces as part of a multi-case study because they \nserved as pilots",
+            "ref": "P3.12"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "transcribed \nand categorized for coding. An open-coding method was used to analyze \nthe data (Yin, 2009). This process involved reviewing key narratives \nexhibited by the transcripts, including repeating keywords and",
+            "ref": "P3.16"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "triangulate our coding, during which we collected policy documents and \nreports from all eleven provinces and municipalities. We in turn \nreviewed a wide range of action plans, interim measures and guiding \nopinions of",
+            "ref": "P3.18"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "goals. Actual prices set during trading are \nusually higher than the guiding price shown in Table 7. \nBased on the various managerial entities mentioned in Session 3.2, \nby the end of 2017, each pilot region has also",
+            "ref": "P4.13"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "mentioned above. \n5. Conclusion \nIn this article we applied longitudinal, qualitative studies to observe \nthe development of eleven PETS pilots in China. Our observations and \nanalysis reveal that ambiguous policy",
+            "ref": "P6.4"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "Inner \nMongolia  \n✓ \n✓ \n✓ \nShanxi \nNot specified \nChongqing  \n✓  \n✓ \nShaanxi \nNot specified \nHebei \n✓ \n✓ \n✓ \n✓ \nTianjin \nNot specified \nHenan \n✓   \n✓  \nTable 7 \nThe pricing of China’s EPT pilots (Unit: RMB per ton per",
+            "ref": "P7.14"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "year. Prices last updated \nin August 2018).  \nRegions \nCOD \nNH3–N \nSO2 \nNOx \nPermit effective for: \nJiangsu \n4500 \n11 000 \n2240 \n2240 \n1 year \nZhejiang \n4000 \n4000 \n1000 \n1000 \n1 year \nHubei \n1758 \n2800 \n798 \n800 \n1",
+            "ref": "P7.15"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "理论和实证两项均判为否，适用 Step 3.3。正文围绕地方排污权交易制度的设计和实施比较11个试点。该制度通过配置、定价和交易排放额度来管理稀缺环境资源，属于经管类，因此判为核心经管。",
+      "variables": [
+        {
+          "role": "central",
+          "name": "地方污染物排放交易制度（pollutant emissions trading systems, PETSs）的设计与实施",
+          "economic": true,
+          "reason": "该变量刻画地方试点如何界定交易资格、配置排放额度、确定价格并组织交易。排放额度的购买关系到企业能否开展新项目，相关规则直接影响资源配置和企业投资，属于环境经济与市场治理范畴。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "design to implementation. The following sections examine the \neleven pioneering provinces (marked in red in Fig. 1) and present a \ncomparative qualitative analysis that systematically reviews the diverse \nprovincial",
+              "ref": "P3.11"
+            },
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "PETSs that were developed and evolved in Stage 2 (prior to \nDocument #38) and Stage 3 (after Document #38). We have chosen to \nstudy these eleven provinces as part of a multi-case study because they \nserved as pilots",
+              "ref": "P3.12"
+            },
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "China \nThe following three aspects are examined to describe the scope of \nlocal PETSs: 1) What kinds of pollutants can be traded? 2) Which in­\ndustries are eligible to trade, and what kinds of industrial projects are",
+              "ref": "P3.20"
+            },
+            {
+              "source": "pdf",
+              "start": 3,
+              "end": 3,
+              "quote": "newly built or authorized industrial projects, i.e., to enable a new \nproject, an enterprise must purchase emissions allowances from other \nenterprises so that the regional limit of emissions control will not exceed",
+              "ref": "P3.25"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "integrated part of \nlocal environmental management. \n3.3. Implementation: allowance, pricing and platforms \nTheoretically, the allowance of emissions trading has three sources: \nreservation, initial allocation (Khezr",
+              "ref": "P4.6"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "facilities that are \nbankrupt, relocated or shut down. \nThe pricing of emissions trading is guided by the provincial gov­\nernments of pilot regions (Table 4). The price differences shown in \nTable 4 reflect the cost of",
+              "ref": "P4.10"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "environmental capacity of a region \nregarding the given pollutants. Nevertheless, “emissions rights” have \nbecome valuable environmental resources for many industries and \ncompanies, without which they cannot invest in",
+              "ref": "P6.9"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "and operate new pro­\njects. Such an institutional arrangement has helped establish public and \nbusiness awareness about the actual value of environmental resources \n(Xu et al., 2015), which should be carried on in",
+              "ref": "P6.10"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

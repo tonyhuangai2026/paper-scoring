@@ -1,0 +1,202 @@
+{
+  "agent": "agent_01",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "290f67be-292c-49fa-8044-814555019d69",
+  "finished_at": "2026-11-24T09:30:45.400777+00:00",
+  "paper": {
+    "id": "181",
+    "position": 11,
+    "title": "Indoor air quality and health Empirical evidence from fluoride pollution in China",
+    "group": "组01",
+    "md_sha256": "4bd0de4c42b9187d6e69d720428b56db8338138dd43319124324e5dbeccddd33",
+    "pdf_sha256": "b2cfedb6a5854c4679880238625caa35c6b002405d0f4e0083f9ad2555054778",
+    "ready": true
+  },
+  "pdf_pages": 16,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的 A B S T R A C T 段落，可识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+          "ref": "P1.3"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要主要说明使用计量分析、个体固定效应模型和三重差分模型来估计燃煤氟污染对健康的影响，并报告实证结果；未明确声称构建新模型、提出新概念或计量方法创新等理论贡献。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Health and\nNutrition Survey, we applied individual fixed effect models and triple difference models to ex-\namine the effects of whether households use coal as domestic fuel. The results showed that\nfluoride pollution",
+            "ref": "P1.4"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用中国健康与营养调查（CHNS）纵向微观数据，并辅以中国深入生育力调查（CIFS）等真实调查数据，属于真实数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "by using household coal use as an indicator of the\nseverity of fluoride pollution. For this purpose, we used the CHNS as the major data source. It is a national sampling survey im-\nplemented by the Carolina Population",
+            "ref": "P4.9"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "China In-depth Fertility Survey (CIFS) of 1987. The CIFS reviewed 6619 qualified women from 40 counties (cities, districts, special\ndistricts) of Guizhou, providing detailed information on women's fertility history and",
+            "ref": "P10.1"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了成人健康的个体固定效应模型（式1）和儿童长期影响的家庭固定效应/类DID模型（式2），并进一步构建三重差分模型；正文明确报告了各模型估计系数及标准误，如燃煤变量对舒张压的系数0.937、对身高的系数-6.776等。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "models were used in the study to respectively estimate the influence of fluoride pollution on adults\nand the influence of exposure to fluoride pollution during infancy on child development. The model for estimating the",
+            "ref": "P4.13"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "influence of\nfluoride pollution on adults is expressed as follows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nht\niht\ni\nt\niht\n1\n2\n3\n(1)\nwhere the dependent variable yiht represents the health indicator that may be affected by fluoride",
+            "ref": "P4.14"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "gender and age/age squared, wave fixed effects, prefectural GDP per capita, and primary and secondary industry proportions. The\nresults reveal that the estimated coefficient of the household coal use variable was 0.937",
+            "ref": "P7.5"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "that fluoride pollution exposure arising from household coal use during infancy significantly lowers height\nduring childhood and adolescence. On average, fluoride pollution caused by household coal use during infancy",
+            "ref": "P8.8"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "the interaction term between household coal use and\nGuizhou.\nTable 5 presents the estimated coefficients of the interaction term between household coal use and Guizhou province from the\ntriple difference models. We find",
+            "ref": "P9.9"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文为有实证（无理论）文章，按Step 3.2识别核心自变量与核心因变量。核心自变量为家庭是否以煤为主要炊事燃料（作为室内氟污染严重程度的代理），核心因变量为成人血压、体重/低体重及儿童身高体重等健康指标。健康指标属于健康经济学范畴，家庭燃料使用属于环境/家庭经济行为变量，至少核心因变量为经管类变量，故判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Household coal use",
+          "economic": true,
+          "reason": "该变量衡量家庭是否以煤作为主要炊事燃料，是家庭能源选择行为，并作为室内氟污染暴露严重程度的代理，属于环境与家庭经济行为变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "household to which the individual belongs, and the period during which the individual is\nsurveyed; coalht represents whether individual i's household uses coal as the main cooking fuel during the period t, which is a",
+              "ref": "P4.16"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "proxy\nfor the severity of fluoride pollution exposure for individual i in the current period; Xiht represents controlled variables that may affect\nhealth, such as age and household income; αi and λt represents the",
+              "ref": "P4.17"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Diastolic and systolic blood pressure / underweight / height and weight",
+          "economic": true,
+          "reason": "这些变量衡量成人血压、低体重概率以及儿童青少年身高体重等健康与人力资本结果，属于健康经济学核心结果变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "influence of\nfluoride pollution on adults is expressed as follows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nht\niht\ni\nt\niht\n1\n2\n3\n(1)\nwhere the dependent variable yiht represents the health indicator that may be affected by fluoride",
+              "ref": "P4.14"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "pollution, including diastolic and\nsystolic blood pressure, weight, and other indicators that measure cardiovascular function and physical state; the subscripts i, h, and t\nrespectively represent the individual, the",
+              "ref": "P4.15"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "birth year, municipal GDP per capita, and primary and secondary\nindustry proportions. The results show that the estimated coefficient of the household coal use in infancy variable was significantly\nnegative, signifying",
+              "ref": "P8.7"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

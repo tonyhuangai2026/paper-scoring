@@ -14,16 +14,16 @@ from uuid import uuid4
 from filelock import FileLock, Timeout
 import pydantic_ai
 
-from .judge import FatalAPIError, Gateway, RUBRIC, classify, ensure, open_paper, probe, score
+from .judge import FatalAPIError, Gateway, RUBRIC, classify, ensure, evidence_lists, open_paper, probe, score
 from .materials import Manifest, Paper, ScoringError, Settings, atomic_write, load_manifest, sha256, write_json
 from .reports import acceptance, export_final, group_markdown, md_text
 
 WORK = "01_Agent工作区"
 FINAL = "04_汇总结果"
-THEORY_FORMAT_REMINDER = (
-    '复核 JSON 字段的条件格式。若 theory.contribution 为 false，theory.derivations 必须为 JSON null，'
-    '即使正文有数学公式也沿此分支跳过步骤 1.3。若 theory.contribution 为 true，'
-    'theory.derivations 必须为 JSON 布尔值。独立按原规则和原文判断 theory.contribution。'
+SKIP_FORMAT_REMINDER = (
+    "核对条件字段。摘要理论贡献为否时，theory.derivations 必须为 null。"
+    "真实数据为否时，empirical.estimated_model 必须为 null。"
+    "实际执行的步骤必须提交 result、reason 和 evidence。按原文独立作答。"
 )
 
 
@@ -56,11 +56,8 @@ def read_record(agent_dir: Path, agent: str, paper: Paper, run_id: str) -> dict:
     ensure(isinstance(data.get("judgment"), dict), "原判缺少判断内容。")
     expected = classify(data["judgment"], modes[-1])
     ensure(expected == (data.get("label_one"), data.get("label_two"), data.get("field_path")), "原判标签与规则不符。")
-    for name in ("abstract", "theory", "empirical", "field"):
-        section = data["judgment"][name]
-        if section is None:
-            continue
-        for evidence in section["evidence"]:
+    for _, citations in evidence_lists(data["judgment"]):
+        for evidence in citations:
             source = evidence["source"]
             ensure((source == "md" and modes[-1] == "md") or (source == "pdf" and modes[-1] != "md" and evidence["end"] <= pages)
                    or (source == "pdf_image" and set(range(evidence["start"], evidence["end"] + 1)).issubset(images)), "原判引用了超出材料范围的证据。")
@@ -107,10 +104,10 @@ def run_agent(agent: str, agent_dir: Path, papers: tuple[Paper, ...], settings: 
         if previous["status"] == "运行中":
             previous["status"] = "中断（结束时间未知）"
     session = {"session_id": str(uuid4()), "pid": os.getpid(), "started_at": now(), "status": "运行中", "resumed": bool(history)}
-    retry_theory = {paper_id for paper_id, reason in failures.items()
-                    if paper_id not in records and reason == "理论步骤与摘要判断不匹配。"}
-    if retry_theory:
-        session["retry_format"] = {"papers": sorted(retry_theory), "instructions": THEORY_FORMAT_REMINDER}
+    retry_skips = {paper_id for paper_id, reason in failures.items()
+                    if paper_id not in records and reason.endswith("必须为 null。")}
+    if retry_skips:
+        session["retry_format"] = {"papers": sorted(retry_skips), "instructions": SKIP_FORMAT_REMINDER}
     history.append(session)
     write_json(agent_dir / "sessions.json", {"sessions": history})
     fatal = False
@@ -129,7 +126,7 @@ def run_agent(agent: str, agent_dir: Path, papers: tuple[Paper, ...], settings: 
                 for paper in group_papers:
                     if paper.id in records:
                         continue
-                    format_reminder = THEORY_FORMAT_REMINDER if paper.id in retry_theory else None
+                    format_reminder = SKIP_FORMAT_REMINDER if paper.id in retry_skips else None
                     try:
                         verdict = score(paper, gateway)
                     except ScoringError as exc:

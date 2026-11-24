@@ -1,0 +1,312 @@
+{
+  "agent": "agent_01",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "62c809e5-2230-4763-855f-d9b6e7db984d",
+  "finished_at": "2026-11-24T09:35:20.867587+00:00",
+  "paper": {
+    "id": "265",
+    "position": 17,
+    "title": "Physical attractiveness, drug taking and gender differences",
+    "group": "组01",
+    "md_sha256": "60e9fc7de4808f686778d44b87366400ae1be4f945829c7260d069dca6e22202",
+    "pdf_sha256": "d0e332714d3a281bfdc4d41dc0b3ff1e1df7e0730a33802cb943c4eb30563b6e",
+    "ready": true
+  },
+  "pdf_pages": 26,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "广义经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "作者信息之后、引言之前有明确标为 Abstract 的英文摘要，概述了研究问题、解释机制和主要发现。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 11,
+          "end": 11,
+          "quote": "Abstract. This study investigates the relationship between adolescent physical attractiveness and drug-taking behaviour, emphasizing the human capital and “pretty girl” efects on the decision to use drugs. Through the",
+          "ref": "L11.1"
+        },
+        {
+          "source": "md",
+          "start": 11,
+          "end": 11,
+          "quote": "drugs. These two efects imply a gender diference in the impact of adolescent physical attractiveness on drug-taking behaviours. We find a robust gender diference in the efect of adolescent physical attractiveness on",
+          "ref": "L11.4"
+        },
+        {
+          "source": "md",
+          "start": 11,
+          "end": 11,
+          "quote": "both the likelihood of having ever taken drugs and the types of drugs ever taken.",
+          "ref": "L11.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提出本文的“pretty girl”效应，即外貌更有吸引力的少女更可能接触到能够获得毒品的年长男性，进而更可能用药。摘要结合这一新机制与人力资本效应，提出外貌吸引力对用药行为的影响存在性别差异。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 11,
+            "end": 11,
+            "quote": "human capital efect, physically attractive adolescents are better positioned to accumulate human capital at a young age compared to their less attractive peers. Building on the economics and psychology literature, we",
+            "ref": "L11.2"
+          },
+          {
+            "source": "md",
+            "start": 11,
+            "end": 11,
+            "quote": "propose a “pretty girl” efect by suggesting that physically attractive young women or girls are more likely to be approached by men or mature boys who may have access to drugs, and they are thus more likely to take",
+            "ref": "L11.3"
+          },
+          {
+            "source": "md",
+            "start": 11,
+            "end": 11,
+            "quote": "drugs. These two efects imply a gender diference in the impact of adolescent physical attractiveness on drug-taking behaviours. We find a robust gender diference in the efect of adolescent physical attractiveness on",
+            "ref": "L11.4"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文第2节建立了用药决策模型。作者在式（2）写出用药的净收益，再对外貌吸引力求导，并根据式（1）中的人力资本边际效应假设，在式（3）推得男性的用药净收益随外貌吸引力提高而下降。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 48,
+            "end": 48,
+            "quote": "\\left. \\frac {d H}{d b} \\right| _ {d = y} <   \\left. \\frac {d H}{d b} \\right| _ {d = n}.\\tag{1}",
+            "ref": "L48.1"
+          },
+          {
+            "source": "md",
+            "start": 72,
+            "end": 72,
+            "quote": "H (b, y) - H (b, n) + a - C (b, s) > 0,\\tag{2}",
+            "ref": "L72.1"
+          },
+          {
+            "source": "md",
+            "start": 75,
+            "end": 75,
+            "quote": "where a is a parameter representing the agent’s preference or enjoyment (in monetary terms) in taking drugs, which follows a distribution over individuals. Let G be the left-hand side o expression (2). G is the net gain",
+            "ref": "L75.1"
+          },
+          {
+            "source": "md",
+            "start": 75,
+            "end": 75,
+            "quote": "from taking drugs. Diferentiating G with respect to b and by expression (1), we obtain the following for males:",
+            "ref": "L75.2"
+          },
+          {
+            "source": "md",
+            "start": 78,
+            "end": 78,
+            "quote": "\\left. \\frac {d G}{d b} \\right\\rfloor_ {s = m} = \\left. \\frac {d H}{d b} \\right\\rfloor_ {d = y} - \\left. \\frac {d H}{d b} \\right\\rfloor_ {d = n} <   0.\\tag{3}",
+            "ref": "L78.1"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "研究使用美国 Add Health 纵向调查第1轮和第4轮的公开样本。调查从受访者就读七至十二年级时开始追踪，成年后再次访问，数据包括访员记录的外貌评分和受访者自报的用药经历。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 91,
+            "end": 91,
+            "quote": "We test our hypothesis using a public-use sample from the first and fourth waves of the National Longitudinal Study of Adolescent Health (Add Health) in the United States. This longitudinal study is considered a",
+            "ref": "L91.1"
+          },
+          {
+            "source": "md",
+            "start": 91,
+            "end": 91,
+            "quote": "representative sample of adolescents. Add Health conducted wave 1 from 1994 to 1995, during which the respondents were initially in grades 7 to 12, and then followed the respondents into adulthood. In wave 4 (2008), the",
+            "ref": "L91.2"
+          },
+          {
+            "source": "md",
+            "start": 91,
+            "end": 91,
+            "quote": "respondents’ ages ranged from 24 to 33. This dataset contains information on the family, school, physical attractiveness and participation in risky behaviour of the respondents.",
+            "ref": "L91.3"
+          },
+          {
+            "source": "md",
+            "start": 93,
+            "end": 93,
+            "quote": "The measurement of physical attractiveness is crucial in our study. In each wave, the interviewers answered the following question: “How physically attractive is the respondent?” The interviewers chose their answers",
+            "ref": "L93.1"
+          },
+          {
+            "source": "md",
+            "start": 95,
+            "end": 95,
+            "quote": "In addition to physical attractiveness, our study focuses on ever using diferent types of drugs until adulthood. In wave 4 of the National Longitudinal Study of Adolescent Health (Add Health), respondents were asked to",
+            "ref": "L95.1"
+          },
+          {
+            "source": "md",
+            "start": 97,
+            "end": 97,
+            "quote": "Have you ever used any of the following drugs?",
+            "ref": "L97.1"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "正文式（5）明确设定了访员固定效应回归，以是否曾使用某类毒品为因变量，以青少年时期是否被评为非常有吸引力为核心自变量。表3按性别和毒品类别报告了系数估计值及标准误，例如男性样本中大麻使用回归的核心系数为 -0.143。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 128,
+            "end": 128,
+            "quote": "D _ {i} = \\beta_ {0} + \\beta_ {f} + \\beta_ {1} a _ {i} + X _ {i} ^ {\\prime} \\theta_ {i} + \\varepsilon_ {i}.\\tag{5}",
+            "ref": "L128.1"
+          },
+          {
+            "source": "md",
+            "start": 131,
+            "end": 131,
+            "quote": "In the model, $D _ { i }$ represents a dummy variable for drug use, while $\\beta _ { f }$ denotes the interviewer fixed efect, which accounts for the interviewer’s subjective assessment of the interviewee’s physical",
+            "ref": "L131.1"
+          },
+          {
+            "source": "md",
+            "start": 131,
+            "end": 131,
+            "quote": "attractiveness. $a _ { i }$ is a dummy variable indicating whether the individual is rated as “very attractive.” $X _ { i }$ represents a vector of pertinent demographic characteristics. To control for interviewer bias",
+            "ref": "L131.2"
+          },
+          {
+            "source": "md",
+            "start": 131,
+            "end": 131,
+            "quote": "$( \\beta _ { f } )$ , we employ an interview fixed efects model.<sup>6</sup> Our hypothesis predicts empirically that $\\beta _ { 1 }$ will be negative for males, indicating a decrease in drug use but this negative efect",
+            "ref": "L131.3"
+          },
+          {
+            "source": "md",
+            "start": 135,
+            "end": 135,
+            "quote": "Table 3 specifications 1 to 4 in panels A and B present the estimated coeficients of “very attractive in wave 1” for males and females, respectively. The control variables include born in United States, age in wave 4,",
+            "ref": "L135.1"
+          },
+          {
+            "source": "md",
+            "start": 149,
+            "end": 149,
+            "quote": "<table><tr><td rowspan=\"2\">Variable</td><td colspan=\"4\">Panel A: Male</td><td colspan=\"4\">Panel B: Female</td></tr><tr><td>Marijuana</td><td>Cocaine</td><td>Crystal meth</td><td>Other",
+            "ref": "L149.1"
+          },
+          {
+            "source": "md",
+            "start": 149,
+            "end": 149,
+            "quote": "td></tr><tr><td rowspan=\"2\">Very attractive in wave 1</td><td>-0.143***(0.053)</td><td>-0.135***(0.045)</td><td>-0.067**(0.033)</td><td>-0.094*(0.052)</td><td>-0.076*(0.041)</td><td>-0.026(0.032)</td><td>-0.031(0.021)</t",
+            "ref": "L149.3"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "有理论且有实证，采用 Step 3.2。正文的核心自变量衡量青少年外貌吸引力，核心因变量衡量截至成年随访时的用药经历及其严重程度。两者均属于非经管类变量，因此判为广义经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Very attractive in wave 1",
+          "economic": false,
+          "reason": "该指标衡量受访者在青少年时期是否被访员评为外貌非常有吸引力，属于对个人外貌特征的主观评价。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 93,
+              "end": 93,
+              "quote": "The measurement of physical attractiveness is crucial in our study. In each wave, the interviewers answered the following question: “How physically attractive is the respondent?” The interviewers chose their answers",
+              "ref": "L93.1"
+            },
+            {
+              "source": "md",
+              "start": 93,
+              "end": 93,
+              "quote": "from the following categories: (1) very unattractive, (2) unattractive, (3) about average, (4) attractive and (5) very attractive. We utilize the variable of physical attractiveness from waves 1 and 4 in our",
+              "ref": "L93.2"
+            },
+            {
+              "source": "md",
+              "start": 131,
+              "end": 131,
+              "quote": "attractiveness. $a _ { i }$ is a dummy variable indicating whether the individual is rated as “very attractive.” $X _ { i }$ represents a vector of pertinent demographic characteristics. To control for interviewer bias",
+              "ref": "L131.2"
+            },
+            {
+              "source": "md",
+              "start": 135,
+              "end": 135,
+              "quote": "Table 3 specifications 1 to 4 in panels A and B present the estimated coeficients of “very attractive in wave 1” for males and females, respectively. The control variables include born in United States, age in wave 4,",
+              "ref": "L135.1"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Drug use / drugs ever taken",
+          "economic": false,
+          "reason": "该结果变量以成年随访时的自报经历衡量受访者是否曾使用各类毒品，并按使用过的毒品类别衡量用药严重程度，属于健康风险行为指标。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 95,
+              "end": 95,
+              "quote": "In addition to physical attractiveness, our study focuses on ever using diferent types of drugs until adulthood. In wave 4 of the National Longitudinal Study of Adolescent Health (Add Health), respondents were asked to",
+              "ref": "L95.1"
+            },
+            {
+              "source": "md",
+              "start": 97,
+              "end": 97,
+              "quote": "Have you ever used any of the following drugs?",
+              "ref": "L97.1"
+            },
+            {
+              "source": "md",
+              "start": 131,
+              "end": 131,
+              "quote": "In the model, $D _ { i }$ represents a dummy variable for drug use, while $\\beta _ { f }$ denotes the interviewer fixed efect, which accounts for the interviewer’s subjective assessment of the interviewee’s physical",
+              "ref": "L131.1"
+            },
+            {
+              "source": "md",
+              "start": 175,
+              "end": 175,
+              "quote": "According to our hypothesis, the human capital and “pretty girl” efects predict a negative beauty efect on the severity of drugs ever taken by males, but this efect should be weaker or even positive for females. To test",
+              "ref": "L175.1"
+            },
+            {
+              "source": "md",
+              "start": 175,
+              "end": 175,
+              "quote": "our hypothesis, we categorize the dependent variable into three possible outcomes—“never taken any drugs,” “marijuana only,” and “marijuana & cocaine/crystal/others”—and estimate the beauty efect using an ordered probit",
+              "ref": "L175.2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

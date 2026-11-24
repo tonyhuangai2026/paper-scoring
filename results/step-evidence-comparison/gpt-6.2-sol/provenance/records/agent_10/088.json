@@ -1,0 +1,358 @@
+{
+  "agent": "agent_10",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "e89771f0-2ca1-4153-9746-1d212bc51bf9",
+  "finished_at": "2026-11-24T09:59:22.991649+00:00",
+  "paper": {
+    "id": "088",
+    "position": 10,
+    "title": "Does Chinese Environmental Policy Affect Income Inequality? Evidence from the Central Environmental Protection Inspection",
+    "group": "组01",
+    "md_sha256": "c723771aae4fb36bed63d4face96aefac1908ce9eb46ca33792246f52ff084d9",
+    "pdf_sha256": "9409d16b98b62b73317f2944c259fdf95ad27c76536638ad9ffb221497283336",
+    "ready": true
+  },
+  "pdf_pages": 32,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "文首有明确的 Abstract 标题，其下概述了研究问题、估计方法和主要发现。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 5,
+          "end": 5,
+          "quote": "## Abstract",
+          "ref": "L5.1"
+        },
+        {
+          "source": "md",
+          "start": 7,
+          "end": 7,
+          "quote": "This paper investigates the effect of environmental policy on income inequality. It focuses on the central environmental protection inspection led by the central government in China. Using a difference-in-differences",
+          "ref": "L7.1"
+        },
+        {
+          "source": "md",
+          "start": 7,
+          "end": 7,
+          "quote": "approach, it finds evidence that environmental regulation decreased the per capita income and enlarged the gap between urban and rural income while showing an insignificant effect on employment. Although the policy can",
+          "ref": "L7.2"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对完整摘要后，双重差分仅被表述为评估中央环境保护督察影响的实证方法。摘要报告了政策效应、可能机制和异质性结果，未明确声称提出新模型、新概念、计量方法创新或证明模型性质。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 7,
+            "end": 7,
+            "quote": "This paper investigates the effect of environmental policy on income inequality. It focuses on the central environmental protection inspection led by the central government in China. Using a difference-in-differences",
+            "ref": "L7.1"
+          },
+          {
+            "source": "md",
+            "start": 7,
+            "end": 7,
+            "quote": "approach, it finds evidence that environmental regulation decreased the per capita income and enlarged the gap between urban and rural income while showing an insignificant effect on employment. Although the policy can",
+            "ref": "L7.2"
+          },
+          {
+            "source": "md",
+            "start": 7,
+            "end": 7,
+            "quote": "reduce pollution levels and bring environmental benefits in aggregate, the findings of this study suggest that the regulations appear to have reduced the proportion of manufacturing industry and hindered general",
+            "ref": "L7.3"
+          },
+          {
+            "source": "md",
+            "start": 7,
+            "end": 7,
+            "quote": "innovation and investment from entrepreneurs, which resulted in greater inequality. Rural residents suffered more from environmental regulation due to relatively high migration costs and their disadvantaged human",
+            "ref": "L7.4"
+          },
+          {
+            "source": "md",
+            "start": 7,
+            "end": 7,
+            "quote": "resources on the aspects of health, education level, and skills. The local government’s execution incentive can also play a key role in the effectiveness of environmental policy. Regions with lower GDP growth targets",
+            "ref": "L7.5"
+          },
+          {
+            "source": "md",
+            "start": 7,
+            "end": 7,
+            "quote": "and younger government leaders were affected significantly with regard to the income growth of local residents and the urban–rural income gap.",
+            "ref": "L7.6"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文将各省统计年鉴和《中国城市统计年鉴》中的收入、就业及污染排放等实际观测记录合并，构建了2010至2019年的城市层面非平衡面板。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 70,
+            "end": 70,
+            "quote": "The panel data used in the benchmark estimation is mainly from two sources. The first source is the statistics yearbooks of each province, which contains per capita incomes at the city-level, the quantity of ${ \\mathrm",
+            "ref": "L70.1"
+          },
+          {
+            "source": "md",
+            "start": 70,
+            "end": 70,
+            "quote": "{ S O } } _ { 2 }$ emissions at the provincial level, and other provincial characteristics (such as population size, GDP growth, and technology innovation). The second source is the China City Statistical Yearbook in",
+            "ref": "L70.2"
+          },
+          {
+            "source": "md",
+            "start": 70,
+            "end": 70,
+            "quote": "different years, which contains the characteristics of cities (including employment information and pollutant emissions). In the mechanism analysis, the innovation index of Regional Innovation and Entrepreneurship in",
+            "ref": "L70.3"
+          },
+          {
+            "source": "md",
+            "start": 70,
+            "end": 70,
+            "quote": "information of local government leaders were from the website Zechengwang (https://www.hotelaah.com/liren/index.html) and Baidu baike.4 By combining these datasets, w e obtained unbalanced city-level panel data of 2,501",
+            "ref": "L70.6"
+          },
+          {
+            "source": "md",
+            "start": 70,
+            "end": 70,
+            "quote": "cities in 2010–2019 and on average about 250 cities each year for basic empirical estimation. In addition, information about the execution of CEPI policy in the first round, including the number of cases handled and",
+            "ref": "L70.7"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "论文在式（1）中明确设定了连续处理强度的双重差分回归，核心系数对应政策实施期虚拟变量与基期二氧化硫排放量对数的交互项。表2和表3报告了该交互项的系数估计值和标准误，其中基准规格下人均收入对数的系数为-0.013，城乡收入比的系数为0.031。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 102,
+            "end": 102,
+            "quote": "construct a DID model with continuous treatment. Unlike the standard DID method, the DID with continuous treatment uses the interactive term of treatment variable and the policy implementation dummy variable to reflect",
+            "ref": "L102.3"
+          },
+          {
+            "source": "md",
+            "start": 107,
+            "end": 107,
+            "quote": "Y _ {i p t} = \\beta_ {0} + \\beta_ {1} \\text { Shock } _ {t} \\times \\ln S O _ {2 i p} + \\beta_ {2} X _ {i p t} + \\gamma_ {t} + \\delta_ {i p} + \\theta_ {p t} + \\varepsilon_ {i p t},\\tag{1}",
+            "ref": "L107.1"
+          },
+          {
+            "source": "md",
+            "start": 110,
+            "end": 110,
+            "quote": "where i refers to city, $p$ refers to province, and t refers to year. The outcome variable $Y _ { i p t }$ is the natural log of income per capita,6 the income ratio between urban and rural income per capita, or the",
+            "ref": "L110.1"
+          },
+          {
+            "source": "md",
+            "start": 110,
+            "end": 110,
+            "quote": "natural log of the employment. Shock equals 1 if $t \\geqslant 2 0 1 6 .$ , otherwise equals 0. ln $S O _ { _ { 2 i p } }$ is the treatment variable and represents the ${ \\mathrm { S O } } _ { 2 }$ emission of city i in",
+            "ref": "L110.2"
+          },
+          {
+            "source": "md",
+            "start": 110,
+            "end": 110,
+            "quote": "$\\mathrm { S O } _ { 2 }$ emissions, before and after the CEPI policy. The coefficient of interest in Equation (1) is $\\beta _ { 1 }$ , which is the estimated effect of CEPI policy on either income per capita or",
+            "ref": "L110.5"
+          },
+          {
+            "source": "md",
+            "start": 128,
+            "end": 128,
+            "quote": "specification, adds the control variables.",
+            "ref": "L128.3"
+          },
+          {
+            "source": "md",
+            "start": 132,
+            "end": 132,
+            "quote": "$Shock \\times lnSO_2$ </td><td>-0.021**(0.009)</td><td>0.016**(0.007)</td><td>-0.013**(0.006)</td><td>-0.036*(0.017)</td><td>-0.008(0.019)</td><td>0.001(0.018)</td></tr><tr><td>Constant</td><td>9.323***(0.015)</td><td>9.",
+            "ref": "L132.2"
+          },
+          {
+            "source": "md",
+            "start": 138,
+            "end": 138,
+            "quote": "Table 3 shows how the levels of per capita income and its gap between urban and rural areas were affected by the CEPI policy. Each of the outcomes of interest contains three specifications, as in Table 2, adding year",
+            "ref": "L138.1"
+          },
+          {
+            "source": "md",
+            "start": 142,
+            "end": 142,
+            "quote": "rowspan=\"2\">(7)</td><td rowspan=\"2\">(8)</td><td rowspan=\"2\">(9)</td></tr><tr><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td></tr><tr><td> $Shock \\times lnSO_2$",
+            "ref": "L142.2"
+          },
+          {
+            "source": "md",
+            "start": 142,
+            "end": 142,
+            "quote": "</td><td>-0.008(0.007)</td><td>0.000(0.005)</td><td>0.002(0.006)</td><td>-0.031***(0.011)</td><td>-0.012**(0.005)</td><td>-0.011**(0.004)</td><td>0.061***(0.021)</td><td>0.033*(0.018)</td><td>0.031*(0.017)</td></tr><tr><",
+            "ref": "L142.3"
+          },
+          {
+            "source": "md",
+            "start": 144,
+            "end": 144,
+            "quote": "capita of urban (rural) areas describes the average income of urban (rural) residents; the urban–rural income gap is the ratio of urban income per capita and rural income per capita. The urban (rural) income per capita",
+            "ref": "L144.2"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文无明确理论贡献，使用真实数据估计了回归系数，因此采用 Step 3.2。核心因变量人均收入、城乡收入差距和就业均属于经管类变量。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Shock × lnSO₂",
+          "economic": false,
+          "reason": "该交互项将2016年及以后取值为1的政策实施期虚拟变量，与城市2015年二氧化硫排放量的自然对数相乘，用基期污染水平衡量城市受到中央环境保护督察的相对强度，属于环境政策暴露指标。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 107,
+              "end": 107,
+              "quote": "Y _ {i p t} = \\beta_ {0} + \\beta_ {1} \\text { Shock } _ {t} \\times \\ln S O _ {2 i p} + \\beta_ {2} X _ {i p t} + \\gamma_ {t} + \\delta_ {i p} + \\theta_ {p t} + \\varepsilon_ {i p t},\\tag{1}",
+              "ref": "L107.1"
+            },
+            {
+              "source": "md",
+              "start": 110,
+              "end": 110,
+              "quote": "natural log of the employment. Shock equals 1 if $t \\geqslant 2 0 1 6 .$ , otherwise equals 0. ln $S O _ { _ { 2 i p } }$ is the treatment variable and represents the ${ \\mathrm { S O } } _ { 2 }$ emission of city i in",
+              "ref": "L110.2"
+            },
+            {
+              "source": "md",
+              "start": 110,
+              "end": 110,
+              "quote": "2015 with logarithmic form, which is 1 year before the policy implementation and can be considered as exogenous to the CEPI policy. A city with higher $\\mathrm { S O } _ { 2 }$ emissions before the CEPI policy is",
+              "ref": "L110.3"
+            },
+            {
+              "source": "md",
+              "start": 114,
+              "end": 114,
+              "quote": "In the literature, pollution situation before environmental regulation is normally used as the proxy variable to measure regulation stringency, such as PM2.5 concentration, PM10 concentration, and $\\mathrm { S O } _ { 2",
+              "ref": "L114.1"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Income per capita (log form)",
+          "economic": true,
+          "reason": "该变量是城市全体居民人均收入的自然对数，衡量居民收入水平，属于经济结果变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 72,
+              "end": 72,
+              "quote": "the overall income per capita is not reported in some provinces. We used the weighted average of urban and rural income per capita by population share instead. Other outcome variables include employment (in logarithmic",
+              "ref": "L72.2"
+            },
+            {
+              "source": "md",
+              "start": 110,
+              "end": 110,
+              "quote": "where i refers to city, $p$ refers to province, and t refers to year. The outcome variable $Y _ { i p t }$ is the natural log of income per capita,6 the income ratio between urban and rural income per capita, or the",
+              "ref": "L110.1"
+            },
+            {
+              "source": "md",
+              "start": 134,
+              "end": 134,
+              "quote": "Notes: \\*\\*\\*, \\*\\*, and \\* represent significance at the 1, 5, and 10 percent levels, respectively. This table shows the results of Equation (1). The dependent variables are defined as follows: income per capita is the",
+              "ref": "L134.1"
+            },
+            {
+              "source": "md",
+              "start": 134,
+              "end": 134,
+              "quote": "average income per capita of urban and rural residents; employment is the number of workers with the unit in thousands. Both variables are given in logarithm form and are at the city level. Standard error in parentheses",
+              "ref": "L134.2"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Urban–rural income gap",
+          "economic": true,
+          "reason": "该变量以城镇居民人均收入除以农村居民人均收入，衡量城乡居民收入分配的相对差距，属于经济变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 72,
+              "end": 72,
+              "quote": "form) and the urban–rural income gap (ratio of urban income per capita to rural income per capita).",
+              "ref": "L72.3"
+            },
+            {
+              "source": "md",
+              "start": 144,
+              "end": 144,
+              "quote": "capita of urban (rural) areas describes the average income of urban (rural) residents; the urban–rural income gap is the ratio of urban income per capita and rural income per capita. The urban (rural) income per capita",
+              "ref": "L144.2"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Employment (log form)",
+          "economic": true,
+          "reason": "该变量是城市就业人数的自然对数，衡量当地劳动力市场的就业规模，属于经济变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 110,
+              "end": 110,
+              "quote": "natural log of the employment. Shock equals 1 if $t \\geqslant 2 0 1 6 .$ , otherwise equals 0. ln $S O _ { _ { 2 i p } }$ is the treatment variable and represents the ${ \\mathrm { S O } } _ { 2 }$ emission of city i in",
+              "ref": "L110.2"
+            },
+            {
+              "source": "md",
+              "start": 128,
+              "end": 128,
+              "quote": "The DID estimates of the effect of the CEPI policy on income per capita and employment are reported in Table 2, which gives three specifications of each outcome of interest. The first specification, columns (1) and (4),",
+              "ref": "L128.1"
+            },
+            {
+              "source": "md",
+              "start": 134,
+              "end": 134,
+              "quote": "average income per capita of urban and rural residents; employment is the number of workers with the unit in thousands. Both variables are given in logarithm form and are at the city level. Standard error in parentheses",
+              "ref": "L134.2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

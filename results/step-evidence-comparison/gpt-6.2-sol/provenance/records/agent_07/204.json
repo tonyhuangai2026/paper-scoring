@@ -1,0 +1,328 @@
+{
+  "agent": "agent_07",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "9ce5351f-b70d-4855-96a0-e4b63cd1fb15",
+  "finished_at": "2026-11-24T09:51:50.024700+00:00",
+  "paper": {
+    "id": "204",
+    "position": 13,
+    "title": "Is an ounce of prevention worth a pound of cure Evidence from a large-scale vaccination experiment in China",
+    "group": "组01",
+    "md_sha256": "60fa81ba86705e63acc0bd83a8d7ab32a0fe7f838e04c0322ce533fe36dd4ac8",
+    "pdf_sha256": "ddb2f0ad23b37069f3963ec842e94566a125b140797e1d94c7735d5a560599d4",
+    "ready": true
+  },
+  "pdf_pages": 18,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页有明确的 ABSTRACT 标题。摘要从公共资助免疫项目的成本效益问题开始，概述了实验、主要发现和政策含义，随后进入引言。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Our results shed light on the long-run viability of public immuni­\nzation programs, and for whom should immunization be prioritized.\n1. Introduction\nHistory has shown that vaccines offer effective protection against",
+          "ref": "P1.8"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对完整摘要后，摘要明确提出通过大规模实验和双重差分估计疫苗接种的成本效益，并报告医疗支出变化和不同人群的获益情况。摘要未声称提出新理论模型、新概念、新计量方法或证明理论性质。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "difference-in-differences \nestimates imply that every dollar spent making vaccination freely available reduced public \nmedical insurance reimbursements by at least 10 to 33 dollars, and reduced total medical",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "expenditure by 15 to 46 dollars. Comparing across beneficiaries, we find that patients aged 70 \nand above, those with more severe COPD symptoms, and those residing in rural areas, benefitted \nthe most from immunization.",
+            "ref": "P1.7"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Our results shed light on the long-run viability of public immuni­\nzation programs, and for whom should immunization be prioritized.\n1. Introduction\nHistory has shown that vaccines offer effective protection against",
+            "ref": "P1.8"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "数据来自北京大学经济政策研究所与中国疾控中心于 2013 年 10 月至 2014 年 10 月在宁波和重庆开展的社区随机实验。研究从当地健康档案中抽取老年慢阻肺患者，通过基线调查和四轮随访收集实际患者的健康状况及医疗支出，分析样本包含 1657 名患者。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "Data and sample\nOur data are derived from a large-scale randomized experiment study that was jointly conducted by Peking University’s Institute of \nEconomic Policy Research (IEPR) and the Chinese Center for Disease",
+            "ref": "P3.20"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "Control and Prevention (CDC) in China from October 2013 to \nOctober 2014.\nTwo cities – Ningbo (in Zhejiang province) and Chongqing (a provincial-level municipality) – were specifically chosen as the lo­\ncations for our",
+            "ref": "P3.21"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "the CDC, we accessed the health records of three counties (a mix of rural and urban) in each city from which \n4 Like all vaccines against infectious diseases, immunization against influenza and pneumonia exhibits",
+            "ref": "P3.27"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "COPD patients were then drawn using a stratified sampling method. Specifically, within each county, we randomly selected several \ncommunities and assigned them groups that received: the influenza vaccine (hereafter,",
+            "ref": "P4.1"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "mid-November 2013, when we trained local \ngeneral practitioners to conduct a baseline survey on all the patients in our sample. This survey collected basic demographic and \nsocioeconomic information, physical condition,",
+            "ref": "P4.7"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "COPD status, and medical expenditure in the preceding year. Patients in the three \ntreatment groups were then informed to visit the nearby CDC clinics to receive their allocated vaccine injection. With the support of",
+            "ref": "P4.8"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "weeks of November.\nThe second stage comprises four rounds of follow-up surveys – in the first two weeks of January, March, May, and October in 2014 – \non all patients in our sample. These surveys were intended to track",
+            "ref": "P4.10"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "their COPD condition and medical expenditure across four different \nseasons. Attrition is very low; we managed to track >90 % of the patients who were interviewed in the first stage.\nTo be clear, we randomized at the",
+            "ref": "P4.11"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "(790.3)***\nIndividual controls\nNO\nYES\nYES\nCommunity fixed effects\nNO\nNO\nYES\nR-squared\n0.061\n0.070\n0.141\nNote: The number of patients is 1657 (treatment: 1253; control: 404) based on our working sample. Each patient is",
+            "ref": "P7.16"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "正文式（1）明确设定了以医疗总支出为因变量的双重差分回归，并将接种组与干预后时期的交互项系数定义为处理效应。表 3 第（3）列明确报告了流感疫苗组、肺炎球菌疫苗组和联合接种组的交互项估计系数，分别为 −2253.1、−2351.8 和 −2544.5 元。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "effect on medical \nexpenditure.\nWe implement the DID estimator by running the following regression. For ease of exposition, consider the case of one treatment \ngroup and one control group only: \nyijt = α0 + α1Vaccineij",
+            "ref": "P6.15"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "+ α2Postt + α3Vaccineij × Postt + Xijtγ + μj + εijt\n(1) \nwhere i, j, and t denotes patient, community, and time respectively. yijt is the outcome variable such as total medical expenditure, \nVaccineij is a dummy",
+            "ref": "P6.16"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "variable for vaccination (essentially the treatment indicator), and Postt is an indicator for the post-treatment \nperiod. Baseline (i.e. pre-treatment period) individual characteristics are contained in the vector Xijt",
+            "ref": "P6.17"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "coefficient of the interaction term, α3, which is analogous to the “treatment effect”.\nOur main regression results are reported in Table 3. Column (1) shows results from a parsimonious form of the DID specification",
+            "ref": "P6.20"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "those in the control group, and whether these mean differences are statistically significant. *p < 0.1, **p <\n0.05, ***p < 0.01.\nTable 3 \nEffects of vaccination on total medical expenditure.\nDep var:\nTotal medical",
+            "ref": "P7.13"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "expenditure\n(1)\n(2)\n(3)\nGroup A\n−1363.4\n−1244.7\n​\n​\n(672.6)**\n(689.2)*\n​\nGroup B\n−1337.0\n−1135.1\n​\n​\n(558.4)**\n(593.0)*\n​\nGroup C\n−725.3\n−627.8\n​\n​\n(838.1)\n(813.8)\n​\nPost\n1066.9\n1109.2\n1104.5\n​\n(669.8)\n(650.2)*\n(657.3)*",
+            "ref": "P7.14"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "Post × Group A\n−2229.0\n−2258.4\n−2253.1\n​\n(714.9)***\n(689.9)***\n(698.1)***\nPost × Group B\n−2354.4\n−2340.6\n−2351.8\n​\n(723.8)***\n(715.1)***\n(717.4)***\nPost × Group C\n−2598.9\n−2544.9\n−2544.5\n​\n(800.7)***\n(789.6)***",
+            "ref": "P7.15"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文有实证且摘要未明确提出理论贡献，采用步骤 3.2。主回归分析疫苗接种对医疗总支出的影响。医疗总支出衡量医疗服务和药品的货币支出，属于卫生经济学变量，因此判为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Vaccine × Post（接种组与干预后时期的交互项）",
+          "economic": false,
+          "reason": "该交互项标记流感疫苗组、肺炎球菌疫苗组或联合接种组在干预后的观测，衡量患者是否处于相应的公共卫生干预状态。其取值由接种分组和观测时期决定，不包含价格、补贴金额或支出信息。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "COPD patients were then drawn using a stratified sampling method. Specifically, within each county, we randomly selected several \ncommunities and assigned them groups that received: the influenza vaccine (hereafter,",
+              "ref": "P4.1"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "group A), the pneumococcal vaccine (hereafter, \ngroup B), both vaccines (hereafter, group C), and no vaccine (hereafter, group D, which is essentially the control group).5\nWithin each community, our target population",
+              "ref": "P4.2"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "effect on medical \nexpenditure.\nWe implement the DID estimator by running the following regression. For ease of exposition, consider the case of one treatment \ngroup and one control group only: \nyijt = α0 + α1Vaccineij",
+              "ref": "P6.15"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "+ α2Postt + α3Vaccineij × Postt + Xijtγ + μj + εijt\n(1) \nwhere i, j, and t denotes patient, community, and time respectively. yijt is the outcome variable such as total medical expenditure, \nVaccineij is a dummy",
+              "ref": "P6.16"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "variable for vaccination (essentially the treatment indicator), and Postt is an indicator for the post-treatment \nperiod. Baseline (i.e. pre-treatment period) individual characteristics are contained in the vector Xijt",
+              "ref": "P6.17"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "Post × Group A\n−2229.0\n−2258.4\n−2253.1\n​\n(714.9)***\n(689.9)***\n(698.1)***\nPost × Group B\n−2354.4\n−2340.6\n−2351.8\n​\n(723.8)***\n(715.1)***\n(717.4)***\nPost × Group C\n−2598.9\n−2544.9\n−2544.5\n​\n(800.7)***\n(789.6)***",
+              "ref": "P7.15"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Total medical expenditure（医疗总支出）",
+          "economic": true,
+          "reason": "该变量以货币金额衡量患者的住院、门诊和处方药支出，由公共医保报销和患者自付两部分构成，反映医疗服务与药品的支出及其支付负担，属于卫生经济学变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "variation (information) about COPD condition.\nThe main outcome that we look at in this paper is the total medical expenditure, which comprises three items: inpatient expenses, \noutpatient expenses, and prescription",
+              "ref": "P5.10"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "medicine. The incidence of hospitalization in our sample is low (around 25.1 % at baseline), so \nmost of the expenses stem from outpatient visits and the cost of prescription medicine. At baseline, total medical",
+              "ref": "P5.11"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "1.27\n(1.44)\n0.69\n(1.19)\n−0.58***\n(0.05)\n​\n​\n​\n​\n​\nPanel C. Direct cost: medical expenditure (RMB, yuan)\n​\n​\n​\n​\nTotal expenditure\n4177\n(4461)\n3434\n(5240)\n−743***\n(169)\nBreakdown by type:\n​\n​\n​\n​\n​\n​\n- Inpatient\n1099",
+              "ref": "P5.16"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "(2532)\n1143\n(3809)\n44\n(112)\n- Outpatient\n428\n(1112)\n376\n(943)\n−52\n(36)\n- Prescription drugs\n2650\n(3109)\n1915\n(2267)\n−735***\n(95)\nBreakdown by source of payment:\n​\n​\n​\n​\n​\n- Reimbursement\n2929\n(3321)\n2438\n(3879)\n−490***",
+              "ref": "P5.17"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "interesting to examine how vaccination status impacted public medical insurance reimbursements vis-`a-vis out-of-pocket medical \nexpenditure. To this end, we break the total medical expenditure into these two components",
+              "ref": "P8.2"
+            },
+            {
+              "source": "pdf",
+              "start": 8,
+              "end": 8,
+              "quote": "and run DID regressions separately. In \nTable 4, we find that receiving either or both of the vaccines will significantly reduce both public medical insurance reimbursements \nand out-of-pocket medical expenditure.",
+              "ref": "P8.3"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

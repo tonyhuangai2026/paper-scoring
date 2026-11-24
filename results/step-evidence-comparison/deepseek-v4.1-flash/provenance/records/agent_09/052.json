@@ -1,0 +1,202 @@
+{
+  "agent": "agent_09",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "ea14727c-7e1f-4056-a4d1-07e6e53aedf4",
+  "finished_at": "2026-11-24T09:41:52.823265+00:00",
+  "paper": {
+    "id": "052",
+    "position": 6,
+    "title": "Exorbitant Privilege Gained and Lost Fiscal Implications",
+    "group": "组01",
+    "md_sha256": "a6cbe316763258e88929ff1202f783fef87fa7969b791bc335c9e408b68eda4d",
+    "pdf_sha256": "52ac9cfbea5eae852969c0ee223bc54f1f38540078b113d8a4c289765ec2ace9",
+    "ready": true
+  },
+  "pdf_pages": 49,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页有明确的摘要段落，概述研究三个世纪财政历史、主导安全资产供应国发行超过未来基本盈余支撑的债务等核心发现。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+          "ref": "P2.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要主要陈述研究发现（主导安全资产供应国发行超过财政支撑的债务、失去特权时债券持有人损失等），并未明确宣称构建新模型、新概念或计量方法创新等理论贡献。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+            "ref": "P2.1"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用英国1729–2020年、美国1793–2020年及荷兰1601–1914年的历史财政与债务数据，来源包括英格兰银行千年宏观数据、Hall and Sargent、Ellison and Scott等真实历史数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "same approach to analyze\nthe case of Holland and the Netherlands.\nII.\nThe Historical Cash Flow Dynamics:\nStylized Facts\nA.\nData and Fiscal Cash Flows\nFor the United Kingdom, we use annual data from 1729 to 2020. The",
+            "ref": "P9.9"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "main\nUK dataset we used is “A Millennium of Macroeconomics Data,” pub-\nlished by the Bank of England, which contains a broad set of historical\nmacroeconomic and ﬁnancial market data. Our historical (1793–1929)\nUS",
+            "ref": "P9.10"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "online) plots the same data against recession episodes, showing that\nspending/GDP, tax/GDP and surplus/GDP ratios are largely acyclical be-\nfore World War I.\nWe obtain the market value of the UK public debt data using",
+            "ref": "P12.3"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "the data\nconstructed by Ellison and Scott (2020), which contain the quantity and\nmarket price of every individual bond issued by the UK government start-\ning in 1694. We compute the market value by matching each bond’s",
+            "ref": "P12.4"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了VAR模型（式8）来刻画税收、支出等状态变量动态，并明确估计了VAR系数（伴随矩阵Ψ、协方差Σ），用于计算财政支撑；同时报告了估计出的风险溢价、便利收益率等系数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "A.\nVAR Model of Cash Flow Dynamics\nWe propose a VAR model to capture the dynamics in expected cash ﬂows\nand discount rates in the economy.\nWe assume that the N \u0003 1 vector of state variables z follows a Gaussian",
+            "ref": "P29.1"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "ﬁrst-order VAR:\nzt 5 Ψzt21 1 ut 5 Ψzt21 1 Σ1=2εt,\n(8)\nwith N \u0003 N companion matrix Ψ and homoscedastic innovations ut ∼\ni:i:d: N (0, Σ). The Cholesky decomposition of the covariance matrix,\nΣ 5 Σ1=2(Σ1=2)0, has nonzero",
+            "ref": "P29.2"
+          },
+          {
+            "source": "pdf",
+            "start": 23,
+            "end": 23,
+            "quote": "returns from the Jordà-Schularick-\nTaylor macrohistory database and corporate bond yields from the Global\nFinancial Database, we compute an equity premium of 5.92%, a credit risk\npremium of 1.74%, and a term premium of",
+            "ref": "P23.3"
+          },
+          {
+            "source": "pdf",
+            "start": 23,
+            "end": 23,
+            "quote": "1.24%, all three measured\nrelative to the short-term bond yield, for the United Kingdom. The ratio\nof corporate debt to equity plus corporate debt is 0.47. As a result, the\nunlevered equity risk premium relative to the",
+            "ref": "P23.4"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章为无理论、有实证，走Step 3.2路径。核心自变量为政府债务的市场价值/财政支撑相关变量，核心因变量为财政支撑（未来基本盈余现值加铸币税），二者均属财政/公共经济学经管类变量，故判为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "market value of government debt (D/Y)",
+          "economic": true,
+          "reason": "政府债务市场价值占GDP比率，衡量主权债务规模，属财政经济学核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": ".56\nSeigniorage/Y\n.29\n.33\n.00\n.00\n.00\n.11\nB. Steady State at z 5 0\nPV(S)/Y\n49.45\n28.59\n73.13\n15.56\n22.42\n2.66\nPV(S 1 CY)/Y\n55.67\n36.09\n73.13\n15.56\n22.42\n8.03\nPV(S 1 CY)/D\n64.40\n41.45\n136.58\n130.64\n214.72\n20.03\nC. Sample",
+              "ref": "P25.6"
+            },
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "Averages\nD/Y\n86.45\n87.06\n53.55\n11.91\n16.48\n40.09\nPV(S)/Y\n55.70\n58.34\n85.46\n17.78\n21.08\n7.67\nPV(S 1 CY)/Y\n61.32\n64.93\n85.46\n17.78\n21.08\n12.80\nPV(S 1 CY)/D\n70.93\n74.58\n159.60\n149.28\n127.96\n31.93\nr(PV(S 1 CY)/Y, D/Y)\n.71",
+              "ref": "P25.7"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "fiscal backing (PV(S+CY)/Y)",
+          "economic": true,
+          "reason": "财政支撑为未来基本盈余与铸币税收入的现值占GDP比率，衡量政府财政能力，属公共财政核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": ".56\nSeigniorage/Y\n.29\n.33\n.00\n.00\n.00\n.11\nB. Steady State at z 5 0\nPV(S)/Y\n49.45\n28.59\n73.13\n15.56\n22.42\n2.66\nPV(S 1 CY)/Y\n55.67\n36.09\n73.13\n15.56\n22.42\n8.03\nPV(S 1 CY)/D\n64.40\n41.45\n136.58\n130.64\n214.72\n20.03\nC. Sample",
+              "ref": "P25.6"
+            },
+            {
+              "source": "pdf",
+              "start": 19,
+              "end": 19,
+              "quote": "(1), the discounted present value\nof primary surpluses PVS\nt scaled by GDP Yt is given by a weighted average\nof the valuations ratios for the tax and spending claims:\nDt\nYt\n5 PVS\nt\nYt\n5 P T\nt\nYt\n2 P G\nt\nYt\n5 tt exp(pdT",
+              "ref": "P19.2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

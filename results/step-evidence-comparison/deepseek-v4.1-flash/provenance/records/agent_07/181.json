@@ -1,0 +1,265 @@
+{
+  "agent": "agent_07",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "659fb356-7118-4ccc-b836-213df9cb243f",
+  "finished_at": "2026-11-24T09:40:11.327570+00:00",
+  "paper": {
+    "id": "181",
+    "position": 11,
+    "title": "Indoor air quality and health Empirical evidence from fluoride pollution in China",
+    "group": "组01",
+    "md_sha256": "4bd0de4c42b9187d6e69d720428b56db8338138dd43319124324e5dbeccddd33",
+    "pdf_sha256": "b2cfedb6a5854c4679880238625caa35c6b002405d0f4e0083f9ad2555054778",
+    "ready": true
+  },
+  "pdf_pages": 16,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的摘要段落，以“A B S T R A C T”开头，概述了研究内容、方法和主要结果。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+          "ref": "P1.3"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要中未明确提及本文的理论贡献，如构建新模型、创造新概念或证明模型性质等。摘要主要描述实证分析方法和结果。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Liub,⁎\na Guangdong University of Foreign Studies, China\nb Chinese University of Hong Kong, Shenzhen, China\nA R T I C L E I N F O\nKeywords:\nI12\nI18\nQ53\nA B S T R A C T\nIn this paper we conducted an econometric analysis",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Health and\nNutrition Survey, we applied individual fixed effect models and triple difference models to ex-\namine the effects of whether households use coal as domestic fuel. The results showed that\nfluoride pollution",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "from coal burning significantly increases the diastolic and systolic blood\npressure levels of adults. And the pollution also leads to higher likelihood of underweight. Our\nfurther analysis indicated that fluoride",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "pollution from coal burning during the infant period\ngreatly reduces the height and weight of children in their childhood and adolescence periods. We\nalso explore the mechanism by investigating the influence of fluoride",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "pollution exposure on\nbirthweight and find evidence that fluoride pollution had a negative impact on prenatal devel-\nopment.\n1. Introduction\nAir pollution is a severe problem in China. In recent decades, this problem",
+            "ref": "P1.7"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用了中国健康与营养调查（CHNS）的面板数据，以及中国深入生育调查（CIFS）和流行病学调查数据，均为真实数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "to investigate the impacts of fluoride pol-\nlution on health. Burning high-fluoride-content coal indoors is the primary source of fluoride\npollution in Guizhou Province of China. Exploiting longitudinal data from China",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Health and\nNutrition Survey, we applied individual fixed effect models and triple difference models to ex-\namine the effects of whether households use coal as domestic fuel. The results showed that\nfluoride pollution",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "by using household coal use as an indicator of the\nseverity of fluoride pollution. For this purpose, we used the CHNS as the major data source. It is a national sampling survey im-\nplemented by the Carolina Population",
+            "ref": "P4.9"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "Center at the University of North Carolina at Chapel Hill and the National Institute for\nNutrition and Health at the Chinese Center for Disease Control and Prevention. As a follow-up survey, it has released nine rounds",
+            "ref": "P4.10"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "China In-depth Fertility Survey (CIFS) of 1987. The CIFS reviewed 6619 qualified women from 40 counties (cities, districts, special\ndistricts) of Guizhou, providing detailed information on women's fertility history and",
+            "ref": "P10.1"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "household backgrounds. We proxied exposure\nto fluoride pollution among women by the county-level dental fluorosis prevalence rate among students aged 8–15 years, which is\nprovided by the Epidemiological Investigation",
+            "ref": "P10.2"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了计量模型（如个体固定效应模型、三重差分模型），并报告了估计出的模型系数（如Table 3、Table 5等）。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "models were used in the study to respectively estimate the influence of fluoride pollution on adults\nand the influence of exposure to fluoride pollution during infancy on child development. The model for estimating the",
+            "ref": "P4.13"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "influence of\nfluoride pollution on adults is expressed as follows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nht\niht\ni\nt\niht\n1\n2\n3\n(1)\nwhere the dependent variable yiht represents the health indicator that may be affected by fluoride",
+            "ref": "P4.14"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "for the identifi-\ncation of the long-term effects (Bleakley, 2010; Chen & Zhou, 2007), but with the treatment at household level. The model was set as\nfollows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nih\niht\nh\nt\niht\n1\n2\n3\n(2)\nwhere the",
+            "ref": "P4.23"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "gender and age/age squared, wave fixed effects, prefectural GDP per capita, and primary and secondary industry proportions. The\nresults reveal that the estimated coefficient of the household coal use variable was 0.937",
+            "ref": "P7.5"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "and was significantly positive, demon-\nstrating that the fluoride pollution caused by household coal increased people's diastolic pressure levels. The second line reports the\nestimated coefficient with additional",
+            "ref": "P7.6"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "the interaction term between household coal use and\nGuizhou.\nTable 5 presents the estimated coefficients of the interaction term between household coal use and Guizhou province from the\ntriple difference models. We find",
+            "ref": "P9.9"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "that household coal use in Guizhou leads to significant increases in both levels of diastolic and\nsystolic pressures. Specifically, baseline model shows household coal use in Guizhou leads to 1.322 mmHg (1.8%) increase",
+            "ref": "P9.10"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章为无理论、有实证，采用步骤3.2：识别核心自变量和核心因变量，判断是否至少有一个为经管类变量。核心自变量为家庭燃煤使用（衡量氟污染暴露），核心因变量为健康指标（血压、体重等），两者均属于经管类变量（环境经济学和健康经济学范畴）。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Household coal use",
+          "economic": true,
+          "reason": "该变量衡量家庭是否使用煤作为主要烹饪燃料，代理氟污染暴露程度，属于环境经济学中的污染暴露变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "household to which the individual belongs, and the period during which the individual is\nsurveyed; coalht represents whether individual i's household uses coal as the main cooking fuel during the period t, which is a",
+              "ref": "P4.16"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "proxy\nfor the severity of fluoride pollution exposure for individual i in the current period; Xiht represents controlled variables that may affect\nhealth, such as age and household income; αi and λt represents the",
+              "ref": "P4.17"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Diastolic and systolic blood pressure, weight, underweight",
+          "economic": true,
+          "reason": "这些变量衡量成人健康结果（心血管功能、体重状况），属于健康经济学中的健康产出变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "influence of\nfluoride pollution on adults is expressed as follows:\n=\n+\n+\n+\n+\n+\ny\ncoal\nX\niht\nht\niht\ni\nt\niht\n1\n2\n3\n(1)\nwhere the dependent variable yiht represents the health indicator that may be affected by fluoride",
+              "ref": "P4.14"
+            },
+            {
+              "source": "pdf",
+              "start": 4,
+              "end": 4,
+              "quote": "pollution, including diastolic and\nsystolic blood pressure, weight, and other indicators that measure cardiovascular function and physical state; the subscripts i, h, and t\nrespectively represent the individual, the",
+              "ref": "P4.15"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "pollution on the health of adults\nUsing an individual fixed-effects model, we estimated the impact of fluoride pollution on adult health. The regression result is\nshown in Table 3. The first four columns concern the",
+              "ref": "P7.3"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "influence of fluorosis on cardiovascular function. The estimate of the impact on\ndiastolic blood pressure is given in the first column, with the controlled variables including age, squared age, interaction between",
+              "ref": "P7.4"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

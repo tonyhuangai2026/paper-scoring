@@ -1,0 +1,392 @@
+{
+  "agent": "agent_04",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "86048cac-e1c2-467d-90ab-9b1761a040f6",
+  "finished_at": "2026-11-24T09:43:33.189793+00:00",
+  "paper": {
+    "id": "239",
+    "position": 15,
+    "title": "Narrowing or widening the gender gap in market and domestic work The impact of workweek reduction reform in China",
+    "group": "组01",
+    "md_sha256": "2accc0a4532e75b65582f60adf6c93078f797b07d4b335338a482a3cbd1222e9",
+    "pdf_sha256": "426c4c436581d09c5ceee088d52ceaaea1514a1ae963551406c2fb5c5d9a295f",
+    "ready": true
+  },
+  "pdf_pages": 22,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页有明确的 ABSTRACT 标题，摘要从研究问题开始，以缩短工时可能加剧劳动力市场性别不平等的结论结束，随后进入第 1 节引言。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "classification:\nD13\nJ22\nJ12\nJ13\nJ16 \nKeywords:\nIntra-household allocations\nGender division of labor\nGender inequality\nWorkweek reduction\nFertility\nA B S T R A C T\nWe investigate whether shorter working hours can narrow",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "the gender gap in market and domestic work by \nexamining the impact of China’s workweek reduction policy. We find that the policy deepened the gender di­\nvision of labor within dual-employee households, resulting in",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "working hours system, families’ optimization \nbehavior manifests as a deepened household specialization aimed at maximizing household consumption, sug­\ngesting that the reduction in working hours may exacerbate labor",
+          "ref": "P1.9"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "market gender inequality.\n1. Introduction\nCalls for shorter working hours have been growing recently. Will \nsuch a gender-neutral policy exert varying impacts on the career \ndevelopment of different genders? In",
+          "ref": "P1.10"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对完整摘要后，摘要明确报告了改革对家庭分工和劳动力市场结果的影响，并以家庭消费最大化解释分工深化。摘要未明确说明本文构建或扩展了理论模型、提出了新概念、推导或证明了模型性质，或创新了计量方法。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "classification:\nD13\nJ22\nJ12\nJ13\nJ16 \nKeywords:\nIntra-household allocations\nGender division of labor\nGender inequality\nWorkweek reduction\nFertility\nA B S T R A C T\nWe investigate whether shorter working hours can narrow",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "the gender gap in market and domestic work by \nexamining the impact of China’s workweek reduction policy. We find that the policy deepened the gender di­\nvision of labor within dual-employee households, resulting in",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "women further leaning toward familial roles. \nSpecifically, women allocated more time to childcare and other household chores, while men withdrew from \nthese domestic duties, worked longer hours beyond the designated",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "schedule, and pursued higher education. This \nshift contributed to improved income and career advancement for men, whereas women did not experience \nsimilar improvements. The impact of this polarized gender division of",
+            "ref": "P1.7"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "labor was particularly pronounced in \nhouseholds with higher demands for domestic product consumption or with higher male-female wage ratios prior \nto the reform. Our analysis demonstrates that under the shortened",
+            "ref": "P1.8"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "working hours system, families’ optimization \nbehavior manifests as a deepened household specialization aimed at maximizing household consumption, sug­\ngesting that the reduction in working hours may exacerbate labor",
+            "ref": "P1.9"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "market gender inequality.\n1. Introduction\nCalls for shorter working hours have been growing recently. Will \nsuch a gender-neutral policy exert varying impacts on the career \ndevelopment of different genders? In",
+            "ref": "P1.10"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "主分析使用中国健康与营养调查（CHNS）1989、1991、1993、1997 和 2000 年五轮纵向数据。该调查采用多阶段随机整群抽样，记录受访者的实际就业和时间使用情况，包括受访者报告的上周工作时数与照料儿童时数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "is already adequate \nbefore the working hour reduction reform.13\n4. Data, summary statistics, and graphical evidence\n4.1. Data and summary statistics\nThe empirical analyses investigate the impact of the working hour",
+            "ref": "P6.24"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "reduction reform on the sexual division of labor when both the wife’s \nand husband’s working hours are reduced. For our main analysis, we use \nlongitudinal data from the 1989, 1991, 1993, 1997, and 2000 waves of \nthe",
+            "ref": "P6.25"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "China Health and Nutrition Survey (CHNS). We exclude observa­\ntions from 2004 onward for two main reasons. (1) Other policy changes \naround 2000 had substantial impacts on employment status and labor \nmarket outcomes,",
+            "ref": "P6.26"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "being followed up in 2004. The CHNS \nadopts a multi-stage random cluster sampling process. The sampling \nframe comprises 4400 households with over 16,000 individuals across \nnine provinces that exhibit significant",
+            "ref": "P6.28"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "variations in geography, eco­\nnomic conditions, and public resources.14 The major advantage of the \nCHNS is that it includes longitudinal data on both time use and labor \nmarket employment.15\nWe construct treatment",
+            "ref": "P6.29"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "Heilongjiang. Note that Liaoning was excluded in 1997 \nbut reintroduced in 2000, while Heilongjiang was added in 1997.\n15 For example, the question regarding working hours was asked: “In the last \nweek, how many hours",
+            "ref": "P6.34"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "did you work?” The questions about childcare were \nasked: “During the past week, did you take care of the children?” and “How \nmuch time did you spend taking care of children by feeding, bathing, dressing, \nholding, or",
+            "ref": "P6.35"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "watching them?”\nA. Sun et al.",
+            "ref": "P6.36"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "模型方面，正文式（8）明确给出双重差分回归，将标准和非标准工时雇员指标分别与年份指标交互，并纳入个人和年份固定效应。系数方面，表 3 报告了交互项估计值及标准误，例如妻子全样本中，标准工时雇员指标与 1997 年指标交互项的系数为 4.906，标准误为 1.864，因变量为每周家务时数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "econometric specification is as follows19\nyit = α +\n∑\ntSEmployeei × τt⋅βS\nt +\n∑\ntNEmployeei × τt⋅βN\nt + τt + λi + Xitρ\n+ εit,\n(8) \nwhere yit denotes the main outcomes for individual i at year t, including \nweekly",
+            "ref": "P10.13"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "working hours, time spent on family chores, overtime hours per \nweek, investments in human capital, job position, and annual labor in­\ncome. SEmployeei is a dummy variable that equals 1 when individual i \nwas an",
+            "ref": "P10.14"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "employee with a standard work schedule; NEmployeei is a dummy \nindicator that equals 1 if individual i was an employee with non- \nstandard work schedules. τt are dummy indicators for calendar years \n1989, 1991, 1997,",
+            "ref": "P10.15"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "and 2000. The reference year is 1993, shortly before \nthe reform. λi refer to individual fixed effects. Further, we include \nindividual demographics (age squared and a dummy for non- \nagricultural hukou), household",
+            "ref": "P10.16"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "Source: China Health and Nutrition Survey (CHNS).\nTable 3 \nImpact of the workweek reduction policy on weekly housework hours.\nSubsamples\nWives\nHusbands\nTotal\nWith underage \nchildren\nTotal\nWith underage \nchildren\n(1)\n(2)",
+            "ref": "P12.23"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "(3)\n(4)\nSEmployee × 1989\n−1.706\n−0.803\n−0.662\n−1.209\n(2.407)\n(2.470)\n(1.397)\n(1.562)\nSEmployee × 1991\n−1.912\n−1.626\n0.965\n0.644\n(2.151)\n(2.134)\n(1.568)\n(1.694)\nSEmployee × 1997\n4.906***\n5.673***\n−0.244\n−0.388\n(1.864)",
+            "ref": "P12.24"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "couples with children under the age of 16. The outcome variable in each column \nis the number of hours spent on housework per week. The DDD estimate for the \ntriple interaction between the indicator for employment",
+            "ref": "P12.29"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "按步骤 3.2 判定。论文使用真实调查数据估计改革效应。核心解释变量衡量劳动工时规制的政策暴露，核心结果变量衡量家庭生产和市场劳动的时间配置，均属于经管类变量，因此判为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "SEmployee × τt 和 NEmployee × τt",
+          "economic": true,
+          "reason": "就业类型与年份的交互项用于衡量标准工时和非标准工时雇员相对于自雇者在各期受到的差异化政策暴露。该变量由就业安排和劳动工时规制共同定义，属于劳动经济学变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "(2020), we regard self-employed individuals as unaffected by \nthe reform. Departing from their study, among employees, we use the \nstatus of a standard or non-standard work schedule as proxies for the \nintensity of the",
+              "ref": "P7.2"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "reform implementation to refine our measurement of the \nreform enforcement.\nThe categorization of standard and non-standard work schedules is \nbased on the statements from the Examination and Approval Measures for",
+              "ref": "P7.3"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "econometric specification is as follows19\nyit = α +\n∑\ntSEmployeei × τt⋅βS\nt +\n∑\ntNEmployeei × τt⋅βN\nt + τt + λi + Xitρ\n+ εit,\n(8) \nwhere yit denotes the main outcomes for individual i at year t, including \nweekly",
+              "ref": "P10.13"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "working hours, time spent on family chores, overtime hours per \nweek, investments in human capital, job position, and annual labor in­\ncome. SEmployeei is a dummy variable that equals 1 when individual i \nwas an",
+              "ref": "P10.14"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "employee with a standard work schedule; NEmployeei is a dummy \nindicator that equals 1 if individual i was an employee with non- \nstandard work schedules. τt are dummy indicators for calendar years \n1989, 1991, 1997,",
+              "ref": "P10.15"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "estimation. εit is the error term and is \nclustered at the community level in all regressions.\nThe coefficients of interest, βS\nt and βN\nt , are the mean shift in time \nallocations and a series of outcomes among",
+              "ref": "P10.18"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "individuals as employees \nwith standard and non-standard work schedules relative to self- \nemployed workers. Assuming that the differences across groups \nremain time-invariant without the workweek reduction reform, βS\nt",
+              "ref": "P10.19"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "and \nβN\nt can be interpreted as the causal effects of the reform.\n5.2. Identification particulars\nThe validity of the DID estimation heavily depends on assumptions \nsuch as parallel trends, no sorting across employment",
+              "ref": "P10.20"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Weekly housework hours",
+          "economic": true,
+          "reason": "衡量夫妻各自每周投入家务的小时数，反映家庭生产中的时间投入及夫妻之间的劳动分工，属于家庭经济学中的资源配置变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "results in Table 3, we break down house­\nwork into four distinct categories collected by the CHNS: (1) preparing \nand cooking food, (2) washing and ironing clothes, (3) buying food, and \n(4) attending and supervising",
+              "ref": "P12.6"
+            },
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "underage children. In Table 4, Columns \n(1)–(4) reveal that wives with a standard work schedule spent more time \non cooking relative to the self-employed after the reform, while hus­\nbands reduced their involvement in",
+              "ref": "P12.7"
+            },
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "Source: China Health and Nutrition Survey (CHNS).\nTable 3 \nImpact of the workweek reduction policy on weekly housework hours.\nSubsamples\nWives\nHusbands\nTotal\nWith underage \nchildren\nTotal\nWith underage \nchildren\n(1)\n(2)",
+              "ref": "P12.23"
+            },
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "couples with children under the age of 16. The outcome variable in each column \nis the number of hours spent on housework per week. The DDD estimate for the \ntriple interaction between the indicator for employment",
+              "ref": "P12.29"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Weekly overtime hours",
+          "economic": true,
+          "reason": "衡量个人每周在主要工作中超过适用基准的工时，反映市场劳动的额外时间投入，属于劳动供给变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "deepening of labor \ndivision, males are anticipated to experience a greater increase in time \nallocation to the workplace sphere beyond the designated schedule \ncompared with females.\nOvertime hours in one’s primary",
+              "ref": "P13.10"
+            },
+            {
+              "source": "pdf",
+              "start": 13,
+              "end": 13,
+              "quote": "job. In this analysis, we focus on \nthe working hours in the primary job.21 We estimate the effect of the \nreform on the number of overtime hours for employed husbands and \nwives, respectively. Specifically, if the",
+              "ref": "P13.11"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "bottom of the table.\nSource: China Health and Nutrition Survey (CHNS).\n22 For employees with a standard work schedule, overtime hours are defined \nas the excess over 48 h in 1991 and 1993, and the excess over 40 h in",
+              "ref": "P14.27"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "1997 and \n2000. For employees with non-standard work schedules, overtime hours are \ndefined as the excess over 48 h in all waves. For self-employed individuals, \novertime hours are calculated by subtracting the average",
+              "ref": "P14.28"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "weekly working hours \nin 1993 from their actual weekly working hours; if the working hours do not \nexceed the average of 1993, the overtime hours are recorded as 0. The results \nare robust to different definitions of",
+              "ref": "P14.29"
+            },
+            {
+              "source": "pdf",
+              "start": 15,
+              "end": 15,
+              "quote": "couples \nwith children under the age of 16. The outcome variables in Columns (1)–(4) are the number of hours worked overtime per week, and those in Columns (5)–(8) are \ndummy indicators of whether one had a college or",
+              "ref": "P15.23"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

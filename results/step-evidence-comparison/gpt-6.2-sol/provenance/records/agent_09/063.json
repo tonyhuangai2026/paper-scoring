@@ -1,0 +1,213 @@
+{
+  "agent": "agent_09",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "55daa6a9-3912-43a2-b364-8aebf752f604",
+  "finished_at": "2026-11-24T09:49:53.800849+00:00",
+  "paper": {
+    "id": "063",
+    "position": 8,
+    "title": "Corporate investment and financing with uncertain growth opportunities",
+    "group": "组01",
+    "md_sha256": "36c298c0c29a56f5d5de2f061ca5d4b7555b1a79bfb0690fb79642b46c7aff9c",
+    "pdf_sha256": "a98ca663ee1a63342eaff766ef04a20048e210192c598fe586c94a7e084dbe3f",
+    "ready": true
+  },
+  "pdf_pages": 22,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "理论",
+  "label_two": "核心经管",
+  "field_path": "3.1",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "正文引言之前有明确标注为 Abstract 的段落，概述了本文的模型和主要发现。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 23,
+          "end": 23,
+          "quote": "## Abstract",
+          "ref": "L23.1"
+        },
+        {
+          "source": "md",
+          "start": 25,
+          "end": 25,
+          "quote": "This paper develops a continuous-time model of a firm's sequential investments. The firm has an option to expand revenue after the initial investment. However, the timing of exercising the growth option depends not only",
+          "ref": "L25.1"
+        },
+        {
+          "source": "md",
+          "start": 25,
+          "end": 25,
+          "quote": "threshold has a nonmonotonic (U-shaped) relation with the arrival rate of the growth opportunity, in that it starts to decrease and then increase with the arrival rate. The outcome is driven by the tradeoff between",
+          "ref": "L25.3"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确说明本文构建了企业序贯投资的连续时间模型，将增长机会到达的不确定性纳入扩张期权的行权时机分析，并给出初始投资阈值与机会到达率之间的 U 形关系。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 25,
+            "end": 25,
+            "quote": "This paper develops a continuous-time model of a firm's sequential investments. The firm has an option to expand revenue after the initial investment. However, the timing of exercising the growth option depends not only",
+            "ref": "L25.1"
+          },
+          {
+            "source": "md",
+            "start": 25,
+            "end": 25,
+            "quote": "on the underlying cash flows but also on the uncertainty of the growth opportunity. We show that the uncertainty of growth opportunity has a positive effect on the initial investment. In particular, the investment",
+            "ref": "L25.2"
+          },
+          {
+            "source": "md",
+            "start": 25,
+            "end": 25,
+            "quote": "threshold has a nonmonotonic (U-shaped) relation with the arrival rate of the growth opportunity, in that it starts to decrease and then increase with the arrival rate. The outcome is driven by the tradeoff between",
+            "ref": "L25.3"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文第 2.2.3 节列出了包含机会到达跳跃项的股权估值微分方程及其通解，并通过价值匹配和平滑拼接条件推导出确定初始投资阈值的方程。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 226,
+            "end": 226,
+            "quote": "r E = \\frac {1}{2} \\sigma^ {2} x ^ {2} E _ {x x} + \\mu x E _ {x} + (1 - \\tau) (x - c) + \\lambda (E _ {2} - E),\\tag{17}",
+            "ref": "L226.1"
+          },
+          {
+            "source": "md",
+            "start": 232,
+            "end": 232,
+            "quote": "E (x) = M _ {3} x ^ {\\beta_ {1}} + M _ {4} x ^ {\\beta_ {2}} + M _ {1} x ^ {\\gamma_ {1}} + M _ {2} x ^ {\\gamma_ {2}} + (1 - \\tau) \\left[ \\frac {x}{r - \\mu} - \\frac {c}{r} \\right],\\tag{18}",
+            "ref": "L232.1"
+          },
+          {
+            "source": "md",
+            "start": 305,
+            "end": 305,
+            "quote": "The initial investment threshold is solved using value-matching and smooth-pasting conditions similar to prior section. After obtaining solution to all coefficients, we obtain the following equation to solve x :",
+            "ref": "L305.1"
+          },
+          {
+            "source": "md",
+            "start": 308,
+            "end": 308,
+            "quote": "\\begin{array}{r l} & {\\gamma_ {1} \\left(I _ {1} - \\frac {\\tau c}{r}\\right) = (\\gamma_ {1} - \\beta_ {1}) (M _ {3} + N _ {3}) x _ {i} ^ {\\beta_ {1}} + (\\gamma_ {1} - \\beta_ {2}) (M _ {4} + N _ {4}) x _ {i} ^ {\\beta_ {2}}}",
+            "ref": "L308.1"
+          },
+          {
+            "source": "md",
+            "start": 308,
+            "end": 308,
+            "quote": "\\\\ & {\\qquad + (\\gamma_ {1} - \\gamma_ {2}) (M _ {2} + N _ {2}) x _ {i} ^ {\\gamma_ {2}} + (\\gamma_ {1} - 1) (1 - \\tau) \\frac {x _ {i}}{r - \\mu}.} \\end{array}\\tag{32}",
+            "ref": "L308.2"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": false,
+        "reason": "核对了正文的数值结果、稳健性分析、实证启示和附录 A。数值结果来自以既有文献中的基准参数及其变动值进行的模型求解。稳健性分析和附录考察两阶段债务融资模型，实证启示提出了供未来检验的专利代理变量和风险率回归。全文未使用实际观测样本开展分析。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 321,
+            "end": 321,
+            "quote": "Although some special cases of our model can be solved analytically, there are no closed-form solutions for the general case $( 0 < \\lambda < \\infty )$ . We use numerical solutions to characterize the quantitative",
+            "ref": "L321.1"
+          },
+          {
+            "source": "md",
+            "start": 321,
+            "end": 321,
+            "quote": "effects of the jump risk (of arrival) on investment and financing decisions. In order to solve the model numerically, we need to specify values of th input parameters. We start with a set of reasonable “base",
+            "ref": "L321.2"
+          },
+          {
+            "source": "md",
+            "start": 321,
+            "end": 321,
+            "quote": "case”parameter values taken from well-established papers in the existing real-option/contingent-claim literature, and repeat the computations with a wide range of parameter values to ensure robustness of the results.",
+            "ref": "L321.3"
+          },
+          {
+            "source": "md",
+            "start": 399,
+            "end": 399,
+            "quote": "We consider the case that the firm can fund the initial investment and the growth opportunity by issuing a mix of debt and equity (two-stage debt financing). Following Sarkar and Zhang (2015), we assume the first-stage",
+            "ref": "L399.1"
+          },
+          {
+            "source": "md",
+            "start": 401,
+            "end": 401,
+            "quote": "As we can see in Table $1 , ^ { 1 3 }$ the investment trigger falls from 2.8476 to 2.1014 as the arrival speed goes from zero to 0.05, then rises to 2.6012 as the arrival speed rises to 1, the investment trigger is",
+            "ref": "L401.1"
+          },
+          {
+            "source": "md",
+            "start": 407,
+            "end": 407,
+            "quote": "Our results on the relation between investment (and debt policy) and uncertainty shed new light on the empirica exercises in the future. On the investment side, previous literatures have unambiguously documented the",
+            "ref": "L407.1"
+          },
+          {
+            "source": "md",
+            "start": 407,
+            "end": 407,
+            "quote": "innovation (Malamud and Zucchi (2019)) We postulate that patents-related proxy might be a good candidate. For example, in a panel group of pharmaceutica companies. Chandy. Hopstaken. Narasimhan, and Prabhu (2o06) use",
+            "ref": "L407.4"
+          },
+          {
+            "source": "md",
+            "start": 407,
+            "end": 407,
+            "quote": "patents at later development stages to capture the “conversion ability” during the drug innovation. Then our testable implication is that the arrival rate has a convex relation with investment timing. Notice that our",
+            "ref": "L407.5"
+          },
+          {
+            "source": "md",
+            "start": 407,
+            "end": 407,
+            "quote": "model is essentially relevant to lumpy investments (Whited, 2006 instead of adiustment costs (Bloom. 2007). Thus a hazard regression will be more appropriate (Jiao. Nishihara, and Zhang (2019)). On the debt policy side,",
+            "ref": "L407.6"
+          },
+          {
+            "source": "md",
+            "start": 541,
+            "end": 541,
+            "quote": "Due to the similarity of one-stage debt financing and two-stage debt financing, we present the two-stage debt financing model in a shorthand way. We first present the case of Certain Modernization Opportunity (λ = ∞).",
+            "ref": "L541.1"
+          },
+          {
+            "source": "md",
+            "start": 649,
+            "end": 649,
+            "quote": "Similar to the boundary conditions of Section 2.2.3, we can solve $K _ { 3 } , K _ { 4 } , J _ { 3 } , J _ { 4 } , K _ { 5 } ,$ , and $J _ { 5 } .$ . After obtaining solu tion to all coefficients, we obtain the",
+            "ref": "L649.1"
+          }
+        ]
+      },
+      "estimated_model": null
+    },
+    "field": {
+      "reason": "本文有理论、无实证，按步骤 3.1 统一判定为核心经管。",
+      "variables": []
+    }
+  }
+}

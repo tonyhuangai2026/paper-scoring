@@ -1,0 +1,286 @@
+{
+  "agent": "agent_04",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "86048cac-e1c2-467d-90ab-9b1761a040f6",
+  "finished_at": "2026-11-24T09:45:38.611974+00:00",
+  "paper": {
+    "id": "316",
+    "position": 19,
+    "title": "Should Financial Gatekeepers be Publicly Traded",
+    "group": "组01",
+    "md_sha256": "828c76a26ef24c541daad995457f1a500bd24d0002dab986c894c7abd5f9d648",
+    "pdf_sha256": "65305f3907c6203529771c5126fe834bdc3804bb57784158ca3d5e3ecfe2f461",
+    "ready": true
+  },
+  "pdf_pages": 26,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "文首有明确的 Abstract 标题，其后的段落概述了研究问题、主要发现及其含义。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 7,
+          "end": 7,
+          "quote": "## Abstract",
+          "ref": "L7.1"
+        },
+        {
+          "source": "md",
+          "start": 9,
+          "end": 9,
+          "quote": "We investigate how a broker firm’s initial public ofering (IPO) afects its analysts’ fiduciary duty of providing independent and objective recommendations. We find that the analysts of newly listed broker firms issue",
+          "ref": "L9.1"
+        },
+        {
+          "source": "md",
+          "start": 9,
+          "end": 9,
+          "quote": "The overall results imply that the public trading of financial gatekeepers compromises the ethical relationship between financial service professionals and society in general.",
+          "ref": "L9.6"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核查了摘要全文。摘要报告券商 IPO 前后分析师推荐偏差的变化，并用经济激励解释结果。摘要未明确提出新理论模型、新概念、计量方法创新或模型性质的证明。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "We investigate how a broker firm’s initial public ofering (IPO) afects its analysts’ fiduciary duty of providing independent and objective recommendations. We find that the analysts of newly listed broker firms issue",
+            "ref": "L9.1"
+          },
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "more positively biased recommendations in the first 2 to 3 years after their employers’ IPO than before the IPO. The increase in the recommendation bias is greater among analysts of afiliated brokers and brokers that",
+            "ref": "L9.2"
+          },
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "raise additional capital after their IPO than among other analysts. Newly listed broker firms experience significant increases in revenue and trading commission, and the increases are positively related to",
+            "ref": "L9.3"
+          },
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "recommendation bias, after controlling for many other factors. More importantly, recommendation bias decreases as newly listed broker firms season and as the importance of trading commission declines. This suggests that",
+            "ref": "L9.4"
+          },
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "public exposure through a broker firm’s IPO does not enhance the integrity and professional conduct of its financial analysts. Rather, economic incentives make financial analysts more accepting of unethical behavior.",
+            "ref": "L9.5"
+          },
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "The overall results imply that the public trading of financial gatekeepers compromises the ethical relationship between financial service professionals and society in general.",
+            "ref": "L9.6"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文从 CSMAR 获取实际发布的分析师股票推荐、基金管理公司股东资料及共同基金持股记录，从 WIND 获取券商股权和财务资料。样本覆盖 2001 年 6 月至 2015 年 12 月的 2938 只股票、69 家券商和 475 只基金。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "We collect analyst recommendation data from the China Stock Market & Accounting Research Database (CSMAR) from June 2001 to December 2015.<sup>12</sup> To identify any potential efect of a broker firm’s ownership",
+            "ref": "L87.1"
+          },
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "afiliations with FMCs on analyst recommendations, we collect FMCs’ shareholder information and mutual fund shareholding information from CSMAR. The CSMAR database includes the top ten stock holdings of each fund at the",
+            "ref": "L87.2"
+          },
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "end of each quarter and the holding information of all other composite stocks at the end of June and December. At the end of 2015, 78 FMCs managing 708 equity funds or hybrid equity funds were included in the CSMAR",
+            "ref": "L87.3"
+          },
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "database. The WIND database provides broker firm ownership and financial information. There were 101 broker firms included in this database at end of December 2015. Our final sample includes 2938 stocks, 69 broker",
+            "ref": "L87.4"
+          },
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "firms, and 475 funds belonging to 67 FMCs from June 30, 2001, to December 31, 2015, which is the common overlapping period of all these datasets.<sup>13</sup> Panel A of Table 1 reports the summary statistics of the",
+            "ref": "L87.5"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "论文明确构建了模型。式（2）以相对推荐变化 ΔREC2 为因变量，纳入新上市和仍未上市虚拟变量、交互项及控制变量。论文也明确报告了估计系数，表 5 的模型（1）中，新上市和仍未上市虚拟变量的估计系数分别为 0.043 和 −0.037。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 173,
+            "end": 173,
+            "quote": "\\begin{array}{l} \\Delta R E C 2 _ {i, j, t} = \\alpha_ {0} + \\beta_ {1} N e w l y \\_ l i s t e d + \\beta_ {2} S t i l l \\_ u n l i s t e d \\\\ \\qquad + \\beta_ {3 - 8} [ I n t e r a c t i o n v a r i a b l e s ] \\\\ \\qquad",
+            "ref": "L173.1"
+          },
+          {
+            "source": "md",
+            "start": 173,
+            "end": 173,
+            "quote": "+ \\gamma [ B r o k e r C o n t r o l s ] \\\\ \\qquad + \\eta [ S t o c k C o n t r o l s ] + \\xi_ {i, j, t}. \\end{array}\\tag{2}",
+            "ref": "L173.2"
+          },
+          {
+            "source": "md",
+            "start": 178,
+            "end": 178,
+            "quote": "Table 5 Regression of changes in relative recommendation of the matched subsample",
+            "ref": "L178.1"
+          },
+          {
+            "source": "md",
+            "start": 180,
+            "end": 180,
+            "quote": "effects</td></tr><tr><td>Intercept</td><td>0.085**(2.37)</td><td>0.072**(1.99)</td><td>0.078**(2.17)</td></tr><tr><td>Newly listed ( $\\beta_1$",
+            "ref": "L180.2"
+          },
+          {
+            "source": "md",
+            "start": 180,
+            "end": 180,
+            "quote": ")</td><td>0.043*(1.83)</td><td>0.038(1.51)</td><td>0.069**(2.37)</td></tr><tr><td>Still-unlisted ( $\\beta_2$ )</td><td>-0.037**(-2.29)</td><td>-0.021(-1.20)</td><td>-0.032**(-1.99)</td></tr><tr><td>Newly listed *",
+            "ref": "L180.3"
+          },
+          {
+            "source": "md",
+            "start": 189,
+            "end": 189,
+            "quote": "_ { I } )$ and the Still-unlisted dummy $( \\beta _ { 2 } )$ are 0.043 and − 0.037, which are significant at the 0.1 and 0.05 levels, respectively. The F-test for the difference between $\\beta _ { I }$ and $\\beta _ { 2",
+            "ref": "L189.2"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文无理论、有实证，采用步骤 3.2。正文的核心检验考察券商首次公开发行并上市对分析师股票推荐偏差的影响，核心自变量和因变量均属于金融领域，因此判为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "券商 IPO 上市状态（Newly listed、Still-unlisted）",
+          "economic": true,
+          "reason": "该变量衡量券商在观察期是刚完成上市、仍未上市，还是此前已经上市。它刻画企业进入公开股权市场的状态，属于公司金融变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 173,
+              "end": 173,
+              "quote": "\\begin{array}{l} \\Delta R E C 2 _ {i, j, t} = \\alpha_ {0} + \\beta_ {1} N e w l y \\_ l i s t e d + \\beta_ {2} S t i l l \\_ u n l i s t e d \\\\ \\qquad + \\beta_ {3 - 8} [ I n t e r a c t i o n v a r i a b l e s ] \\\\ \\qquad",
+              "ref": "L173.1"
+            },
+            {
+              "source": "md",
+              "start": 176,
+              "end": 176,
+              "quote": "Specifically, we identify all analysts in the matched subsample who issue recommendations in a given period t (t = 0) and classify an analyst’s broker firm as a newly listed broker if it was just listed in period t,",
+              "ref": "L176.1"
+            },
+            {
+              "source": "md",
+              "start": 176,
+              "end": 176,
+              "quote": "still-unlisted if it was still not listed up to period t, or already-listed if it was listed prior to period t. The dependent variable in Eq. (2), $\\Delta R E C 2 _ { i , j , t } ,$ , is the change in the average",
+              "ref": "L176.2"
+            },
+            {
+              "source": "md",
+              "start": 176,
+              "end": 176,
+              "quote": "the efects are captured by the dummy variables Newly listed, Still-unlisted, and Already-listed as well as their interaction with other variables. Note that the Already-listed dummy is not included in the regression,",
+              "ref": "L176.4"
+            },
+            {
+              "source": "md",
+              "start": 289,
+              "end": 289,
+              "quote": "study, we use broker firms’ IPO as a unique event in the organizational structure and social status change and test how it afects the analyst recommendations of newly listed broker firms. Using a sample of listed broker",
+              "ref": "L289.3"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "分析师股票推荐偏差的变化（ΔREC2）",
+          "economic": true,
+          "reason": "REC2 是券商对某只股票的推荐评级减去同期未上市券商对同一股票的推荐评级中位数。式（2）的 ΔREC2 衡量这一差值相对于前两年平均水平的变化，反映证券分析师投资建议的相对乐观程度，属于金融市场信息中介领域的变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 89,
+              "end": 89,
+              "quote": "The main test variable is analyst recommendation bias, which is measured in two diferent ways: REC1 and REC2. REC1 is the raw recommendation of broker firm j for stock i subtracting the median value of the",
+              "ref": "L89.1"
+            },
+            {
+              "source": "md",
+              "start": 89,
+              "end": 89,
+              "quote": "recommendation for stock i by all brokers in period t. REC2 is the raw recommendation of broker firm j for stock i subtracting the median value of the recommendation of all unlisted brokers (i.e., excluding listed",
+              "ref": "L89.2"
+            },
+            {
+              "source": "md",
+              "start": 89,
+              "end": 89,
+              "quote": "brokers) for stock i in a given period. Raw recommendation takes a value from 1 (strong sell) to 5 (strong buy). To report the summary statistics, we first compute the average analyst recommendation at the broker firm",
+              "ref": "L89.3"
+            },
+            {
+              "source": "md",
+              "start": 176,
+              "end": 176,
+              "quote": "still-unlisted if it was still not listed up to period t, or already-listed if it was listed prior to period t. The dependent variable in Eq. (2), $\\Delta R E C 2 _ { i , j , t } ,$ , is the change in the average",
+              "ref": "L176.2"
+            },
+            {
+              "source": "md",
+              "start": 176,
+              "end": 176,
+              "quote": "relative recommendation from a 2-year lagged benchmark period $( t = - 4 , t = - 1 )$ to the current recommendation period $t { = } 0 . { ^ { 2 3 } }$ Thus, if listing status has diferent efects on recommendation bias,",
+              "ref": "L176.3"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

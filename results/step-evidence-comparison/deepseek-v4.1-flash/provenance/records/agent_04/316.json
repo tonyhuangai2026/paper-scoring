@@ -1,0 +1,216 @@
+{
+  "agent": "agent_04",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "cf722762-2e71-44ee-85e6-ecc3cea29f0d",
+  "finished_at": "2026-11-24T09:38:12.922072+00:00",
+  "paper": {
+    "id": "316",
+    "position": 19,
+    "title": "Should Financial Gatekeepers be Publicly Traded",
+    "group": "组01",
+    "md_sha256": "828c76a26ef24c541daad995457f1a500bd24d0002dab986c894c7abd5f9d648",
+    "pdf_sha256": "65305f3907c6203529771c5126fe834bdc3804bb57784158ca3d5e3ecfe2f461",
+    "ready": true
+  },
+  "pdf_pages": 26,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "MD 开头有明确的 Abstract 段落，包含研究问题、主要发现和结论。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 7,
+          "end": 7,
+          "quote": "## Abstract",
+          "ref": "L7.1"
+        },
+        {
+          "source": "md",
+          "start": 9,
+          "end": 9,
+          "quote": "We investigate how a broker firm’s initial public ofering (IPO) afects its analysts’ fiduciary duty of providing independent and objective recommendations. We find that the analysts of newly listed broker firms issue",
+          "ref": "L9.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要主要陈述研究问题、实证发现和政策含义，没有明确声称构建新模型、提出新概念、计量方法创新或证明模型性质等理论贡献。摘要提到应用伦理和社会地位理论，但未将其表述为本文的理论贡献。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "We investigate how a broker firm’s initial public ofering (IPO) afects its analysts’ fiduciary duty of providing independent and objective recommendations. We find that the analysts of newly listed broker firms issue",
+            "ref": "L9.1"
+          },
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "public exposure through a broker firm’s IPO does not enhance the integrity and professional conduct of its financial analysts. Rather, economic incentives make financial analysts more accepting of unethical behavior.",
+            "ref": "L9.5"
+          },
+          {
+            "source": "md",
+            "start": 9,
+            "end": 9,
+            "quote": "The overall results imply that the public trading of financial gatekeepers compromises the ethical relationship between financial service professionals and society in general.",
+            "ref": "L9.6"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文使用 CSMAR 和 WIND 数据库中的中国券商、分析师推荐、基金持股和券商财务数据，样本为 2001 年 6 月至 2015 年 12 月的 2938 只股票、69 家券商和 475 只基金，属于真实市场数据。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "We collect analyst recommendation data from the China Stock Market & Accounting Research Database (CSMAR) from June 2001 to December 2015.<sup>12</sup> To identify any potential efect of a broker firm’s ownership",
+            "ref": "L87.1"
+          },
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "database. The WIND database provides broker firm ownership and financial information. There were 101 broker firms included in this database at end of December 2015. Our final sample includes 2938 stocks, 69 broker",
+            "ref": "L87.4"
+          },
+          {
+            "source": "md",
+            "start": 87,
+            "end": 87,
+            "quote": "firms, and 475 funds belonging to 67 FMCs from June 30, 2001, to December 31, 2015, which is the common overlapping period of all these datasets.<sup>13</sup> Panel A of Table 1 reports the summary statistics of the",
+            "ref": "L87.5"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "论文明确构建了多个回归模型，例如式 (1) 以 ΔREC2 为因变量并控制券商—股票、券商和股票变量，式 (2) 使用 PSM 匹配样本并加入 Newly listed、Still-unlisted 等虚拟变量，式 (3)—(6) 进一步检验上市后推荐偏差、交易佣金和券商成熟度。正文报告了回归系数、标准误或 t 值、显著性水平和样本量，明确估计出模型系数。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 144,
+            "end": 144,
+            "quote": "$$",
+            "ref": "L144.1"
+          },
+          {
+            "source": "md",
+            "start": 145,
+            "end": 145,
+            "quote": "\\begin{array}{c} \\Delta R E C 2 _ {i, j} = \\alpha_ {0} + \\boldsymbol {\\beta} [ B r o k e r - s t o c k C o n t r o l s ] \\\\ \\qquad + \\boldsymbol {\\gamma} [ B r o k e r C o n t r o l s ] \\\\ \\qquad + \\boldsymbol {\\mu} [ S",
+            "ref": "L145.1"
+          },
+          {
+            "source": "md",
+            "start": 152,
+            "end": 152,
+            "quote": "<table><tr><td></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td></tr><tr><td>Intercept</td><td>0.064*(1.73)</td><td>0.053(1.38)</td><td>0.067*(1.67)</td><td>0.072**(2.09)</td><td>0.048**(2.24)",
+            "ref": "L152.1"
+          },
+          {
+            "source": "md",
+            "start": 166,
+            "end": 166,
+            "quote": "features of broker firms (∆%SO\\_ shares, ∆%LP\\_shares, Top 10 auditor, and Overseas-listing), we include these variables separately in models 1–4. The intercepts range from 0.053 in model 2 to 0.072 in model 4, and",
+            "ref": "L166.2"
+          },
+          {
+            "source": "md",
+            "start": 180,
+            "end": 180,
+            "quote": "effects</td></tr><tr><td>Intercept</td><td>0.085**(2.37)</td><td>0.072**(1.99)</td><td>0.078**(2.17)</td></tr><tr><td>Newly listed ( $\\beta_1$",
+            "ref": "L180.2"
+          },
+          {
+            "source": "md",
+            "start": 201,
+            "end": 201,
+            "quote": "Table 6 reports the results of the OLS regression (3), and columns 1 and 2 report the results for the matched listed brokers and matched unlisted brokers, respectively. The coeficient on Post-listing in model 1 for the",
+            "ref": "L201.1"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文无理论贡献但有实证，采用 Step 3.2：识别核心自变量和核心因变量，并判断是否至少一个为经管类变量。核心自变量是券商 IPO/上市状态（Newly listed、Post-listing 等），核心因变量是分析师推荐偏差（REC1/REC2 或 ΔREC2）。两者均属于金融学/公司金融与资本市场研究中的经管类变量，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Newly listed / Post-listing（券商 IPO 或上市状态）",
+          "economic": true,
+          "reason": "该变量衡量券商是否刚完成 IPO 或是否已上市，反映企业所有权结构、公开上市和资本市场融资状态，属于公司金融与资本市场领域的经管类变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 176,
+              "end": 176,
+              "quote": "Specifically, we identify all analysts in the matched subsample who issue recommendations in a given period t (t = 0) and classify an analyst’s broker firm as a newly listed broker if it was just listed in period t,",
+              "ref": "L176.1"
+            },
+            {
+              "source": "md",
+              "start": 199,
+              "end": 199,
+              "quote": "For the listed brokers, Post-listing takes a value of 1 if the broker was already listed either prior to or in period t and 0 otherwise. For the matched unlisted brokers, Post-listing is a hypothetical dummy variable,",
+              "ref": "L199.1"
+            },
+            {
+              "source": "md",
+              "start": 307,
+              "end": 307,
+              "quote": "returns</td></tr><tr><td>Newly listed</td><td>A broker that it has just been listed in period t. The dummy variable takes a value of 1 if the broker is newly listed and 0",
+              "ref": "L307.17"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "REC1 / REC2（分析师推荐偏差）",
+          "economic": true,
+          "reason": "该变量衡量券商分析师对股票的相对推荐乐观程度，是证券分析师行为、利益冲突和资本市场信息中介研究的核心经管类变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 89,
+              "end": 89,
+              "quote": "The main test variable is analyst recommendation bias, which is measured in two diferent ways: REC1 and REC2. REC1 is the raw recommendation of broker firm j for stock i subtracting the median value of the",
+              "ref": "L89.1"
+            },
+            {
+              "source": "md",
+              "start": 89,
+              "end": 89,
+              "quote": "recommendation for stock i by all brokers in period t. REC2 is the raw recommendation of broker firm j for stock i subtracting the median value of the recommendation of all unlisted brokers (i.e., excluding listed",
+              "ref": "L89.2"
+            },
+            {
+              "source": "md",
+              "start": 307,
+              "end": 307,
+              "quote": "<table><tr><td>Variable</td><td>Definition</td></tr><tr><td> $\\text{REC1}_{i,j,t}$ </td><td>The relative recommendation, computed by subtracting the median value of the recommendation for stock  $i$  by all brokers from",
+              "ref": "L307.1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "agent": "agent_07",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "9ce5351f-b70d-4855-96a0-e4b63cd1fb15",
+  "finished_at": "2026-11-24T09:52:12.811577+00:00",
+  "paper": {
+    "id": "218",
+    "position": 14,
+    "title": "Local political chief turnover and economic growth Evidence from China",
+    "group": "组01",
+    "md_sha256": "2b7bda207c06281cd82f26ca263f9f91612664962b47ef04a1734c7b23a2c8ab",
+    "pdf_sha256": "25adeceab24660b9196241bc53083051001247fe117b01d6bb044f5d117a1e38",
+    "ready": true
+  },
+  "pdf_pages": 26,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "正文引言之前有明确的 Abstract 标题，其后概述了研究问题、数据和主要发现。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 19,
+          "end": 19,
+          "quote": "## Abstract",
+          "ref": "L19.1"
+        },
+        {
+          "source": "md",
+          "start": 21,
+          "end": 21,
+          "quote": "turnover of local chiefs. Based on a new manually collected dataset on prefectural-level local chiefs between 1983 and 2012, our empirical results suggest that the turnover of the local Chinese Communist Party (CCP)",
+          "ref": "L21.2"
+        },
+        {
+          "source": "md",
+          "start": 21,
+          "end": 21,
+          "quote": "chief would lead to a 0.48 percentage point decrease in the local GDP growth rate in the current year. This effect is especially concentrated on more government-affected fields, such as domestic investments, consumption",
+          "ref": "L21.3"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "核对整段摘要后，作者明确报告了手工收集的新数据、对市委书记更替与 GDP 增长关系的估计，以及组织摩擦作为可能机制的经验证据。摘要没有提出新的理论模型、概念、计量方法或需要证明的模型性质。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 21,
+            "end": 21,
+            "quote": "It is widely believed that the rotation and promotion system of local political chiefs plays an important role in China's economic miracle. In this paper, however, we focus on the potential cost of the inherent frequent",
+            "ref": "L21.1"
+          },
+          {
+            "source": "md",
+            "start": 21,
+            "end": 21,
+            "quote": "turnover of local chiefs. Based on a new manually collected dataset on prefectural-level local chiefs between 1983 and 2012, our empirical results suggest that the turnover of the local Chinese Communist Party (CCP)",
+            "ref": "L21.2"
+          },
+          {
+            "source": "md",
+            "start": 21,
+            "end": 21,
+            "quote": "chief would lead to a 0.48 percentage point decrease in the local GDP growth rate in the current year. This effect is especially concentrated on more government-affected fields, such as domestic investments, consumption",
+            "ref": "L21.3"
+          },
+          {
+            "source": "md",
+            "start": 21,
+            "end": 21,
+            "quote": "and government expenditures. We also provide evidence that organization friction, especially the successor CCP chiefs’ unfamiliarity with the city, his/her new colleagues and/or the working conditions, is one of the",
+            "ref": "L21.4"
+          },
+          {
+            "source": "md",
+            "start": 21,
+            "end": 21,
+            "quote": "major potential reasons for such a negative turnover effect.",
+            "ref": "L21.5"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "作者从地方政府官方网站和地方年鉴收集了 1983 至 2012 年间 283 个地级市的市委书记和市长任职记录，并使用官方统计中的城市 GDP 增长率。这些数据来自实际任职记录和城市经济统计。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 76,
+            "end": 76,
+            "quote": "To form the dataset, we manually collected information on all CCP chiefs and mayors of these 283 cities between 1983 and 2012.<sup>8</sup> The data collection procedure included two steps. First, we collected the name,",
+            "ref": "L76.1"
+          },
+          {
+            "source": "md",
+            "start": 76,
+            "end": 76,
+            "quote": "starting month and ending month of each CCP chief/mayor from the official website of local governments and local yearbooks. There were 2,172 CCP chiefs and 2,387 mayors in the sample. Second, we attempted to collect",
+            "ref": "L76.2"
+          },
+          {
+            "source": "md",
+            "start": 99,
+            "end": 99,
+            "quote": "Next, we further introduce variables on the economic performances of these prefectural-level cities based on official statistics. The key variable is the annual GDP growth rate. One challenge here is tha China only",
+            "ref": "L99.1"
+          },
+          {
+            "source": "md",
+            "start": 99,
+            "end": 99,
+            "quote": "city-level data. All the monetary variables are in real terms.",
+            "ref": "L99.4"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "正文式（1）明确设定回归模型，以城市 GDP 增长率为因变量，以市委书记更替虚拟变量为核心自变量，并纳入控制变量及城市和年份固定效应。表 3 明确报告了模型系数，作者首选的第（4）列中，市委书记更替的估计系数为 -0.476，对应当年 GDP 增长率约低 0.48 个百分点。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 106,
+            "end": 106,
+            "quote": "G D P G R _ {i, j, t} = \\alpha + \\beta T U R N O V E R _ {i, j, t} + \\delta_ {i, t} + \\kappa_ {j, t} + \\chi_ {i} + \\eta_ {t} + \\varepsilon_ {i, j, t},\\tag{1}",
+            "ref": "L106.1"
+          },
+          {
+            "source": "md",
+            "start": 109,
+            "end": 109,
+            "quote": "where the dependent variable measures the GDP growth rate in city i, province j and year $t ;$ the key dummy variable of $T U R N O V E R _ { i , j , t }$ equals 1 if a CCP chief turnover occurred—thus, the coefficient",
+            "ref": "L109.1"
+          },
+          {
+            "source": "md",
+            "start": 109,
+            "end": 109,
+            "quote": "of $\\dot { \\beta }$ measures the turnover effect and is our main interest; the set of $\\delta _ { i , t }$ refers to the city-level control variables, such as the lagged GDP level, mayor turnover and the individual",
+            "ref": "L109.2"
+          },
+          {
+            "source": "md",
+            "start": 109,
+            "end": 109,
+            "quote": "characteristics of ongoing CCP chiefs and mayors (including age, gender, nationality, education and working experience), while the set of $\\kappa _ { j , t }$ refers to the province-level control variables, such as",
+            "ref": "L109.3"
+          },
+          {
+            "source": "md",
+            "start": 109,
+            "end": 109,
+            "quote": "provincial leader attributes; $\\chi _ { i }$ and $\\eta _ { t }$ refer to city and year fixed effects, respectively; and the error term $\\mathcal { E } _ { i , j , t }$ is clustered at the city level. One might worry",
+            "ref": "L109.4"
+          },
+          {
+            "source": "md",
+            "start": 115,
+            "end": 115,
+            "quote": "qualitatively unchanged. According to our preferred specification, in column (4), where we have controlled for the lagged GDP level, city and year fixed effects, mayor turnover (excluding concurrent CCP chief turnover),",
+            "ref": "L115.2"
+          },
+          {
+            "source": "md",
+            "start": 115,
+            "end": 115,
+            "quote": "provincial-level CCP chief turnover and individual characteristics of CCP chiefs and mayors, the coefficient of the local CCP chief turnover dummy suggests that the GDP growth rate would be approximately 0.48 percentage",
+            "ref": "L115.3"
+          },
+          {
+            "source": "md",
+            "start": 115,
+            "end": 115,
+            "quote": "points lower if a CCP chief turnover occurred in this city-year. It is also worth noting that, in general, most control variables have no significant effect on economic growth; in particular, the mayor turnovers alone",
+            "ref": "L115.4"
+          },
+          {
+            "source": "md",
+            "start": 119,
+            "end": 119,
+            "quote": "<table><tr><td>Variables</td><td>(1)Growth rate of GDP</td><td>(2)Growth rate of GDP</td><td>(3)Growth rate of GDP</td><td>(4)Growth rate of GDP</td><td>(5)Growth rate of GDP</td></tr><tr><td>CCP chief",
+            "ref": "L119.1"
+          },
+          {
+            "source": "md",
+            "start": 119,
+            "end": 119,
+            "quote": "turnover</td><td>-0.460***(0.119)</td><td>-0.479***(0.125)</td><td>-0.480***(0.125)</td><td>-0.476***(0.124)</td><td></td></tr><tr><td>CCP chief and mayor simultaneous",
+            "ref": "L119.2"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文有实证，适用 Step 3.2。基准回归的核心因变量是城市实际 GDP 增长率，属于经管类变量，因此判为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "CCP chief turnover（市委书记更替）",
+          "economic": false,
+          "reason": "该虚拟变量衡量某地级市在某年是否发生市委书记更替，记录的是地方党政领导岗位的人事变动，属于政治治理变量。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 49,
+              "end": 49,
+              "quote": "In each prefectural government, just as with other levels of subnational governments, there are two leading cadres, that is, the secretary of the CCP municipal committee (hereafter, CCP chief) and the mayor. According",
+              "ref": "L49.1"
+            },
+            {
+              "source": "md",
+              "start": 109,
+              "end": 109,
+              "quote": "where the dependent variable measures the GDP growth rate in city i, province j and year $t ;$ the key dummy variable of $T U R N O V E R _ { i , j , t }$ equals 1 if a CCP chief turnover occurred—thus, the coefficient",
+              "ref": "L109.1"
+            },
+            {
+              "source": "md",
+              "start": 109,
+              "end": 109,
+              "quote": "of $\\dot { \\beta }$ measures the turnover effect and is our main interest; the set of $\\delta _ { i , t }$ refers to the city-level control variables, such as the lagged GDP level, mayor turnover and the individual",
+              "ref": "L109.2"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Growth rate of GDP（城市实际 GDP 增长率）",
+          "economic": true,
+          "reason": "该变量衡量地级市实际地区生产总值的年度增长幅度，属于衡量地方经济增长的宏观经济指标。",
+          "evidence": [
+            {
+              "source": "md",
+              "start": 95,
+              "end": 95,
+              "quote": "<table><tr><td>Variables</td><td>Explanation</td><td>Period</td><td>Obs</td><td>Mean</td><td>SD</td><td>Min</td><td>Max</td></tr><tr><td>GDP</td><td>The annual real gross regional product of the city; in 100 million",
+              "ref": "L95.1"
+            },
+            {
+              "source": "md",
+              "start": 95,
+              "end": 95,
+              "quote": "RMB</td><td>1991–2012</td><td>5,393</td><td>664.567</td><td>965.380</td><td>12.500</td><td>12,722.300</td></tr><tr><td>GDP extended to 1983</td><td>The annual real gross regional product of prefectural-level cities,",
+              "ref": "L95.2"
+            },
+            {
+              "source": "md",
+              "start": 99,
+              "end": 99,
+              "quote": "Next, we further introduce variables on the economic performances of these prefectural-level cities based on official statistics. The key variable is the annual GDP growth rate. One challenge here is tha China only",
+              "ref": "L99.1"
+            },
+            {
+              "source": "md",
+              "start": 99,
+              "end": 99,
+              "quote": "city-level data. All the monetary variables are in real terms.",
+              "ref": "L99.4"
+            },
+            {
+              "source": "md",
+              "start": 109,
+              "end": 109,
+              "quote": "where the dependent variable measures the GDP growth rate in city i, province j and year $t ;$ the key dummy variable of $T U R N O V E R _ { i , j , t }$ equals 1 if a CCP chief turnover occurred—thus, the coefficient",
+              "ref": "L109.1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "agent": "agent_03",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "a7304907-6c7c-40e5-a8bc-61635ff501fe",
+  "finished_at": "2026-11-24T09:30:14.474719+00:00",
+  "paper": {
+    "id": "037",
+    "position": 5,
+    "title": "Can trade liberalization promote green production Evidence from China's manufacturing enterprises",
+    "group": "组01",
+    "md_sha256": "8577b507fb01847bd73bdec24c9df0cf961467ac0977ad39faf6f40a17a9d9f7",
+    "pdf_sha256": "1f12e6847454e2a0c15992d3a0f059da04d6ec3bb53eac674a908852c09355ab",
+    "ready": true
+  },
+  "pdf_pages": 14,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的摘要段落，以 'A B S T R A C T' 标识，概述了研究问题、方法和主要发现。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Tariff reduction \nTechnology upgrading \nCorporate environmental performance \nA B S T R A C T  \nWhether international trade causes environmental damage to developing countries has caused \nwidespread concern. We estimate",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "trade liberalization’s impact on environmental performance \nusing unique firm-level pollution data in China. By using maximum tariff rates from China’s \naccession agreement as instrumental variables for actual tariff",
+          "ref": "P1.5"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "rates, we find that cuts in import \ntariffs enhance the average SO2 emission. Changes in the composition of products in the polluting \nand non-polluting industries can explain the substantial increase in the average SO2",
+          "ref": "P1.6"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要中未明确提及本文的理论贡献（如构建新模型、提出新概念、证明模型性质等）。摘要主要描述实证估计方法和发现，未强调理论创新。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Tariff reduction \nTechnology upgrading \nCorporate environmental performance \nA B S T R A C T  \nWhether international trade causes environmental damage to developing countries has caused \nwidespread concern. We estimate",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "trade liberalization’s impact on environmental performance \nusing unique firm-level pollution data in China. By using maximum tariff rates from China’s \naccession agreement as instrumental variables for actual tariff",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "rates, we find that cuts in import \ntariffs enhance the average SO2 emission. Changes in the composition of products in the polluting \nand non-polluting industries can explain the substantial increase in the average SO2",
+            "ref": "P1.6"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用了两个企业级真实数据集：中国环境统计数据库（CESD）和中国工业企业数据库（CIED），覆盖1998-2007年约17万企业-年观测值，数据来源明确且为真实微观数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "in the existing \nliterature exist. By matching two firm-level data, we established a firm-level database that consists of both environmental information \nand economic information. The environmental information comes",
+            "ref": "P2.20"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "from China’s Environmental Statistics Database (CESD), and the \neconomic information comes from China’s Industrial Enterprise Database (CIED). CESD is China’s most complete national environ­\nmental data set but has only",
+            "ref": "P2.21"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "through technological \nadvancement, there should be less pollution intensity per unit of output value or unit coal consumption. \n5. Data \nWe use two enterprise-level datasets, CESD and CIED, to estimate the causal",
+            "ref": "P7.15"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "impact of China’s entry into the WTO on Chinese \nmanufacturing companies’ environmental performance. CESD is China’s most complete countrywide environmental data. China began \ngathering environmental statistics on waste",
+            "ref": "P7.16"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "intermediate inputs, capital, and employees. We match these \ntwo datasets using information on legal person code and firm name. \nTable 1 shows the summary statistic on firm characteristics over 1998–2007. On average, we",
+            "ref": "P8.4"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了计量模型（如式(7) log(SO2)it = β1Output tariffjt−1 + β2Input tariffjt−1 + γt + εit），并使用工具变量法（以WTO accession agreement中的最高关税率为实际关税率的工具变量）估计了模型系数，报告了具体的系数估计值和显著性水平（如表2）。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "a good predictor of the actual tariff.10 \n4.2. Estimating equation \nTo identify the effects of trade liberalization on environmental outcomes, we first regress the firm-level SO2 emission on the in­\ndicator of trade",
+            "ref": "P6.20"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "liberalization, \nlog(SO2)it = β1Output tariffjt−1 + β2Input tariffjt−1 + γt + εit\n(7)  \nwhere i, j, p, and t represent firm, industry, province and year, respectively. We use firm-level log SO2 emission as the indicator",
+            "ref": "P6.21"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "of \nenvironmental performance (log(SO2)it). We use lagged output and input tariffs (Output tariffjt−1 and Iutput tariffjt−1) at the industry \n9 Amiti and Konings (2007) estimate the productivity gains from cutting back",
+            "ref": "P6.22"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "170,329 \n0.09 \n0.04 \nMaximum output tariff \n170,329 \n0.14 \n0.11  \nTable 2 \nEffects of import tariffs on corporate SO2 emissions.   \n(1) \n(2) \n(3) \n(4) \n(5)  \nln(SO2)  \nln(SO2)  \nln(SO2)  \nln(SO2)  \nln(SO2)   \nOLS-IV",
+            "ref": "P9.19"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "OLS-IV \nOLS-IV \nFE-IV \nFE-IV \nInput tariff (lagged) \n−\n7.016***  \n−\n6.211***  \n1.283 \n0.764 \n0.650  \n(1.285) \n(1.252) \n(0.836) \n(0.878) \n(0.849) \nOutput tariff (lagged) \n−\n0.795*  \n−\n0.881**  \n0.321* \n0.719** \n0.595**",
+            "ref": "P9.20"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章为'无理论、有实证'，采用Step 3.2路径：识别核心自变量和核心因变量，判断是否至少有一个为经管类变量。核心自变量为进口关税（input tariff）和出口关税（output tariff），属于国际贸易政策变量，是经管类变量；核心因变量为SO2排放（log(SO2)），属于环境绩效指标，虽涉及环境但作为企业环境绩效，在经管研究中常被视为企业绩效的一部分，且自变量明确为经管类，故判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Input tariff (lagged)",
+          "economic": true,
+          "reason": "进口关税是贸易自由化的核心度量，属于国际贸易政策变量，直接反映经管类政策干预。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "trace through in detail \nthe mechanisms through which trade liberalization affects environmental performance. \n4. Empirical framework \n4.1. Quantifying trade openness \nIn this paper, we use import tariffs at the 4-digit",
+              "ref": "P6.13"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "industry level as the key measure of trade liberalization since they provide the most \ndetailed information on trade openness (Brandt et al., 2017). Lower output tariffs induce tougher import competition (De Loecker,",
+              "ref": "P6.14"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "Goldberg, Khandelwal, & Pavcnik, 2016), whereas cheaper input tariffs can promote learning, variety, and quality.9 Since input tariff \nand output tariff have different impacts on firm performance, we use both of them to",
+              "ref": "P6.15"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "Output tariff (lagged)",
+          "economic": true,
+          "reason": "出口关税同样衡量贸易自由化程度，属于经管类政策变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "industry level as the key measure of trade liberalization since they provide the most \ndetailed information on trade openness (Brandt et al., 2017). Lower output tariffs induce tougher import competition (De Loecker,",
+              "ref": "P6.14"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "Goldberg, Khandelwal, & Pavcnik, 2016), whereas cheaper input tariffs can promote learning, variety, and quality.9 Since input tariff \nand output tariff have different impacts on firm performance, we use both of them to",
+              "ref": "P6.15"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "log(SO2) emission",
+          "economic": true,
+          "reason": "企业SO2排放量作为环境绩效指标，在经管文献中常被用作企业环境绩效的代理变量，属于经管类研究范畴。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "liberalization, \nlog(SO2)it = β1Output tariffjt−1 + β2Input tariffjt−1 + γt + εit\n(7)  \nwhere i, j, p, and t represent firm, industry, province and year, respectively. We use firm-level log SO2 emission as the indicator",
+              "ref": "P6.21"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "of \nenvironmental performance (log(SO2)it). We use lagged output and input tariffs (Output tariffjt−1 and Iutput tariffjt−1) at the industry \n9 Amiti and Konings (2007) estimate the productivity gains from cutting back",
+              "ref": "P6.22"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

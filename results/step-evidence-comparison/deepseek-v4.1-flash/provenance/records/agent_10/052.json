@@ -1,0 +1,258 @@
+{
+  "agent": "agent_10",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "c2251137-a667-4bdd-bffa-1d3b7d9dda1d",
+  "finished_at": "2026-11-24T09:43:57.886108+00:00",
+  "paper": {
+    "id": "052",
+    "position": 6,
+    "title": "Exorbitant Privilege Gained and Lost Fiscal Implications",
+    "group": "组01",
+    "md_sha256": "a6cbe316763258e88929ff1202f783fef87fa7969b791bc335c9e408b68eda4d",
+    "pdf_sha256": "52ac9cfbea5eae852969c0ee223bc54f1f38540078b113d8a4c289765ec2ace9",
+    "ready": true
+  },
+  "pdf_pages": 49,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含摘要，以'We study three centuries of fiscal history'开头，概述研究问题、样本和主要发现。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 2,
+          "end": 2,
+          "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+          "ref": "P2.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要未明确声称构建新模型、提出新概念或证明模型性质等理论贡献；摘要主要描述研究三个世纪的财政历史、度量财政支撑与债务市场价值的缺口，并报告实证发现。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "Stanford Institute for Economic Policy Research\nStijn Van Nieuwerburgh\nColumbia University, NBER, and Centre for Economic Policy Research\nMindy Z. Xiaolan\nUniversity of Texas at Austin\nWe study three centuries of ﬁscal",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "history. Dominant safe asset suppliers\nissue more debt than future primary surpluses can justify, even after\naccounting for seigniorage revenue from convenience yields. This\npattern holds for the Dutch Republic",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "and UK ﬁscal fundamentals deteriorated, they lost their dominant po-\nsition as the safe asset supplier, and their debt became fully backed by\nprimary surpluses. Exorbitant privilege stems from issuing overpriced\ndebt in",
+            "ref": "P2.1"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文使用真实历史数据：英国1729–2020年数据来自英格兰银行'A Millennium of Macroeconomics Data'，美国1793–1929年政府财政数据来自Hall and Sargent (2021)，英国国债微观数据来自Ellison and Scott (2020)，荷兰数据来自历史财政数据库。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "same approach to analyze\nthe case of Holland and the Netherlands.\nII.\nThe Historical Cash Flow Dynamics:\nStylized Facts\nA.\nData and Fiscal Cash Flows\nFor the United Kingdom, we use annual data from 1729 to 2020. The",
+            "ref": "P9.9"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "main\nUK dataset we used is “A Millennium of Macroeconomics Data,” pub-\nlished by the Bank of England, which contains a broad set of historical\nmacroeconomic and ﬁnancial market data. Our historical (1793–1929)\nUS",
+            "ref": "P9.10"
+          },
+          {
+            "source": "pdf",
+            "start": 9,
+            "end": 9,
+            "quote": "government ﬁnance data were taken from Hall and Sargent (2021),\nwhich contain detailed historical government ﬁnance information. We\nuse other datasets to complement the main dataset, as detailed in appen-\ndix A (apps.",
+            "ref": "P9.11"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "online) plots the same data against recession episodes, showing that\nspending/GDP, tax/GDP and surplus/GDP ratios are largely acyclical be-\nfore World War I.\nWe obtain the market value of the UK public debt data using",
+            "ref": "P12.3"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "the data\nconstructed by Ellison and Scott (2020), which contain the quantity and\nmarket price of every individual bond issued by the UK government start-\ning in 1694. We compute the market value by matching each bond’s",
+            "ref": "P12.4"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "论文明确构建了VAR模型（式8）来刻画税收和支出增长、利率等状态变量的动态，并基于Campbell-Shiller分解推导出财政支撑的表达式（式2、3、5、9）；同时明确估计了模型系数，包括VAR伴随矩阵Ψ、协方差矩阵Σ，以及GDP风险溢价等参数（如假设3%的GDP风险溢价，并报告了估计的股权溢价、信用溢价和期限溢价）。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "A.\nVAR Model of Cash Flow Dynamics\nWe propose a VAR model to capture the dynamics in expected cash ﬂows\nand discount rates in the economy.\nWe assume that the N \u0003 1 vector of state variables z follows a Gaussian",
+            "ref": "P29.1"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "ﬁrst-order VAR:\nzt 5 Ψzt21 1 ut 5 Ψzt21 1 Σ1=2εt,\n(8)\nwith N \u0003 N companion matrix Ψ and homoscedastic innovations ut ∼\ni:i:d: N (0, Σ). The Cholesky decomposition of the covariance matrix,\nΣ 5 Σ1=2(Σ1=2)0, has nonzero",
+            "ref": "P29.2"
+          },
+          {
+            "source": "pdf",
+            "start": 18,
+            "end": 18,
+            "quote": "When we log-linearize the return equation around\nthe mean log price/dividend ratio, iterate forward, take expectations,\nand impose a TVC, we obtain the following expressions for the log price/\ndividend ratios of the tax",
+            "ref": "P18.7"
+          },
+          {
+            "source": "pdf",
+            "start": 18,
+            "end": 18,
+            "quote": "claim and the spending claim:\npdT\nt 5\nkT\n0\n1 2 rT\n1 Et o\n∞\nj51\nr\nj21\nT ΔlogTt1j\n\"\n#\n2 Et o\n∞\nj51\nr\nj21\nT r T\nt1j\n\"\n#\n,\n(2)\npdG\nt 5\nkG\n0\n1 2 rG\n1 Et o\n∞\nj51\nr\nj21\nG ΔlogGt1j\n\"\n#\n2 Et o\n∞\nj51\nr\nj21\nG r G\nt1j\n\"\n#\n,\n(3)",
+            "ref": "P18.8"
+          },
+          {
+            "source": "pdf",
+            "start": 23,
+            "end": 23,
+            "quote": "returns from the Jordà-Schularick-\nTaylor macrohistory database and corporate bond yields from the Global\nFinancial Database, we compute an equity premium of 5.92%, a credit risk\npremium of 1.74%, and a term premium of",
+            "ref": "P23.3"
+          },
+          {
+            "source": "pdf",
+            "start": 23,
+            "end": 23,
+            "quote": "1.24%, all three measured\nrelative to the short-term bond yield, for the United Kingdom. The ratio\nof corporate debt to equity plus corporate debt is 0.47. As a result, the\nunlevered equity risk premium relative to the",
+            "ref": "P23.4"
+          },
+          {
+            "source": "pdf",
+            "start": 23,
+            "end": 23,
+            "quote": "long-term bond yield is\n2:73% 5 0:47 \u0003 1:74% 1 (1 2 0:47) \u0003 5:92% 21:24% in the 1870–2020\nsample, as shown in column 5 of table 2. In the shorter postwar sample,\nwe obtain an unlevered equity premium of 3.88% for the",
+            "ref": "P23.5"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文为有理论（正文包含数学推导和模型）且有实证（使用真实数据并估计模型系数）的文章，因此采用Step 3.2路径：识别核心自变量和核心因变量，判断是否至少有一个为经管类变量。核心自变量为政府债务的市场价值与财政支撑（未来初级盈余的现值加铸币税收入）之间的缺口，核心因变量为该国是否拥有安全资产供应商地位（即'exorbitant privilege'）。两者均属于宏观金融和公共财政领域的经管类变量。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Excess fiscal capacity (market value of debt minus fiscal backing)",
+          "economic": true,
+          "reason": "该变量衡量政府债务市场价值超过其未来初级盈余现值（含便利收益铸币税）的部分，是公共财政和主权债务可持续性的核心经管概念。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "the Dutch Republic in the seven-\nteenth and part of the eighteenth century. By comparing the market val-\nuation of government debt with the ﬁscal backing of the global hegemon,\nwe obtain a new measure of the exorbitant",
+              "ref": "P2.6"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "privilege and document how it\nevolves over time. Our main ﬁnding is that the world’s safe asset provider\nborrows more than justiﬁed by its ﬁscal backing. In contrast, the historical\nevidence shows that before or after a",
+              "ref": "P2.7"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "US yields were too\nlow after World War II.\nOur ﬁndings shed light on the wide gap between the market value of\ndebt and ﬁscal capacity that has been documented for the United States\nin recent decades by Jiang et al.",
+              "ref": "P7.12"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "(2024a). Reis (2022) calls this wedge the\ndebt revenue term; we call it excess ﬁscal capacity. The measurement in\nJiang et al. (2024a) is focused on the postwar United States. Our paper\ncompares the historical",
+              "ref": "P7.13"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Exorbitant privilege / safe asset supplier status",
+          "economic": true,
+          "reason": "该变量衡量一国是否处于全球安全资产供应商的主导地位，属于国际金融和货币体系的核心经管变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "the early stage, followed by bondholder losses and ﬁnancial re-\npression in the later stage.\nI.\nIntroduction\nThe international monetary system has been characterized by a hegemon\nconﬁguration, in which a single dominant",
+              "ref": "P2.2"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "country issues most of the\nworld’s safe assets. These safe assets, mostly government debt, tend to be\nmore expensive than the debt issued by other countries, reﬂecting a high\ndemand from domestic and international",
+              "ref": "P2.3"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "investors alike. The United\nStates has been in this position since World War II. French ﬁnance min-\nister Valéry Giscard d’Estaing labeled this position an exorbitant privilege.\nIn this paper, we broaden the perspective",
+              "ref": "P2.4"
+            },
+            {
+              "source": "pdf",
+              "start": 2,
+              "end": 2,
+              "quote": "by studying the world’s safe as-\nset suppliers over the past three centuries. Before the United States, the\nsafe asset issuer was the United Kingdom in part of the eighteenth and\nnineteenth centuries and, before that,",
+              "ref": "P2.5"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

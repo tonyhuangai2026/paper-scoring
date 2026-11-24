@@ -1,0 +1,280 @@
+{
+  "agent": "agent_05",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "7370b1f3-4a33-4d80-bae9-bcbbf6289f14",
+  "finished_at": "2026-11-24T09:37:09.468742+00:00",
+  "paper": {
+    "id": "239",
+    "position": 15,
+    "title": "Narrowing or widening the gender gap in market and domestic work The impact of workweek reduction reform in China",
+    "group": "组01",
+    "md_sha256": "2accc0a4532e75b65582f60adf6c93078f797b07d4b335338a482a3cbd1222e9",
+    "pdf_sha256": "426c4c436581d09c5ceee088d52ceaaea1514a1ae963551406c2fb5c5d9a295f",
+    "ready": true
+  },
+  "pdf_pages": 22,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页有明确的ABSTRACT段落，概述了研究问题、主要发现和机制解释。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "classification:\nD13\nJ22\nJ12\nJ13\nJ16 \nKeywords:\nIntra-household allocations\nGender division of labor\nGender inequality\nWorkweek reduction\nFertility\nA B S T R A C T\nWe investigate whether shorter working hours can narrow",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "the gender gap in market and domestic work by \nexamining the impact of China’s workweek reduction policy. We find that the policy deepened the gender di­\nvision of labor within dual-employee households, resulting in",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提到本文构建/扩展了理论框架：将Becker家庭专业化模型扩展以纳入法定工作时间约束，并据此推导家庭内劳动分工深化的预测。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "labor was particularly pronounced in \nhouseholds with higher demands for domestic product consumption or with higher male-female wage ratios prior \nto the reform. Our analysis demonstrates that under the shortened",
+            "ref": "P1.8"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "working hours system, families’ optimization \nbehavior manifests as a deepened household specialization aimed at maximizing household consumption, sug­\ngesting that the reduction in working hours may exacerbate labor",
+            "ref": "P1.9"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文第3节构建了家庭效用最大化模型，给出预算约束、Kuhn-Tucker条件下的内点解，并推导出Proposition 1、Corollary 1、Proposition 2、Proposition 3及比较静态结果，属于明确的数学推导与定理/命题论证。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "workweek reduction policy relaxes the restriction, the ideal division of \nlabor will, at least to some extent, be recovered.\n3.1. Setup\nConsider a family with a husband (h) and a wife (w) with household \nutility given",
+            "ref": "P5.3"
+          },
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "0≤tk≤1−t0,k=h,wU\n(\nCh\nd, Cw\nd , Cr\n)\n,\n(2) \nwhich is subject to budget constraints: \n(1 −th −t0)⋅wh + (1 −tw −t0)⋅ww + Ih + Iw = Cr and tk = Ck\nd, k = h, w.\n(3) \n3.2. Solution to the household’s problem\nIn Section 3.2,",
+            "ref": "P5.15"
+          },
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "tasks will further withdraw from the domestic sphere.10\nProposition 1.\nIn an interior solution to the dual-employee household’s \nproblem, the wife assumes the lion’s share of domestic work if and only if \n5 We adopt a",
+            "ref": "P5.25"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "wh\nθ > ww. After the working hour reduction reform, (a) the husband spends \nstrictly less time on domestic activities if his initial domestic participation is \nnot 0, and (b) the wife spends weakly more time on domestic",
+            "ref": "P6.1"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "following proposition. \nProposition 2.\nThe domestic working hours of wives are more likely to \nincrease in a group of dual-employee families with a higher male-female wage \nratio than in a group with a lower wage ratio.",
+            "ref": "P6.20"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "实证使用中国健康与营养调查（CHNS）1989、1991、1993、1997、2000年面板数据，属于真实调查数据，并明确说明样本筛选与变量构造。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "reduction reform on the sexual division of labor when both the wife’s \nand husband’s working hours are reduced. For our main analysis, we use \nlongitudinal data from the 1989, 1991, 1993, 1997, and 2000 waves of \nthe",
+            "ref": "P6.25"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "being followed up in 2004. The CHNS \nadopts a multi-stage random cluster sampling process. The sampling \nframe comprises 4400 households with over 16,000 individuals across \nnine provinces that exhibit significant",
+            "ref": "P6.28"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "working sample as \npanels of spouses (1) whose marriages were intact and (2) where both \npartners were in the labor force and maintained the same employment \nstatus immediately before 1993 and after 1997 the policy",
+            "ref": "P7.8"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了DID计量模型（式8）及家庭内DDD模型（式9），并报告了模型系数估计值、标准误和显著性（如Table 2、Table 3、Table 6、Table 7等），明确估计出政策效应系数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "econometric specification is as follows19\nyit = α +\n∑\ntSEmployeei × τt⋅βS\nt +\n∑\ntNEmployeei × τt⋅βN\nt + τt + λi + Xitρ\n+ εit,\n(8) \nwhere yit denotes the main outcomes for individual i at year t, including \nweekly",
+            "ref": "P10.13"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "estimation. εit is the error term and is \nclustered at the community level in all regressions.\nThe coefficients of interest, βS\nt and βN\nt , are the mean shift in time \nallocations and a series of outcomes among",
+            "ref": "P10.18"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "SEmployee × 1989\n−1.181\n−0.607\n−0.072\n0.019\n(1.639)\n(1.695)\n(0.089)\n(0.107)\nSEmployee × 1991\n−0.160\n−0.058\n0.076\n−0.029\n(1.268)\n(1.379)\n(0.096)\n(0.111)\nSemployee × 1997\n−6.465***\n−5.123***\n−0.614***\n−0.638***\n(1.348)",
+            "ref": "P12.15"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "(3)\n(4)\nSEmployee × 1989\n−1.706\n−0.803\n−0.662\n−1.209\n(2.407)\n(2.470)\n(1.397)\n(1.562)\nSEmployee × 1991\n−1.912\n−1.626\n0.965\n0.644\n(2.151)\n(2.134)\n(1.568)\n(1.694)\nSEmployee × 1997\n4.906***\n5.673***\n−0.244\n−0.388\n(1.864)",
+            "ref": "P12.24"
+          },
+          {
+            "source": "pdf",
+            "start": 15,
+            "end": 15,
+            "quote": "0.014\n−0.106\n−0.014\n−0.012\n−0.006\n−0.007\n(0.668)\n(0.674)\n(0.612)\n(0.636)\n(0.010)\n(0.011)\n(0.010)\n(0.012)\nSEmployee × 1997\n1.049\n0.674\n1.958**\n1.532**\n0.017\n0.013\n0.041***\n0.048***\n(0.709)\n(0.750)\n(0.789)\n(0.758)\n(0.010)",
+            "ref": "P15.16"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "本文为有理论、有实证，按Step 3.2识别核心自变量与核心因变量。核心自变量为工作时间改革暴露（标准工时雇员身份×年份），核心因变量为家庭内家务/育儿时间、加班时间、教育获得、职位和劳动收入等，均属于劳动经济学与家庭经济学核心经管变量，故判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "SEmployee × year（标准工时雇员身份与年份交互项）",
+          "economic": true,
+          "reason": "该变量衡量1995年缩短周工时改革对不同就业状态劳动者的暴露强度，是劳动经济学中政策冲击/劳动供给约束的核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "working hours, time spent on family chores, overtime hours per \nweek, investments in human capital, job position, and annual labor in­\ncome. SEmployeei is a dummy variable that equals 1 when individual i \nwas an",
+              "ref": "P10.14"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "individuals as employees \nwith standard and non-standard work schedules relative to self- \nemployed workers. Assuming that the differences across groups \nremain time-invariant without the workweek reduction reform, βS\nt",
+              "ref": "P10.19"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Weekly housework hours / childcare hours",
+          "economic": true,
+          "reason": "家务和育儿时间是家庭经济学中家庭内劳动分工与时间配置的核心因变量，直接衡量家庭生产与性别分工。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "(3)\n(4)\nSEmployee × 1989\n−1.706\n−0.803\n−0.662\n−1.209\n(2.407)\n(2.470)\n(1.397)\n(1.562)\nSEmployee × 1991\n−1.912\n−1.626\n0.965\n0.644\n(2.151)\n(2.134)\n(1.568)\n(1.694)\nSEmployee × 1997\n4.906***\n5.673***\n−0.244\n−0.388\n(1.864)",
+              "ref": "P12.24"
+            },
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "With \npreschool \nchildren\n(1)\n(2)\n(3)\n(4)\n(5)\nSEmployee ×\n1989\n1.519\n1.608\n0.584\n0.404\n​\n(1.802)\n(2.024)\n(1.143)\n(1.326)\n​\nSEmployee ×\n1991\n−0.679\n−1.323\n1.056\n0.976\n0.008\n(1.624)\n(1.814)\n(1.011)\n(1.178)\n(0.047)",
+              "ref": "P14.19"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Weekly overtime hours",
+          "economic": true,
+          "reason": "加班时间衡量劳动供给强度和职场投入，是劳动经济学核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 15,
+              "end": 15,
+              "quote": "0.014\n−0.106\n−0.014\n−0.012\n−0.006\n−0.007\n(0.668)\n(0.674)\n(0.612)\n(0.636)\n(0.010)\n(0.011)\n(0.010)\n(0.012)\nSEmployee × 1997\n1.049\n0.674\n1.958**\n1.532**\n0.017\n0.013\n0.041***\n0.048***\n(0.709)\n(0.750)\n(0.789)\n(0.758)\n(0.010)",
+              "ref": "P15.16"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Have a college or university degree",
+          "economic": true,
+          "reason": "教育获得衡量人力资本投资，是劳动经济学核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 15,
+              "end": 15,
+              "quote": "0.014\n−0.106\n−0.014\n−0.012\n−0.006\n−0.007\n(0.668)\n(0.674)\n(0.612)\n(0.636)\n(0.010)\n(0.011)\n(0.010)\n(0.012)\nSEmployee × 1997\n1.049\n0.674\n1.958**\n1.532**\n0.017\n0.013\n0.041***\n0.048***\n(0.709)\n(0.750)\n(0.789)\n(0.758)\n(0.010)",
+              "ref": "P15.16"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Obtain a high-level position / log annual labor income",
+          "economic": true,
+          "reason": "职位层级和劳动收入是劳动市场表现与职业发展的核心经管变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 16,
+              "end": 16,
+              "quote": "−0.007\n−0.017\n−0.009\n−0.042\n−0.029\n−0.024\n0.005\n(0.041)\n(0.044)\n(0.048)\n(0.056)\n(0.100)\n(0.114)\n(0.087)\n(0.097)\nSEmployee × 1997\n0.027\n0.017\n0.059\n0.053\n−0.046\n−0.058\n0.056\n0.055\n(0.037)\n(0.034)\n(0.045)\n(0.050)\n(0.111)",
+              "ref": "P16.20"
+            },
+            {
+              "source": "pdf",
+              "start": 16,
+              "end": 16,
+              "quote": "(0.028)\n(0.071)\n(0.074)\n(0.139)\n(0.141)\n(0.127)\n(0.131)\nObservations\n5030\n4105\n5030\n4105\n4869\n3981\n4853\n3964\nR2\n0.651\n0.649\n0.683\n0.667\n0.426\n0.418\n0.430\n0.427\nSample mean\n0.150\n0.155\n0.341\n0.319\n7.234\n7.239\n7.416\n7.420",
+              "ref": "P16.24"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

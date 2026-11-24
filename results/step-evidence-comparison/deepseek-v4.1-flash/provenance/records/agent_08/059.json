@@ -1,0 +1,266 @@
+{
+  "agent": "agent_08",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "746402cd-6beb-4d6a-93c1-94a618d5a0ee",
+  "finished_at": "2026-11-24T09:40:13.513380+00:00",
+  "paper": {
+    "id": "059",
+    "position": 7,
+    "title": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE",
+    "group": "组01",
+    "md_sha256": "532ac7d494f1ef7ee6ba8e184fb4a291f961eb1d875842339166363ce4da0137",
+    "pdf_sha256": "bcab122a56856e2c17504eccdede96d9f82f1c9e1338000d284605efb7a9f42a",
+    "ready": true
+  },
+  "pdf_pages": 42,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含摘要，以'We propose a series-based nonparametric specification test...'开头，明确陈述研究内容。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Econometric Theory, 40, 2024, 278–319.\ndoi:10.1017/S0266466622000445\nCONSISTENT SPECIFICATION\nTESTING UNDER SPATIAL\nDEPENDENCE\nABHIMANYU GUPTA\nUniversity of Essex\nXI QU\nShanghai Jiao Tong University\nWe propose a",
+          "ref": "P1.1"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+          "ref": "P1.2"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提到理论贡献：提出新的检验统计量、建立新的中心极限定理（CLT for quadratic forms in linear processes in an increasing dimension setting），并引入新的平滑空间依赖条件。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "dependence condition, our test statistic is asymptotically\nstandard normal. To prove the latter property, we establish a central limit theorem for\nquadratic forms in linear processes in an increasing dimension setting.",
+            "ref": "P1.4"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文包含大量数学推导、引理、定理和证明，如Proposition 4.1、Corollary 4.1、Theorem 4.1-4.4、Theorem 5.1-5.3、Theorem 6.1-6.3等，附录A给出详细证明。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "continuous or,\nequivalently, a bounded linear operator, a property that makes Assumption R.5\nmore reasonable.\nThe following proposition is very useful in “linearizing” perturbations in\nthe \b(·).\nProposition 4.1. If",
+            "ref": "P10.5"
+          },
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "R.3, Assumption R.8 implies\nsupγ ∈\t\n\r\nϕ\n\u0005\nn−1\u000f′\b(γ )−1\u000f\n\u0006\u000e−1\n= Op(1).\nTheorem 4.1. Under either H0 or H1, Assumptions R.1–R.8, and p−1 +\n\u0005\ndγ +p\n\u0006\n/n →0 as n →∞,\n\f\f\u0005\n\nγ, ˆσ 2\u0006\n−\n\u0005\nγ0,σ 2\n0\n\u0006\f\f\np\n−→0.\n4.2. Asymptotic",
+            "ref": "P11.6"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "= 1,...,n and j = 1,...,p.\nThe next theorem establishes the asymptotic normality of the approximating\nquadratic form introduced above.\nTheorem 4.3. Under Assumptions R.3, R.4, R.8, and R.11–R.13 and p−1 +\np3/n →0, as n",
+            "ref": "P12.5"
+          },
+          {
+            "source": "pdf",
+            "start": 31,
+            "end": 31,
+            "quote": "results in the literature and future work might combine\nboth aspects.\nA. APPENDIX: Proofs of Theorems and Propositions\nProof of Proposition 4.1. Because the map \b : \to →Mn×n is Fréchet-differentiable\non \to, it is also",
+            "ref": "P31.2"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "论文使用真实数据：冲突联盟数据（König et al., 2017，刚果内战数据，79个群体）、R&D溢出数据（Bloom et al., 2013，美国企业面板数据，577个观测）、经济增长数据（Ertur and Koch, 2007，91个国家1960-1995年数据）。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 24,
+            "end": 24,
+            "quote": "examples.\n9.1. Conflict Alliances\nThis example is based on a study of how a network of military alliances and\nenmities affects the intensity of a conflict, conducted by König et al. (2017). They\nstress that",
+            "ref": "P24.7"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "take r = 2.\nIn the original dataset, there are 80 groups, but groups 62 and 63 have the same\nvariables and the same locations, so we drop one group and end up with a sample\nof 79 groups. We use data from 1998 as an",
+            "ref": "P25.8"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "Ti = (Ti1,Ti2,...,Ti426)′, with Tiτ being the share of patents\nof firm i in technology class τ. Focusing on a cross-sectional analysis, we use\nobservations from the year 2000 and obtain a sample size of 577. Both weight",
+            "ref": "P27.6"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "regional incomes.\nIn this section, we want to test the linear SAR model specification in Ertur and\nKoch (2007). Their dataset covers a sample of 91 countries over the period of\n1960–1995, originally from Heston,",
+            "ref": "P29.7"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "论文明确构建了SARARMA等空间计量模型（如式5.1、9.1、9.2），并使用QMLE估计模型系数，报告了估计值和p值（如表6-9）。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "introduce the SAR model\nyi =\ndλ\n\u0004\nj=1\nλ0jw′\ni,jy+θ0 (xi)+ui,i = 1,...,n,\n(5.1)\nhttps://doi.org/10.1017/S0266466622000445 Published online by Cambridge University Press",
+            "ref": "P12.11"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n303\nTable 6. The estimates and test statistics for the conflict data.\n1998\nPooled\nH0\np-value\nH1\np-value\nH0\np-value\nH1\nSARARMA(2,1,0)\nWAy\n−0.005\n<0.001\n−0.003",
+            "ref": "P26.1"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "304\nABHIMANYU GUPTA AND XI QU\nTable 7. The estimates and test statistics for the R&D data, SARARMA(0,1,0).\nVariables\nFE\nSARARMA(0,1,0), WTEC\np-value\nH0\np-value\nH1\np-value\nln(Spsic)\n−0.005\n0.649\n0.007\n0.574\n0.015\n0.166",
+            "ref": "P27.1"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n307\nTable 9. The estimates and test statistics of the linear SAR model for the\ngrowth data.\nVariable\nw∗\nij = d−2\nij\nfor i̸ = j\nw∗\nij = e−2dij for i̸ = j\nEstimate",
+            "ref": "P30.1"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文有理论且有实证，采用Step 3.2路径。核心自变量为空间权重矩阵（网络邻接矩阵）和回归变量（如R&D、劳动力、资本等），核心因变量为销售、冲突强度、经济增长等经济变量，均属于经管类变量。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "spatial weight matrices (Wj)",
+          "economic": true,
+          "reason": "空间权重矩阵刻画经济主体间的网络/空间关联（如联盟关系、技术邻近性、地理距离），是空间计量经济学的核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "models for spatial dependence in (2.3). Introduce\na set of n × n spatial weight (equivalently network adjacency) matrices Wj, j =\n1,...,m1 + m2. Each Wj can be thought of as representing dependence through a\nparticular",
+              "ref": "P6.3"
+            },
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "by using a spatial heteroskedasticity and autocorrelation robust standard error.\nWe use their data and the main structure of the specification and build a cross-\nsectional SAR(2) model with two weight matrices, WA (WA",
+              "ref": "P25.3"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "R&D stock, labor, capital",
+          "economic": true,
+          "reason": "研发存量、劳动力、资本是衡量企业投入和生产效率的核心经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            },
+            {
+              "source": "pdf",
+              "start": 27,
+              "end": 27,
+              "quote": "ln(Sptec)\n0.191\n<0.001\n0.006\n0.850\n−0.001\n0.998\nln(Lab.)\n0.636\n<0.001\n0.572\n<0.001\nln(Cap.)\n0.154\n<0.001\n0.336\n<0.001\nln(R&D)\n0.043\n<0.001\n0.081\n<0.001\nWTEC\n0.835\n<0.001\n0.829\n<0.001\nTn\n15.528\n<0.001\nT ∗\nn\n0.050",
+              "ref": "P27.2"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "sales (y)",
+          "economic": true,
+          "reason": "销售额是企业产出和市场绩效的核心经济指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "fighting efforts",
+          "economic": true,
+          "reason": "冲突强度（战斗努力）是政治经济学中衡量冲突结果的核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "ij = 1 if groups i and j\nare allies, and WA\nij = 0 otherwise) and WE (WE\nij = 1 if groups i and j are enemies,\nand WE\nij = 0 otherwise):\ny = λ1WAy+λ2WEy+1nβ0 +Xβ +u,\nwhere y is a vector of fighting efforts of each group",
+              "ref": "P25.4"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "log real income per worker",
+          "economic": true,
+          "reason": "人均实际收入是经济增长研究的核心因变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+              "ref": "P29.9"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

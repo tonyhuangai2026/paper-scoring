@@ -1,0 +1,150 @@
+{
+  "agent": "agent_08",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "746402cd-6beb-4d6a-93c1-94a618d5a0ee",
+  "finished_at": "2026-11-24T09:40:18.764244+00:00",
+  "paper": {
+    "id": "063",
+    "position": 8,
+    "title": "Corporate investment and financing with uncertain growth opportunities",
+    "group": "组01",
+    "md_sha256": "36c298c0c29a56f5d5de2f061ca5d4b7555b1a79bfb0690fb79642b46c7aff9c",
+    "pdf_sha256": "a98ca663ee1a63342eaff766ef04a20048e210192c598fe586c94a7e084dbe3f",
+    "ready": true
+  },
+  "pdf_pages": 22,
+  "modes": [
+    "md"
+  ],
+  "image_pages": [],
+  "label_one": "理论",
+  "label_two": "核心经管",
+  "field_path": "3.1",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文开头有明确的 Abstract 段落，包含研究模型、主要结果和政策/实证含义。",
+      "evidence": [
+        {
+          "source": "md",
+          "start": 23,
+          "end": 23,
+          "quote": "## Abstract",
+          "ref": "L23.1"
+        },
+        {
+          "source": "md",
+          "start": 25,
+          "end": 25,
+          "quote": "This paper develops a continuous-time model of a firm's sequential investments. The firm has an option to expand revenue after the initial investment. However, the timing of exercising the growth option depends not only",
+          "ref": "L25.1"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确说明本文构建了一个连续时间模型来刻画企业的序贯投资，并强调增长机会的不确定性（到达率）对初始投资和融资决策的影响，属于明确的理论贡献。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 25,
+            "end": 25,
+            "quote": "This paper develops a continuous-time model of a firm's sequential investments. The firm has an option to expand revenue after the initial investment. However, the timing of exercising the growth option depends not only",
+            "ref": "L25.1"
+          },
+          {
+            "source": "md",
+            "start": 25,
+            "end": 25,
+            "quote": "on the underlying cash flows but also on the uncertainty of the growth opportunity. We show that the uncertainty of growth opportunity has a positive effect on the initial investment. In particular, the investment",
+            "ref": "L25.2"
+          },
+          {
+            "source": "md",
+            "start": 25,
+            "end": 25,
+            "quote": "threshold has a nonmonotonic (U-shaped) relation with the arrival rate of the growth opportunity, in that it starts to decrease and then increase with the arrival rate. The outcome is driven by the tradeoff between",
+            "ref": "L25.3"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文包含大量数学推导，包括价值函数、边界条件、平滑粘贴条件、微分方程和最优资本结构的一阶条件等，属于有理论推导。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 63,
+            "end": 63,
+            "quote": "$$",
+            "ref": "L63.1"
+          },
+          {
+            "source": "md",
+            "start": 85,
+            "end": 85,
+            "quote": "$$",
+            "ref": "L85.1"
+          },
+          {
+            "source": "md",
+            "start": 149,
+            "end": 149,
+            "quote": "Also, both expansion and default decision made optimally, giving two smooth pasting conditions:",
+            "ref": "L149.1"
+          },
+          {
+            "source": "md",
+            "start": 225,
+            "end": 225,
+            "quote": "$$",
+            "ref": "L225.1"
+          },
+          {
+            "source": "md",
+            "start": 307,
+            "end": 307,
+            "quote": "$$",
+            "ref": "L307.1"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": false,
+        "reason": "论文没有使用真实数据，而是采用数值模拟和校准参数进行定量分析；参数取值来自已有文献的基准值，并非实际观测数据。",
+        "evidence": [
+          {
+            "source": "md",
+            "start": 321,
+            "end": 321,
+            "quote": "Although some special cases of our model can be solved analytically, there are no closed-form solutions for the general case $( 0 < \\lambda < \\infty )$ . We use numerical solutions to characterize the quantitative",
+            "ref": "L321.1"
+          },
+          {
+            "source": "md",
+            "start": 321,
+            "end": 321,
+            "quote": "effects of the jump risk (of arrival) on investment and financing decisions. In order to solve the model numerically, we need to specify values of th input parameters. We start with a set of reasonable “base",
+            "ref": "L321.2"
+          },
+          {
+            "source": "md",
+            "start": 323,
+            "end": 323,
+            "quote": "Base-case parameter values: the risk-free rate $r = 7 \\%$ (Tsyplakoy. 2008: Mauer and Ott. 2000). the expected growth rate of revenue flow is $\\mu = 1 \\%$ (Hackbarth and Mauer, 2011; Huang and Lee, 2013; Morellec &",
+            "ref": "L323.1"
+          }
+        ]
+      },
+      "estimated_model": null
+    },
+    "field": {
+      "reason": "论文属于“有理论、无实证”的情形，按 Step 3.1 统一判定为核心经管。",
+      "variables": []
+    }
+  }
+}

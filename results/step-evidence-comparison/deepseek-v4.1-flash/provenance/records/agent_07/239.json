@@ -1,0 +1,237 @@
+{
+  "agent": "agent_07",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "659fb356-7118-4ccc-b836-213df9cb243f",
+  "finished_at": "2026-11-24T09:41:02.183077+00:00",
+  "paper": {
+    "id": "239",
+    "position": 15,
+    "title": "Narrowing or widening the gender gap in market and domestic work The impact of workweek reduction reform in China",
+    "group": "组01",
+    "md_sha256": "2accc0a4532e75b65582f60adf6c93078f797b07d4b335338a482a3cbd1222e9",
+    "pdf_sha256": "426c4c436581d09c5ceee088d52ceaaea1514a1ae963551406c2fb5c5d9a295f",
+    "ready": true
+  },
+  "pdf_pages": 22,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页有明确的 A B S T R A C T 段落，可识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "classification:\nD13\nJ22\nJ12\nJ13\nJ16 \nKeywords:\nIntra-household allocations\nGender division of labor\nGender inequality\nWorkweek reduction\nFertility\nA B S T R A C T\nWe investigate whether shorter working hours can narrow",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "the gender gap in market and domestic work by \nexamining the impact of China’s workweek reduction policy. We find that the policy deepened the gender di­\nvision of labor within dual-employee households, resulting in",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确说明本文在缩短工时制度下分析家庭优化行为，提出家庭专业化加深的机制解释，属于理论贡献。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "labor was particularly pronounced in \nhouseholds with higher demands for domestic product consumption or with higher male-female wage ratios prior \nto the reform. Our analysis demonstrates that under the shortened",
+            "ref": "P1.8"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "working hours system, families’ optimization \nbehavior manifests as a deepened household specialization aimed at maximizing household consumption, sug­\ngesting that the reduction in working hours may exacerbate labor",
+            "ref": "P1.9"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文第3节构建了扩展Becker家庭模型的合作决策框架，包含效用函数、预算约束、Kuhn-Tucker条件、内点解、比较静态以及命题和推论等数学论证。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "hours may lead to a deepening division of \nlabor. To better understand this interplay, we present a simple cooper­\native decision-making framework.\nOur model extends Becker’s (1991) unitary household model by",
+            "ref": "P4.5"
+          },
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "workweek reduction policy relaxes the restriction, the ideal division of \nlabor will, at least to some extent, be recovered.\n3.1. Setup\nConsider a family with a husband (h) and a wife (w) with household \nutility given",
+            "ref": "P5.3"
+          },
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "0≤tk≤1−t0,k=h,wU\n(\nCh\nd, Cw\nd , Cr\n)\n,\n(2) \nwhich is subject to budget constraints: \n(1 −th −t0)⋅wh + (1 −tw −t0)⋅ww + Ih + Iw = Cr and tk = Ck\nd, k = h, w.\n(3) \n3.2. Solution to the household’s problem\nIn Section 3.2,",
+            "ref": "P5.15"
+          },
+          {
+            "source": "pdf",
+            "start": 5,
+            "end": 5,
+            "quote": "tasks will further withdraw from the domestic sphere.10\nProposition 1.\nIn an interior solution to the dual-employee household’s \nproblem, the wife assumes the lion’s share of domestic work if and only if \n5 We adopt a",
+            "ref": "P5.25"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "domain \nbeyond the designated schedule is represented by 1 −\nt⋆\nk −\nt0, which \nencompasses overtime hours or time dedicated to improving one’s \nhuman capital. The following corollary illustrates the changes in spou­",
+            "ref": "P6.3"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "使用中国健康与营养调查（CHNS）1989、1991、1993、1997、2000年纵向面板数据，属于真实调查数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "exposure helps alle­\nviate concerns about systematic differences between employees and the \nself-employed, thereby improving the credibility of our estimates.\nUsing panel data from the China Health and Nutrition Survey",
+            "ref": "P2.7"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "reduction reform on the sexual division of labor when both the wife’s \nand husband’s working hours are reduced. For our main analysis, we use \nlongitudinal data from the 1989, 1991, 1993, 1997, and 2000 waves of \nthe",
+            "ref": "P6.25"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "明确构建了DID计量模型（式8），并报告了核心交互项系数及其标准误，如标准工时员工×1997对妻子家务时间的影响为4.906小时/周，对丈夫加班时间的影响为1.958小时/周等，明确估计出模型系数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "econometric specification is as follows19\nyit = α +\n∑\ntSEmployeei × τt⋅βS\nt +\n∑\ntNEmployeei × τt⋅βN\nt + τt + λi + Xitρ\n+ εit,\n(8) \nwhere yit denotes the main outcomes for individual i at year t, including \nweekly",
+            "ref": "P10.13"
+          },
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "involved in the domestic sphere, \nspouses should lean toward different spheres after the reform.\nThis is supported by the DID estimations reported in Table 3. Column \n(1) indicates that wives subject to a standard work",
+            "ref": "P11.9"
+          },
+          {
+            "source": "pdf",
+            "start": 14,
+            "end": 14,
+            "quote": "counted as overtime.22 The results in Columns (1)–(4) of Table 6 indi­\ncate that following the complete implementation of the reform, hus­\nbands with a standard work schedule allocated an additional \n1.958–2.335 h per",
+            "ref": "P14.1"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文同时具有理论模型和实证估计，采用Step 3.2路径。核心自变量为工时改革暴露（标准工时员工身份×改革后），核心因变量为家务劳动时间、加班时间、收入、职位等，均属于劳动经济学和家庭经济学核心经管变量。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "SEmployee × Post1995（标准工时员工身份与改革后年份的交互项）",
+          "economic": true,
+          "reason": "该变量衡量工时改革对不同就业状态劳动者的差异化暴露强度，是劳动经济学政策评估中的核心处理变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "working hours, time spent on family chores, overtime hours per \nweek, investments in human capital, job position, and annual labor in­\ncome. SEmployeei is a dummy variable that equals 1 when individual i \nwas an",
+              "ref": "P10.14"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "individuals as employees \nwith standard and non-standard work schedules relative to self- \nemployed workers. Assuming that the differences across groups \nremain time-invariant without the workweek reduction reform, βS\nt",
+              "ref": "P10.19"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Weekly housework hours（每周家务劳动时间）",
+          "economic": true,
+          "reason": "家务劳动时间是无酬劳动供给和家庭内部分工的核心度量，属于家庭经济学和劳动经济学的研究对象。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 11,
+              "end": 11,
+              "quote": "involved in the domestic sphere, \nspouses should lean toward different spheres after the reform.\nThis is supported by the DID estimations reported in Table 3. Column \n(1) indicates that wives subject to a standard work",
+              "ref": "P11.9"
+            },
+            {
+              "source": "pdf",
+              "start": 12,
+              "end": 12,
+              "quote": "Source: China Health and Nutrition Survey (CHNS).\nTable 3 \nImpact of the workweek reduction policy on weekly housework hours.\nSubsamples\nWives\nHusbands\nTotal\nWith underage \nchildren\nTotal\nWith underage \nchildren\n(1)\n(2)",
+              "ref": "P12.23"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Weekly overtime hours（每周加班时间）",
+          "economic": true,
+          "reason": "加班时间是劳动供给的重要维度，直接反映劳动力市场参与强度，属于劳动经济学核心变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 14,
+              "end": 14,
+              "quote": "counted as overtime.22 The results in Columns (1)–(4) of Table 6 indi­\ncate that following the complete implementation of the reform, hus­\nbands with a standard work schedule allocated an additional \n1.958–2.335 h per",
+              "ref": "P14.1"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Log annual labor income（年劳动收入对数）",
+          "economic": true,
+          "reason": "劳动收入是劳动经济学中衡量劳动力市场表现和性别工资差距的核心结果变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 15,
+              "end": 15,
+              "quote": "neither do they exhibit statistical significance.\nAnnual labor income. Columns (5)–(8) in Table 7 demonstrate an \nincrease in labor income among men with a standard work schedule in \n2000, five years after the",
+              "ref": "P15.2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

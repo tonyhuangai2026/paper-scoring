@@ -186,39 +186,57 @@ def evidence_shape(evidence: object, required: bool) -> None:
         ensure(valid_text(item.get("quote"), 360), "证据短引缺失或过长。")
 
 
-def section(result: dict, name: str, evidence_required: bool = True) -> dict:
-    data = result.get(name)
-    ensure(isinstance(data, dict) and valid_text(data.get("reason")), f"缺少 {name} 判断理由。")
-    evidence_shape(data.get("evidence"), evidence_required)
-    return data
+def step_result(step: object, name: str, key: str = "result") -> bool:
+    ensure(isinstance(step, dict) and type(step.get(key)) is bool, f"{name} 必须有布尔判定结果。")
+    ensure(valid_text(step.get("reason")), f"{name} 缺少判断理由。")
+    evidence_shape(step.get("evidence"), required=True)
+    return step[key]
+
+
+def step_pair(result: dict, name: str, first: str, second: str, first_id: str, second_id: str) -> bool:
+    group = result[name]
+    ensure(isinstance(group, dict) and first in group and second in group, f"缺少步骤 {first_id} 或 {second_id}。")
+    if not step_result(group[first], f"步骤 {first_id}"):
+        ensure(group[second] is None, f"步骤 {first_id} 为否时，步骤 {second_id} 必须为 null。")
+        return False
+    return step_result(group[second], f"步骤 {second_id}")
+
+
+def evidence_lists(result: dict):
+    """Yield evidence lists for each step and core variable, including during citation resolution."""
+    candidates = [("1.1 摘要", result.get("abstract"))]
+    for group, steps in (
+        ("theory", (("1.2 摘要理论贡献", "contribution"), ("1.3 正文推导", "derivations"))),
+        ("empirical", (("2.1 真实数据", "real_data"), ("2.2 模型与系数", "estimated_model"))),
+    ):
+        data = result.get(group)
+        if isinstance(data, dict):
+            candidates.extend((name, data.get(key)) for name, key in steps)
+    field = result.get("field")
+    if isinstance(field, dict) and isinstance(field.get("variables"), list):
+        candidates.extend((f"核心变量 {index}", variable) for index, variable in enumerate(field["variables"], 1))
+    for name, step in candidates:
+        if isinstance(step, dict) and isinstance(step.get("evidence"), list):
+            yield name, step["evidence"]
 
 
 def classify(result: dict, mode: str) -> tuple[str, str, str]:
     ensure(result.get("status") == "ok", "只有完成状态可生成标签。")
     ensure(all(name in result for name in ("abstract", "theory", "empirical", "field")), "判定结构缺少必要字段。")
-    abstract = section(result, "abstract")
-    found = abstract.get("found")
-    ensure(type(found) is bool, "abstract.found 必须为布尔值。")
+    found = step_result(result["abstract"], "步骤 1.1", "found")
     if not found:
         ensure(mode != "md", "找不到摘要时必须核查 PDF。")
         ensure(result["theory"] is None and result["empirical"] is None, "无摘要时必须跳过理论和实证。")
         label_one = "无法判断"
         path = "3.3"
     else:
-        theory = section(result, "theory")
-        empirical = section(result, "empirical")
-        contribution, derivations = theory.get("contribution"), theory.get("derivations")
-        real_data, estimated = empirical.get("real_data"), empirical.get("estimated_model")
-        ensure(type(contribution) is bool and "derivations" in theory
-               and (type(derivations) is bool if contribution else derivations is None), "理论步骤与摘要判断不匹配。")
-        ensure(type(real_data) is bool and "estimated_model" in empirical
-               and (type(estimated) is bool if real_data else estimated is None), "实证步骤与真实数据判断不匹配。")
-        has_theory = bool(contribution and derivations)
-        has_empirical = bool(real_data and estimated)
+        has_theory = step_pair(result, "theory", "contribution", "derivations", "1.2", "1.3")
+        has_empirical = step_pair(result, "empirical", "real_data", "estimated_model", "2.1", "2.2")
         label_one = {(True, False): "理论", (False, True): "实证", (True, True): "理论+实证",
                      (False, False): "描述性统计和综述"}[has_theory, has_empirical]
         path = "3.2" if has_empirical else "3.1" if has_theory else "3.3"
-    field = section(result, "field", evidence_required=path != "3.1")
+    field = result["field"]
+    ensure(isinstance(field, dict) and valid_text(field.get("reason")), "步骤 3 缺少路径理由。")
     variables = field.get("variables")
     ensure(isinstance(variables, list) and len(variables) <= 16, "核心变量必须为列表。")
     roles = set()
@@ -226,6 +244,7 @@ def classify(result: dict, mode: str) -> tuple[str, str, str]:
         ensure(isinstance(variable, dict) and variable.get("role") in ("central", "independent", "dependent")
                and valid_text(variable.get("name"), 400) and type(variable.get("economic")) is bool
                and valid_text(variable.get("reason"), 1200), "核心变量缺少名称、角色或经管属性依据。")
+        evidence_shape(variable.get("evidence"), required=True)
         roles.add(variable["role"])
     ensure((path == "3.1" and not variables) or (path == "3.2" and roles == {"independent", "dependent"})
            or (path == "3.3" and len(variables) == 1 and roles == {"central"}), "核心变量与标签二判断路径不匹配。")
@@ -241,11 +260,8 @@ def normalized_quote(text: str) -> str:
 
 def check_evidence(result: dict, mode: str, md_lines: list[str], pdf_pages: list[str], image_pages: list[int]) -> None:
     sources = {"md": md_lines} if mode == "md" else {"pdf": pdf_pages}
-    for name in ("abstract", "theory", "empirical", "field"):
-        data = result[name]
-        if data is None:
-            continue
-        for item in data["evidence"]:
+    for name, evidence in evidence_lists(result):
+        for item in evidence:
             source, start, end = item["source"], item["start"], item["end"]
             if source == "pdf_image":
                 ensure(mode == "pdf_image" and set(range(start, end + 1)).issubset(image_pages), "页图证据引用了未提供的页。")
@@ -299,15 +315,12 @@ def annotated_material(units: list[str], source: str) -> tuple[str, dict[str, di
 
 
 def resolve_citations(result: dict, references: dict[str, dict]) -> None:
-    for name in ("abstract", "theory", "empirical", "field"):
-        section_value = result.get(name)
-        if not isinstance(section_value, dict) or not isinstance(section_value.get("evidence"), list):
-            continue
-        for index, item in enumerate(section_value["evidence"]):
+    for name, evidence in evidence_lists(result):
+        for index, item in enumerate(evidence):
             if isinstance(item, dict) and "ref" in item:
                 reference = item["ref"]
                 ensure(isinstance(reference, str) and reference in references, f"{name} 的引文编号不在本次材料中。")
-                section_value["evidence"][index] = {**references[reference], "ref": reference}
+                evidence[index] = {**references[reference], "ref": reference}
 
 
 def evaluate_mode(gateway: Gateway, content: Content, mode: str, md_lines: list[str], pdf_pages: list[str],

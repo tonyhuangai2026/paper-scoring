@@ -1,0 +1,435 @@
+{
+  "agent": "agent_09",
+  "run_id": "f974efde-9704-4139-9d64-4d7fef96e8e8",
+  "session_id": "55daa6a9-3912-43a2-b364-8aebf752f604",
+  "finished_at": "2026-11-24T09:49:37.634647+00:00",
+  "paper": {
+    "id": "059",
+    "position": 7,
+    "title": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE",
+    "group": "组01",
+    "md_sha256": "532ac7d494f1ef7ee6ba8e184fb4a291f961eb1d875842339166363ce4da0137",
+    "pdf_sha256": "bcab122a56856e2c17504eccdede96d9f82f1c9e1338000d284605efb7a9f42a",
+    "ready": true
+  },
+  "pdf_pages": 42,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "理论+实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "PDF 第 1 页作者署名之后、第 1 节引言之前的段落概述了研究问题、检验方法、理论结果、模拟和实证应用，可识别为摘要。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Econometric Theory, 40, 2024, 278–319.\ndoi:10.1017/S0266466622000445\nCONSISTENT SPECIFICATION\nTESTING UNDER SPATIAL\nDEPENDENCE\nABHIMANYU GUPTA\nUniversity of Essex\nXI QU\nShanghai Jiao Tong University\nWe propose a",
+          "ref": "P1.1"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+          "ref": "P1.2"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "dependence condition, our test statistic is asymptotically\nstandard normal. To prove the latter property, we establish a central limit theorem for\nquadratic forms in linear processes in an increasing dimension setting.",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "Finite sample\nperformance is investigated in a simulation study, with a bootstrap method also\njustified and illustrated. Empirical examples illustrate the test with real-world data.\n1. INTRODUCTION\nModels for spatial",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": true,
+        "reason": "摘要明确提出一种基于级数的非参数回归设定检验，引入新的平滑空间依赖条件，并建立维数递增情形下线性过程二次型的中心极限定理，以证明检验统计量的渐近正态性。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "series-based nonparametric specification test for a regression function\nwhen data are spatially dependent, the “space” being of a general economic or\nsocial nature. Dependence can be parametric, parametric with",
+            "ref": "P1.2"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "increasing dimension,\nsemiparametric or any combination thereof, thus covering a vast variety of settings.\nThese include spatial error models of varying types and levels of complexity. Under\na new smooth spatial",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "dependence condition, our test statistic is asymptotically\nstandard normal. To prove the latter property, we establish a central limit theorem for\nquadratic forms in linear processes in an increasing dimension setting.",
+            "ref": "P1.4"
+          }
+        ]
+      },
+      "derivations": {
+        "result": true,
+        "reason": "正文第 3 节由高斯准对数似然推导回归系数与误差方差的估计式，并构造中心化和标准化的检验统计量。第 4 节定理 4.2 给出统计量的二次型近似，定理 4.3 给出该二次型的中心极限定理，定理 4.4 给出检验的渐近正态性、一致性和局部备择下的极限分布。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "admissible values\nβ, σ 2, and γ , the (multiplied by 2\nn) negative quasi-log-likelihood function based\non using the approximation (3.1) is\nL(β,σ 2,γ ) = ln\n\u0005\n2πσ 2\u0006\n+ 1\nn ln|\b (γ )|+ 1\nnσ 2 (y−\u000fβ)′\b (γ )−1 (y−\u000fβ),\n(3.3)",
+            "ref": "P7.5"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "which is minimized with respect to β and σ 2 by\n¯β (γ ) =\n\u0005\n\u000f′\b (γ )−1 \u000f\n\u0006−1 \u000f′\b (γ )−1 y,\n(3.4)\n¯σ 2 (γ ) = n−1y′E(γ )′M(γ )E(γ )y,\n(3.5)\nwhere M(γ ) = In −E(γ )\u000f\n\u0005\n\u000f′\b(γ )−1\u000f\n\u0006−1 \u000f′E(γ )′ and E(γ ) is the n × n sym-",
+            "ref": "P7.6"
+          },
+          {
+            "source": "pdf",
+            "start": 8,
+            "end": 8,
+            "quote": "(x1,α),...,f (xn,α))′.\nPrecisely, it is defined as\nTn = n\nmn −p\n√2p .\n(3.8)\nThe motivation for such a centering and scaling stems from the fact that, for fixed p,\nn\nmn has an asymptotic χ2\np distribution. Such a",
+            "ref": "P8.4"
+          },
+          {
+            "source": "pdf",
+            "start": 11,
+            "end": 11,
+            "quote": "Under\nAssumptions\nR.1–R.10,\np−1 + p\n\u0005\np+d2\nγ\n\u0006\n/n +\n√n/pμ+1/4 →0, as n →∞, and H0, Tn −\n\u0005\nσ −2\n0 ε′V ε −p\n\u0006\n/√2p = op(1).\nhttps://doi.org/10.1017/S0266466622000445 Published online by Cambridge University Press",
+            "ref": "P11.12"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "= 1,...,n and j = 1,...,p.\nThe next theorem establishes the asymptotic normality of the approximating\nquadratic form introduced above.\nTheorem 4.3. Under Assumptions R.3, R.4, R.8, and R.11–R.13 and p−1 +\np3/n →0, as n",
+            "ref": "P12.5"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "→∞,\n\u0005\nσ −2\n0 ε′V ε −p\n\u0006\n/√2p\nd\n−→N(0,1).\nThis is a new type of CLT, integrating both a linear process framework and\nan increasing dimension element. A linear-quadratic form in i.i.d. disturbances is\ntreated by Kelejian",
+            "ref": "P12.6"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "4.4. Under the conditions of Theorems 4.2 and 4.3, (1) Tn\nd→N(0,1)\nunder H0, (2) Tn is a consistent test statistic, and (3) Tn\nd→N (\u0016,1) under local\nalternatives Hℓ.\n5. MODELS WITH SAR STRUCTURE IN RESPONSES\nWe now",
+            "ref": "P12.10"
+          }
+        ]
+      }
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "正文第 9 节使用三组现实观测数据，分别是 König 等关于第二次刚果战争的武装团体数据、Bloom 等关于美国企业的面板数据中的 2000 年横截面样本，以及 Ertur 和 Koch 采用的 Penn World Table 6.1 版跨国经济数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "302\nABHIMANYU GUPTA AND XI QU\nempirical analysis using data on the Second Congo War, a conflict that involves\nmany groups in a complex network of informal alliances and rivalries.\nTo study the fighting effort of each",
+            "ref": "P25.1"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "by using a spatial heteroskedasticity and autocorrelation robust standard error.\nWe use their data and the main structure of the specification and build a cross-\nsectional SAR(2) model with two weight matrices, WA (WA",
+            "ref": "P25.3"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "take r = 2.\nIn the original dataset, there are 80 groups, but groups 62 and 63 have the same\nvariables and the same locations, so we drop one group and end up with a sample\nof 79 groups. We use data from 1998 as an",
+            "ref": "P25.8"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+            "ref": "P26.6"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "Ti = (Ti1,Ti2,...,Ti426)′, with Tiτ being the share of patents\nof firm i in technology class τ. Focusing on a cross-sectional analysis, we use\nobservations from the year 2000 and obtain a sample size of 577. Both weight",
+            "ref": "P27.6"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "regional incomes.\nIn this section, we want to test the linear SAR model specification in Ertur and\nKoch (2007). Their dataset covers a sample of 91 countries over the period of\n1960–1995, originally from Heston,",
+            "ref": "P29.7"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "Summers, and Aten (2002), obtained from\nthe Penn World Tables (PWT version 6.1). The variables in use include per worker\nincome in 1960 (y60) and 1995 (y95), average rate of growth between 1960 and\n1995 (gy), average",
+            "ref": "P29.8"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "建模方面，作者用冲突数据构建了含盟友和敌对团体空间滞后项的横截面 SAR(2) 模型，在创新应用中给出生产率方程及空间误差设定，并在跨国应用中给出线性 SAR 方程。系数估计方面，表 6 报告冲突模型的空间滞后项估计，表 7 报告企业研发和溢出项的系数估计，表 9 报告跨国模型的估计系数，其中两种空间权重设定下对数投资率的系数分别为 0.8256 和 0.7938。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "by using a spatial heteroskedasticity and autocorrelation robust standard error.\nWe use their data and the main structure of the specification and build a cross-\nsectional SAR(2) model with two weight matrices, WA (WA",
+            "ref": "P25.3"
+          },
+          {
+            "source": "pdf",
+            "start": 25,
+            "end": 25,
+            "quote": "ij = 1 if groups i and j\nare allies, and WA\nij = 0 otherwise) and WE (WE\nij = 1 if groups i and j are enemies,\nand WE\nij = 0 otherwise):\ny = λ1WAy+λ2WEy+1nβ0 +Xβ +u,\nwhere y is a vector of fighting efforts of each group",
+            "ref": "P25.4"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n303\nTable 6. The estimates and test statistics for the conflict data.\n1998\nPooled\nH0\np-value\nH1\np-value\nH0\np-value\nH1\nSARARMA(2,1,0)\nWAy\n−0.005\n<0.001\n−0.003",
+            "ref": "P26.1"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "<0.001\n0.013\n<0.001\n0.013\n<0.001\nWEy\n0.130\n<0.001\n0.129\n<0.001\n0.121\n<0.001\n0.121\n<0.001\nWd\n−0.159\n0.281\n−0.225\n<0.001\n−0.086\n0.033\n−0.086\n0.033\nTn\n−1.921\n0.973\n−2.531\n0.994\nT ∗\nn\n0.840\n0.940\nT a\nn\n−1.918\n0.972\n−2.547",
+            "ref": "P26.2"
+          },
+          {
+            "source": "pdf",
+            "start": 26,
+            "end": 26,
+            "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+            "ref": "P26.6"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "304\nABHIMANYU GUPTA AND XI QU\nTable 7. The estimates and test statistics for the R&D data, SARARMA(0,1,0).\nVariables\nFE\nSARARMA(0,1,0), WTEC\np-value\nH0\np-value\nH1\np-value\nln(Spsic)\n−0.005\n0.649\n0.007\n0.574\n0.015\n0.166",
+            "ref": "P27.1"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "ln(Sptec)\n0.191\n<0.001\n0.006\n0.850\n−0.001\n0.998\nln(Lab.)\n0.636\n<0.001\n0.572\n<0.001\nln(Cap.)\n0.154\n<0.001\n0.336\n<0.001\nln(R&D)\n0.043\n<0.001\n0.081\n<0.001\nWTEC\n0.835\n<0.001\n0.829\n<0.001\nTn\n15.528\n<0.001\nT ∗\nn\n0.050",
+            "ref": "P27.2"
+          },
+          {
+            "source": "pdf",
+            "start": 27,
+            "end": 27,
+            "quote": "SARARMA(0,1,0) models using WSIC and WTEC\nseparately. We use both WSIC and WTEC simultaneously in SARARMA(0,2,0),\nSARARMA(0,2,0), and Error MESS(2) models, reported in Table 8. In all of\nthese specifications, the test",
+            "ref": "P27.8"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+            "ref": "P29.9"
+          },
+          {
+            "source": "pdf",
+            "start": 29,
+            "end": 29,
+            "quote": "worker ln(y95), elements\nof the explanatory variable X = (x′\n1,x′\n2) include log investment rate ln(s) = x1\nand log physical capital effective rate of depreciation ln(np + 0.05) = x2, with\ncorresponding subscripted",
+            "ref": "P29.10"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "CONSISTENT SPECIFICATION TESTING UNDER SPATIAL DEPENDENCE\n307\nTable 9. The estimates and test statistics of the linear SAR model for the\ngrowth data.\nVariable\nw∗\nij = d−2\nij\nfor i̸ = j\nw∗\nij = e−2dij for i̸ = j\nEstimate",
+            "ref": "P30.1"
+          },
+          {
+            "source": "pdf",
+            "start": 30,
+            "end": 30,
+            "quote": "p-value\nEstimate\np-value\nConstant\n1.0711\n0.608\n0.5989\n0.798\nln(s)\n0.8256\n< 0.001\n0.7938\n< 0.001\nln(np +0.05)\n−1.4984\n0.008\n−1.4512\n0.009\nW ln(s)\n−0.3159\n0.075\n−0.3595\n0.020\nW ln(np +0.05)\n0.5633\n0.498\n0.1283\n0.856\nWy",
+            "ref": "P30.2"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "论文同时具有理论贡献和实证估计，采用 Step 3.2。正文的创新溢出与跨国增长应用以研发存量、投资率等经济投入为核心解释变量，以企业销售额和实际每工人收入为结果变量，满足核心经管判定条件。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "WAy 和 WEy（盟友与敌对团体的总作战投入）",
+          "economic": false,
+          "reason": "这两个空间滞后项衡量与某团体结盟或敌对的其他团体的总作战投入，反映军事冲突网络中的活动强度。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "group, the authors use a panel data model\nwith individual fixed effects, where key regressors include total fighting effort of\nallies and enemies. They further correct the potential spatial correlation in the error\nterm",
+              "ref": "P25.2"
+            },
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "ij = 1 if groups i and j\nare allies, and WA\nij = 0 otherwise) and WE (WE\nij = 1 if groups i and j are enemies,\nand WE\nij = 0 otherwise):\ny = λ1WAy+λ2WEy+1nβ0 +Xβ +u,\nwhere y is a vector of fighting efforts of each group",
+              "ref": "P25.4"
+            },
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "is defined by total fights of allies or enemies.\nhttps://doi.org/10.1017/S0266466622000445 Published online by Cambridge University Press",
+              "ref": "P25.15"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "fighting efforts of each group（各团体的作战投入）",
+          "economic": false,
+          "reason": "该变量衡量各武装团体的作战活动强度，属于军事冲突结果指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "302\nABHIMANYU GUPTA AND XI QU\nempirical analysis using data on the Second Congo War, a conflict that involves\nmany groups in a complex network of informal alliances and rivalries.\nTo study the fighting effort of each",
+              "ref": "P25.1"
+            },
+            {
+              "source": "pdf",
+              "start": 25,
+              "end": 25,
+              "quote": "ij = 1 if groups i and j\nare allies, and WA\nij = 0 otherwise) and WE (WE\nij = 1 if groups i and j are enemies,\nand WE\nij = 0 otherwise):\ny = λ1WAy+λ2WEy+1nβ0 +Xβ +u,\nwhere y is a vector of fighting efforts of each group",
+              "ref": "P25.4"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "ln(R&D)（企业研发存量的对数）",
+          "economic": true,
+          "reason": "该变量衡量企业累积的研发投入，是生产率方程中的创新投入指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ln y（企业销售额的对数）",
+          "economic": true,
+          "reason": "该变量衡量企业销售规模，是企业经营活动的结果指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 26,
+              "end": 26,
+              "quote": "panel data on U.S. firms.\nWe consider the Productivity Equation in Bloom et al. (2013):\nlny = ϕ1 ln(R&D)+ϕ2 ln(Sptec)+ϕ3 ln(Spsic)+ϕ4X +error,\n(9.1)\nwhere y is a vector of sales, R&D is a vector of R&D stocks, and",
+              "ref": "P26.6"
+            }
+          ]
+        },
+        {
+          "role": "independent",
+          "name": "ln(s)（平均投资率的对数）",
+          "economic": true,
+          "reason": "该变量衡量各国在 1960 至 1995 年期间的平均投资率，反映宏观经济中的投资强度。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "Summers, and Aten (2002), obtained from\nthe Penn World Tables (PWT version 6.1). The variables in use include per worker\nincome in 1960 (y60) and 1995 (y95), average rate of growth between 1960 and\n1995 (gy), average",
+              "ref": "P29.8"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+              "ref": "P29.9"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "worker ln(y95), elements\nof the explanatory variable X = (x′\n1,x′\n2) include log investment rate ln(s) = x1\nand log physical capital effective rate of depreciation ln(np + 0.05) = x2, with\ncorresponding subscripted",
+              "ref": "P29.10"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "ln(y95)（1995 年实际每工人收入的对数）",
+          "economic": true,
+          "reason": "该变量衡量各国 1995 年按工人平均的实际收入，是跨国比较收入水平的宏观经济指标。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "Summers, and Aten (2002), obtained from\nthe Penn World Tables (PWT version 6.1). The variables in use include per worker\nincome in 1960 (y60) and 1995 (y95), average rate of growth between 1960 and\n1995 (gy), average",
+              "ref": "P29.8"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "investment rate of this period (s), and average rate of growth of\nworking-age population (np).\nErtur and Koch (2007) consider the model\ny = λWy+Xβ +WXθ +ε,\n(9.2)\nwhere the dependent variable is log real income per",
+              "ref": "P29.9"
+            },
+            {
+              "source": "pdf",
+              "start": 29,
+              "end": 29,
+              "quote": "worker ln(y95), elements\nof the explanatory variable X = (x′\n1,x′\n2) include log investment rate ln(s) = x1\nand log physical capital effective rate of depreciation ln(np + 0.05) = x2, with\ncorresponding subscripted",
+              "ref": "P29.10"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

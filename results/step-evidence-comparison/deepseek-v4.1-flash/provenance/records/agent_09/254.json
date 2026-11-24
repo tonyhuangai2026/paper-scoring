@@ -1,0 +1,307 @@
+{
+  "agent": "agent_09",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "ea14727c-7e1f-4056-a4d1-07e6e53aedf4",
+  "finished_at": "2026-11-24T09:43:52.677574+00:00",
+  "paper": {
+    "id": "254",
+    "position": 16,
+    "title": "Pandemic and insurance purchase How do people respond to unprecedented risk and uncertainty",
+    "group": "组01",
+    "md_sha256": "4df862da852f5050805502909293c7a967b4fe76b8dce3a2cc0ec08916743866",
+    "pdf_sha256": "7131b5acd28de0caac5bc73be9b463484ce69b1affa96d960fb0b978ab0b1bd7",
+    "ready": true
+  },
+  "pdf_pages": 25,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的摘要段落，以 'A B S T R A C T' 开头，概述了研究问题、数据、方法和主要发现。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "G41 \nG52 \nKeywords: \nInsurance \nDecision-making \nCOVID-19 \nRisk \nInformation \nA B S T R A C T  \nWe investigate how people insure themselves against an upsurge of risk and uncertainty during a \npandemic. Using",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "high-frequency, city-level insurance purchases data from the largest online in­\nsurance platform in China, we employ difference-in-differences strategies to quantify changes in \ninsurance purchases before and after the",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要中未明确提及本文的理论贡献，如构建新模型、创造新概念或计量方法创新。摘要主要描述实证发现和政策含义。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "G41 \nG52 \nKeywords: \nInsurance \nDecision-making \nCOVID-19 \nRisk \nInformation \nA B S T R A C T  \nWe investigate how people insure themselves against an upsurge of risk and uncertainty during a \npandemic. Using",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "high-frequency, city-level insurance purchases data from the largest online in­\nsurance platform in China, we employ difference-in-differences strategies to quantify changes in \ninsurance purchases before and after the",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "COVID-19 outbreak relative to a corresponding period in \n2019. We show that the pandemic induces a substantial increase in daily number of insurance \npurchase, with evident impact on both health and life insurance. We",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "demonstrate that the in­\ncrease mainly originates from an expanded number of consumers; and is not driven by compo­\nsitional shifts. Particularly, we show that the observed increase is better explained by pandemic \nrisk",
+            "ref": "P1.7"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "exposure than other mechanisms such as negative emotions and insurance awareness. \nNevertheless, there is a notable discrepancy between changes in insurance purchases and COVID- \n19 risk exposure, which is driven by",
+            "ref": "P1.8"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "individuals’ lack of information on pandemic. We find that \nthe more direct and high-quality information people have, the more likely their decisions are to \naccord with the objective risk exposure. These findings",
+            "ref": "P1.9"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "reveal the key driving forces of the risk \nmanagement responses under an unprecedented pandemic, and point to the importance and \nnecessity of public information disclosure.   \n1. Introduction \nIn December 2019, a novel",
+            "ref": "P1.10"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用了来自中国最大在线保险平台的高频、城市级保险购买数据，以及中国CDC的COVID-19确诊病例数据、百度指数和微博数据等真实数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "the dynamic \nchanges in the COVID-19 risk exposure or other mechanisms. \nIn this study, insurance data are obtained from the largest private online insurance platform in China, which had in total insured \n>100 million",
+            "ref": "P2.11"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "people by the end of 2019. The great accessibility and responsiveness of the online platform makes it an excellent source \nof data to investigate insurance purchases behaviors. We use every two-day insurance purchases",
+            "ref": "P2.12"
+          },
+          {
+            "source": "pdf",
+            "start": 2,
+            "end": 2,
+            "quote": "data from Dec 01, 2019 to Mar 16, \n2020 (2019–2020) and the corresponding period in 2018–2019 for 294 prefecture-level cities; and a difference-in-differences (DID) \napproach is employed to identify the impact of",
+            "ref": "P2.13"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "2020), pandemic risks are measured by the number of \nCOVID-19 confirmed cases in daily-city level, which captures the objective risk of exposure within each city. Specifically, our data are \nacquired from the Chinese",
+            "ref": "P6.4"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "Center for Disease Control and Prevention (China CDC). We collect daily cumulative numbers of COVID-19 \nconfirmed cases for each prefecture-level city from the first day that COVID-19 cases were reported, to the last",
+            "ref": "P6.5"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "other negative emotions may also distort risk perceptions and induce changes in insurance purchases. \nIn this study, we use the searching frequency of mental health counseling as a measure of negative emotions based on",
+            "ref": "P6.10"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "Baidu Index. As \nthe leading search engine in China, Baidu provides internet search services for the majority of Chinese users (over 80%) and collects \ntimely search history data. Similar to Google Trends, it calculates",
+            "ref": "P6.11"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "specific, we web scrap all the tweets published by official accounts in Sina Weibo (the largest microblog platform) during our study \nperiods.15 Similar to Twitter, Weibo is the largest microblogging platform and one of",
+            "ref": "P7.4"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了双重差分（DID）模型（式1）及扩展模型（式2、式3），并报告了估计出的模型系数（如Table 2中2020×Post系数为0.855，Table 3中消费者数量系数为0.990等），且系数具有统计显著性。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "al., 2021; Chen et al., 2021; Fang et al., 2020; He et al., \n2020).16 The regression equation can be specified as follows, \nYit = α + β1Treat × Postit + Treat + Postit + λi + ωt + εit\n(1)  \nwhere Yit represents the",
+            "ref": "P7.15"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "outcomes of insurance purchases measured in prefecture-level city i, at time t, such as the log number of \ninsurance purchases and the log number of consumers. The dummy variable Treat is defined as 1 for 2019–2020",
+            "ref": "P7.16"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "observations and 0 for \n2018–2019 observations. For 2019–2020 observations, Postit is defined as 1 after the emergence of first COVID-19 cases in city i, and \n0 otherwise17; for 2018–2019 observations, Postit is defined",
+            "ref": "P7.17"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "as 1 after the corresponding dates matched using the lunar calendar for \n2018–2019 observations, and 0 otherwise. λi are city-fixed effects that control for the time-invariant unobservables across cities, such \nas GDP",
+            "ref": "P7.18"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "per capita and population size. ωt are date-fixed effects that account for the time-related differences.18 β1 accordingly, estimates \nthe differences of changes between treatment periods and parallel control periods,",
+            "ref": "P7.19"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "before and after the COVID-19 outbreak (Brodeur \net al., 2021; Chen et al., 2021; Fang et al., 2020; He et al., 2020), thus capturing the average treatment effect of the COVID-19 \npandemic on insurance purchases. We",
+            "ref": "P7.20"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "effects of the COVID-19 pandemic on insurance purchases.   \n(1) \n(2) \n(3)  \nLog number of insurance purchases \nLog number of platform visits \nLog number of insurance purchases per visit \n2020 × Post \n0.855*** \n0.532***",
+            "ref": "P10.16"
+          },
+          {
+            "source": "pdf",
+            "start": 10,
+            "end": 10,
+            "quote": "0.021***  \n(0.018) \n(0.017) \n(0.002)  \n[135.10%] \n[70.32%] \n[2.17%] \nConstant \n4.464*** \n6.486*** \n0.146***  \n(0.004) \n(0.003) \n(0.000) \nObservations \n27,342 \n27,342 \n27,342 \nR-squared \n0.908 \n0.954 \n0.547 \nPrefecture",
+            "ref": "P10.17"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "and intensive margin.   \n(1) \n(2)  \nLog number of consumers (Extensive margin) \nLog number of insurance purchases per consumer (Intensive margin) \n2020 × Post \n0.990*** \n−0.095***  \n(0.016) \n(0.004)  \n[169.10%]",
+            "ref": "P12.21"
+          },
+          {
+            "source": "pdf",
+            "start": 12,
+            "end": 12,
+            "quote": "[−9.11%] \nConstant \n3.849*** \n1.073***  \n(0.003) \n(0.001) \nObservations \n27,342 \n27,276 \nR-squared \n0.919 \n0.523 \nPrefecture FE \nYES \nYES \nDate FE \nYES \nYES \nTreat and Post FE \nYES \nYES \nNotes: Standard errors shown in",
+            "ref": "P12.22"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章为'无理论、有实证'，采用步骤3.2：识别核心自变量和核心因变量，判断是否至少有一个为经管类变量。核心自变量为COVID-19大流行冲击（Treat×Post），核心因变量为保险购买数量（log number of insurance purchases）。两者均属于经管类变量（保险市场、风险管理），因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "COVID-19 pandemic (Treat × Post)",
+          "economic": true,
+          "reason": "该变量衡量COVID-19大流行这一外生冲击，属于经济冲击和风险管理事件，是经管类研究的核心自变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "al., 2021; Chen et al., 2021; Fang et al., 2020; He et al., \n2020).16 The regression equation can be specified as follows, \nYit = α + β1Treat × Postit + Treat + Postit + λi + ωt + εit\n(1)  \nwhere Yit represents the",
+              "ref": "P7.15"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "outcomes of insurance purchases measured in prefecture-level city i, at time t, such as the log number of \ninsurance purchases and the log number of consumers. The dummy variable Treat is defined as 1 for 2019–2020",
+              "ref": "P7.16"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "observations and 0 for \n2018–2019 observations. For 2019–2020 observations, Postit is defined as 1 after the emergence of first COVID-19 cases in city i, and \n0 otherwise17; for 2018–2019 observations, Postit is defined",
+              "ref": "P7.17"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Log number of insurance purchases",
+          "economic": true,
+          "reason": "该变量衡量保险购买数量，直接反映保险市场需求和消费者风险管理行为，属于经管类变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "al., 2021; Chen et al., 2021; Fang et al., 2020; He et al., \n2020).16 The regression equation can be specified as follows, \nYit = α + β1Treat × Postit + Treat + Postit + λi + ωt + εit\n(1)  \nwhere Yit represents the",
+              "ref": "P7.15"
+            },
+            {
+              "source": "pdf",
+              "start": 7,
+              "end": 7,
+              "quote": "outcomes of insurance purchases measured in prefecture-level city i, at time t, such as the log number of \ninsurance purchases and the log number of consumers. The dummy variable Treat is defined as 1 for 2019–2020",
+              "ref": "P7.16"
+            },
+            {
+              "source": "pdf",
+              "start": 10,
+              "end": 10,
+              "quote": "effects of the COVID-19 pandemic on insurance purchases.   \n(1) \n(2) \n(3)  \nLog number of insurance purchases \nLog number of platform visits \nLog number of insurance purchases per visit \n2020 × Post \n0.855*** \n0.532***",
+              "ref": "P10.16"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "agent": "agent_01",
+  "run_id": "a30e440c-81fe-49a1-8c18-cf698444e097",
+  "session_id": "290f67be-292c-49fa-8044-814555019d69",
+  "finished_at": "2026-11-24T09:31:10.271286+00:00",
+  "paper": {
+    "id": "204",
+    "position": 13,
+    "title": "Is an ounce of prevention worth a pound of cure Evidence from a large-scale vaccination experiment in China",
+    "group": "组01",
+    "md_sha256": "60fa81ba86705e63acc0bd83a8d7ab32a0fe7f838e04c0322ce533fe36dd4ac8",
+    "pdf_sha256": "ddb2f0ad23b37069f3963ec842e94566a125b140797e1d94c7735d5a560599d4",
+    "ready": true
+  },
+  "pdf_pages": 18,
+  "modes": [
+    "pdf"
+  ],
+  "image_pages": [],
+  "label_one": "实证",
+  "label_two": "核心经管",
+  "field_path": "3.2",
+  "judgment": {
+    "status": "ok",
+    "abstract": {
+      "found": true,
+      "reason": "论文首页包含明确的摘要（ABSTRACT）部分，概述了研究目的、实验设计、主要估计结果和政策含义。",
+      "evidence": [
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+          "ref": "P1.3"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+          "ref": "P1.4"
+        },
+        {
+          "source": "pdf",
+          "start": 1,
+          "end": 1,
+          "quote": "– experienced improvements in their COPD \ncondition, which led to a substantial decrease in their medical expenditure (public medical in­\nsurance reimbursements and out-of-pocket expenses). Our conservative",
+          "ref": "P1.5"
+        }
+      ]
+    },
+    "theory": {
+      "contribution": {
+        "result": false,
+        "reason": "摘要未明确提及本文的理论贡献（如构建新模型、提出新概念、计量方法创新或证明模型性质等）。摘要主要说明研究目的、实验设计、估计结果和政策含义，属于实证研究摘要。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "I1 \nKeywords:\nVaccination\nPneumonia\nInfluenza\nCost-effectiveness\nCOPD\nChina\nA B S T R A C T\nCan publicly-funded immunization programs in developing countries be cost-effective? To answer \nthis, we run a large-scale",
+            "ref": "P1.3"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "experiment in China to estimate the cost-effectiveness of influenza and \npneumococcal vaccines on elderly patients with chronic obstructive pulmonary diseases (COPD). \nVaccinated patients – relative to the control group",
+            "ref": "P1.4"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "– experienced improvements in their COPD \ncondition, which led to a substantial decrease in their medical expenditure (public medical in­\nsurance reimbursements and out-of-pocket expenses). Our conservative",
+            "ref": "P1.5"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "difference-in-differences \nestimates imply that every dollar spent making vaccination freely available reduced public \nmedical insurance reimbursements by at least 10 to 33 dollars, and reduced total medical",
+            "ref": "P1.6"
+          },
+          {
+            "source": "pdf",
+            "start": 1,
+            "end": 1,
+            "quote": "expenditure by 15 to 46 dollars. Comparing across beneficiaries, we find that patients aged 70 \nand above, those with more severe COPD symptoms, and those residing in rural areas, benefitted \nthe most from immunization.",
+            "ref": "P1.7"
+          }
+        ]
+      },
+      "derivations": null
+    },
+    "empirical": {
+      "real_data": {
+        "result": true,
+        "reason": "文章使用了来自中国宁波和重庆的大规模随机实验数据，数据来源于北京大学中国经济政策研究中心与中国疾控中心联合开展的实地实验，包含患者健康记录和医疗支出等真实观测数据。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "Data and sample\nOur data are derived from a large-scale randomized experiment study that was jointly conducted by Peking University’s Institute of \nEconomic Policy Research (IEPR) and the Chinese Center for Disease",
+            "ref": "P3.20"
+          },
+          {
+            "source": "pdf",
+            "start": 3,
+            "end": 3,
+            "quote": "Control and Prevention (CDC) in China from October 2013 to \nOctober 2014.\nTwo cities – Ningbo (in Zhejiang province) and Chongqing (a provincial-level municipality) – were specifically chosen as the lo­\ncations for our",
+            "ref": "P3.21"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "undertaking hormonal therapy for cancer, (v) \nsuspected or confirmed to be infected with pneumococcal infection.6 In the end, we obtained a sample size of 1657 patients (that is, \napproximately 400 patients in each",
+            "ref": "P4.5"
+          },
+          {
+            "source": "pdf",
+            "start": 4,
+            "end": 4,
+            "quote": "group). The geographical and treatment group distribution of patients and communities can be \nfound in Appendix Table A1.\nThe experiment was carried out in two stages. The first stage ran from mid-October to",
+            "ref": "P4.6"
+          }
+        ]
+      },
+      "estimated_model": {
+        "result": true,
+        "reason": "文章明确构建了双重差分（DID）回归模型（式1），并报告了模型系数的估计值（如Post×Group A系数为-2253.1，标准误698.1），同时进行了三重差分和倾向得分匹配等稳健性检验，明确估计出处理效应系数。",
+        "evidence": [
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "effect on medical \nexpenditure.\nWe implement the DID estimator by running the following regression. For ease of exposition, consider the case of one treatment \ngroup and one control group only: \nyijt = α0 + α1Vaccineij",
+            "ref": "P6.15"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "+ α2Postt + α3Vaccineij × Postt + Xijtγ + μj + εijt\n(1) \nwhere i, j, and t denotes patient, community, and time respectively. yijt is the outcome variable such as total medical expenditure, \nVaccineij is a dummy",
+            "ref": "P6.16"
+          },
+          {
+            "source": "pdf",
+            "start": 6,
+            "end": 6,
+            "quote": "coefficient of the interaction term, α3, which is analogous to the “treatment effect”.\nOur main regression results are reported in Table 3. Column (1) shows results from a parsimonious form of the DID specification",
+            "ref": "P6.20"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "expenditure\n(1)\n(2)\n(3)\nGroup A\n−1363.4\n−1244.7\n​\n​\n(672.6)**\n(689.2)*\n​\nGroup B\n−1337.0\n−1135.1\n​\n​\n(558.4)**\n(593.0)*\n​\nGroup C\n−725.3\n−627.8\n​\n​\n(838.1)\n(813.8)\n​\nPost\n1066.9\n1109.2\n1104.5\n​\n(669.8)\n(650.2)*\n(657.3)*",
+            "ref": "P7.14"
+          },
+          {
+            "source": "pdf",
+            "start": 7,
+            "end": 7,
+            "quote": "Post × Group A\n−2229.0\n−2258.4\n−2253.1\n​\n(714.9)***\n(689.9)***\n(698.1)***\nPost × Group B\n−2354.4\n−2340.6\n−2351.8\n​\n(723.8)***\n(715.1)***\n(717.4)***\nPost × Group C\n−2598.9\n−2544.9\n−2544.5\n​\n(800.7)***\n(789.6)***",
+            "ref": "P7.15"
+          }
+        ]
+      }
+    },
+    "field": {
+      "reason": "文章为有实证、无理论的研究，采用步骤3.2：识别核心自变量和核心因变量，判断是否至少有一个为经管类变量。核心自变量为疫苗接种（处理变量），核心因变量为医疗支出（总医疗支出、公共医保报销、自付支出等），两者均属于卫生经济学和公共经济学范畴的经管类变量，因此判定为核心经管。",
+      "variables": [
+        {
+          "role": "independent",
+          "name": "Vaccineij（疫苗接种处理变量）",
+          "economic": true,
+          "reason": "该变量衡量是否接种流感疫苗、肺炎疫苗或两者，属于公共卫生干预政策变量，是卫生经济学和公共政策评估的核心研究对象。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "+ α2Postt + α3Vaccineij × Postt + Xijtγ + μj + εijt\n(1) \nwhere i, j, and t denotes patient, community, and time respectively. yijt is the outcome variable such as total medical expenditure, \nVaccineij is a dummy",
+              "ref": "P6.16"
+            },
+            {
+              "source": "pdf",
+              "start": 6,
+              "end": 6,
+              "quote": "variable for vaccination (essentially the treatment indicator), and Postt is an indicator for the post-treatment \nperiod. Baseline (i.e. pre-treatment period) individual characteristics are contained in the vector Xijt",
+              "ref": "P6.17"
+            }
+          ]
+        },
+        {
+          "role": "dependent",
+          "name": "Total medical expenditure（总医疗支出）",
+          "economic": true,
+          "reason": "该变量衡量患者年度医疗总支出（包括住院、门诊和处方药费用），是卫生经济学中衡量医疗负担和成本效果的核心经济变量。",
+          "evidence": [
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "variation (information) about COPD condition.\nThe main outcome that we look at in this paper is the total medical expenditure, which comprises three items: inpatient expenses, \noutpatient expenses, and prescription",
+              "ref": "P5.10"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "medicine. The incidence of hospitalization in our sample is low (around 25.1 % at baseline), so \nmost of the expenses stem from outpatient visits and the cost of prescription medicine. At baseline, total medical",
+              "ref": "P5.11"
+            },
+            {
+              "source": "pdf",
+              "start": 5,
+              "end": 5,
+              "quote": "expenditure (in the \nyear preceding the experiment) of an average patient is 4177 RMB ($576), which is equivalent to 2.27 times of their monthly income.9\nThis figure decreases to 3434 RMB in the post-treatment period,",
+              "ref": "P5.12"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
